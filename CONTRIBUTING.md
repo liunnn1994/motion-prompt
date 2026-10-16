@@ -6,7 +6,7 @@ This repository is a library of names: the words people in a field use for the t
 
 Fields outside video are welcome: lighting, sound, UI and interaction, photography, typography, illustration, cooking, architecture, fashion, music, dance, games. If people in a field say "do a ___" to each other and an outsider would not know the word, that word belongs here.
 
-You do not have to write the code yourself. The prompts in [`make-your-own/prompts/`](make-your-own/prompts/) let a coding AI (Claude Code, Codex, Cursor, and so on) do most of the building. What only you can bring is knowing which names are real.
+You do not have to write the code yourself. The prompts in [`make-your-own/prompts/`](make-your-own/prompts/) let a coding AI (WorkBuddy, Doubao (豆包), Codex, Claude Code, Cursor, and so on) do most of the building. What only you can bring is knowing which names are real.
 
 ## Three ways in
 

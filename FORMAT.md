@@ -3,7 +3,7 @@
 Motion Prompt is a library of names: the words a field uses for the things you ask an AI to make, each
 with a moving sample. Each element is a small, dependency-free Canvas 2D animation that is a
 **pure function of time**, with its name and a one-line meaning in several languages, an example
-of how to ask for it, and a copyable prompt (zh-CN/en/ja), so people can tell Claude Code / Codex
+of how to ask for it, and a copyable prompt (zh-CN/en/ja), so people can tell WorkBuddy / 豆包 / Codex / Claude Code
 "use #012 and #045" or "swap this title for #005".
 
 Repo: GitHub `liunnn1994/motion-prompt` (MIT) → GitHub Pages

@@ -1,6 +1,6 @@
 # 提示词 1：制作其他语言版本
 
-将以下提示词交给能读取仓库的编程 AI。替换 `<语言>` 和 `<lang>`，例如简体中文和 `zh-CN`。
+将以下提示词交给能读取仓库的WorkBuddy、豆包、Codex、Claude Code 等 AI 助手。替换 `<语言>` 和 `<lang>`，例如简体中文和 `zh-CN`。
 
 ```text
 阅读 make-your-own/README.zh-CN.md 和 make-your-own/examples/camera-moves/en/index.html。

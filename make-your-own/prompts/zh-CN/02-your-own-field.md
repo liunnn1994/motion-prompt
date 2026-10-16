@@ -1,6 +1,6 @@
 # 提示词 2：制作自己的领域
 
-替换 `<领域>`、`<slug>`，将以下文字交给编程 AI。
+替换 `<领域>`、`<slug>`，将以下文字交给WorkBuddy、豆包、Codex、Claude Code 等 AI 助手。
 
 ```text
 阅读 make-your-own/README.zh-CN.md、render.mjs 和现有镜头、动态图形 HTML 示例。

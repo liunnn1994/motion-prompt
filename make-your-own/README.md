@@ -33,7 +33,7 @@ examples/motion-graphics/
 | Videos | 1200x1350, 30fps, H.264 (yuv420p), no audio, 9.4 seconds, seamless loop |
 | Cheat-sheet image | made with an image-generation AI from the prompt in `prompts/` |
 
-Each video is one HTML file that draws on a `<canvas>`. There is no build step and no framework, so a coding AI (Claude Code, Codex, Cursor, and so on) can read the whole thing and change it for you.
+Each video is one HTML file that draws on a `<canvas>`. There is no build step and no framework, so a coding AI (WorkBuddy, Doubao (豆包), Codex, Claude Code, Cursor, and so on) can read the whole thing and change it for you.
 
 ## Prompts
 

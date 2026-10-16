@@ -42,7 +42,7 @@ AIに何かを作ってもらうときに使う「名前」のライブラリで
 
 ### 1. ライブラリを出して、選んで、AIに渡す
 
-Claude Code や Codex に `motion-prompt` スキルを入れると、AIに頼むだけでこのギャラリーが開きます。名前や番号を覚えていなくてかまいません。分からないときに、辞書を引くように出してもらう使い方です。
+WorkBuddy、豆包、Codex、Claude Code に `motion-prompt` スキルを入れると、AIに頼むだけでこのギャラリーが開きます。名前や番号を覚えていなくてかまいません。分からないときに、辞書を引くように出してもらう使い方です。
 
 ```sh
 npx skills add liunnn1994/motion-prompt
@@ -124,7 +124,7 @@ Node.js 18 以上が必要です。
 
 ### 入れ方
 
-**プロンプトで入れる。** Claude Code や Codex に、次の文を貼ります。
+**プロンプトで入れる。** WorkBuddy、豆包、Codex、Claude Code に、次の文を貼ります。
 
 ```text
 https://github.com/liunnn1994/motion-prompt を読んで、motion-prompt スキルをこの環境に入れてください。入れたら、使い方を3行で教えてください。

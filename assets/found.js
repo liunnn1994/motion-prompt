@@ -74,7 +74,7 @@
       notePrivacy: 'Xのプライバシーポリシー', noteCookies: 'XのCookieについて',
       listH: '事例の一覧', loadListFailed: '一覧を読み込めませんでした。',
       count: '{n}件',
-      postLang: { 'zh-CN': '簡体中国語', ja: '日本語', en: '英語' },
+      postLang: { 'zh-CN': '简体中文', ja: '日本語', en: '英語' },
       postLangLabel: 'ポストの言語: {l}',
       viewOnX: 'Xで見る',
       viewOnXLabel: '{a} のポストをXで見る',

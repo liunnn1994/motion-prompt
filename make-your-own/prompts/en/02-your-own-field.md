@@ -1,6 +1,6 @@
 # Prompt 2: make the names of your own field
 
-Use this with a coding AI (Claude Code, Codex, Cursor, and so on) that can read this repository. Replace `<FIELD>`, `<LANGUAGE>`, `<slug>` and `<lang>`.
+Use this with a coding AI (WorkBuddy, Doubao (豆包), Codex, Claude Code, Cursor, and so on) that can read this repository. Replace `<FIELD>`, `<LANGUAGE>`, `<slug>` and `<lang>`.
 
 The field does not have to be video. Examples: lighting setups, sound design and mixing terms, UI animation, chart types, typography, photography, cooking techniques, architectural details, dance steps, knitting stitches.
 

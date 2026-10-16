@@ -1,6 +1,6 @@
 # プロンプト1: 別の言語版を作る
 
-このリポジトリを読めるコーディングAI（Claude Code、Codex、Cursor など）に貼って使います。`<言語>` と `<lang>` を書き換えてください（例: `スペイン語` と `es`）。
+このリポジトリを読めるコーディングAI（WorkBuddy、豆包、Codex、Claude Code、Cursor など）に貼って使います。`<言語>` と `<lang>` を書き換えてください（例: `スペイン語` と `es`）。
 
 ```
 このリポジトリの make-your-own/README.ja.md と make-your-own/examples/camera-moves/en/index.html を読んでください。

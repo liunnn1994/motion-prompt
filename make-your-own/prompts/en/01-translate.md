@@ -1,6 +1,6 @@
 # Prompt 1: make a version in another language
 
-Use this with a coding AI (Claude Code, Codex, Cursor, and so on) that can read this repository. Replace `<LANGUAGE>` and `<lang>` (for example `Spanish` and `es`).
+Use this with a coding AI (WorkBuddy, Doubao (豆包), Codex, Claude Code, Cursor, and so on) that can read this repository. Replace `<LANGUAGE>` and `<lang>` (for example `Spanish` and `es`).
 
 ```
 Read make-your-own/README.md and make-your-own/examples/camera-moves/en/index.html in this repository.

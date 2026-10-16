@@ -47,7 +47,7 @@ Each pack has its own look. The motion pack is dark navy with four colors. The c
 
 ### 1. Open the library, pick, and send your picks to your AI
 
-With the `motion-prompt` skill installed in Claude Code or Codex, asking is enough to open this gallery. You do not need to remember names or numbers. When you are not sure what something is called, have the library opened, the way you would look a word up in a dictionary.
+With the `motion-prompt` skill installed in WorkBuddy, Doubao (豆包), Codex or Claude Code, asking is enough to open this gallery. You do not need to remember names or numbers. When you are not sure what something is called, have the library opened, the way you would look a word up in a dictionary.
 
 ```sh
 npx skills add liunnn1994/motion-prompt
@@ -129,7 +129,7 @@ Node.js 18 or later is required.
 
 ### Install
 
-**With a prompt.** Paste this into Claude Code or Codex:
+**With a prompt.** Paste this into WorkBuddy, Doubao (豆包), Codex or Claude Code:
 
 ```text
 Read https://github.com/liunnn1994/motion-prompt and install the motion-prompt skill in this environment. When it is installed, tell me how to use it in three lines.

@@ -33,7 +33,7 @@ examples/motion-graphics/
 | 動画 | 1200×1350、30fps、H.264（yuv420p）、音なし、9.4秒、継ぎ目のないループ |
 | 早見表の画像 | `prompts/` のプロンプトを使い、画像生成AIで作成 |
 
-動画1本は、`<canvas>` に描くHTMLファイル1つです。ビルドもフレームワークもないので、コーディングAI（Claude Code、Codex、Cursor など）が全体を読んで、そのまま作り替えられます。
+動画1本は、`<canvas>` に描くHTMLファイル1つです。ビルドもフレームワークもないので、コーディングAI（WorkBuddy、豆包、Codex、Claude Code、Cursor など）が全体を読んで、そのまま作り替えられます。
 
 ## プロンプト
 
