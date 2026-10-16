@@ -31,7 +31,9 @@ export async function verifyDeployment({ siteRoot = defaultRoot, base, attempts 
   let lastError;
   for (let attempt = 0; attempt < attempts; attempt++) {
     try {
-      await Promise.all(expected.map(async ({ relative, digest }) => {
+      // Finish every request before rejecting or retrying. Otherwise callers can
+      // clean up files while other checks are still reading them.
+      const results = await Promise.allSettled(expected.map(async ({ relative, digest }) => {
         // Check the actual resource URL, without a cache-busting query string.
         const response = await fetch(new URL(relative === 'index.html' ? '' : relative, base), {
           cache: 'no-store', signal: AbortSignal.timeout(15000),
@@ -41,6 +43,8 @@ export async function verifyDeployment({ siteRoot = defaultRoot, base, attempts 
           throw new Error(`${relative}: SHA-256 does not match this deployment`);
         }
       }));
+      const failure = results.find(result => result.status === 'rejected');
+      if (failure) throw failure.reason;
       return { base, version: catalog.version, count: catalog.count, files: expected.length };
     } catch (error) {
       lastError = error;

@@ -6,6 +6,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { spawnSync } from 'node:child_process';
 import http from 'node:http';
+import { setTimeout as delay } from 'node:timers/promises';
 import { verifyDeployment } from './verify-deployment.mjs';
 
 function fixture(t) {
@@ -80,12 +81,13 @@ async function publishedFixture(t, overrides = {}) {
   const result = local.run();
   assert.equal(result.status, 0, result.stderr);
   const requested = new Set();
-  const server = http.createServer((req, res) => {
+  const server = http.createServer(async (req, res) => {
     const relative = new URL(req.url, 'http://localhost').pathname.slice(1) || 'index.html';
     requested.add(relative);
     if (Object.hasOwn(overrides, relative)) {
       res.statusCode = overrides[relative] === null ? 404 : 200;
-      res.end(overrides[relative]);
+      const body = overrides[relative];
+      res.end(typeof body === 'function' ? await body() : body);
     } else {
       res.end(fs.readFileSync(path.join(local.output, relative)));
     }
@@ -105,6 +107,20 @@ test('verifies the actual homepage, CSS, JS and drawing code as well as APIs', a
 test('rejects a truncated homepage even when the install command and APIs are correct', async t => {
   const options = await publishedFixture(t, { 'index.html': 'npx skills add liunnn1994/motion-prompt' });
   await assert.rejects(verifyDeployment(options), /index\.html: SHA-256/);
+});
+
+test('waits for outstanding checks before rejecting a failed deployment', async t => {
+  let finished = false;
+  const options = await publishedFixture(t, {
+    'index.html': 'previous release',
+    'assets/site.js': async () => {
+      await delay(100);
+      finished = true;
+      return '// site';
+    },
+  });
+  await assert.rejects(verifyDeployment(options), /index\.html: SHA-256/);
+  assert.equal(finished, true, 'a failed check must not leave requests running after rejection');
 });
 
 for (const file of ['assets/site.js', 'assets/site.css', 'packs/example/pack.js', 'found.html']) {
