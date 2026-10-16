@@ -45,7 +45,7 @@ jobs:
           DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
           DEPLOY_SSH_HOST_PUBLIC_KEY: ${{ secrets.DEPLOY_SSH_HOST_PUBLIC_KEY }}
           DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
-          DEPLOY_PORT: ${{ vars.DEPLOY_PORT || '22' }}
+          DEPLOY_PORT: ${{ secrets.DEPLOY_PORT || vars.DEPLOY_PORT || '22' }}
         run: bash tools/deploy-static.sh
       - name: Verify deployed website
         run: node tools/verify-deployment.mjs
