@@ -1,6 +1,6 @@
-// Motion Prompt #015 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#015
+// Motion Prompt #015 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#015
 //
-// Particles / パーティクル
+// Particles / 粒子效果
 // Pack: motion (Motion graphics moves) · element 15 · Category: Motion polish
 // What happens: Particles keep shooting up from an emitter, spread out and fall.
 // Motion spec:
@@ -12,8 +12,8 @@
 // When to use it: Use it to add celebration or liveliness, in place of confetti or sparks.
 // Tags: particles, confetti, emitter, fountain, gravity, celebration, sparks
 // Size: 539x208 px · Cycle: 4.7 s
-// Needs: kit motion -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/motion.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#015
+// Needs: kit motion -> https://motion-prompt.2077tech.com/api/v1/kit/motion.js
+// Live demo: https://motion-prompt.2077tech.com/#015
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

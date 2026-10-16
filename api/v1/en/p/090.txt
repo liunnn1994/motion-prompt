@@ -1,4 +1,4 @@
-Please use "Lazy loading" (遅延読み込み), one of the names in "Landing page & web effects".
+Please use "Lazy loading" (懒加载), one of the names in "Landing page & web effects".
 Motion Prompt #090
 
 What it is: Images load only when they come into view
@@ -11,6 +11,6 @@ Spec:
 - Placeholders that leave the bottom of the view are reset out of sight.
 When to use it: Use it on image-heavy pages to make the first view load faster.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/090.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/lp.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/090.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/lp.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

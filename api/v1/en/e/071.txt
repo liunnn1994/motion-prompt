@@ -1,6 +1,6 @@
-// Motion Prompt #071 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#071
+// Motion Prompt #071 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#071
 //
-// Badge / バッジ
+// Badge / 角标
 // Pack: ui (UI component names) · element 23 · Category: Navigation & status
 // What happens: Each time a notification arrives, the blue dot on the bell in the header counts up 1, 2, 3; clicking the bell clears it.
 // Motion spec:
@@ -12,8 +12,8 @@
 // When to use it: Use it to call attention to a count, such as unread messages or items in a cart.
 // Tags: badge, notification-badge, counter, count, dot, unread
 // Size: 542x191 px · Cycle: 4.5 s
-// Needs: kit ui -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/ui.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#071
+// Needs: kit ui -> https://motion-prompt.2077tech.com/api/v1/kit/ui.js
+// Live demo: https://motion-prompt.2077tech.com/#071
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

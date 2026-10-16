@@ -1,6 +1,6 @@
-// Motion Prompt #107 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#107
+// Motion Prompt #107 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#107
 //
-// Long exposure / 長時間露光
+// Long exposure / 长曝光
 // Pack: photo (Photo looks, lighting & styles) · element 11 · Category: Lens & camera effects
 // What happens: The street turns to night; the moving car fades to almost nothing, a red tail-light line stretches out behind it and white and amber lines run along the opposite lane.
 // Motion spec:
@@ -13,8 +13,8 @@
 // When to use it: To show traffic flow, or silky water and clouds, in a single still.
 // Tags: long exposure, light trails, slow shutter, night photography, car trails, motion
 // Size: 539x208 px · Cycle: 5 s
-// Needs: kit photo -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/photo.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#107
+// Needs: kit photo -> https://motion-prompt.2077tech.com/api/v1/kit/photo.js
+// Live demo: https://motion-prompt.2077tech.com/#107
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

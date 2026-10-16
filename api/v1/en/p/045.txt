@@ -1,4 +1,4 @@
-Please use "Wipe" (ワイプ), one of the names in "Camera moves & transitions".
+Please use "Wipe" (划像转场), one of the names in "Camera moves & transitions".
 Motion Prompt #045
 
 What it is: A moving edge replaces the shot
@@ -12,6 +12,6 @@ Spec:
 - Alternates A→B and B→A every 4.7 s (9.4 s for the round trip); top-right readout shows "A → B" / "B → A"
 When to use it: To mark a clear change of scene or topic, or to switch between the two sides of a comparison.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/045.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/camera.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/045.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/camera.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

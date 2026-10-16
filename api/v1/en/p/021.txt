@@ -1,4 +1,4 @@
-Please use "Flip" (フリップ), one of the names in "Motion graphics moves".
+Please use "Flip" (翻转), one of the names in "Motion graphics moves".
 Motion Prompt #021
 
 What it is: Turns over like a card to show the other side
@@ -11,6 +11,6 @@ Spec:
 - During the turn it scales up 8% and lifts 6 px on a sine curve; a dark overlay with opacity 0.34 × |sin θ| shades the face. An elliptical shadow sits on the floor.
 When to use it: Use it for two things that are sides of one another: question and answer, before and after.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/021.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/motion.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/021.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/motion.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

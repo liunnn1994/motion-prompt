@@ -1,5 +1,12 @@
 # Third-party notices
 
+## Original Motion Prompt
+
+This Chinese edition is maintained by liunnn1994 and is based on
+[Motion Prompt by Shohei Ohtaki](https://github.com/showheyohtaki/motion-prompt).
+Original copyright: (c) 2026 Shohei Ohtaki. The original [MIT License](LICENSE)
+and source attribution are retained. Translation and distribution changes do not imply endorsement by the original author.
+
 ## Lucian UX/UI Prompt
 
 The idea of pairing a gallery of live elements with an agent skill, and the general outline of the skill
@@ -36,7 +43,7 @@ The examples page (`found.html`) shows posts on X by other people through X's of
 text, images and videos, belong to their authors and are not covered by this repository's MIT License. The
 repository keeps only each post's ID and URL and a one-line introduction we wrote (`examples/found.json`).
 Being listed does not mean the author endorses this project. To ask for a removal or a correction, use the
-[issue form](https://github.com/showheyohtaki/motion-prompt/issues/new?template=3-removal.yml).
+[issue form](https://github.com/liunnn1994/motion-prompt/issues/new?template=3-removal.yml).
 
 ## Tools used at run time (not included)
 

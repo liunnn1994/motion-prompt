@@ -11,6 +11,6 @@ Motion Prompt #050
 - 閉じる: カーソルがパネルの外 (420, 120) を3.3秒にクリック。a に (1 − easeInOutCubic(3.3〜3.65秒)) を掛けて左へ戻す
 使いどころ: スマホの全体メニューや、絞り込み条件など、場所を取る操作を横に隠しておきたいとき。
 
-参考実装（Canvas 2D・時刻だけで絵が決まる関数）: https://showheyohtaki.github.io/motion-prompt/api/v1/ja/e/050.txt
-共通の補助コード: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/ui.js
+参考実装（Canvas 2D・時刻だけで絵が決まる関数）: https://motion-prompt.2077tech.com/api/v1/ja/e/050.txt
+共通の補助コード: https://motion-prompt.2077tech.com/api/v1/kit/ui.js
 参考実装の形・タイミング・イージングの数値はそのまま使い、中の文字・色・素材だけ、いま作っている物に合わせてください。

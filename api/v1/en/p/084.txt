@@ -1,4 +1,4 @@
-Please use "Magnetic button" (マグネティックボタン), one of the names in "Landing page & web effects".
+Please use "Magnetic button" (磁吸按钮), one of the names in "Landing page & web effects".
 Motion Prompt #084
 
 What it is: The button is pulled toward a nearby cursor
@@ -10,6 +10,6 @@ Spec:
 - The cursor enters from the left, circles the button and leaves to the right.
 When to use it: Use it on the one button you most want clicked, such as sign-up or contact.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/084.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/lp.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/084.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/lp.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

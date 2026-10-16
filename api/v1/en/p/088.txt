@@ -1,4 +1,4 @@
-Please use "Exit-intent popup" (離脱防止ポップアップ), one of the names in "Landing page & web effects".
+Please use "Exit-intent popup" (离站提示弹窗), one of the names in "Landing page & web effects".
 Motion Prompt #088
 
 What it is: A popup shown when the visitor is about to leave
@@ -11,6 +11,6 @@ Spec:
 - Click on the × at 2.9 s; it disappears 0.03–0.25 s later (linear).
 When to use it: Use it to make one last offer to visitors who are about to leave without converting.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/088.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/lp.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/088.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/lp.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

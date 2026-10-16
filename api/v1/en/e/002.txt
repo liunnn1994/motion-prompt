@@ -1,6 +1,6 @@
-// Motion Prompt #002 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#002
+// Motion Prompt #002 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#002
 //
-// Stagger / スタガー
+// Stagger / 交错入场
 // Pack: motion (Motion graphics moves) · element 02 · Category: Entrances & text
 // What happens: Chart bars rise one after another from the left, each slightly delayed.
 // Motion spec:
@@ -11,8 +11,8 @@
 // When to use it: Use it to bring in several items (list rows, chart bars, cards) in sequence and lead the eye across them.
 // Tags: stagger, sequence, delay, cascade, bar-chart, list, entrance
 // Size: 539x208 px · Cycle: 4.7 s
-// Needs: kit motion -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/motion.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#002
+// Needs: kit motion -> https://motion-prompt.2077tech.com/api/v1/kit/motion.js
+// Live demo: https://motion-prompt.2077tech.com/#002
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

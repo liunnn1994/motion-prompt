@@ -11,6 +11,6 @@ Motion Prompt #055
 - 閉じる: カーソルが3.0秒にOK (402, 157) へ移り3.3秒にクリック。a に (1 − easeInOutCubic(3.3〜3.5秒)) を掛ける
 使いどころ: ボタンの近くで、短い設定や確認をその場で済ませたいとき。
 
-参考実装（Canvas 2D・時刻だけで絵が決まる関数）: https://showheyohtaki.github.io/motion-prompt/api/v1/ja/e/055.txt
-共通の補助コード: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/ui.js
+参考実装（Canvas 2D・時刻だけで絵が決まる関数）: https://motion-prompt.2077tech.com/api/v1/ja/e/055.txt
+共通の補助コード: https://motion-prompt.2077tech.com/api/v1/kit/ui.js
 参考実装の形・タイミング・イージングの数値はそのまま使い、中の文字・色・素材だけ、いま作っている物に合わせてください。

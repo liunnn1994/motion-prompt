@@ -1,4 +1,4 @@
-Please use "Overshoot" (オーバーシュート), one of the names in "Motion graphics moves".
+Please use "Overshoot" (过冲), one of the names in "Motion graphics moves".
 Motion Prompt #010
 
 What it is: Goes a little past the target, then settles back
@@ -11,6 +11,6 @@ Spec:
 - Return: from 3.7 s, value = 0.7 × e^(−7.5t)·cos(8.5t) back to 0 (dipping slightly below 0 before it stops).
 When to use it: Use it to give an arriving element energy and a springy feel.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/010.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/motion.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/010.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/motion.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

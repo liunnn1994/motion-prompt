@@ -1,4 +1,4 @@
-// Motion Prompt #102 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#102
+// Motion Prompt #102 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#102
 //
 // バタフライライティング / Butterfly lighting
 // パック: photo (写真の表現・光と画風) · element 06 · カテゴリ: 光の当て方・時間帯
@@ -12,8 +12,8 @@
 // 使いどころ: 顔立ちをきれいに見せたい美容・ファッションの人物写真で。
 // タグ: butterfly lighting, paramount lighting, beauty lighting, portrait lighting, overhead light, glamour
 // サイズ: 539x208 px · 1周: 5 s
-// Needs: kit photo -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/photo.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#102
+// Needs: kit photo -> https://motion-prompt.2077tech.com/api/v1/kit/photo.js
+// 動く見本: https://motion-prompt.2077tech.com/#102
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

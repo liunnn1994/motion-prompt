@@ -1,0 +1,42 @@
+// Motion Prompt #068 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#068
+//
+// 步骤指示器 / Step indicator
+// 素材包: ui (UI 组件) · element 20 · 分类: 导航与状态反馈
+// 示例内容: 每次点击“下一步”，四个圆点中的下一个被选中，蓝色连接线延长。
+// 动画规格:
+//   - 卡片尺寸 542×191，每轮 4.5 秒。4 个步骤位于 x = 80、207、334、461，y = 35；日语标签为资料、审核、付款、完成；圆点半径 17，以 4px 灰线连接。
+//   - 光标在 0.9、1.7、2.5 秒点击右下角 110×38 的“下一步”。
+//   - 每次点击，当前步骤变为蓝圆白勾，下一步变为蓝圆白色数字；尚未到达的步骤为白底灰边。
+//   - 蓝线每次用 0.3 秒按 easeInOutCubic 延长 127px，第三次点击后四步全部显示勾号。
+//   - 重置：3.75–4.05 秒整体淡出，4.05–4.3 秒从第 1 步状态淡入。
+// 适用场景: 适合注册、结账等多步流程。
+// 标签: step-indicator, stepper, steps, progress-steps, wizard, multi-step, checkout
+// 尺寸: 542x191 px · 周期: 4.5 s
+// 依赖: kit ui -> https://motion-prompt.2077tech.com/api/v1/kit/ui.js
+// 动态示例: https://motion-prompt.2077tech.com/#068
+//
+// cells[i](k, w, h, u)：k = CanvasRenderingContext2D（由调用方清空画布并执行 save/restore），w、h = 尺寸，u = 秒数，范围为 [0, cycle)。画面仅由 u 决定。
+// 以下为素材代码。CELLS、常量及辅助函数位于 kit 文件中。
+
+// @element 20
+// 20 ステップインジケーター（Step indicator）
+CELLS[19] = ui((w, h, t) => {
+  const clicks = [.9, 1.7, 2.5]; let step = 0; clicks.forEach(c => { if (t >= c) step++; });
+  const reset = seg(t, 3.75, 4.05), back = seg(t, 4.05, 4.3);
+  const showStep = reset >= 1 ? 0 : step;
+  const xs = [80, 207, 334, 461], labs = ['入力', '確認', '支払い', '完了'];
+  const prog = clicks.reduce((s, c) => s + eio(seg(t, c, c + .3)), 0);
+  X.save(); X.globalAlpha = reset < 1 ? 1 - reset : back;
+  const pr = reset >= 1 ? 0 : prog;
+  fillRR(xs[0], 33, xs[3] - xs[0], 4, 2, '#e3e1df'); fillRR(xs[0], 33, (xs[1] - xs[0]) * pr, 4, 2, C.blue);
+  xs.forEach((x, i) => {
+    const done = i < showStep || (showStep === 3 && i === 3), cur = i === showStep && showStep < 3;
+    circle(x, 35, 17, done || cur ? C.blue : '#fff'); if (!(done || cur)) ring(x, 35, 16, C.line2, 2);
+    if (done) check(x, 35, 7, '#fff', 2.6); else text(String(i + 1), x, 36, 16, cur ? '#fff' : '#9a9896', 700, 'center', NUMF);
+    text(labs[i], x, 70, 14, done || cur ? C.blue : '#9a9896', 600, 'center');
+  });
+  X.restore();
+  strokeRR(24, 96, 494, 30, 7, C.line2, 1.5); bar(36, 106, 160, C.line); bar(24, 148, 200, C.line);
+  fillRR(w - 24 - 110, 142, 110, 38, 8, C.blue); text('次へ', w - 24 - 55, 161, 16, '#fff', 600, 'center');
+  pointer([[.3, w + 30, h + 30], [.85, w - 74, 166], [2.6, w - 74, 166], [3.3, w + 30, h + 30]], clicks, t);
+});

@@ -1,4 +1,4 @@
-// Motion Prompt #090 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#090
+// Motion Prompt #090 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#090
 //
 // 遅延読み込み / Lazy loading
 // パック: lp (LP・Webサイトの演出) · element 18 · カテゴリ: 読み込み・移動・動き続ける演出
@@ -12,8 +12,8 @@
 // 使いどころ: 画像の多いページで、最初の表示を速くしたいとき。
 // タグ: lazy-loading, lazy-load, images, placeholder, performance, spinner, gallery
 // サイズ: 539x208 px · 1周: 4.8 s
-// Needs: kit lp -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/lp.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#090
+// Needs: kit lp -> https://motion-prompt.2077tech.com/api/v1/kit/lp.js
+// 動く見本: https://motion-prompt.2077tech.com/#090
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

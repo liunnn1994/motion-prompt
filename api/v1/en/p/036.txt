@@ -1,4 +1,4 @@
-Please use "Dutch angle" (ダッチアングル), one of the names in "Camera moves & transitions".
+Please use "Dutch angle" (荷兰角), one of the names in "Camera moves & transitions".
 Motion Prompt #036
 
 What it is: Tilt the frame diagonally
@@ -12,6 +12,6 @@ Spec:
 - Top-right readout shows the angle (∠ 0° → ∠ 21°)
 When to use it: To express unease, tension or the feeling that something is wrong.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/036.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/camera.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/036.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/camera.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

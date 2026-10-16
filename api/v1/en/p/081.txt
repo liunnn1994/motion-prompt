@@ -1,4 +1,4 @@
-Please use "Hover lift" (ホバーで浮き上がる), one of the names in "Landing page & web effects".
+Please use "Hover lift" (悬停抬升), one of the names in "Landing page & web effects".
 Motion Prompt #081
 
 What it is: On hover, the element rises with a deeper shadow
@@ -10,6 +10,6 @@ Spec:
 - Light grey page, white cards, so the shadow reads.
 When to use it: Use it to make cards and buttons look clickable.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/081.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/lp.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/081.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/lp.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

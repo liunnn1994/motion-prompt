@@ -1,7 +1,7 @@
-// Motion Prompt #001-024 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#001
+// Motion Prompt #001-024 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#001
 //
-// Kit for pack "motion" (Motion graphics moves / モーショングラフィックスの動き): the constants and helpers its elements share.
-// Elements #001-024 · 539x208 px · cycle 4.7 s. Element code: https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/<id>.txt (or /ja/).
+// Kit for pack "motion" (动态图形 / Motion graphics moves): the constants and helpers its elements share.
+// Elements #001-024 · 539x208 px · cycle 4.7 s. Element code: https://motion-prompt.2077tech.com/api/v1/en/e/<id>.txt (or /zh-CN/, /ja/).
 //
 // Run one element standalone in a browser:
 //   1. paste this file into a <script>,

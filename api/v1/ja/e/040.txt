@@ -1,4 +1,4 @@
-// Motion Prompt #040 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#040
+// Motion Prompt #040 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#040
 //
 // フリーズフレーム / Freeze frame
 // パック: camera (カメラワークと切り替え) · element 16 · カテゴリ: 撮り方・時間の演出
@@ -13,8 +13,8 @@
 // 使いどころ: 決定的な瞬間を強調するとき、止めた画に名前や説明のテロップを載せるとき。
 // タグ: freeze frame, still frame, pause, hold, stop motion, highlight
 // サイズ: 539x208 px · 1周: 9.4 s
-// Needs: kit camera -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/camera.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#040
+// Needs: kit camera -> https://motion-prompt.2077tech.com/api/v1/kit/camera.js
+// 動く見本: https://motion-prompt.2077tech.com/#040
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

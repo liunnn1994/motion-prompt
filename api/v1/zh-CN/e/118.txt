@@ -1,0 +1,30 @@
+// Motion Prompt #118 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#118
+//
+// 胶片颗粒 / Film grain
+// 素材包: photo (摄影效果、布光与风格) · element 22 · 分类: 影调与后期风格
+// 示例内容: 同一风景上出现细颗粒，色彩略向暖奶油色偏移。
+// 动画规格:
+//   - 场景 3：左侧为半身像，头部圆心（140, 82）、半径 28px；右侧为山丘、房屋、树和太阳，太阳圆心（432, 54）、半径 15px。
+//   - 颗粒由 2,600 个边长 0.8–1.7px 的方块组成，使用固定随机种子；55% 为暗色 #3A3530，45% 为白色。
+//   - 颗粒不透明度为 16–38% × 效果强度，颗粒位置不变，无闪烁。
+//   - 各颜色向 #F2DDBE 混合 16%。
+//   - 时序：0.4–1.4 秒效果逐渐增强，保持至 4.0 秒，4.8 秒前恢复原状；每轮 5 秒，使用三次缓入缓出，约为 cubic-bezier(0.65,0,0.35,1)。
+// 适用场景: 适合降低过于干净的数字感，增加模拟胶片质地。
+// 标签: film grain, grain, noise, analog, 35mm film, texture, warm tone
+// 尺寸: 539x208 px · 周期: 5 s
+// 依赖: kit photo -> https://motion-prompt.2077tech.com/api/v1/kit/photo.js
+// 动态示例: https://motion-prompt.2077tech.com/#118
+//
+// cells[i](k, w, h, u)：k = CanvasRenderingContext2D（由调用方清空画布并执行 save/restore），w、h = 尺寸，u = 秒数，范围为 [0, cycle)。画面仅由 u 决定。
+// 以下为素材代码。CELLS、常量及辅助函数位于 kit 文件中。
+
+// @element 22
+// フィルムグレイン: 細かい粒子が全体に乗り、全体が少し暖かい色に寄る
+CELLS[21] = cell((k, u) => {
+  const a = env(u);
+  const FILM = mapPal(BASE, c => mixc(c, '#F2DDBE', 0.16));
+  const p = pal(BASE, FILM, a);
+  const G = once('grain', () => { const r = rng(22), o = []; for (let i = 0; i < 2600; i++) o.push([r() * CW, r() * CH, 0.8 + r() * 0.9, r() < 0.55 ? 0 : 1, 0.16 + r() * 0.22]); return o; });
+  const grain = kk => { kk.save(); for (const [x, y, s, d, al] of G) { kk.globalAlpha = al * a; kk.fillStyle = d ? '#FFFFFF' : '#3A3530'; kk.fillRect(x, y, s, s); } kk.restore(); };
+  stageLand(k, p); grain(k);
+});

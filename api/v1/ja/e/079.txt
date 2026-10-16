@@ -1,4 +1,4 @@
-// Motion Prompt #079 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#079
+// Motion Prompt #079 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#079
 //
 // スクロールプログレスバー / Scroll progress bar
 // パック: lp (LP・Webサイトの演出) · element 07 · カテゴリ: スクロールで起きる演出
@@ -11,8 +11,8 @@
 // 使いどころ: 長い記事やコラムで、あとどれくらいで読み終わるかを伝えたいとき。
 // タグ: progress-bar, reading-progress, scroll-progress, indicator, scroll-driven, article
 // サイズ: 539x208 px · 1周: 4.8 s
-// Needs: kit lp -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/lp.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#079
+// Needs: kit lp -> https://motion-prompt.2077tech.com/api/v1/kit/lp.js
+// 動く見本: https://motion-prompt.2077tech.com/#079
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

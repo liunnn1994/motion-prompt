@@ -1,6 +1,6 @@
-// Motion Prompt #103 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#103
+// Motion Prompt #103 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#103
 //
-// Golden hour / ゴールデンアワー
+// Golden hour / 黄金时刻
 // Pack: photo (Photo looks, lighting & styles) · element 07 · Category: Lighting & time of day
 // What happens: The sun drops to just above the horizon; sky and ground turn orange, the left side of the person lights up and the shadows of the lamp and tree stretch far to the right.
 // Motion spec:
@@ -13,8 +13,8 @@
 // When to use it: For warm, nostalgic, gentle-feeling images.
 // Tags: golden hour, magic hour, sunset light, warm light, long shadows, low sun
 // Size: 539x208 px · Cycle: 5 s
-// Needs: kit photo -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/photo.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#103
+// Needs: kit photo -> https://motion-prompt.2077tech.com/api/v1/kit/photo.js
+// Live demo: https://motion-prompt.2077tech.com/#103
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

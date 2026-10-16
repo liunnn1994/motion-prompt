@@ -1,0 +1,40 @@
+// Motion Prompt #011 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#011
+//
+// 挤压与拉伸 / Squash & stretch
+// 素材包: motion (动态图形) · element 11 · 分类: 动效细节
+// 示例内容: 弹跳角色在落地时压扁，在起跳时拉长。
+// 动画规格:
+//   - 圆形角色半径 37，每 1.175 秒弹跳一次，每 4.7 秒共 4 次，抛物线高度 92px；整个周期内沿正弦曲线横向漂移 ±150px。
+//   - 触地阶段为每次弹跳开头和结尾各 10%：纵向缩放按二次曲线在 0.52（落地）与 1.28（离地）间变化。
+//   - 腾空时，纵向缩放 = 1 + 0.28 × s^3；s 表示相对最高点的时间偏移，最高点为 0，起跳与落地为 1，使高速阶段更拉长。
+//   - 横向缩放始终为纵向缩放的倒数，以保持体积感；变形锚点固定在脚底。
+//   - 随高度增加，阴影变小、变扁。每次落地向左右闪出黄色短线，持续约单次弹跳的 18%。
+// 适用场景: 适合表现角色或标志的重量感和柔软度。
+// 标签: squash, stretch, squash-and-stretch, bounce, character, ball, animation-principle
+// 尺寸: 539x208 px · 周期: 4.7 s
+// 依赖: kit motion -> https://motion-prompt.2077tech.com/api/v1/kit/motion.js
+// 动态示例: https://motion-prompt.2077tech.com/#011
+//
+// cells[i](k, w, h, u)：k = CanvasRenderingContext2D（由调用方清空画布并执行 save/restore），w、h = 尺寸，u = 秒数，范围为 [0, cycle)。画面仅由 u 决定。
+// 以下为素材代码。CELLS、常量及辅助函数位于 kit 文件中。
+
+// @element 11
+// 11 スクワッシュ＆ストレッチ（弾むキャラクターが、着地でつぶれ、飛ぶときに伸びる）
+CELLS[10] = (k, w, h, u) => {
+  stage(k);
+  const T = CYC / 4, q = mod(u, T) / T, c = 0.1, floor = h - 28, R = 37, Hgt = 92;
+  const X = w / 2 + 150 * Math.sin(u / CYC * Math.PI * 2);
+  let sy, yb, grounded = false;
+  if (q < c || q > 1 - c) { const d = (q < c ? q : 1 - q) / c; sy = lerp(0.52, 1.28, d * d); yb = floor; grounded = true; }
+  else { const qq = (q - c) / (1 - 2 * c), sp = Math.abs(2 * qq - 1); yb = floor - Hgt * (1 - sp * sp); sy = 1 + 0.28 * Math.pow(sp, 3); }
+  const sx = 1 / sy, hg = (floor - yb) / Hgt;
+  k.fillStyle = C.navy3; rr(k, 40, floor, w - 80, 5, 2.5); k.fill();
+  k.fillStyle = 'rgba(0,0,0,.32)'; k.beginPath(); k.ellipse(X, floor + 9, R * 1.2 * (1 - hg * 0.55) * Math.max(1, sx), 6 * (1 - hg * 0.5), 0, 0, 7); k.fill();
+  // 着地の小さなしぶき
+  const dq = q < 0.5 ? q : q - 1; if (Math.abs(dq) < 0.16 && dq > -0.02) { const t = (dq + 0.02) / 0.18; k.strokeStyle = C.yel; k.lineWidth = 5 * (1 - t); k.lineCap = 'round';[-1, 1].forEach(s => { k.beginPath(); k.moveTo(X + s * (50 + 28 * t), floor - 6 - 10 * t); k.lineTo(X + s * (62 + 40 * t), floor - 12 - 20 * t); if (t < 0.97) k.stroke(); }); }
+  k.save(); k.translate(X, yb); k.scale(sx, sy);
+  k.fillStyle = C.coral; k.beginPath(); k.arc(0, -R, R, 0, 7); k.fill();
+  k.fillStyle = '#fff'; k.beginPath(); k.ellipse(-12, -R - 4, 7, 9.5, 0, 0, 7); k.ellipse(12, -R - 4, 7, 9.5, 0, 0, 7); k.fill();
+  k.fillStyle = C.navy; k.beginPath(); k.arc(-10.5, -R - 3, 3.8, 0, 7); k.arc(13.5, -R - 3, 3.8, 0, 7); k.fill();
+  k.restore();
+};

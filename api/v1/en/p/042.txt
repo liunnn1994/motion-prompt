@@ -1,4 +1,4 @@
-Please use "Match cut" (マッチカット), one of the names in "Camera moves & transitions".
+Please use "Match cut" (匹配剪辑), one of the names in "Camera moves & transitions".
 Motion Prompt #042
 
 What it is: Cut on a matching shape or motion
@@ -12,6 +12,6 @@ Spec:
 - Top-right readout shows "SHOT 1" → "SHOT 2"; at 4.7 s it cuts straight back to SHOT 1
 When to use it: To link two scenes far apart in time or place through a shared shape or motion.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/042.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/camera.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/042.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/camera.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

@@ -1,0 +1,37 @@
+// Motion Prompt #063 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#063
+//
+// 数字步进器 / Stepper (+/−)
+// 素材包: ui (UI 组件) · element 15 · 分类: 选择与切换
+// 示例内容: 点击加号三次，数字从 1 变为 4；点击减号三次，回到 1。
+// 动画规格:
+//   - 卡片尺寸 542×191，每轮 4.5 秒。（171, 52）处有 200×60、圆角半径 12 的框，左右各 60px 分别显示减号和蓝色加号，中央为 30px 粗体数字。
+//   - 0.9、1.35、1.8 秒点击加号，数字 1→4；2.8、3.25、3.7 秒点击减号，数字 4→1。
+//   - 被按下的分区从点击前 0.05 秒至点击后 0.15 秒显示浅蓝底色。
+//   - 每次按下后，数字变蓝，缩放比例用 0.25 秒从 1.18 线性回落到 1。
+// 适用场景: 适合数量或人数等逐一变化的小整数。
+// 标签: stepper, quantity, number-input, increment, decrement, plus-minus, spin-button
+// 尺寸: 542x191 px · 周期: 4.5 s
+// 依赖: kit ui -> https://motion-prompt.2077tech.com/api/v1/kit/ui.js
+// 动态示例: https://motion-prompt.2077tech.com/#063
+//
+// cells[i](k, w, h, u)：k = CanvasRenderingContext2D（由调用方清空画布并执行 save/restore），w、h = 尺寸，u = 秒数，范围为 [0, cycle)。画面仅由 u 决定。
+// 以下为素材代码。CELLS、常量及辅助函数位于 kit 文件中。
+
+// @element 15
+// 15 ステッパー（Stepper (+/−)）
+CELLS[14] = ui((w, h, t) => {
+  bar(171, 24, 90, C.line2, 10);
+  const plus = [.9, 1.35, 1.8], minus = [2.8, 3.25, 3.7];
+  let n = 1; plus.forEach(c => { if (t >= c) n++; }); minus.forEach(c => { if (t >= c) n--; });
+  const last = [...plus, ...minus].filter(c => t >= c).pop();
+  const pop = last !== undefined ? 1 - seg(t, last, last + .25) : 0;
+  const bx = 171, by = 52, bw = 200, bh = 60;
+  strokeRR(bx, by, bw, bh, 12, C.line2, 1.8);
+  const pressP = plus.some(c => t >= c - .05 && t < c + .15), pressM = minus.some(c => t >= c - .05 && t < c + .15);
+  if (pressM) fillRR(bx + 2, by + 2, 58, bh - 4, 10, C.lb); if (pressP) fillRR(bx + bw - 60, by + 2, 58, bh - 4, 10, C.lb);
+  X.fillStyle = C.line2; X.fillRect(bx + 60, by + 10, 1.5, bh - 20); X.fillRect(bx + bw - 61, by + 10, 1.5, bh - 20);
+  text('−', bx + 30, by + bh / 2, 30, '#555', 500, 'center', NUMF); text('+', bx + bw - 30, by + bh / 2, 30, C.blue, 500, 'center', NUMF);
+  X.save(); X.translate(bx + bw / 2, by + bh / 2 + 1); X.scale(1 + .18 * pop, 1 + .18 * pop); text(String(n), 0, 0, 30, pop > .05 ? C.blue : C.ink, 700, 'center', NUMF); X.restore();
+  bar(171, 136, 200, C.line); bar(171, 154, 140, C.line);
+  pointer([[.3, w + 30, h + 30], [.85, 342, 86], [2.3, 342, 86], [2.75, 202, 86], [3.75, 202, 86], [4.3, w + 30, h + 30]], [...plus, ...minus], t);
+});

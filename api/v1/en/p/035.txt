@@ -1,4 +1,4 @@
-Please use "FPV drone shot" (FPV), one of the names in "Camera moves & transitions".
+Please use "FPV drone shot" (FPV 穿越机镜头), one of the names in "Camera moves & transitions".
 Motion Prompt #035
 
 What it is: Fast, immersive fly-through
@@ -12,6 +12,6 @@ Spec:
 - No hold and no cross-fade reset (the tree rows shift phase when it restarts every 4.7 s)
 When to use it: For speed and immersion, or to fly through a location in one continuous move.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/035.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/camera.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/035.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/camera.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

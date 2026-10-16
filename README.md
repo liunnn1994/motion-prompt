@@ -1,10 +1,11 @@
-# Motion Prompt
+# Motion Prompt 中文版 / Chinese Edition
 
-**English** | [日本語](README.ja.md)
+[简体中文](README.zh-CN.md) | **English** | [日本語](README.ja.md)
 
+> 简体中文说明见 [README.zh-CN.md](README.zh-CN.md)。
 > 日本語の説明は [README.ja.md](README.ja.md) にあります。
-> 中文用户：名称一览目前只有英文和日文。把 [`make-your-own/prompts/en/01-translate.md`](make-your-own/prompts/en/01-translate.md) 交给 Claude Code、Codex 等编程 AI，就可以制作中文或其他语言的版本。
-> Other languages: the name lists are in English and Japanese for now. Give [`make-your-own/prompts/en/01-translate.md`](make-your-own/prompts/en/01-translate.md) to a coding AI to make a version in your language.
+
+This Chinese edition is maintained by [liunnn1994](https://github.com/liunnn1994), based on [the original Motion Prompt by Shohei Ohtaki](https://github.com/showheyohtaki/motion-prompt). See the [Chinese installation guide](README.zh-CN.md).
 
 A library of names for the things you ask an AI to make. Each name comes with a moving sample, a one-line meaning and an example of how to ask for it. Five sets are in it now, 24 names each and 120 in all: motion-graphics moves (`motion`), camera moves (`camera`), UI component names (`ui`), landing page and web effects (`lp`), and photo looks, lighting and styles (`photo`). It also comes with the prompts to make the same kind of library for your own field, in your own language.
 
@@ -12,9 +13,9 @@ A library of names for the things you ask an AI to make. Each name comes with a 
 |---|---|
 | ![Motion graphics names 01–08](assets/preview-motion.gif) | ![Camera move names 01–08](assets/preview-camera.gif) |
 
-- Gallery (every sample, moving): https://showheyohtaki.github.io/motion-prompt/
+- Gallery (every sample, moving): https://motion-prompt.2077tech.com/
 - Name lists you can read here on GitHub: [`packs/`](packs/README.md)
-- Examples from other people who share names with samples (embeds and links to their posts on X): https://showheyohtaki.github.io/motion-prompt/found.html
+- Examples from other people who share names with samples (embeds and links to their posts on X): https://motion-prompt.2077tech.com/found.html
 
 ## Why I made this
 
@@ -38,7 +39,7 @@ Shohei Ohtaki
 | 073–096 | `lp`: landing page and web effects | 24 | [English](packs/lp/README.md) · [日本語](packs/lp/README.ja.md) |
 | 097–120 | `photo`: photo looks, lighting and styles | 24 | [English](packs/photo/README.md) · [日本語](packs/photo/README.ja.md) |
 
-Each list gives the number, the name, what it means and an example of how to ask an AI for it. The same names move in the [gallery](https://showheyohtaki.github.io/motion-prompt/).
+Each list gives the number, the name, what it means and an example of how to ask an AI for it. The same names move in the [gallery](https://motion-prompt.2077tech.com/).
 
 Each pack has its own look. The motion pack is dark navy with four colors. The camera pack is light gray with one blue. The ui pack is warm off-white with black and one blue, and a cursor sets each part moving. The lp pack draws a white browser window on a pale gray desk, with a vermilion accent and blue for the pictures on the page. The photo pack has no shared palette: each card is painted in the colors of its own scene, and the effect fades in and back out so you can compare. That is on purpose. What a pack has to get right is the names, not a house style.
 
@@ -49,7 +50,7 @@ Each pack has its own look. The motion pack is dark navy with four colors. The c
 With the `motion-prompt` skill installed in Claude Code or Codex, asking is enough to open this gallery. You do not need to remember names or numbers. When you are not sure what something is called, have the library opened, the way you would look a word up in a dictionary.
 
 ```sh
-npx skills add showheyohtaki/motion-prompt
+npx skills add liunnn1994/motion-prompt
 ```
 
 1. Ask your AI:
@@ -131,19 +132,19 @@ Node.js 18 or later is required.
 **With a prompt.** Paste this into Claude Code or Codex:
 
 ```text
-Read https://github.com/showheyohtaki/motion-prompt and install the motion-prompt skill in this environment. When it is installed, tell me how to use it in three lines.
+Read https://github.com/liunnn1994/motion-prompt and install the motion-prompt skill in this environment. When it is installed, tell me how to use it in three lines.
 ```
 
 **With a command.** This uses the `skills` installer, which works with Claude Code, Codex and other agents that read Agent Skills:
 
 ```sh
-npx skills add showheyohtaki/motion-prompt
+npx skills add liunnn1994/motion-prompt
 ```
 
 **As a Claude Code plugin.**
 
 ```text
-/plugin marketplace add showheyohtaki/motion-prompt
+/plugin marketplace add liunnn1994/motion-prompt
 /plugin install motion-prompt@motion-prompt
 ```
 
@@ -163,11 +164,11 @@ This section is for an AI agent that received the prompt in "With a prompt".
 1. Check that Node.js 18 or later is available with `node --version`.
 2. In the user's project folder, run the command below. If it asks which agent to install for, choose the one you are.
    ```sh
-   npx skills add showheyohtaki/motion-prompt -y
+   npx skills add liunnn1994/motion-prompt -y
    ```
 3. If step 2 is not possible, fetch the repository and copy the folder. Copy to `.claude/skills/` if you are Claude Code and to `.agents/skills/` otherwise (or to `~/.claude/skills/` or `~/.agents/skills/` for all projects).
    ```sh
-   git clone --depth 1 https://github.com/showheyohtaki/motion-prompt.git /tmp/motion-prompt
+   git clone --depth 1 https://github.com/liunnn1994/motion-prompt.git /tmp/motion-prompt
    mkdir -p .claude/skills
    cp -R /tmp/motion-prompt/skills/motion-prompt .claude/skills/
    ```
@@ -212,8 +213,8 @@ Three files make up the skill: the instructions (`SKILL.md`), notes on moving an
 
 The script makes GET requests for the text files below and nothing else. Nothing from your project is uploaded. `pick` also opens a temporary listener on your own machine (127.0.0.1) that receives only the numbers and note sent by "Send to AI" in the gallery.
 
-1. `https://showheyohtaki.github.io/motion-prompt/api/v1/`
-2. if that is unreachable: `https://raw.githubusercontent.com/showheyohtaki/motion-prompt/main/api/v1/`
+1. `https://motion-prompt.2077tech.com/api/v1/`
+2. if that is unreachable: `https://raw.githubusercontent.com/liunnn1994/motion-prompt/main/api/v1/`
 
 | File | Contents |
 |---|---|
@@ -234,7 +235,7 @@ If you clone this whole repository, the CLI reads the local `api/v1` first and n
 ### Run the gallery yourself
 
 ```sh
-git clone https://github.com/showheyohtaki/motion-prompt.git
+git clone https://github.com/liunnn1994/motion-prompt.git
 cd motion-prompt
 python3 -m http.server 8000
 ```
@@ -247,7 +248,7 @@ Open `http://localhost:8000/` to see the gallery (`index.html`). In a clone, `no
 
 Commercial use is allowed, for the code, the videos and the images. When you use an element's code, keep its first line (`// Motion Prompt #ID · MIT License (c) 2026 Shohei Ohtaki · …`).
 
-To ask for something to be removed or corrected, use the [removal or correction form](https://github.com/showheyohtaki/motion-prompt/issues/new?template=3-removal.yml). We act on it as soon as the request is confirmed.
+To ask for something to be removed or corrected, use the [removal or correction form](https://github.com/liunnn1994/motion-prompt/issues/new?template=3-removal.yml). We act on it as soon as the request is confirmed.
 
 ## Acknowledgements
 

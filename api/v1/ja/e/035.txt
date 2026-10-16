@@ -1,4 +1,4 @@
-// Motion Prompt #035 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#035
+// Motion Prompt #035 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#035
 //
 // FPV / FPV drone shot
 // パック: camera (カメラワークと切り替え) · element 11 · カテゴリ: 撮り方・時間の演出
@@ -13,8 +13,8 @@
 // 使いどころ: スピード感と没入感を出すとき。場所の中を一気に通り抜けて見せるとき。
 // タグ: fpv, drone, fly through, first person, banking, speed, aerial
 // サイズ: 539x208 px · 1周: 9.4 s
-// Needs: kit camera -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/camera.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#035
+// Needs: kit camera -> https://motion-prompt.2077tech.com/api/v1/kit/camera.js
+// 動く見本: https://motion-prompt.2077tech.com/#035
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

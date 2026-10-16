@@ -3,7 +3,7 @@
 `get <id>` returns one text file per element:
 
 ```js
-// Motion Prompt #012 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#012
+// Motion Prompt #012 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#012
 // name, what it shows, spec lines, when to use it, size, cycle, "Needs: kit <pack>", live demo URL
 // @element 12
 CELLS[11] = (k, w, h, u) => { … };     // k = CanvasRenderingContext2D, w/h = card size, u = seconds in [0, cycle)
@@ -155,7 +155,7 @@ The words, numbers and names inside an element are sample content. Replace them 
 
 ## License line
 
-Keep each element's first line, `// Motion Prompt #ID · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#ID`, above the code made from it, and the kit's first line above the kit. When only numbers were carried over (section 3), put the same line as a comment where the target format allows comments.
+Keep each element's first line, `// Motion Prompt #ID · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#ID`, above the code made from it, and the kit's first line above the kit. When only numbers were carried over (section 3), put the same line as a comment where the target format allows comments.
 
 ## Check before reporting
 

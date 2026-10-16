@@ -10,6 +10,6 @@ Motion Prompt #096
 - 周期 2.4秒と1.6秒はどちらも4.8秒を割り切るので、つなぎ目が出ない
 使いどころ: アプリやサービスの画像、アイコンなどの飾りに、静かな動きを足したいとき。
 
-参考実装（Canvas 2D・時刻だけで絵が決まる関数）: https://showheyohtaki.github.io/motion-prompt/api/v1/ja/e/096.txt
-共通の補助コード: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/lp.js
+参考実装（Canvas 2D・時刻だけで絵が決まる関数）: https://motion-prompt.2077tech.com/api/v1/ja/e/096.txt
+共通の補助コード: https://motion-prompt.2077tech.com/api/v1/kit/lp.js
 参考実装の形・タイミング・イージングの数値はそのまま使い、中の文字・色・素材だけ、いま作っている物に合わせてください。

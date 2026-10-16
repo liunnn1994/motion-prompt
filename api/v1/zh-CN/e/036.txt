@@ -1,0 +1,24 @@
+// Motion Prompt #036 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#036
+//
+// 荷兰角 / Dutch angle
+// 素材包: camera (镜头运动与转场) · element 12 · 分类: 拍摄手法与时间控制
+// 示例内容: 相机绕镜头轴旋转，让地平线保持倾斜。
+// 动画规格:
+//   - 相机：机位固定，高度 1.5m，仅横滚 0→0.36rad，约 21°，整个画面绕中心旋转。
+//   - 时序：0.6–2.2 秒，时长 1.6 秒，使用三次缓入缓出，约为 cubic-bezier(0.65,0,0.35,1)。
+//   - 主体：人物站在前方 7m 处，地平线、建筑和人物倾斜相同角度。
+//   - 2.2–4.2 秒保持倾斜，留出观察斜构图的时间。
+//   - 最后 0.5 秒交叉淡化回水平起始状态，每轮 4.7 秒。
+//   - 右上角显示角度，∠ 0°→∠ 21°。
+// 适用场景: 适合表现不安、紧张或异样。
+// 标签: dutch angle, dutch tilt, canted angle, oblique, roll, tension, tilted horizon
+// 尺寸: 539x208 px · 周期: 9.4 s
+// 依赖: kit camera -> https://motion-prompt.2077tech.com/api/v1/kit/camera.js
+// 动态示例: https://motion-prompt.2077tech.com/#036
+//
+// cells[i](k, w, h, u)：k = CanvasRenderingContext2D（由调用方清空画布并执行 save/restore），w、h = 尺寸，u = 秒数，范围为 [0, cycle)。画面仅由 u 决定。
+// 以下为素材代码。CELLS、常量及辅助函数位于 kit 文件中。
+
+// @element 12
+// 12 ダッチアングル
+CELLS[11] = shot(camCell((k, w, h, p) => world(k, w, h, cam({ roll: lerp(0, 0.36, p) }), { person: { z: 7 } }), p => `∠ ${Math.round(lerp(0, 0.36, p) * 57.3)}°`, 0.6, 2.2));

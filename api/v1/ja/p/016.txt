@@ -10,6 +10,6 @@ Motion Prompt #016
 - 各層は画面の左右に200px以上はみ出して描き、端が見えないようにする
 使いどころ: 平面の絵や写真に奥行きを出したいとき。背景・風景・スクロール表現に。
 
-参考実装（Canvas 2D・時刻だけで絵が決まる関数）: https://showheyohtaki.github.io/motion-prompt/api/v1/ja/e/016.txt
-共通の補助コード: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/motion.js
+参考実装（Canvas 2D・時刻だけで絵が決まる関数）: https://motion-prompt.2077tech.com/api/v1/ja/e/016.txt
+共通の補助コード: https://motion-prompt.2077tech.com/api/v1/kit/motion.js
 参考実装の形・タイミング・イージングの数値はそのまま使い、中の文字・色・素材だけ、いま作っている物に合わせてください。

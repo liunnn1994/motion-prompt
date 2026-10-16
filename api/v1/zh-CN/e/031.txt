@@ -1,0 +1,27 @@
+// Motion Prompt #031 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#031
+//
+// 升镜头 / Crane up
+// 素材包: camera (镜头运动与转场) · element 07 · 分类: 镜头运动
+// 示例内容: 相机升高的同时向下俯仰，最终俯视人物。
+// 动画规格:
+//   - 相机：从高 1.4m 升至 9m，同时向前移动 0→1.5m。
+//   - 朝向：向下俯仰以让前方 8m 的人物留在画面内；pitch = −0.86 × atan2(height − 1.0, 8 − forward)，约 −2.5°→−44°。
+//   - 时序：0.5–3.4 秒，时长 2.9 秒，使用三次缓入缓出，约为 cubic-bezier(0.65,0,0.35,1)。
+//   - 主体：人物静止，随相机升高而变小，地面网格逐渐占满画面，地平线从顶部移出。
+//   - 回到起点：3.4–4.2 秒停留，最后 0.5 秒交叉淡化至初始状态，每轮 4.7 秒。
+//   - 右上角显示高度，↑ 1.4m→↑ 9.0m。
+// 适用场景: 适合场景结尾拉开与人物的距离，或展示环境规模。
+// 标签: crane, crane up, jib, boom up, rise, high angle, camera move
+// 尺寸: 539x208 px · 周期: 9.4 s
+// 依赖: kit camera -> https://motion-prompt.2077tech.com/api/v1/kit/camera.js
+// 动态示例: https://motion-prompt.2077tech.com/#031
+//
+// cells[i](k, w, h, u)：k = CanvasRenderingContext2D（由调用方清空画布并执行 save/restore），w、h = 尺寸，u = 秒数，范围为 [0, cycle)。画面仅由 u 决定。
+// 以下为素材代码。CELLS、常量及辅助函数位于 kit 文件中。
+
+// @element 07
+// 07 クレーンアップ: カメラが上昇し、見下ろしになる
+CELLS[6] = shot(camCell((k, w, h, p) => {
+  const y = lerp(1.4, 9, p), z = lerp(0, 1.5, p);
+  world(k, w, h, cam({ y, z, pitch: -0.86 * Math.atan2(y - 1.0, 8 - z) }), { person: { z: 8 } });
+}, p => `↑ ${lerp(1.4, 9, p).toFixed(1)}m`));

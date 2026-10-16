@@ -1,6 +1,6 @@
-// Motion Prompt #081 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#081
+// Motion Prompt #081 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#081
 //
-// Hover lift / ホバーで浮き上がる
+// Hover lift / 悬停抬升
 // Pack: lp (Landing page & web effects) · element 09 · Category: Hover & click interactions
 // What happens: Only the card under the cursor lifts slightly and its shadow spreads; it settles back when the cursor leaves.
 // Motion spec:
@@ -11,8 +11,8 @@
 // When to use it: Use it to make cards and buttons look clickable.
 // Tags: hover, lift, float, card, shadow, translatey, interaction
 // Size: 539x208 px · Cycle: 4.8 s
-// Needs: kit lp -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/lp.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#081
+// Needs: kit lp -> https://motion-prompt.2077tech.com/api/v1/kit/lp.js
+// Live demo: https://motion-prompt.2077tech.com/#081
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

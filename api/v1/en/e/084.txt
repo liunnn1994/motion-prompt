@@ -1,6 +1,6 @@
-// Motion Prompt #084 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#084
+// Motion Prompt #084 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#084
 //
-// Magnetic button / マグネティックボタン
+// Magnetic button / 磁吸按钮
 // Pack: lp (Landing page & web effects) · element 12 · Category: Hover & click interactions
 // What happens: As the cursor comes near, the button is drawn toward it and follows; when the cursor leaves, the button wobbles back to its place.
 // Motion spec:
@@ -11,8 +11,8 @@
 // When to use it: Use it on the one button you most want clicked, such as sign-up or contact.
 // Tags: magnetic, magnetic-button, hover, cursor, elastic, cta, interaction
 // Size: 539x208 px · Cycle: 4.8 s
-// Needs: kit lp -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/lp.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#084
+// Needs: kit lp -> https://motion-prompt.2077tech.com/api/v1/kit/lp.js
+// Live demo: https://motion-prompt.2077tech.com/#084
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

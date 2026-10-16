@@ -1,0 +1,51 @@
+name: Deploy static website
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: motion-prompt-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+          package-manager-cache: false
+      - name: Validate and build website
+        run: |
+          node --test tools/deployment.test.mjs
+          node tools/build.mjs --check
+          node tools/build.mjs
+          node tools/package-site.mjs
+      - name: Install upload tools if needed
+        shell: bash
+        run: |
+          if ! command -v rsync >/dev/null || ! command -v ssh >/dev/null; then
+            sudo apt-get update
+            sudo apt-get install -y rsync openssh-client
+          fi
+      - name: Upload static files
+        env:
+          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+          DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+          DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+          DEPLOY_SSH_HOST_PUBLIC_KEY: ${{ secrets.DEPLOY_SSH_HOST_PUBLIC_KEY }}
+          DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
+          DEPLOY_PORT: ${{ vars.DEPLOY_PORT || '22' }}
+        run: bash tools/deploy-static.sh
+      - name: Verify deployed website
+        run: node tools/verify-deployment.mjs

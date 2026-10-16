@@ -1,4 +1,4 @@
-Please use "Parallax scrolling" (パララックススクロール), one of the names in "Landing page & web effects".
+Please use "Parallax scrolling" (视差滚动), one of the names in "Landing page & web effects".
 Motion Prompt #073
 
 What it is: On scroll, background layers move slower than the content
@@ -11,6 +11,6 @@ Spec:
 - The scrollbar thumb on the right moves with the scroll.
 When to use it: Use it to give the hero or a section photo a sense of depth.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/073.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/lp.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/073.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/lp.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

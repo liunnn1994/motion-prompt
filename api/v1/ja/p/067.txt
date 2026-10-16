@@ -11,6 +11,6 @@ Motion Prompt #067
 - 閉じる: カーソルが2.9秒からパネルの外へ出て、3.15〜3.4秒に (1 − easeInOutCubic) で消える
 使いどころ: 製品やサービスが多いサイトで、全体を一度に見渡せるメニューにしたいとき。
 
-参考実装（Canvas 2D・時刻だけで絵が決まる関数）: https://showheyohtaki.github.io/motion-prompt/api/v1/ja/e/067.txt
-共通の補助コード: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/ui.js
+参考実装（Canvas 2D・時刻だけで絵が決まる関数）: https://motion-prompt.2077tech.com/api/v1/ja/e/067.txt
+共通の補助コード: https://motion-prompt.2077tech.com/api/v1/kit/ui.js
 参考実装の形・タイミング・イージングの数値はそのまま使い、中の文字・色・素材だけ、いま作っている物に合わせてください。

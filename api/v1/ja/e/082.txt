@@ -1,4 +1,4 @@
-// Motion Prompt #082 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#082
+// Motion Prompt #082 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#082
 //
 // ホバーで画像ズーム / Image zoom on hover
 // パック: lp (LP・Webサイトの演出) · element 10 · カテゴリ: マウス・クリックへの反応
@@ -10,8 +10,8 @@
 // 使いどころ: 写真の一覧（実績・商品・記事）で、どれを選ぼうとしているかを伝えたいとき。
 // タグ: hover, zoom, image, scale, overflow-hidden, thumbnail, gallery
 // サイズ: 539x208 px · 1周: 4.8 s
-// Needs: kit lp -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/lp.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#082
+// Needs: kit lp -> https://motion-prompt.2077tech.com/api/v1/kit/lp.js
+// 動く見本: https://motion-prompt.2077tech.com/#082
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

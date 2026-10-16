@@ -1,0 +1,33 @@
+// Motion Prompt #104 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#104
+//
+// 蓝调时刻 / Blue hour
+// 素材包: photo (摄影效果、布光与风格) · element 08 · 分类: 布光与拍摄时段
+// 示例内容: 太阳落山后天空渐变为深蓝，窗户和路灯亮起琥珀色，人物呈深蓝轮廓。
+// 动画规格:
+//   - 场景 1：半身人物站在 y = 150 的地平线前，头部圆心为（270, 78）、半径 29px，不绘制五官或头发。
+//   - 太阳半径 18px、x = 120，在效果强度达到 70% 的过程中从 y = 40 下沉至 190，并在强度 40–80% 之间淡出。
+//   - 天空顶部 #2C3B5E、地平线附近 #4A6191，地面 #283452、建筑 #34446B、人物 #1C2439。
+//   - 每三扇窗中的一扇及路灯灯泡变为 #FFC75A；灯泡外绘制半径 13px 和 8px 的实色光环，颜色 #FFE3A3、不透明度分别为 35% 和 60%。
+//   - 右上角时间 12:00→18:35。
+//   - 时序：0.4–1.4 秒效果逐渐增强，保持至 4.0 秒，4.8 秒前恢复原状；每轮 5 秒，使用三次缓入缓出，约为 cubic-bezier(0.65,0,0.35,1)。
+// 适用场景: 适合蓝色天空与灯光相映的城市夜景。
+// 标签: blue hour, twilight, dusk, night city, cityscape, deep blue sky
+// 尺寸: 539x208 px · 周期: 5 s
+// 依赖: kit photo -> https://motion-prompt.2077tech.com/api/v1/kit/photo.js
+// 动态示例: https://motion-prompt.2077tech.com/#104
+//
+// cells[i](k, w, h, u)：k = CanvasRenderingContext2D（由调用方清空画布并执行 save/restore），w、h = 尺寸，u = 秒数，范围为 [0, cycle)。画面仅由 u 决定。
+// 以下为素材代码。CELLS、常量及辅助函数位于 kit 文件中。
+
+// @element 08
+// ブルーアワー: 日が沈んだ後、空が深い青になり、窓と街灯の暖かい光が灯る
+CELLS[7] = cell((k, u) => {
+  const a = env(u);
+  const p = pal(BASE, NIGHT, a);
+  stagePortrait(k, p, {
+    sun: [120, lerp(40, 190, P(a, 0, 0.7)), 18, 1 - P(a, 0.4, 0.8)],
+    after: D => { const k2 = D.k; k2.save(); k2.globalAlpha = 0.35 * a; D.circ(413, HZ - 53, 13, BASE.glow); k2.globalAlpha = 0.6 * a; D.circ(413, HZ - 53, 8, BASE.glow); k2.restore(); D.circ(413, HZ - 53, 4, p.bulb); }
+  });
+  bust(k, PX, PY, PR, p.person);
+  hud(k, clock(lerp(720, 1115, a)));
+});

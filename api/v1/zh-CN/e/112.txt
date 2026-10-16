@@ -1,0 +1,30 @@
+// Motion Prompt #112 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#112
+//
+// 暗角 / Vignette
+// 素材包: photo (摄影效果、布光与风格) · element 16 · 分类: 镜头与相机效果
+// 示例内容: 画面从四角渐渐变暗，中央人物和道路仍然明亮。
+// 动画规格:
+//   - 场景 2：街角，道路位于 y = 132–162，后方是建筑、树和路灯，路灯 x = 114、292、494；前景左侧人物高 124px，脚部位于（176, 200）。
+//   - 以画面中心为圆心绘制椭圆，纵向半径 = 横向半径 × 208/539 × 1.35。
+//   - 横向半径 334px 的前 45% 保持透明，此后 rgb(32,35,43) 的不透明度从 0% 向边缘增至 70%。
+//   - 时序：0.4–1.4 秒效果逐渐增强，保持至 4.0 秒，4.8 秒前恢复原状；每轮 5 秒，使用三次缓入缓出，约为 cubic-bezier(0.65,0,0.35,1)。
+// 适用场景: 适合集中主体注意力，或模拟旧镜头效果。
+// 标签: vignette, vignetting, dark corners, edge darkening, lens falloff, focus
+// 尺寸: 539x208 px · 周期: 5 s
+// 依赖: kit photo -> https://motion-prompt.2077tech.com/api/v1/kit/photo.js
+// 动态示例: https://motion-prompt.2077tech.com/#112
+//
+// cells[i](k, w, h, u)：k = CanvasRenderingContext2D（由调用方清空画布并执行 save/restore），w、h = 尺寸，u = 秒数，范围为 [0, cycle)。画面仅由 u 决定。
+// 以下为素材代码。CELLS、常量及辅助函数位于 kit 文件中。
+
+// @element 16
+// 周辺減光（ビネット）: 四隅だけがなだらかに暗くなり、中央の人物に目が集まる
+CELLS[15] = cell((k, u) => {
+  const a = env(u);
+  stageStreet(k, BASE);
+  // 楕円の放射グラデーション: 半径の45%までは素通し、外へ向かって 0 → 70% の濃さ
+  k.save(); k.translate(CW / 2, CH / 2); k.scale(1, CH / CW * 1.35);
+  const g = k.createRadialGradient(0, 0, CW * 0.45 * 0.62, 0, 0, CW * 0.62);
+  g.addColorStop(0, 'rgba(32,35,43,0)'); g.addColorStop(1, `rgba(32,35,43,${(0.7 * a).toFixed(3)})`);
+  k.fillStyle = g; k.fillRect(-CW, -CW, CW * 2, CW * 2); k.restore();
+});

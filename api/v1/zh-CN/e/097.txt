@@ -1,0 +1,32 @@
+// Motion Prompt #097 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#097
+//
+// 逆光 / Backlighting
+// 素材包: photo (摄影效果、布光与风格) · element 01 · 分类: 布光与拍摄时段
+// 示例内容: 太阳移到人物头后，轮廓边缘亮起，暖色薄雾覆盖画面，人物正面变暗。
+// 动画规格:
+//   - 场景 1：半身人物站在 y = 150 的地平线前，头部圆心为（270, 78）、半径 29px，不绘制五官或头发。亮部使用纯色琥珀色 #FFC75A，暗部使用纯色 #33405A。
+//   - 太阳半径 20px，从画外左上（40, −40）移到头后（270, 56）；外侧两层实色光环半径为太阳的 2.6 倍和 1.7 倍，颜色 #FFE3A3，不透明度分别为 35% 和 60%。
+//   - 人物先用 7px 线宽描边再填充，外侧留下 3.5px 的亮边。
+//   - 人物颜色 #4D5A75→#33405A，天空 #FAF9F7→#FFF4DC，整幅画面叠加 22% 不透明度的 #FFE3A3。
+//   - 时序：0.4–1.4 秒效果逐渐增强，保持至 4.0 秒，4.8 秒前恢复原状；每轮 5 秒，使用三次缓入缓出，约为 cubic-bezier(0.65,0,0.35,1)。
+// 适用场景: 适合通透、发光、沐浴在光线中的人像。
+// 标签: backlighting, backlit, contre-jour, sun behind, haze, glow, halo
+// 尺寸: 539x208 px · 周期: 5 s
+// 依赖: kit photo -> https://motion-prompt.2077tech.com/api/v1/kit/photo.js
+// 动态示例: https://motion-prompt.2077tech.com/#097
+//
+// cells[i](k, w, h, u)：k = CanvasRenderingContext2D（由调用方清空画布并执行 save/restore），w、h = 尺寸，u = 秒数，范围为 [0, cycle)。画面仅由 u 决定。
+// 以下为素材代码。CELLS、常量及辅助函数位于 kit 文件中。
+
+// @element 01
+// 逆光: 太陽が画面の外から頭の真後ろへ回り込み、輪郭が光って人物は暗くなる
+CELLS[0] = cell((k, u) => {
+  const a = env(u);
+  const BACK = Object.assign({}, BASE, { sky: '#FFF4DC', sky2: '#FFEBC4', far: '#F6E2BE', ground: '#F7EAD3', bld: '#F7E9D2', winOff: '#EEDCBF', win: '#EEDCBF', tree: '#EEDCBF', edge: '#E3CFAE', post: '#CDB894', trunk: '#E3CFAE', bulb: '#E3CFAE' });
+  stagePortrait(k, pal(BASE, BACK, a), { sun: [lerp(40, PX, a), lerp(-40, PY - 22, a), 20, 1] });
+  // 輪郭の光: 胸像の形を太い線でなぞってから中を塗り、縁だけを残す
+  k.save(); k.globalAlpha = a; bustPath(k, PX, PY, PR); k.strokeStyle = BASE.lit; k.lineWidth = 7; k.lineJoin = 'round'; k.stroke(); k.restore();
+  bust(k, PX, PY, PR, mixc(BASE.person, BASE.shade, a));
+  // かすみ: 全体に光の色を薄く重ねる
+  k.save(); k.globalAlpha = 0.22 * a; k.fillStyle = BASE.glow; k.fillRect(0, 0, CW, CH); k.restore();
+});

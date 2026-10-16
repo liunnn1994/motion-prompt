@@ -11,6 +11,6 @@ Motion Prompt #080
 - 画面の下へ出た行は、見えない所で線を消して元に戻す
 使いどころ: LPの本文で、いちばん伝えたい一言を読んでいる瞬間に目立たせたいとき。
 
-参考実装（Canvas 2D・時刻だけで絵が決まる関数）: https://showheyohtaki.github.io/motion-prompt/api/v1/ja/e/080.txt
-共通の補助コード: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/lp.js
+参考実装（Canvas 2D・時刻だけで絵が決まる関数）: https://motion-prompt.2077tech.com/api/v1/ja/e/080.txt
+共通の補助コード: https://motion-prompt.2077tech.com/api/v1/kit/lp.js
 参考実装の形・タイミング・イージングの数値はそのまま使い、中の文字・色・素材だけ、いま作っている物に合わせてください。

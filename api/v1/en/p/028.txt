@@ -1,4 +1,4 @@
-Please use "Zoom in" (ズームイン), one of the names in "Camera moves & transitions".
+Please use "Zoom in" (变焦推近), one of the names in "Camera moves & transitions".
 Motion Prompt #028
 
 What it is: Magnify with the lens (camera stays put)
@@ -12,6 +12,6 @@ Spec:
 - Top-right readout shows the focal length in mm (24mm → 87mm)
 When to use it: To direct attention to one point without moving the camera; it looks flatter and more observational than a dolly in.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/028.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/camera.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/028.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/camera.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

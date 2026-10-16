@@ -1,4 +1,4 @@
-// Motion Prompt #028 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#028
+// Motion Prompt #028 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#028
 //
 // ズームイン / Zoom in
 // パック: camera (カメラワークと切り替え) · element 04 · カテゴリ: カメラの動き
@@ -13,8 +13,8 @@
 // 使いどころ: その場から動かずに一点へ注目を集めるとき。ドリーインより平面的で観察する印象になる。
 // タグ: zoom, zoom in, focal length, lens, magnify, telephoto, camera move
 // サイズ: 539x208 px · 1周: 9.4 s
-// Needs: kit camera -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/camera.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#028
+// Needs: kit camera -> https://motion-prompt.2077tech.com/api/v1/kit/camera.js
+// 動く見本: https://motion-prompt.2077tech.com/#028
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

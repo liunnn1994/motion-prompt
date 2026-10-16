@@ -2,7 +2,7 @@
 
 # Motion graphics moves
 
-24 names · #001–024 · pack `motion` · Languages: [日本語](README.ja.md)
+24 names · #001–024 · pack `motion` · Languages: [简体中文](README.zh-CN.md) / [日本語](README.ja.md)
 
 Find the name, then say it to your AI. Add how long, how strong and what moves, and the result gets closer to what you had in mind.
 
@@ -10,42 +10,42 @@ Find the name, then say it to your AI. Add how long, how strong and what moves, 
 
 ## Entrances & text
 
-| # | Name | What it is | How to ask an AI |
-|---|---|---|---|
-| [#001](https://showheyohtaki.github.io/motion-prompt/#001) | **Pop-in** | Pops into view with a small bounce | Bring the logo in with a pop-in, about 0.4 s, with a slight overshoot. |
-| [#002](https://showheyohtaki.github.io/motion-prompt/#002) | **Stagger** | Items appear one after another, slightly offset in time | Bring in the five cards with a stagger, 0.08 s apart, left to right. |
-| [#003](https://showheyohtaki.github.io/motion-prompt/#003) | **Burst** | Lines and dots burst outward as something appears | Add a burst around the heart the moment it appears: 8 short lines that fade in 0.3 s. |
-| [#004](https://showheyohtaki.github.io/motion-prompt/#004) | **Line draw** | A line extends as if it were being drawn | Reveal the chart line with a line draw from the left, over 1.2 s. |
-| [#005](https://showheyohtaki.github.io/motion-prompt/#005) | **Mask reveal** | Text rises into view from behind an invisible edge | Bring the title in with a mask reveal from below, 0.6 s, each line slightly after the one before. |
-| [#006](https://showheyohtaki.github.io/motion-prompt/#006) | **Typewriter** | Text appears one character at a time, as if typed | Show this sentence with a typewriter effect, 0.05 s per character, with a cursor at the end. |
-| [#007](https://showheyohtaki.github.io/motion-prompt/#007) | **Count-up** | A number runs up quickly to its final value | Count the figure up from 0 to 1,280 in 1.5 s, slowing down at the end. |
-| [#008](https://showheyohtaki.github.io/motion-prompt/#008) | **Kinetic typography** | Words move, scale and turn in time with what is said | Turn this narration into kinetic typography: make the stressed words larger and land them on the beat. |
+| # | Name | Chinese | What it is | How to ask an AI |
+|---|---|---|---|---|
+| [#001](https://motion-prompt.2077tech.com/#001) | **Pop-in** | 弹性入场 | Pops into view with a small bounce | Bring the logo in with a pop-in, about 0.4 s, with a slight overshoot. |
+| [#002](https://motion-prompt.2077tech.com/#002) | **Stagger** | 交错入场 | Items appear one after another, slightly offset in time | Bring in the five cards with a stagger, 0.08 s apart, left to right. |
+| [#003](https://motion-prompt.2077tech.com/#003) | **Burst** | 放射迸发 | Lines and dots burst outward as something appears | Add a burst around the heart the moment it appears: 8 short lines that fade in 0.3 s. |
+| [#004](https://motion-prompt.2077tech.com/#004) | **Line draw** | 描边动画 | A line extends as if it were being drawn | Reveal the chart line with a line draw from the left, over 1.2 s. |
+| [#005](https://motion-prompt.2077tech.com/#005) | **Mask reveal** | 蒙版揭示 | Text rises into view from behind an invisible edge | Bring the title in with a mask reveal from below, 0.6 s, each line slightly after the one before. |
+| [#006](https://motion-prompt.2077tech.com/#006) | **Typewriter** | 打字机效果 | Text appears one character at a time, as if typed | Show this sentence with a typewriter effect, 0.05 s per character, with a cursor at the end. |
+| [#007](https://motion-prompt.2077tech.com/#007) | **Count-up** | 数字递增 | A number runs up quickly to its final value | Count the figure up from 0 to 1,280 in 1.5 s, slowing down at the end. |
+| [#008](https://motion-prompt.2077tech.com/#008) | **Kinetic typography** | 动态文字 | Words move, scale and turn in time with what is said | Turn this narration into kinetic typography: make the stressed words larger and land them on the beat. |
 
 ## Motion polish
 
-| # | Name | What it is | How to ask an AI |
-|---|---|---|---|
-| [#009](https://showheyohtaki.github.io/motion-prompt/#009) | **Easing** | Motion speeds up and slows down instead of moving at one speed | Add easing to this move: ease-out, slowing down as it stops. |
-| [#010](https://showheyohtaki.github.io/motion-prompt/#010) | **Overshoot** | Goes a little past the target, then settles back | Give the gauge needle an overshoot: about 10% past the target, then back. |
-| [#011](https://showheyohtaki.github.io/motion-prompt/#011) | **Squash & stretch** | Squashes and stretches so that it feels elastic | Add squash and stretch when the ball lands; keep the squash subtle. |
-| [#012](https://showheyohtaki.github.io/motion-prompt/#012) | **Shape morph** | One shape turns smoothly into another | Morph the circle into a star in 0.8 s, changing the color from blue to yellow on the way. |
-| [#013](https://showheyohtaki.github.io/motion-prompt/#013) | **Liquid motion** | Shapes move and merge like liquid | Make the logo entrance a liquid motion: drops gather and form the shape. |
-| [#014](https://showheyohtaki.github.io/motion-prompt/#014) | **Motion trail** | A fading trail follows a moving object | Add a motion trail to the flying circle: five copies that fade out behind it. |
-| [#015](https://showheyohtaki.github.io/motion-prompt/#015) | **Particles** | Many small pieces fly out and scatter | At the moment of success, shoot particles up from the bottom: four colors, all fallen within 1.5 s. |
-| [#016](https://showheyohtaki.github.io/motion-prompt/#016) | **Parallax** | Near and far layers move at different speeds to show depth | Split this landscape into three layers and scroll them with parallax, nearer layers faster. |
+| # | Name | Chinese | What it is | How to ask an AI |
+|---|---|---|---|---|
+| [#009](https://motion-prompt.2077tech.com/#009) | **Easing** | 缓动 | Motion speeds up and slows down instead of moving at one speed | Add easing to this move: ease-out, slowing down as it stops. |
+| [#010](https://motion-prompt.2077tech.com/#010) | **Overshoot** | 过冲 | Goes a little past the target, then settles back | Give the gauge needle an overshoot: about 10% past the target, then back. |
+| [#011](https://motion-prompt.2077tech.com/#011) | **Squash & stretch** | 挤压与拉伸 | Squashes and stretches so that it feels elastic | Add squash and stretch when the ball lands; keep the squash subtle. |
+| [#012](https://motion-prompt.2077tech.com/#012) | **Shape morph** | 形状变形 | One shape turns smoothly into another | Morph the circle into a star in 0.8 s, changing the color from blue to yellow on the way. |
+| [#013](https://motion-prompt.2077tech.com/#013) | **Liquid motion** | 液态动效 | Shapes move and merge like liquid | Make the logo entrance a liquid motion: drops gather and form the shape. |
+| [#014](https://motion-prompt.2077tech.com/#014) | **Motion trail** | 运动拖尾 | A fading trail follows a moving object | Add a motion trail to the flying circle: five copies that fade out behind it. |
+| [#015](https://motion-prompt.2077tech.com/#015) | **Particles** | 粒子效果 | Many small pieces fly out and scatter | At the moment of success, shoot particles up from the bottom: four colors, all fallen within 1.5 s. |
+| [#016](https://motion-prompt.2077tech.com/#016) | **Parallax** | 视差 | Near and far layers move at different speeds to show depth | Split this landscape into three layers and scroll them with parallax, nearer layers faster. |
 
 ## Transitions & highlights
 
-| # | Name | What it is | How to ask an AI |
-|---|---|---|---|
-| [#017](https://showheyohtaki.github.io/motion-prompt/#017) | **Mask transition** | The next scene appears inside a growing shape | Go to the next scene with a mask transition: a circle grows from the center in 0.7 s. |
-| [#018](https://showheyohtaki.github.io/motion-prompt/#018) | **Shape transition** | Shapes cover the screen and uncover the next scene | Change scenes with a shape transition: four diagonal color bands sweep in from the left. |
-| [#019](https://showheyohtaki.github.io/motion-prompt/#019) | **Liquid transition** | Liquid flows in and replaces the scene | Use a liquid transition here: blue ink drips down from the top and fills the frame. |
-| [#020](https://showheyohtaki.github.io/motion-prompt/#020) | **Zoom through** | Zooms into an object and passes through it into the next scene | Zoom through the hole of the "O" in the logo into the next scene, 0.6 s, accelerating. |
-| [#021](https://showheyohtaki.github.io/motion-prompt/#021) | **Flip** | Turns over like a card to show the other side | Flip the pricing card to show the details on its back, in 0.5 s. |
-| [#022](https://showheyohtaki.github.io/motion-prompt/#022) | **Light sweep** | A band of light crosses a surface | After the logo settles, add one light sweep from top-left to bottom-right, subtle. |
-| [#023](https://showheyohtaki.github.io/motion-prompt/#023) | **Glitch** | The picture breaks up as if it were malfunctioning | Add a brief glitch to the title: 0.3 s, a mild color split, no flashing. |
-| [#024](https://showheyohtaki.github.io/motion-prompt/#024) | **Impact shake** | The whole frame shakes when something lands | Add an impact shake when the headline lands; it should settle within 0.4 s. |
+| # | Name | Chinese | What it is | How to ask an AI |
+|---|---|---|---|---|
+| [#017](https://motion-prompt.2077tech.com/#017) | **Mask transition** | 蒙版转场 | The next scene appears inside a growing shape | Go to the next scene with a mask transition: a circle grows from the center in 0.7 s. |
+| [#018](https://motion-prompt.2077tech.com/#018) | **Shape transition** | 图形转场 | Shapes cover the screen and uncover the next scene | Change scenes with a shape transition: four diagonal color bands sweep in from the left. |
+| [#019](https://motion-prompt.2077tech.com/#019) | **Liquid transition** | 液态转场 | Liquid flows in and replaces the scene | Use a liquid transition here: blue ink drips down from the top and fills the frame. |
+| [#020](https://motion-prompt.2077tech.com/#020) | **Zoom through** | 穿越缩放 | Zooms into an object and passes through it into the next scene | Zoom through the hole of the "O" in the logo into the next scene, 0.6 s, accelerating. |
+| [#021](https://motion-prompt.2077tech.com/#021) | **Flip** | 翻转 | Turns over like a card to show the other side | Flip the pricing card to show the details on its back, in 0.5 s. |
+| [#022](https://motion-prompt.2077tech.com/#022) | **Light sweep** | 扫光 | A band of light crosses a surface | After the logo settles, add one light sweep from top-left to bottom-right, subtle. |
+| [#023](https://motion-prompt.2077tech.com/#023) | **Glitch** | 故障效果 | The picture breaks up as if it were malfunctioning | Add a brief glitch to the title: 0.3 s, a mild color split, no flashing. |
+| [#024](https://motion-prompt.2077tech.com/#024) | **Impact shake** | 冲击震动 | The whole frame shakes when something lands | Add an impact shake when the headline lands; it should settle within 0.4 s. |
 
 Each number opens the moving sample in the gallery. Timings, easing values and reference code for one name: `api/v1/en/e/<id>.txt` ([#001](../../api/v1/en/e/001.txt)).
 

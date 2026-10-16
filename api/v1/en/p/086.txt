@@ -1,4 +1,4 @@
-Please use "Underline animation" (下線アニメーション), one of the names in "Landing page & web effects".
+Please use "Underline animation" (下划线动画), one of the names in "Landing page & web effects".
 Motion Prompt #086
 
 What it is: A link's underline grows from the left on hover
@@ -10,6 +10,6 @@ Spec:
 - On leave, the left end moves right over 0.3 s, so the line exits to the right (like scaleX with transform-origin on the right).
 When to use it: Use it on menu and text links to show where the pointer is, quietly.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/086.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/lp.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/086.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/lp.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

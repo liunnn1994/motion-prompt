@@ -1,4 +1,4 @@
-Please use "Handheld" (手持ち), one of the names in "Camera moves & transitions".
+Please use "Handheld" (手持拍摄), one of the names in "Camera moves & transitions".
 Motion Prompt #034
 
 What it is: A slight shake, as if the camera were held by hand
@@ -12,6 +12,6 @@ Spec:
 - All multipliers are integers, so it loops seamlessly every 4.7 s; top-right readout shows "HANDHELD"
 When to use it: To give a documentary feel or the sense of being present in the scene.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/034.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/camera.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/034.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/camera.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

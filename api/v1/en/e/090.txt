@@ -1,6 +1,6 @@
-// Motion Prompt #090 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#090
+// Motion Prompt #090 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#090
 //
-// Lazy loading / 遅延読み込み
+// Lazy loading / 懒加载
 // Pack: lp (Landing page & web effects) · element 18 · Category: Loading, navigation & ambient loops
 // What happens: As grey placeholders scroll into view, a spinner turns in each, and the images fade in as they arrive. The top row is loaded from the start.
 // Motion spec:
@@ -12,8 +12,8 @@
 // When to use it: Use it on image-heavy pages to make the first view load faster.
 // Tags: lazy-loading, lazy-load, images, placeholder, performance, spinner, gallery
 // Size: 539x208 px · Cycle: 4.8 s
-// Needs: kit lp -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/lp.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#090
+// Needs: kit lp -> https://motion-prompt.2077tech.com/api/v1/kit/lp.js
+// Live demo: https://motion-prompt.2077tech.com/#090
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

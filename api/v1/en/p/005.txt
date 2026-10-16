@@ -1,4 +1,4 @@
-Please use "Mask reveal" (マスクリビール), one of the names in "Motion graphics moves".
+Please use "Mask reveal" (蒙版揭示), one of the names in "Motion graphics moves".
 Motion Prompt #005
 
 What it is: Text rises into view from behind an invisible edge
@@ -11,6 +11,6 @@ Spec:
 - Opacity never changes; the text is hidden only by leaving the clip area.
 When to use it: Use it for titles and headings that should appear in a clean, composed way.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/005.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/motion.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/005.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/motion.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

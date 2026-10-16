@@ -12,6 +12,6 @@ Motion Prompt #024
 - 退場: 1.85〜2.2秒に板が上へ300px（backIn s=1.6）
 使いどころ: 重要な見出しや数字を、重さと衝撃で強く印象づけたいとき。
 
-参考実装（Canvas 2D・時刻だけで絵が決まる関数）: https://showheyohtaki.github.io/motion-prompt/api/v1/ja/e/024.txt
-共通の補助コード: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/motion.js
+参考実装（Canvas 2D・時刻だけで絵が決まる関数）: https://motion-prompt.2077tech.com/api/v1/ja/e/024.txt
+共通の補助コード: https://motion-prompt.2077tech.com/api/v1/kit/motion.js
 参考実装の形・タイミング・イージングの数値はそのまま使い、中の文字・色・素材だけ、いま作っている物に合わせてください。

@@ -12,6 +12,6 @@ Motion Prompt #008
 - 着地後: 横揺れ 10px × e^(−9t) × sin(38t)、縦つぶれ 20% × e^(−11t)、放射の線8本を0.4秒
 使いどころ: ナレーションや歌詞のキーワードを、意味ごと印象に残したいとき。
 
-参考実装（Canvas 2D・時刻だけで絵が決まる関数）: https://showheyohtaki.github.io/motion-prompt/api/v1/ja/e/008.txt
-共通の補助コード: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/motion.js
+参考実装（Canvas 2D・時刻だけで絵が決まる関数）: https://motion-prompt.2077tech.com/api/v1/ja/e/008.txt
+共通の補助コード: https://motion-prompt.2077tech.com/api/v1/kit/motion.js
 参考実装の形・タイミング・イージングの数値はそのまま使い、中の文字・色・素材だけ、いま作っている物に合わせてください。

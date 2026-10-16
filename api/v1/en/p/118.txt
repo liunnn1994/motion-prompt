@@ -1,4 +1,4 @@
-Please use "Film grain" (フィルムグレイン), one of the names in "Photo looks, lighting & styles".
+Please use "Film grain" (胶片颗粒), one of the names in "Photo looks, lighting & styles".
 Motion Prompt #118
 
 What it is: Fine, film-like grain over the image
@@ -11,6 +11,6 @@ Spec:
 - Timing: the effect comes in from 0.4 s to 1.4 s, holds until 4.0 s and is gone again by 4.8 s (one pass = 5 s, cubic ease-in-out (about cubic-bezier(0.65,0,0.35,1)))
 When to use it: To remove the clean digital look and add an analogue film texture.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/118.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/photo.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/118.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/photo.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

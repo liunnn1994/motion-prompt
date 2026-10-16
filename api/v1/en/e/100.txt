@@ -1,6 +1,6 @@
-// Motion Prompt #100 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#100
+// Motion Prompt #100 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#100
 //
-// Split lighting / スプリットライティング
+// Split lighting / 分割光
 // Pack: photo (Photo looks, lighting & styles) · element 04 · Category: Lighting & time of day
 // What happens: The light swings from near the front (20°) to directly at the side (90°); the shadow on the head grows from a crescent to exactly half, splitting the face down the middle.
 // Motion spec:
@@ -12,8 +12,8 @@
 // When to use it: For dramatic, tense or moody portraits.
 // Tags: split lighting, side light, portrait lighting, half face, dramatic, chiaroscuro
 // Size: 539x208 px · Cycle: 5 s
-// Needs: kit photo -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/photo.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#100
+// Needs: kit photo -> https://motion-prompt.2077tech.com/api/v1/kit/photo.js
+// Live demo: https://motion-prompt.2077tech.com/#100
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

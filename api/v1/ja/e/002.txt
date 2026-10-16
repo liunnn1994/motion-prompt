@@ -1,4 +1,4 @@
-// Motion Prompt #002 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#002
+// Motion Prompt #002 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#002
 //
 // スタガー / Stagger
 // パック: motion (モーショングラフィックスの動き) · element 02 · カテゴリ: 登場・文字の演出
@@ -11,8 +11,8 @@
 // 使いどころ: リスト・グラフ・カードなど、複数の要素を順番に出して視線を流したいとき。
 // タグ: stagger, sequence, delay, cascade, bar-chart, list, entrance
 // サイズ: 539x208 px · 1周: 4.7 s
-// Needs: kit motion -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/motion.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#002
+// Needs: kit motion -> https://motion-prompt.2077tech.com/api/v1/kit/motion.js
+// 動く見本: https://motion-prompt.2077tech.com/#002
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

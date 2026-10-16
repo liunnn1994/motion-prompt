@@ -1,4 +1,4 @@
-// Motion Prompt #119 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#119
+// Motion Prompt #119 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#119
 //
 // ライトリーク / Light leak
 // パック: photo (写真の表現・光と画風) · element 23 · カテゴリ: 仕上げ・画風
@@ -11,8 +11,8 @@
 // 使いどころ: 思い出・夏・青春のような、なつかしく偶然っぽい雰囲気を出したいとき。
 // タグ: light leak, film leak, vintage, analog, lomo, warm glow
 // サイズ: 539x208 px · 1周: 5 s
-// Needs: kit photo -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/photo.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#119
+// Needs: kit photo -> https://motion-prompt.2077tech.com/api/v1/kit/photo.js
+// 動く見本: https://motion-prompt.2077tech.com/#119
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

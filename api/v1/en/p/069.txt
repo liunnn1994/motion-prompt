@@ -1,4 +1,4 @@
-Please use "Skeleton screen" (スケルトン), one of the names in "UI component names".
+Please use "Skeleton screen" (骨架屏), one of the names in "UI component names".
 Motion Prompt #069
 
 What it is: Grey shapes stand in for content while it loads
@@ -10,6 +10,6 @@ Spec:
 - The content returns over 3.0–3.3 s (linear).
 When to use it: Use it for lists or cards that take a moment to load, so the layout is visible while people wait.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/069.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/ui.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/069.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/ui.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

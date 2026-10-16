@@ -10,6 +10,6 @@ Motion Prompt #064
 - 上の一覧（3行）は1.05・2.15・3.35秒の前後0.2秒で不透明度を 1→0→1 と下げて、中身を入れ替える
 使いどころ: 検索結果や記事一覧など、長い一覧をページに分けて見せたいとき。
 
-参考実装（Canvas 2D・時刻だけで絵が決まる関数）: https://showheyohtaki.github.io/motion-prompt/api/v1/ja/e/064.txt
-共通の補助コード: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/ui.js
+参考実装（Canvas 2D・時刻だけで絵が決まる関数）: https://motion-prompt.2077tech.com/api/v1/ja/e/064.txt
+共通の補助コード: https://motion-prompt.2077tech.com/api/v1/kit/ui.js
 参考実装の形・タイミング・イージングの数値はそのまま使い、中の文字・色・素材だけ、いま作っている物に合わせてください。

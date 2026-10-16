@@ -1,6 +1,6 @@
-// Motion Prompt #063 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#063
+// Motion Prompt #063 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#063
 //
-// Stepper (+/−) / ステッパー
+// Stepper (+/−) / 数字步进器
 // Pack: ui (UI component names) · element 15 · Category: Choosing & switching
 // What happens: Pressing + three times raises the number from 1 to 4, and pressing − three times brings it back to 1; the number pops on each press.
 // Motion spec:
@@ -11,8 +11,8 @@
 // When to use it: Use it for small whole numbers changed one at a time, such as quantity or number of guests.
 // Tags: stepper, quantity, number-input, increment, decrement, plus-minus, spin-button
 // Size: 542x191 px · Cycle: 4.5 s
-// Needs: kit ui -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/ui.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#063
+// Needs: kit ui -> https://motion-prompt.2077tech.com/api/v1/kit/ui.js
+// Live demo: https://motion-prompt.2077tech.com/#063
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

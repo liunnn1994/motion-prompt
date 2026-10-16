@@ -1,52 +1,53 @@
 <!doctype html>
-<html lang="ja">
+<html lang="zh-CN">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Motion Prompt｜AIに頼むための「名前」のライブラリ</title>
-<meta name="description" content="AIに何かを作ってもらうときに使う「名前」のライブラリです。モーショングラフィックス、カメラワーク、UIパーツ、LP・Webサイトの演出、写真の表現の名前に、動く見本・一言の意味・頼み方の例が付いています。MITライセンス。">
-<link rel="canonical" href="https://showheyohtaki.github.io/motion-prompt/">
+<title>Motion Prompt｜与 AI 沟通创意的术语库</title>
+<meta name="description" content="收录 120 个动态图形、镜头运动、UI 组件、落地页和摄影术语，每个都配有动态示例。复制提示词，即可同时获得动画规格和参考实现。">
+<link rel="canonical" href="https://motion-prompt.2077tech.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Motion Prompt">
-<meta property="og:title" content="Motion Prompt｜AIに頼むための「名前」のライブラリ">
-<meta property="og:description" content="AIを指揮するクリエイティブディレクターへ。モーショングラフィックス、カメラワーク、UIパーツ、LP・Webサイトの演出、写真の表現の名前を、動く見本つきで並べました。">
-<meta property="og:url" content="https://showheyohtaki.github.io/motion-prompt/">
-<meta property="og:image" content="https://showheyohtaki.github.io/motion-prompt/assets/og.png">
-<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="Motion Prompt｜与 AI 沟通创意的术语库">
+<meta property="og:description" content="收录 120 个动态图形、镜头运动、UI 组件、落地页和摄影术语，每个都配有动态示例。复制提示词，即可同时获得动画规格和参考实现。">
+<meta property="og:url" content="https://motion-prompt.2077tech.com/">
+<meta property="og:image" content="https://motion-prompt.2077tech.com/assets/og.png">
+<meta property="og:locale" content="zh_CN">
 <meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:creator" content="@showheyohtaki">
-<meta name="twitter:image" content="https://showheyohtaki.github.io/motion-prompt/assets/og.png">
+<meta name="twitter:image" content="https://motion-prompt.2077tech.com/assets/og.png">
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <script>
 /* Apply the saved theme and language before first paint. */
 (function () {
-  var d = document.documentElement, t = null, l = null, m = /[?&]lang=(ja|en)(?:&|$)/.exec(location.search);
+  var d = document.documentElement, t = null, l = null, m = /[?&]lang=(zh-CN|en|ja)(?:&|$)/.exec(location.search);
   try { t = localStorage.getItem('mp-theme'); l = localStorage.getItem('mp-lang'); } catch (e) {}
   if (m) l = m[1]; /* ?lang= (set when an agent opens the gallery) wins for this visit */
   if (t === 'light' || t === 'dark') d.setAttribute('data-theme', t);
-  if (l !== 'ja' && l !== 'en') l = /^ja\b/i.test(navigator.language || 'ja') ? 'ja' : 'en';
+  if (l !== 'zh-CN' && l !== 'en' && l !== 'ja') l = 'zh-CN';
   d.lang = l;
 })();
 </script>
 <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-<a class="skip" href="#gallery" data-t="skip">見本の一覧へ移動</a>
+<a class="skip" href="#gallery" data-t="skip">跳转到素材库</a>
 
 <header class="top">
   <div class="wrap top-in">
     <a class="logo" href="./" aria-label="Motion Prompt">Motion Prompt</a>
-    <nav class="top-nav" aria-label="サイト内" data-t-attr="aria-label:navLabel">
-      <a class="top-link top-how" href="#how" data-t="navHow">使い方</a>
-      <a class="top-link" href="found.html" data-t="navFound">事例</a>
-      <a class="top-link top-gh" href="https://github.com/showheyohtaki/motion-prompt" rel="noopener">GitHub</a>
-      <div class="seg" role="group" aria-label="言語" data-t-attr="aria-label:langLabel">
-        <button type="button" class="seg-b" data-lang="ja" aria-pressed="true" aria-label="日本語">JA</button>
-        <button type="button" class="seg-b" data-lang="en" aria-pressed="false" aria-label="English">EN</button>
-      </div>
-      <button type="button" class="icon-b" id="theme" aria-label="ダークモードに切り替える">
+    <nav class="top-nav" aria-label="网站导航" data-t-attr="aria-label:navLabel">
+      <a class="top-link top-how" href="#how" data-t="navHow">使用方法</a>
+      <a class="top-link" href="found.html" data-t="navFound">案例</a>
+      <a class="top-link top-gh" href="https://github.com/liunnn1994/motion-prompt" rel="noopener">GitHub</a>
+      <select id="lang" class="lang-select" aria-label="语言" data-t-attr="aria-label:langLabel">
+        <option value="zh-CN">简体中文</option>
+        <option value="en">English</option>
+        <option value="ja">日本語</option>
+      </select>
+      <button type="button" class="icon-b" id="theme" aria-label="切换到深色模式">
         <svg class="i-moon" viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M16.5 12.3A7 7 0 0 1 7.7 3.5a.6.6 0 0 0-.8-.7 7.6 7.6 0 1 0 10.3 10.3.6.6 0 0 0-.7-.8z" fill="currentColor"/></svg>
         <svg class="i-sun" viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><circle cx="10" cy="10" r="3.6" fill="currentColor"/><g stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M10 2v2M10 16v2M2 10h2M16 10h2M4.3 4.3l1.4 1.4M14.3 14.3l1.4 1.4M4.3 15.7l1.4-1.4M14.3 5.7l1.4-1.4"/></g></svg>
       </button>
@@ -57,45 +58,45 @@
 <main>
   <section class="hero wrap" aria-labelledby="hero-h">
     <div class="hero-copy">
-      <p class="eyebrow" data-t="eyebrow">AIに頼むための「名前」のライブラリ</p>
-      <h1 id="hero-h" data-t-html="h1">AIを<wbr>指揮する<wbr>クリエイティブ<wbr>ディレクターへ</h1>
-      <p class="lead" data-t="lead">モーショングラフィックス、カメラワーク、UIパーツ、LP・Webサイトの演出、写真の表現の名前を、動く見本つきで並べました。プロンプトをコピーすれば、動きの仕様と参考実装も一緒に渡せます。</p>
+      <p class="eyebrow" data-t="eyebrow">与 AI 沟通创意的术语库</p>
+      <h1 id="hero-h" data-t-html="h1">成为指挥 AI 的<wbr>创意导演</h1>
+      <p class="lead" data-t="lead">收录 {n} 个动态图形、镜头运动、UI 组件、落地页和摄影术语，每个都配有动态示例。复制提示词，即可同时获得动画规格和参考实现。</p>
       <dl class="facts">
-        <div><dt data-t="factMoves">名前</dt><dd id="fact-count"></dd></div>
-        <div><dt data-t="factPacks">パック</dt><dd id="fact-packs"></dd></div>
-        <div><dt data-t="factLicense">ライセンス</dt><dd>MIT</dd></div>
+        <div><dt data-t="factMoves">术语</dt><dd id="fact-count"></dd></div>
+        <div><dt data-t="factPacks">素材包</dt><dd id="fact-packs"></dd></div>
+        <div><dt data-t="factLicense">许可证</dt><dd>MIT</dd></div>
       </dl>
     </div>
     <div class="hero-install">
       <div class="install">
-        <h2 class="install-h" data-t="installSkillH">スキルで導入</h2>
-        <p class="install-p" data-t="installSkillP">ターミナルで実行します。入れたあとは、AIに「motion-prompt のライブラリ出して」と頼むと、このギャラリーが開きます。選んで「AIに渡す」を押すと、AIに届きます。</p>
+        <h2 class="install-h" data-t="installSkillH">通过技能安装</h2>
+        <p class="install-p" data-t="installSkillP">在终端中运行以下命令。安装后，向 AI 说“打开 motion-prompt 素材库”，即可打开此页面。选好素材后，点击“发送给 AI”。</p>
         <div class="copyfield">
-          <code id="cmd">npx skills add showheyohtaki/motion-prompt</code>
-          <button type="button" class="btn btn-s" data-copy="#cmd" data-t="copy" data-t-attr="aria-label:copyCmdLabel" aria-label="導入コマンドをコピー">コピー</button>
+          <code id="cmd">npx skills add liunnn1994/motion-prompt</code>
+          <button type="button" class="btn btn-s" data-copy="#cmd" data-t="copy" data-t-attr="aria-label:copyCmdLabel" aria-label="复制安装命令">复制</button>
         </div>
       </div>
       <div class="install">
-        <h2 class="install-h" data-t="installPromptH">プロンプトで導入</h2>
-        <p class="install-p" data-t="installPromptP">下の文を Claude Code や Codex に貼ると、AIがスキルを入れて使い方を教えてくれます。</p>
+        <h2 class="install-h" data-t="installPromptH">通过提示词安装</h2>
+        <p class="install-p" data-t="installPromptP">将以下文字粘贴到 Claude Code 或 Codex，AI 会安装技能并介绍使用方法。</p>
         <div class="copyfield copyfield-text">
-          <p id="install-prompt" data-t="installPrompt">https://github.com/showheyohtaki/motion-prompt を読んで、motion-prompt スキルをこの環境に入れてください。入れたら、使い方を3行で教えてください。</p>
-          <button type="button" class="btn btn-s" data-copy="#install-prompt" data-t="copy" data-t-attr="aria-label:copyInstallLabel" aria-label="導入用のプロンプトをコピー">コピー</button>
+          <p id="install-prompt" data-t="installPrompt">请阅读 https://github.com/liunnn1994/motion-prompt，并在当前环境中安装 motion-prompt 技能。安装后，请用三句话告诉我如何使用。</p>
+          <button type="button" class="btn btn-s" data-copy="#install-prompt" data-t="copy" data-t-attr="aria-label:copyInstallLabel" aria-label="复制安装提示词">复制</button>
         </div>
       </div>
     </div>
   </section>
 
   <section id="gallery" class="gallery" aria-labelledby="gallery-h">
-    <h2 id="gallery-h" class="sr" data-t="galleryH">見本の一覧</h2>
+    <h2 id="gallery-h" class="sr" data-t="galleryH">素材库</h2>
     <div class="tools">
       <div class="wrap tools-in">
-        <div class="chips" id="packs" role="group" aria-label="パックで絞り込む" data-t-attr="aria-label:packFilterLabel"></div>
+        <div class="chips" id="packs" role="group" aria-label="按素材包筛选" data-t-attr="aria-label:packFilterLabel"></div>
         <div class="tools-side">
           <label class="search">
-            <span class="sr" data-t="searchLabel">見本を探す</span>
+            <span class="sr" data-t="searchLabel">搜索素材</span>
             <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M13 13l4.5 4.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
-            <input type="search" id="q" autocomplete="off" spellcheck="false" placeholder="名前・番号・タグで探す" data-t-attr="placeholder:searchPh">
+            <input type="search" id="q" autocomplete="off" spellcheck="false" placeholder="搜索名称、编号或标签" data-t-attr="placeholder:searchPh">
           </label>
           <button type="button" class="btn btn-ghost playtoggle" id="play" aria-pressed="true">
             <svg class="i-pause" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><rect x="3" y="2.5" width="3.6" height="11" rx="1" fill="currentColor"/><rect x="9.4" y="2.5" width="3.6" height="11" rx="1" fill="currentColor"/></svg>
@@ -103,60 +104,61 @@
             <span id="play-t">一時停止</span>
           </button>
         </div>
-        <div class="chips chips-sub" id="cats" role="group" aria-label="カテゴリで絞り込む" data-t-attr="aria-label:catFilterLabel" hidden></div>
+        <div class="chips chips-sub" id="cats" role="group" aria-label="按分类筛选" data-t-attr="aria-label:catFilterLabel" hidden></div>
       </div>
     </div>
     <div class="wrap">
       <p class="count" id="count" role="status" aria-live="polite"></p>
       <div id="grid"></div>
-      <p class="empty" id="empty" hidden data-t="empty">見つかりませんでした。別の言葉や番号で探してみてください。</p>
-      <noscript><p class="empty">見本の再生には JavaScript が必要です。一覧は <a href="api/v1/ja/catalog.tsv">catalog.tsv</a> でも読めます。</p></noscript>
+      <p class="empty" id="empty" hidden data-t="empty">没有找到匹配内容，请尝试其他关键词或编号。</p>
+      <noscript><p class="empty">播放示例需要 JavaScript，也可以查看 <a href="api/v1/zh-CN/catalog.tsv">catalog.tsv</a> 。</p></noscript>
     </div>
   </section>
 
   <section id="how" class="how wrap" aria-labelledby="how-h">
-    <h2 id="how-h" class="sec-h" data-t="howH">使い方</h2>
+    <h2 id="how-h" class="sec-h" data-t="howH">使用方法</h2>
     <ol class="steps">
-      <li><span class="step-n" aria-hidden="true">1</span><h3 data-t="s1h">ライブラリを出してもらう</h3><p data-t="s1p">motion-prompt スキルを入れたAIに「motion-prompt のライブラリ出して」と頼みます。このギャラリーがブラウザで開きます。</p></li>
-      <li><span class="step-n" aria-hidden="true">2</span><h3 data-t="s2h">見ながら選ぶ</h3><p data-t="s2p">使いたい見本の「選ぶ」を押します。いくつでも選べます。選んだ物は画面の下に並び、「冒頭のタイトルに」のような一言のメモも書けます。</p></li>
-      <li><span class="step-n" aria-hidden="true">3</span><h3 data-t="s3h">AIに渡して、頼む</h3><p data-t="s3p">「AIに渡す」を押すと、選んだ物がAIに届きます。あとは「この動画の冒頭をこんな感じに編集して」と頼みます。このボタンは、AIがライブラリを開いたときに出ます。</p></li>
+      <li><span class="step-n" aria-hidden="true">1</span><h3 data-t="s1h">让 AI 打开素材库</h3><p data-t="s1p">向已安装 motion-prompt 技能的 AI 说“打开 motion-prompt 素材库”，此页面就会在浏览器中打开。</p></li>
+      <li><span class="step-n" aria-hidden="true">2</span><h3 data-t="s2h">边看边选</h3><p data-t="s2p">点击所需素材上的“选择”，可选择多个。已选素材会显示在屏幕底部，也可以添加简短备注，例如“用于片头标题”。</p></li>
+      <li><span class="step-n" aria-hidden="true">3</span><h3 data-t="s3h">发送给 AI，提出需求</h3><p data-t="s3p">点击“发送给 AI”，再告诉它：“请按照这些效果编辑视频的开头。”此按钮会在 AI 打开素材库时出现。</p></li>
     </ol>
     <div class="how-more how-more-3">
       <div class="how-col">
-        <h3 data-t="skillH">こう話しかけます</h3>
-        <p data-t="skillP">名前や番号を覚えていなくてかまいません。分からないときは、辞書を引くようにライブラリを出してもらってください。</p>
+        <h3 data-t="skillH">可以这样说</h3>
+        <p data-t="skillP">不必记住名称或编号。不确定时，就像查字典一样，让 AI 打开素材库供你挑选。</p>
         <ul class="says">
-          <li data-t="say1">motion-prompt のライブラリ出して</li>
-          <li data-t="say2">どんなカメラワークがある？一覧見せて</li>
-          <li data-t="say3">（選んで渡したあと）この動画の冒頭をこんな感じに編集して</li>
+          <li data-t="say1">打开 motion-prompt 素材库</li>
+          <li data-t="say2">有哪些镜头运动？给我看看列表</li>
+          <li data-t="say3">（选好并发送后）请按照这些效果编辑视频的开头</li>
         </ul>
       </div>
       <div class="how-col">
-        <h3 data-t="altH">スキルが無いとき・番号が分かるとき</h3>
-        <p data-t="altP1">スキルを入れていないAIには、画面の下の「選んだ物をコピー」で作った文を貼ってください。見本と仕様のURLが入っています。1つだけなら、詳細の「プロンプトをコピー」も使えます。</p>
-        <p data-t="altP2">番号が分かっていれば、「motion-prompt で #012 と #045 を使って」のように直接頼むこともできます。</p>
+        <h3 data-t="altH">未安装技能，或已知编号时</h3>
+        <p data-t="altP1">如果 AI 没有安装技能，可以点击屏幕底部的“复制已选素材”，将包含示例和规格链接的文字粘贴给它。单个素材也可以在详情中点击“复制提示词”。</p>
+        <p data-t="altP2">如果知道编号，也可以直接说：“使用 motion-prompt 的 #012 和 #045。”</p>
       </div>
       <div class="how-col">
-        <h3 data-t="implH">参考実装について</h3>
-        <p data-t="implP">見本はすべて Canvas 2D で書いた、時刻だけで絵が決まる関数です。外部ライブラリは使っていません。1コマずつ描けるので、動画の書き出しにも使えます。</p>
-        <p><a href="api/v1/catalog.json">catalog.json</a> · <a id="tsv-link" href="api/v1/ja/catalog.tsv">catalog.tsv</a> · <a href="https://github.com/showheyohtaki/motion-prompt" rel="noopener">GitHub</a></p>
+        <h3 data-t="implH">关于参考实现</h3>
+        <p data-t="implP">每个示例都是仅由时间决定画面的 Canvas 2D 函数，无需外部依赖。支持逐帧绘制，也能用于导出视频。</p>
+        <p><a href="api/v1/catalog.json">catalog.json</a> · <a id="tsv-link" href="api/v1/zh-CN/catalog.tsv">catalog.tsv</a> · <a href="https://github.com/liunnn1994/motion-prompt" rel="noopener">GitHub</a></p>
       </div>
     </div>
-    <p class="how-own"><span data-t="ownP">ここにあるのは見本です。同じような名前の見本を、自分の分野・自分の言語でも作れます。</span> <a href="https://github.com/showheyohtaki/motion-prompt/blob/main/make-your-own/README.ja.md" data-href-ja="https://github.com/showheyohtaki/motion-prompt/blob/main/make-your-own/README.ja.md" data-href-en="https://github.com/showheyohtaki/motion-prompt/tree/main/make-your-own" rel="noopener" data-t="ownLink">作り方とプロンプト（make-your-own）</a></p>
+    <p class="how-own"><span data-t="ownP">这里的内容是示例。你也可以为自己的领域和语言制作同样的术语素材。</span> <a href="make-your-own/README.zh-CN.md" data-href-ja="https://github.com/liunnn1994/motion-prompt/blob/main/make-your-own/README.ja.md" data-href-zh-CN="make-your-own/README.zh-CN.md" data-href-en="https://github.com/liunnn1994/motion-prompt/tree/main/make-your-own" rel="noopener" data-t="ownLink">制作方法与提示词（make-your-own）</a></p>
   </section>
 </main>
 
 <footer class="foot">
   <div class="wrap foot-in">
+    <p>中文版 / Chinese edition · <a href="https://github.com/liunnn1994/motion-prompt" rel="noopener">liunnn1994</a></p>
     <p><strong>Motion Prompt</strong> · MIT License · <span data-t="author">作者</span> <span data-t="authorName">大滝昇平</span>（<a href="https://x.com/showheyohtaki" rel="noopener">@showheyohtaki</a>）</p>
     <p class="foot-links">
-      <a href="https://github.com/showheyohtaki/motion-prompt/blob/main/README.ja.md#なぜ作ったか" data-href-ja="https://github.com/showheyohtaki/motion-prompt/blob/main/README.ja.md#なぜ作ったか" data-href-en="https://github.com/showheyohtaki/motion-prompt#why-i-made-this" rel="noopener" data-t="whyLink">なぜ作ったか</a>
-      <a href="https://github.com/showheyohtaki/motion-prompt/tree/main/packs" data-href-ja="https://github.com/showheyohtaki/motion-prompt/tree/main/packs" data-href-en="https://github.com/showheyohtaki/motion-prompt/tree/main/packs" rel="noopener" data-t="listLink">名前の一覧（GitHub）</a>
-      <a href="https://github.com/showheyohtaki/motion-prompt/blob/main/make-your-own/README.ja.md" data-href-ja="https://github.com/showheyohtaki/motion-prompt/blob/main/make-your-own/README.ja.md" data-href-en="https://github.com/showheyohtaki/motion-prompt/tree/main/make-your-own" rel="noopener" data-t="makeLink">自分の分野・自分の言語で作る</a>
-      <a href="https://github.com/showheyohtaki/motion-prompt/blob/main/CONTRIBUTING.ja.md" data-href-ja="https://github.com/showheyohtaki/motion-prompt/blob/main/CONTRIBUTING.ja.md" data-href-en="https://github.com/showheyohtaki/motion-prompt/blob/main/CONTRIBUTING.md" rel="noopener" data-t="addLink">あなたの分野の名前を足す</a>
+      <a href="README.zh-CN.md" data-href-ja="https://github.com/liunnn1994/motion-prompt/blob/main/README.ja.md#なぜ作ったか" data-href-zh-CN="README.zh-CN.md" data-href-en="https://github.com/liunnn1994/motion-prompt#why-i-made-this" rel="noopener" data-t="whyLink">创作缘由</a>
+      <a href="packs/README.md" data-href-ja="https://github.com/liunnn1994/motion-prompt/tree/main/packs" data-href-zh-CN="packs/README.md" data-href-en="https://github.com/liunnn1994/motion-prompt/tree/main/packs" rel="noopener" data-t="listLink">术语列表（GitHub）</a>
+      <a href="make-your-own/README.zh-CN.md" data-href-ja="https://github.com/liunnn1994/motion-prompt/blob/main/make-your-own/README.ja.md" data-href-zh-CN="make-your-own/README.zh-CN.md" data-href-en="https://github.com/liunnn1994/motion-prompt/tree/main/make-your-own" rel="noopener" data-t="makeLink">制作你自己的领域或语言版本</a>
+      <a href="CONTRIBUTING.zh-CN.md" data-href-ja="https://github.com/liunnn1994/motion-prompt/blob/main/CONTRIBUTING.ja.md" data-href-zh-CN="CONTRIBUTING.zh-CN.md" data-href-en="https://github.com/liunnn1994/motion-prompt/blob/main/CONTRIBUTING.md" rel="noopener" data-t="addLink">添加你所在领域的术语</a>
     </p>
-    <p class="foot-remove"><span data-t="removeP1">掲載の削除・訂正は</span><a href="https://github.com/showheyohtaki/motion-prompt/issues/new?template=3-removal.yml" rel="noopener" data-t="removeLink">GitHub の Issue のフォーム</a><span data-t="removeP2">から依頼できます。確認後、すみやかに対応します。</span></p>
-    <p class="foot-thanks"><span data-t="thanks1">動く見本を並べて、プロンプトをコピーして使う形は</span> <a href="https://lucianlabs.dev/uxui-prompt/" rel="noopener">Lucian UX/UI Prompt</a> <span data-t="thanks2">から着想を得ました。ありがとうございます。</span></p>
+    <p class="foot-remove"><span data-t="removeP1">如需删除或更正内容，请通过</span><a href="https://github.com/liunnn1994/motion-prompt/issues/new?template=3-removal.yml" rel="noopener" data-t="removeLink">GitHub Issue 表单</a><span data-t="removeP2">联系我们，确认后会及时处理。</span></p>
+    <p class="foot-thanks"><span data-t="thanks1">动态示例搭配可复制提示词的形式，灵感来自</span> <a href="https://lucianlabs.dev/uxui-prompt/" rel="noopener">Lucian UX/UI Prompt</a> <span data-t="thanks2">。感谢分享。</span></p>
   </div>
 </footer>
 
@@ -164,24 +166,24 @@
   <div class="wrap tray-in">
     <div class="tray-top">
       <button type="button" class="tray-toggle" id="tray-toggle" aria-expanded="true" aria-controls="tray-body">
-        <span class="tray-count" id="tray-count">選んだ物 0個</span>
+        <span class="tray-count" id="tray-count">已选 0 个素材</span>
         <svg class="tray-chev" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M3.5 10l4.5-4.5 4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
-      <p class="tray-wait" id="tray-wait" data-t="trayWait" hidden>AIが待っています。選んだら「AIに渡す」を押してください。</p>
-      <button type="button" class="btn btn-s btn-main tray-main" id="tray-main">選んだ物をコピー</button>
+      <p class="tray-wait" id="tray-wait" data-t="trayWait" hidden>AI 正在等待。选好后请点击“发送给 AI”。</p>
+      <button type="button" class="btn btn-s btn-main tray-main" id="tray-main">复制已选素材</button>
     </div>
     <div class="tray-body" id="tray-body">
       <ol class="tray-list" id="tray-list"></ol>
-      <p class="tray-empty" id="tray-empty" data-t="trayEmpty" hidden>見本の「選ぶ」を押すと、ここに並びます。</p>
+      <p class="tray-empty" id="tray-empty" data-t="trayEmpty" hidden>点击素材上的“选择”，即可添加到这里。</p>
       <div class="tray-row">
         <label class="tray-note">
-          <span class="tray-note-l" data-t="noteLabel">メモ（任意）</span>
-          <input type="text" id="tray-note" maxlength="300" autocomplete="off" placeholder="例: 冒頭のタイトルに" data-t-attr="placeholder:notePh">
+          <span class="tray-note-l" data-t="noteLabel">备注（可选）</span>
+          <input type="text" id="tray-note" maxlength="300" autocomplete="off" placeholder="例如：用于片头标题" data-t-attr="placeholder:notePh">
         </label>
         <div class="tray-acts">
-          <button type="button" class="btn btn-s" id="tray-copy" data-t="copyPicked" hidden>選んだ物をコピー</button>
-          <button type="button" class="btn btn-s" id="tray-share" data-t="shareUrl">選択を共有するURL</button>
-          <button type="button" class="btn btn-s btn-ghost" id="tray-clear" data-t="clearAll">すべて外す</button>
+          <button type="button" class="btn btn-s" id="tray-copy" data-t="copyPicked" hidden>复制已选素材</button>
+          <button type="button" class="btn btn-s" id="tray-share" data-t="shareUrl">复制当前选择的分享链接</button>
+          <button type="button" class="btn btn-s btn-ghost" id="tray-clear" data-t="clearAll">清空选择</button>
         </div>
       </div>
     </div>
@@ -196,9 +198,9 @@
         <svg class="i-pause" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><rect x="3" y="2.5" width="3.6" height="11" rx="1" fill="currentColor"/><rect x="9.4" y="2.5" width="3.6" height="11" rx="1" fill="currentColor"/></svg>
         <svg class="i-play" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M4 2.6v10.8a.6.6 0 0 0 .9.5l9-5.4a.6.6 0 0 0 0-1l-9-5.4a.6.6 0 0 0-.9.5z" fill="currentColor"/></svg>
       </button>
-      <button type="button" class="icon-b" id="d-prev" aria-label="前の名前"><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M10 3L5 8l5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-      <button type="button" class="icon-b" id="d-next" aria-label="次の名前"><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M6 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-      <button type="button" class="icon-b" id="d-close" aria-label="閉じる"><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M3.5 3.5l9 9M12.5 3.5l-9 9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+      <button type="button" class="icon-b" id="d-prev" aria-label="上一个术语"><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M10 3L5 8l5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <button type="button" class="icon-b" id="d-next" aria-label="下一个术语"><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M6 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <button type="button" class="icon-b" id="d-close" aria-label="关闭"><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M3.5 3.5l9 9M12.5 3.5l-9 9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
     </div>
   </div>
   <div class="d-body">
@@ -210,21 +212,21 @@
       <p class="d-summary" id="d-summary"></p>
     </div>
     <div class="d-main">
-      <h3 id="d-ask-h" data-t="dAsk">AIへの頼み方の例</h3>
+      <h3 id="d-ask-h" data-t="dAsk">如何向 AI 描述</h3>
       <p class="d-ask" id="d-ask"></p>
-      <h3 data-t="dSpec">動きの仕様</h3>
+      <h3 data-t="dSpec">动画规格</h3>
       <ul class="d-spec" id="d-spec"></ul>
-      <h3 data-t="dUse">使いどころ</h3>
+      <h3 data-t="dUse">适用场景</h3>
       <p id="d-use"></p>
-      <ul class="d-tags" id="d-tags" aria-label="タグ" data-t-attr="aria-label:tagsLabel"></ul>
+      <ul class="d-tags" id="d-tags" aria-label="标签" data-t-attr="aria-label:tagsLabel"></ul>
     </div>
     <div class="d-side">
-      <button type="button" class="btn btn-pick" id="d-pick" aria-pressed="false"><span class="pick-box" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M3.5 8.4l3 3 6-6.6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span id="d-pick-t">選ぶ</span></button>
-      <button type="button" class="btn btn-main" id="d-copy-prompt" data-t="copyPrompt">プロンプトをコピー</button>
-      <button type="button" class="btn" id="d-copy-code" data-t="copyCode">コードをコピー</button>
-      <pre class="d-prompt" id="d-prompt" tabindex="0" aria-label="コピーされるプロンプト" data-t-attr="aria-label:promptLabel"></pre>
+      <button type="button" class="btn btn-pick" id="d-pick" aria-pressed="false"><span class="pick-box" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M3.5 8.4l3 3 6-6.6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span id="d-pick-t">选择</span></button>
+      <button type="button" class="btn btn-main" id="d-copy-prompt" data-t="copyPrompt">复制提示词</button>
+      <button type="button" class="btn" id="d-copy-code" data-t="copyCode">复制代码</button>
+      <pre class="d-prompt" id="d-prompt" tabindex="0" aria-label="将要复制的提示词" data-t-attr="aria-label:promptLabel"></pre>
       <details class="d-code">
-        <summary data-t="showCode">コードを見る</summary>
+        <summary data-t="showCode">查看代码</summary>
         <pre id="d-code" tabindex="0"></pre>
       </details>
       <p class="d-links"><a id="d-kit" href="#"></a><a id="d-txt" href="#"></a></p>

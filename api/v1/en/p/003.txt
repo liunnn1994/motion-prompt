@@ -1,4 +1,4 @@
-Please use "Burst" (バースト), one of the names in "Motion graphics moves".
+Please use "Burst" (放射迸发), one of the names in "Motion graphics moves".
 Motion Prompt #003
 
 What it is: Lines and dots burst outward as something appears
@@ -12,6 +12,6 @@ Spec:
 - 10 dots (coral/blue alternating, radius 8→4.8): radius 58→150 on an ellipse (x ×1.45, y ×0.78), fading out 0.3–0.72 s after the trigger. The heart fill fades at 1.92–2.2 s.
 When to use it: Use it to mark the instant something is triggered or achieved, such as a like, a success or a correct answer.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/003.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/motion.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/003.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/motion.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

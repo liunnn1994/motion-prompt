@@ -1,4 +1,4 @@
-Please use "Squash & stretch" (スクワッシュ＆ストレッチ), one of the names in "Motion graphics moves".
+Please use "Squash & stretch" (挤压与拉伸), one of the names in "Motion graphics moves".
 Motion Prompt #011
 
 What it is: Squashes and stretches so that it feels elastic
@@ -11,6 +11,6 @@ Spec:
 - The shadow gets smaller and thinner with height. Short yellow lines flick out left and right at each landing (for about 18% of a bounce).
 When to use it: Use it to give a character or logo weight and softness.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/011.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/motion.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/011.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/motion.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

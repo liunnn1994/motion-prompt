@@ -1,0 +1,29 @@
+// Motion Prompt #110 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#110
+//
+// 鱼眼镜头 / Fisheye lens
+// 素材包: photo (摄影效果、布光与风格) · element 14 · 分类: 镜头与相机效果
+// 示例内容: 街景中心凸起，建筑垂线和道路线条向外弯曲，边角位置不变。
+// 动画规格:
+//   - 场景 2：街角，道路位于 y = 132–162，后方是建筑、树和路灯，路灯 x = 114、292、494；前景左侧人物高 124px，脚部位于（176, 200）。
+//   - 畸变：距中心 d 的点，径向距离乘以 g = (1 + k) / (1 + k·d²/R²)，R 为中心到边角的距离，约 289px。
+//   - k 从 0 增至 1.25，中央放大 2.25 倍，边角保持不动。
+//   - 各轮廓在畸变前每隔 6px 细分，使直线能变为曲线。
+//   - 右上角焦距读数 24mm→8mm。
+//   - 时序：0.4–1.4 秒效果逐渐增强，保持至 4.0 秒，4.8 秒前恢复原状；每轮 5 秒，使用三次缓入缓出，约为 cubic-bezier(0.65,0,0.35,1)。
+// 适用场景: 适合大胆、有趣或类似猫眼的视角，如滑板和音乐视频。
+// 标签: fisheye, fisheye lens, barrel distortion, ultra wide, 8mm, distortion
+// 尺寸: 539x208 px · 周期: 5 s
+// 依赖: kit photo -> https://motion-prompt.2077tech.com/api/v1/kit/photo.js
+// 动态示例: https://motion-prompt.2077tech.com/#110
+//
+// cells[i](k, w, h, u)：k = CanvasRenderingContext2D（由调用方清空画布并执行 save/restore），w、h = 尺寸，u = 秒数，范围为 [0, cycle)。画面仅由 u 决定。
+// 以下为素材代码。CELLS、常量及辅助函数位于 kit 文件中。
+
+// @element 14
+// 魚眼レンズ: 中心がふくらみ、建物の縦の線が外側へ丸く曲がる
+CELLS[13] = cell((k, u) => {
+  const a = env(u), kk = 1.25 * a, cx = CW / 2, cy = CH / 2, R2 = cx * cx + cy * cy;
+  const M = kk < 0.002 ? null : (x, y) => { const dx = x - cx, dy = y - cy, g = (1 + kk) / (1 + kk * (dx * dx + dy * dy) / R2); return [cx + dx * g, cy + dy * g]; };
+  stageStreet(k, BASE, { M });
+  hud(k, `${Math.round(lerp(24, 8, a))}mm`);
+});

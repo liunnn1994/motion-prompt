@@ -1,4 +1,4 @@
-Please use "Image zoom on hover" (ホバーで画像ズーム), one of the names in "Landing page & web effects".
+Please use "Image zoom on hover" (悬停图片缩放), one of the names in "Landing page & web effects".
 Motion Prompt #082
 
 What it is: The photo enlarges inside a fixed frame
@@ -9,6 +9,6 @@ Spec:
 - Anything outside the frame is clipped (overflow: hidden). The frame and the caption do not move.
 When to use it: Use it on photo grids (work, products, articles) to show which item is about to be chosen.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/082.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/lp.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/082.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/lp.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

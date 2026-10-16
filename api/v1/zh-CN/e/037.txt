@@ -1,0 +1,28 @@
+// Motion Prompt #037 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#037
+//
+// 慢动作 / Slow motion
+// 素材包: camera (镜头运动与转场) · element 13 · 分类: 拍摄手法与时间控制
+// 示例内容: 固定镜头中，跳跃者缓慢上升和落下，树叶也缓慢飘落。
+// 动画规格:
+//   - 相机完全固定，高度 1.3m，仅主体运动。
+//   - 主体：前方 7m 的人物在 0.5–4.3 秒完成一次跳跃，时长 3.8 秒；高度 = 4q(1−q)×1.1m，最高 1.1m，q 随时间线性变化。
+//   - 腾空时双臂抬起；起跳前站立 0.5 秒，落地后站立 0.4 秒。
+//   - 9 片树叶在 4.7 秒内从高 3.4m 处旋转落地，各错开周期的 1/9。
+//   - 右上角显示“120fps ×0.25”，表示播放时长拉长为 4 倍。
+//   - 无额外停留和交叉淡化，每 4.7 秒无缝循环。
+// 适用场景: 适合观察短暂动作、表情或强调情绪高潮。
+// 标签: slow motion, slow-mo, slomo, high frame rate, 120fps, time stretch, jump
+// 尺寸: 539x208 px · 周期: 9.4 s
+// 依赖: kit camera -> https://motion-prompt.2077tech.com/api/v1/kit/camera.js
+// 动态示例: https://motion-prompt.2077tech.com/#037
+//
+// cells[i](k, w, h, u)：k = CanvasRenderingContext2D（由调用方清空画布并执行 save/restore），w、h = 尺寸，u = 秒数，范围为 [0, cycle)。画面仅由 u 决定。
+// 以下为素材代码。CELLS、常量及辅助函数位于 kit 文件中。
+
+// @element 13
+// 13 スローモーション
+CELLS[12] = shot((k, w, h, u) => {
+  const q = P(u, 0.5, 4.3);
+  world(k, w, h, cam({ y: 1.3 }), { person: { z: 7, y: jumpY(q), armUp: q > 0 && q < 1 }, extra: leaves(u, 1) });
+  return '120fps ×0.25';
+});

@@ -1,4 +1,4 @@
-Please use "Zoom through" (ズームスルー), one of the names in "Motion graphics moves".
+Please use "Zoom through" (穿越缩放), one of the names in "Motion graphics moves".
 Motion Prompt #020
 
 What it is: Zooms into an object and passes through it into the next scene
@@ -11,6 +11,6 @@ Spec:
 - Inside the hole the next scene is placed at 1/maxScale. When the zoom ends it is exactly at full size, and the view switches to the next scene.
 When to use it: Use it to dive into a logo or letter and move to the next scene with momentum.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/020.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/motion.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/020.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/motion.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

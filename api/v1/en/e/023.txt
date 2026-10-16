@@ -1,6 +1,6 @@
-// Motion Prompt #023 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#023
+// Motion Prompt #023 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#023
 //
-// Glitch / グリッチ
+// Glitch / 故障效果
 // Pack: motion (Motion graphics moves) · element 23 · Category: Transitions & highlights
 // What happens: Text slices shift sideways, colours split and small bars appear, with no brightness flashing.
 // Motion spec:
@@ -13,8 +13,8 @@
 // When to use it: Use it for a digital, error or uneasy feel, as an accent on titles and scene changes.
 // Tags: glitch, rgb-split, chromatic-aberration, distortion, digital, error, slice
 // Size: 539x208 px · Cycle: 4.7 s
-// Needs: kit motion -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/motion.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#023
+// Needs: kit motion -> https://motion-prompt.2077tech.com/api/v1/kit/motion.js
+// Live demo: https://motion-prompt.2077tech.com/#023
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

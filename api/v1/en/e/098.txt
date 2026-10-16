@@ -1,6 +1,6 @@
-// Motion Prompt #098 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#098
+// Motion Prompt #098 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#098
 //
-// Rim light / リムライト
+// Rim light / 轮廓光
 // Pack: photo (Photo looks, lighting & styles) · element 02 · Category: Lighting & time of day
 // What happens: The surroundings go dark and two lights behind the person, left and right, draw thin bright edges only along both sides of the head and shoulders; the plan at the bottom right shows where the two lights are.
 // Motion spec:
@@ -12,8 +12,8 @@
 // When to use it: To separate a person or product from a dark background and show its shape.
 // Tags: rim light, rim lighting, edge light, backlight, kicker, outline, studio
 // Size: 539x208 px · Cycle: 5 s
-// Needs: kit photo -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/photo.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#098
+// Needs: kit photo -> https://motion-prompt.2077tech.com/api/v1/kit/photo.js
+// Live demo: https://motion-prompt.2077tech.com/#098
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

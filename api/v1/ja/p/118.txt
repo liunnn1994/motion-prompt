@@ -11,6 +11,6 @@ Motion Prompt #118
 - 時間: 0.4〜1.4秒で効果が入り、4.0秒まで保ち、4.8秒までに元へ戻る（1周5秒、3次のイーズインアウト（cubic-bezier(0.65,0,0.35,1) 相当））
 使いどころ: デジタルのつるっとした感じを消して、フィルムの手触りを出したいとき。
 
-参考実装（Canvas 2D・時刻だけで絵が決まる関数）: https://showheyohtaki.github.io/motion-prompt/api/v1/ja/e/118.txt
-共通の補助コード: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/photo.js
+参考実装（Canvas 2D・時刻だけで絵が決まる関数）: https://motion-prompt.2077tech.com/api/v1/ja/e/118.txt
+共通の補助コード: https://motion-prompt.2077tech.com/api/v1/kit/photo.js
 参考実装の形・タイミング・イージングの数値はそのまま使い、中の文字・色・素材だけ、いま作っている物に合わせてください。

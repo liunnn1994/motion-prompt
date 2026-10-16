@@ -1,4 +1,4 @@
-Please use "Smash cut" (スマッシュカット), one of the names in "Camera moves & transitions".
+Please use "Smash cut" (猛切), one of the names in "Camera moves & transitions".
 Motion Prompt #046
 
 What it is: Abrupt cut to a contrasting scene
@@ -12,6 +12,6 @@ Spec:
 - Top-right readout shows "♪ 静か" (quiet) → "♪ 大音量" (loud)
 When to use it: For comedy or shock, showing in an instant the gap between calm and chaos or between expectation and reality.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/046.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/camera.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/046.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/camera.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

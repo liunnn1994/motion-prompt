@@ -10,6 +10,6 @@ Motion Prompt #095
 - 上に白の見出し（34px）とボタン。グラデーションだけが動く
 使いどころ: 写真を使わずに、ファーストビューや見出しの背景に動きと華やかさを出したいとき。
 
-参考実装（Canvas 2D・時刻だけで絵が決まる関数）: https://showheyohtaki.github.io/motion-prompt/api/v1/ja/e/095.txt
-共通の補助コード: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/lp.js
+参考実装（Canvas 2D・時刻だけで絵が決まる関数）: https://motion-prompt.2077tech.com/api/v1/ja/e/095.txt
+共通の補助コード: https://motion-prompt.2077tech.com/api/v1/kit/lp.js
 参考実装の形・タイミング・イージングの数値はそのまま使い、中の文字・色・素材だけ、いま作っている物に合わせてください。

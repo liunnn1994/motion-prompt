@@ -1,15 +1,15 @@
 {
   "name": "motion-prompt",
-  "description": "Marketplace for the Motion Prompt skill (gallery: showheyohtaki.github.io/motion-prompt)",
+  "description": "Motion Prompt 中文版技能市场（素材库：motion-prompt.2077tech.com）",
   "owner": {
-    "name": "Shohei Ohtaki",
-    "url": "https://x.com/showheyohtaki"
+    "name": "liunnn1994",
+    "url": "https://github.com/liunnn1994"
   },
   "plugins": [
     {
       "name": "motion-prompt",
       "source": "./",
-      "description": "A library of names to use with AI (motion-graphics moves, camera moves and transitions, UI components, landing-page and web effects, photo looks and lighting), each with a moving sample. Ask the agent to open the library, pick in the browser, and it applies your picks to your video, web or image project with the published timings and easing.",
+      "description": "Motion Prompt 中文版：120 个动效、镜头、UI、网页与摄影术语，配动态示例、中英对照、规格及参考代码。打开素材库，选择后发送给 AI。",
       "category": "design"
     }
   ]

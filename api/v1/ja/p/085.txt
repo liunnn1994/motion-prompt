@@ -10,6 +10,6 @@ Motion Prompt #085
 - 円はボタンの形で切り取る（overflow: hidden）。文字は円の上に描く
 使いどころ: ボタンやリストを押したことを、その場ですぐ返したいとき。
 
-参考実装（Canvas 2D・時刻だけで絵が決まる関数）: https://showheyohtaki.github.io/motion-prompt/api/v1/ja/e/085.txt
-共通の補助コード: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/lp.js
+参考実装（Canvas 2D・時刻だけで絵が決まる関数）: https://motion-prompt.2077tech.com/api/v1/ja/e/085.txt
+共通の補助コード: https://motion-prompt.2077tech.com/api/v1/kit/lp.js
 参考実装の形・タイミング・イージングの数値はそのまま使い、中の文字・色・素材だけ、いま作っている物に合わせてください。

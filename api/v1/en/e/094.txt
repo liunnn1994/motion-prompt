@@ -1,6 +1,6 @@
-// Motion Prompt #094 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#094
+// Motion Prompt #094 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#094
 //
-// Marquee / マーキー
+// Marquee / 跑马灯
 // Pack: lp (Landing page & web effects) · element 22 · Category: Loading, navigation & ambient loops
 // What happens: Inside a navy band, large service names separated by orange dots keep moving to the left without a gap.
 // Motion spec:
@@ -11,8 +11,8 @@
 // When to use it: Use it to show service names, client logos or a tagline with energy.
 // Tags: marquee, ticker, infinite-loop, scrolling-text, logo-strip, band, loop
 // Size: 539x208 px · Cycle: 4.8 s
-// Needs: kit lp -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/lp.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#094
+// Needs: kit lp -> https://motion-prompt.2077tech.com/api/v1/kit/lp.js
+// Live demo: https://motion-prompt.2077tech.com/#094
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

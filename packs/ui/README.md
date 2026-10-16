@@ -2,48 +2,48 @@
 
 # UI component names
 
-24 names · #049–072 · pack `ui` · Languages: [日本語](README.ja.md)
+24 names · #049–072 · pack `ui` · Languages: [简体中文](README.zh-CN.md) / [日本語](README.ja.md)
 
 Find the name, then say it to your AI. Add how long, how strong and what moves, and the result gets closer to what you had in mind.
 
 ## Opening & overlays
 
-| # | Name | What it is | How to ask an AI |
-|---|---|---|---|
-| [#049](https://showheyohtaki.github.io/motion-prompt/#049) | **Modal dialog** | A window opens in the middle while the page behind dims | When the delete button is pressed, show a confirmation in a modal dialog. Dim the page about 40% and fade it in over 0.3 s with a slight scale-up. |
-| [#050](https://showheyohtaki.github.io/motion-prompt/#050) | **Drawer (Off-canvas)** | A menu panel slides in from the side of the screen | Open a drawer from the left when the menu button is pressed: 40% of the screen wide, sliding in over 0.4 s, with the page slightly dimmed. |
-| [#051](https://showheyohtaki.github.io/motion-prompt/#051) | **Bottom sheet** | A panel slides up from the bottom of the screen | Show the details in a bottom sheet when "View details" is tapped: 40% of the screen tall, rising over 0.4 s, closing when dragged down. |
-| [#052](https://showheyohtaki.github.io/motion-prompt/#052) | **Accordion** | Click a heading to show or hide its content | Make the FAQ an accordion: the clicked item opens over 0.35 s and its arrow turns 180°. |
-| [#053](https://showheyohtaki.github.io/motion-prompt/#053) | **Dropdown (select)** | Click a field to drop a list of options below it | Make the prefecture field a dropdown: open the options below it in 0.25 s and close it with the value filled in once one is picked. |
-| [#054](https://showheyohtaki.github.io/motion-prompt/#054) | **Tooltip** | Hover over something to show a short label | Add a tooltip to the "?" icon: show the note above it 0.2 s after hover, and hide it when the cursor leaves. |
-| [#055](https://showheyohtaki.github.io/motion-prompt/#055) | **Popover** | Click a button to open a small panel pointing at it | Attach a popover to the "Details" button: clicking opens a small panel to its right over 0.3 s, and OK closes it. |
-| [#056](https://showheyohtaki.github.io/motion-prompt/#056) | **Toast notification** | A short message appears in a corner and goes away on its own | After saving, show "Saved" as a toast at the bottom right: slide it in from the right in 0.35 s and dismiss it automatically after 2 s. |
+| # | Name | Chinese | What it is | How to ask an AI |
+|---|---|---|---|---|
+| [#049](https://motion-prompt.2077tech.com/#049) | **Modal dialog** | 模态对话框 | A window opens in the middle while the page behind dims | When the delete button is pressed, show a confirmation in a modal dialog. Dim the page about 40% and fade it in over 0.3 s with a slight scale-up. |
+| [#050](https://motion-prompt.2077tech.com/#050) | **Drawer (Off-canvas)** | 抽屉面板 | A menu panel slides in from the side of the screen | Open a drawer from the left when the menu button is pressed: 40% of the screen wide, sliding in over 0.4 s, with the page slightly dimmed. |
+| [#051](https://motion-prompt.2077tech.com/#051) | **Bottom sheet** | 底部面板 | A panel slides up from the bottom of the screen | Show the details in a bottom sheet when "View details" is tapped: 40% of the screen tall, rising over 0.4 s, closing when dragged down. |
+| [#052](https://motion-prompt.2077tech.com/#052) | **Accordion** | 折叠面板 | Click a heading to show or hide its content | Make the FAQ an accordion: the clicked item opens over 0.35 s and its arrow turns 180°. |
+| [#053](https://motion-prompt.2077tech.com/#053) | **Dropdown (select)** | 下拉选择框 | Click a field to drop a list of options below it | Make the prefecture field a dropdown: open the options below it in 0.25 s and close it with the value filled in once one is picked. |
+| [#054](https://motion-prompt.2077tech.com/#054) | **Tooltip** | 文字提示 | Hover over something to show a short label | Add a tooltip to the "?" icon: show the note above it 0.2 s after hover, and hide it when the cursor leaves. |
+| [#055](https://motion-prompt.2077tech.com/#055) | **Popover** | 气泡卡片 | Click a button to open a small panel pointing at it | Attach a popover to the "Details" button: clicking opens a small panel to its right over 0.3 s, and OK closes it. |
+| [#056](https://motion-prompt.2077tech.com/#056) | **Toast notification** | 轻提示 | A short message appears in a corner and goes away on its own | After saving, show "Saved" as a toast at the bottom right: slide it in from the right in 0.35 s and dismiss it automatically after 2 s. |
 
 ## Choosing & switching
 
-| # | Name | What it is | How to ask an AI |
-|---|---|---|---|
-| [#057](https://showheyohtaki.github.io/motion-prompt/#057) | **Tabs** | Click a label to switch which panel is shown | Put three tabs at the top of the pricing page. On click, slide the underline over 0.25 s and cross-fade the content in 0.2 s. |
-| [#058](https://showheyohtaki.github.io/motion-prompt/#058) | **Carousel** | Slides that move sideways to show one item at a time | Turn the top images into a carousel: the right arrow moves one slide in 0.4 s, with position dots below. |
-| [#059](https://showheyohtaki.github.io/motion-prompt/#059) | **Toggle switch** | Flip a setting on or off | Put a toggle switch on each notification setting: the knob slides in 0.2 s and the track turns blue when on. |
-| [#060](https://showheyohtaki.github.io/motion-prompt/#060) | **Segmented control** | A row of joined buttons that switches the view | Put a Day / Week / Month segmented control above the chart: the selected background slides over 0.25 s and the chart changes with it. |
-| [#061](https://showheyohtaki.github.io/motion-prompt/#061) | **Filter chips** | Small pills you click to add or remove a filter | Add filter chips above the list: a clicked chip gets a check mark and turns blue, and the list filters within 0.15 s. |
-| [#062](https://showheyohtaki.github.io/motion-prompt/#062) | **Range slider** | Two handles on one track pick a minimum and a maximum | Make the price filter a range slider with two handles, showing each value in a bubble while it is dragged. |
-| [#063](https://showheyohtaki.github.io/motion-prompt/#063) | **Stepper (+/−)** | Plus and minus buttons that change a number by one | Make the quantity field a stepper: + and − change it by one, and the number pops slightly for 0.25 s on each press. |
-| [#064](https://showheyohtaki.github.io/motion-prompt/#064) | **Pagination** | Numbered buttons that move between pages | Add pagination under the search results: the current page is a blue circle that moves in 0.2 s on click, and the list is replaced. |
+| # | Name | Chinese | What it is | How to ask an AI |
+|---|---|---|---|---|
+| [#057](https://motion-prompt.2077tech.com/#057) | **Tabs** | 选项卡 | Click a label to switch which panel is shown | Put three tabs at the top of the pricing page. On click, slide the underline over 0.25 s and cross-fade the content in 0.2 s. |
+| [#058](https://motion-prompt.2077tech.com/#058) | **Carousel** | 轮播图 | Slides that move sideways to show one item at a time | Turn the top images into a carousel: the right arrow moves one slide in 0.4 s, with position dots below. |
+| [#059](https://motion-prompt.2077tech.com/#059) | **Toggle switch** | 切换开关 | Flip a setting on or off | Put a toggle switch on each notification setting: the knob slides in 0.2 s and the track turns blue when on. |
+| [#060](https://motion-prompt.2077tech.com/#060) | **Segmented control** | 分段选择器 | A row of joined buttons that switches the view | Put a Day / Week / Month segmented control above the chart: the selected background slides over 0.25 s and the chart changes with it. |
+| [#061](https://motion-prompt.2077tech.com/#061) | **Filter chips** | 筛选标签 | Small pills you click to add or remove a filter | Add filter chips above the list: a clicked chip gets a check mark and turns blue, and the list filters within 0.15 s. |
+| [#062](https://motion-prompt.2077tech.com/#062) | **Range slider** | 范围滑块 | Two handles on one track pick a minimum and a maximum | Make the price filter a range slider with two handles, showing each value in a bubble while it is dragged. |
+| [#063](https://motion-prompt.2077tech.com/#063) | **Stepper (+/−)** | 数字步进器 | Plus and minus buttons that change a number by one | Make the quantity field a stepper: + and − change it by one, and the number pops slightly for 0.25 s on each press. |
+| [#064](https://motion-prompt.2077tech.com/#064) | **Pagination** | 分页 | Numbered buttons that move between pages | Add pagination under the search results: the current page is a blue circle that moves in 0.2 s on click, and the list is replaced. |
 
 ## Navigation & status
 
-| # | Name | What it is | How to ask an AI |
-|---|---|---|---|
-| [#065](https://showheyohtaki.github.io/motion-prompt/#065) | **Hamburger menu** | A three-line icon that opens the menu | Put a hamburger menu at the right of the mobile header: on tap, morph the three lines into × in 0.3 s and drop the menu down from the top. |
-| [#066](https://showheyohtaki.github.io/motion-prompt/#066) | **Breadcrumbs** | A trail of links showing where the page sits in the site | Add breadcrumbs above the article: "Home › Courses › Web design", with the current page in bold and not linked. |
-| [#067](https://showheyohtaki.github.io/motion-prompt/#067) | **Mega menu** | A wide panel of grouped links that opens from the main menu | Give "Products" in the header a mega menu: on hover, drop a full-width panel in 0.25 s with three columns of links and an image. |
-| [#068](https://showheyohtaki.github.io/motion-prompt/#068) | **Step indicator** | Shows which step of a process you are on | Add a step indicator above the sign-up form with four steps: Details, Review, Payment, Done; completed steps show a check. |
-| [#069](https://showheyohtaki.github.io/motion-prompt/#069) | **Skeleton screen** | Grey shapes stand in for content while it loads | While the list loads, show a skeleton screen: grey blocks in the shape of the content, with a shine sweeping left to right every 0.9 s. |
-| [#070](https://showheyohtaki.github.io/motion-prompt/#070) | **Spinner** | A spinning circle that means "please wait" | While sending, show a spinner over the form, turning a little over once per second, then replace it with a blue check when done. |
-| [#071](https://showheyohtaki.github.io/motion-prompt/#071) | **Badge** | A small dot with a number showing a count | Add a badge to the bell in the header to show the unread count: it pops for 0.3 s each time the count goes up and disappears when opened. |
-| [#072](https://showheyohtaki.github.io/motion-prompt/#072) | **Empty state** | The screen shown when there is nothing to list yet | When the list is empty, show an empty state: a line icon, "Nothing here yet" and an add button, fading in over 0.35 s. |
+| # | Name | Chinese | What it is | How to ask an AI |
+|---|---|---|---|---|
+| [#065](https://motion-prompt.2077tech.com/#065) | **Hamburger menu** | 汉堡菜单 | A three-line icon that opens the menu | Put a hamburger menu at the right of the mobile header: on tap, morph the three lines into × in 0.3 s and drop the menu down from the top. |
+| [#066](https://motion-prompt.2077tech.com/#066) | **Breadcrumbs** | 面包屑导航 | A trail of links showing where the page sits in the site | Add breadcrumbs above the article: "Home › Courses › Web design", with the current page in bold and not linked. |
+| [#067](https://motion-prompt.2077tech.com/#067) | **Mega menu** | 大型下拉菜单 | A wide panel of grouped links that opens from the main menu | Give "Products" in the header a mega menu: on hover, drop a full-width panel in 0.25 s with three columns of links and an image. |
+| [#068](https://motion-prompt.2077tech.com/#068) | **Step indicator** | 步骤指示器 | Shows which step of a process you are on | Add a step indicator above the sign-up form with four steps: Details, Review, Payment, Done; completed steps show a check. |
+| [#069](https://motion-prompt.2077tech.com/#069) | **Skeleton screen** | 骨架屏 | Grey shapes stand in for content while it loads | While the list loads, show a skeleton screen: grey blocks in the shape of the content, with a shine sweeping left to right every 0.9 s. |
+| [#070](https://motion-prompt.2077tech.com/#070) | **Spinner** | 加载指示器 | A spinning circle that means "please wait" | While sending, show a spinner over the form, turning a little over once per second, then replace it with a blue check when done. |
+| [#071](https://motion-prompt.2077tech.com/#071) | **Badge** | 角标 | A small dot with a number showing a count | Add a badge to the bell in the header to show the unread count: it pops for 0.3 s each time the count goes up and disappears when opened. |
+| [#072](https://motion-prompt.2077tech.com/#072) | **Empty state** | 空状态 | The screen shown when there is nothing to list yet | When the list is empty, show an empty state: a line icon, "Nothing here yet" and an add button, fading in over 0.35 s. |
 
 Each number opens the moving sample in the gallery. Timings, easing values and reference code for one name: `api/v1/en/e/<id>.txt` ([#049](../../api/v1/en/e/049.txt)).
 

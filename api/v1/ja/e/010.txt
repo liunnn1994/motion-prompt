@@ -1,4 +1,4 @@
-// Motion Prompt #010 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#010
+// Motion Prompt #010 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#010
 //
 // オーバーシュート / Overshoot
 // パック: motion (モーショングラフィックスの動き) · element 10 · カテゴリ: 動きの味付け
@@ -12,8 +12,8 @@
 // 使いどころ: 要素が到着する動きに勢いと弾力を出したいとき。
 // タグ: overshoot, spring, bounce, settle, elastic, gauge, meter, needle
 // サイズ: 539x208 px · 1周: 4.7 s
-// Needs: kit motion -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/motion.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#010
+// Needs: kit motion -> https://motion-prompt.2077tech.com/api/v1/kit/motion.js
+// 動く見本: https://motion-prompt.2077tech.com/#010
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

@@ -1,6 +1,6 @@
-// Motion Prompt #111 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#111
+// Motion Prompt #111 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#111
 //
-// Chromatic aberration / 色収差
+// Chromatic aberration / 色差
 // Pack: photo (Photo looks, lighting & styles) · element 15 · Category: Lens & camera effects
 // What happens: The street scene is split into red, green and blue and the three are laid back together at slightly different sizes, so red and cyan fringes appear on the edges of the person, buildings and lamps, larger towards the sides.
 // Motion spec:
@@ -12,8 +12,8 @@
 // When to use it: To add an imperfect old-lens, VHS or glitch feel.
 // Tags: chromatic aberration, color fringing, rgb split, lens aberration, fringe, glitch
 // Size: 539x208 px · Cycle: 5 s
-// Needs: kit photo -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/photo.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#111
+// Needs: kit photo -> https://motion-prompt.2077tech.com/api/v1/kit/photo.js
+// Live demo: https://motion-prompt.2077tech.com/#111
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

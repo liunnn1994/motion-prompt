@@ -1,4 +1,4 @@
-Please use "Range slider" (レンジスライダー), one of the names in "UI component names".
+Please use "Range slider" (范围滑块), one of the names in "UI component names".
 Motion Prompt #062
 
 What it is: Two handles on one track pick a minimum and a maximum
@@ -11,6 +11,6 @@ Spec:
 - The cursor sits on the handle it drags (presses at 1.0, 2.1, 2.95 and 3.55 s).
 When to use it: Use it to filter by a range, such as price, date or size, with a minimum and a maximum.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/062.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/ui.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/062.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/ui.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

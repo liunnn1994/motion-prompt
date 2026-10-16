@@ -1,4 +1,4 @@
-// Motion Prompt #111 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#111
+// Motion Prompt #111 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#111
 //
 // 色収差 / Chromatic aberration
 // パック: photo (写真の表現・光と画風) · element 15 · カテゴリ: レンズ・カメラの効果
@@ -12,8 +12,8 @@
 // 使いどころ: 古いレンズやVHS、グリッチのような、少し崩れた質感を足したいとき。
 // タグ: chromatic aberration, color fringing, rgb split, lens aberration, fringe, glitch
 // サイズ: 539x208 px · 1周: 5 s
-// Needs: kit photo -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/photo.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#111
+// Needs: kit photo -> https://motion-prompt.2077tech.com/api/v1/kit/photo.js
+// 動く見本: https://motion-prompt.2077tech.com/#111
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

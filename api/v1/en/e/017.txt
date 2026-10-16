@@ -1,6 +1,6 @@
-// Motion Prompt #017 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#017
+// Motion Prompt #017 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#017
 //
-// Mask transition / マスクトランジション
+// Mask transition / 蒙版转场
 // Pack: motion (Motion graphics moves) · element 17 · Category: Transitions & highlights
 // What happens: A circle- or star-shaped window grows, showing the next scene inside it.
 // Motion spec:
@@ -12,8 +12,8 @@
 // When to use it: Use it to change scenes starting from an object in the frame, such as a sun, logo or button.
 // Tags: mask, transition, iris, wipe, shape-wipe, reveal, scene-change
 // Size: 539x208 px · Cycle: 4.7 s
-// Needs: kit motion -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/motion.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#017
+// Needs: kit motion -> https://motion-prompt.2077tech.com/api/v1/kit/motion.js
+// Live demo: https://motion-prompt.2077tech.com/#017
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

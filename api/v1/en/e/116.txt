@@ -1,6 +1,6 @@
-// Motion Prompt #116 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#116
+// Motion Prompt #116 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#116
 //
-// Duotone / デュオトーン
+// Duotone / 双色调
 // Pack: photo (Photo looks, lighting & styles) · element 20 · Category: Tones & finishing looks
 // What happens: The colours of the same landscape are replaced by a range between just two colours: indigo in the darks and pink in the lights.
 // Motion spec:
@@ -11,8 +11,8 @@
 // When to use it: To unify posters, music artwork or social images in brand colours.
 // Tags: duotone, two-tone, gradient map, color overlay, poster, graphic
 // Size: 539x208 px · Cycle: 5 s
-// Needs: kit photo -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/photo.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#116
+// Needs: kit photo -> https://motion-prompt.2077tech.com/api/v1/kit/photo.js
+// Live demo: https://motion-prompt.2077tech.com/#116
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

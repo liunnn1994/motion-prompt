@@ -1,0 +1,25 @@
+// Motion Prompt #028 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#028
+//
+// 变焦推近 / Zoom in
+// 素材包: camera (镜头运动与转场) · element 04 · 分类: 镜头运动
+// 示例内容: 相机不动，焦距变长，整个画面按相同比例放大。
+// 动画规格:
+//   - 相机：机位与朝向固定，高度 1.5m，仅改变焦距，330px→1200px，显示为 24mm→87mm，约 3.6 倍。
+//   - 指数插值：f = 330 × (8/2.2)^p，其中 p 在 0.5–3.4 秒内按三次缓入缓出变化，时长 2.9 秒。
+//   - 主体：人物站在前方 8m 处，最终大小与第 03 项推镜头相同，约放大 3.6 倍。
+//   - 无视差：前景柱、石块、人物、建筑和山按相同比例放大，遮挡关系不变。
+//   - 回到起点：3.4–4.2 秒停留，最后 0.5 秒交叉淡化至初始状态，每轮 4.7 秒。
+//   - 右上角显示焦距，24mm→87mm。
+// 适用场景: 适合在不移动相机的情况下突出局部，透视变化比推镜头更平。
+// 标签: zoom, zoom in, focal length, lens, magnify, telephoto, camera move
+// 尺寸: 539x208 px · 周期: 9.4 s
+// 依赖: kit camera -> https://motion-prompt.2077tech.com/api/v1/kit/camera.js
+// 动态示例: https://motion-prompt.2077tech.com/#028
+//
+// cells[i](k, w, h, u)：k = CanvasRenderingContext2D（由调用方清空画布并执行 save/restore），w、h = 尺寸，u = 秒数，范围为 [0, cycle)。画面仅由 u 决定。
+// 以下为素材代码。CELLS、常量及辅助函数位于 kit 文件中。
+
+// @element 04
+// 04 ズームイン: 位置は固定・焦点距離だけ伸びる（全体が同じ比率で拡大）
+CELLS[3] = shot(camCell((k, w, h, p) => world(k, w, h, cam({ f: F0 * Math.pow(8 / 2.2, p) }), { person: { z: 8 }, fg: [[-1.5, 3.6], [1.6, 4.8, 'rock']] }),
+  p => mm(F0 * Math.pow(8 / 2.2, p))));

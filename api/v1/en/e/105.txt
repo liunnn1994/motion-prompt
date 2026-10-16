@@ -1,6 +1,6 @@
-// Motion Prompt #105 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#105
+// Motion Prompt #105 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#105
 //
-// Bokeh / ボケ
+// Bokeh / 散景
 // Pack: photo (Photo looks, lighting & styles) · element 09 · Category: Lens & camera effects
 // What happens: As the aperture opens, the in-focus person stays sharp, the buildings behind soften and the street lamps and distant lights spread into large, pale discs.
 // Motion spec:
@@ -13,8 +13,8 @@
 // When to use it: To lift a person or product off the background and add a soft, festive night mood.
 // Tags: bokeh, shallow depth of field, background blur, wide aperture, f/1.4, out of focus, lights
 // Size: 539x208 px · Cycle: 5 s
-// Needs: kit photo -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/photo.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#105
+// Needs: kit photo -> https://motion-prompt.2077tech.com/api/v1/kit/photo.js
+// Live demo: https://motion-prompt.2077tech.com/#105
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

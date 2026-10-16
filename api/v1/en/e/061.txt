@@ -1,6 +1,6 @@
-// Motion Prompt #061 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#061
+// Motion Prompt #061 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#061
 //
-// Filter chips / チップ
+// Filter chips / 筛选标签
 // Pack: ui (UI component names) · element 13 · Category: Choosing & switching
 // What happens: Clicking the "New" and "Free" chips adds a check mark and turns them blue, and cards that do not match fade out.
 // Motion spec:
@@ -11,8 +11,8 @@
 // When to use it: Use it to let people narrow a list or search results by combining a few quick filters.
 // Tags: chips, filter-chips, tags, filter, facets, pills
 // Size: 542x191 px · Cycle: 4.5 s
-// Needs: kit ui -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/ui.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#061
+// Needs: kit ui -> https://motion-prompt.2077tech.com/api/v1/kit/ui.js
+// Live demo: https://motion-prompt.2077tech.com/#061
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

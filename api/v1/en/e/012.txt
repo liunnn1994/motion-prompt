@@ -1,6 +1,6 @@
-// Motion Prompt #012 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#012
+// Motion Prompt #012 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#012
 //
-// Shape morph / モーフィング
+// Shape morph / 形状变形
 // Pack: motion (Motion graphics moves) · element 12 · Category: Motion polish
 // What happens: A shape changes smoothly from circle to square to star to heart, with its colour.
 // Motion spec:
@@ -13,8 +13,8 @@
 // When to use it: Use it to turn one icon or logo into another without a cut.
 // Tags: morph, morphing, shape, path, interpolate, transform, icon
 // Size: 539x208 px · Cycle: 4.7 s
-// Needs: kit motion -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/motion.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#012
+// Needs: kit motion -> https://motion-prompt.2077tech.com/api/v1/kit/motion.js
+// Live demo: https://motion-prompt.2077tech.com/#012
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

@@ -1,4 +1,4 @@
-// Motion Prompt #074 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#074
+// Motion Prompt #074 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#074
 //
 // スクロールでフェードイン / Fade-in on scroll
 // パック: lp (LP・Webサイトの演出) · element 02 · カテゴリ: スクロールで起きる演出
@@ -12,8 +12,8 @@
 // 使いどころ: 縦に長いLPで、読み進めるごとに内容を一つずつ見せたいとき。
 // タグ: fade-in, scroll-reveal, reveal-on-scroll, intersection-observer, aos, entrance, scroll
 // サイズ: 539x208 px · 1周: 4.8 s
-// Needs: kit lp -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/lp.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#074
+// Needs: kit lp -> https://motion-prompt.2077tech.com/api/v1/kit/lp.js
+// 動く見本: https://motion-prompt.2077tech.com/#074
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

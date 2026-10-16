@@ -1,4 +1,4 @@
-Please use "Particles" (パーティクル), one of the names in "Motion graphics moves".
+Please use "Particles" (粒子效果), one of the names in "Motion graphics moves".
 Motion Prompt #015
 
 What it is: Many small pieces fly out and scatter
@@ -11,6 +11,6 @@ Spec:
 - Shapes are circles, squares and triangles (size 5–11 px) in blue, coral, yellow and mint, spinning at up to ±4.5 rad/s.
 When to use it: Use it to add celebration or liveliness, in place of confetti or sparks.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/015.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/motion.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/015.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/motion.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

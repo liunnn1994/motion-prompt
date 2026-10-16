@@ -1,6 +1,6 @@
-// Motion Prompt #033 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#033
+// Motion Prompt #033 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#033
 //
-// Rack focus / ラックフォーカス
+// Rack focus / 移焦
 // Pack: camera (Camera moves & transitions) · element 09 · Category: Shooting Style & Time
 // What happens: The camera does not move; focus shifts from a flower in the foreground to a person behind it, swapping which one is blurred.
 // Motion spec:
@@ -13,8 +13,8 @@
 // When to use it: To move attention from foreground to background (or back) without cutting.
 // Tags: rack focus, focus pull, pull focus, depth of field, blur, bokeh, foreground
 // Size: 539x208 px · Cycle: 9.4 s
-// Needs: kit camera -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/camera.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#033
+// Needs: kit camera -> https://motion-prompt.2077tech.com/api/v1/kit/camera.js
+// Live demo: https://motion-prompt.2077tech.com/#033
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

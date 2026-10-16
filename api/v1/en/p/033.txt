@@ -1,4 +1,4 @@
-Please use "Rack focus" (ラックフォーカス), one of the names in "Camera moves & transitions".
+Please use "Rack focus" (移焦), one of the names in "Camera moves & transitions".
 Motion Prompt #033
 
 What it is: Shift focus between near and far
@@ -12,6 +12,6 @@ Spec:
 - Return: hold 2.6–4.2 s, then cross-fade back over the last 0.5 s; top-right readout shows focus distance (◎ 2m → ◎ 9m)
 When to use it: To move attention from foreground to background (or back) without cutting.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/033.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/camera.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/033.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/camera.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

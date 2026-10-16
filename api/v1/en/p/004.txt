@@ -1,4 +1,4 @@
-Please use "Line draw" (ラインドロー), one of the names in "Motion graphics moves".
+Please use "Line draw" (描边动画), one of the names in "Motion graphics moves".
 Motion Prompt #004
 
 What it is: A line extends as if it were being drawn
@@ -12,6 +12,6 @@ Spec:
 - Erase: circle 3.5–4.0 s, line 3.65–4.45 s, axes 3.85–4.55 s, each shrinking from its starting end. The arrowhead fades at 4.3–4.45 s.
 When to use it: Use it when the stroke itself is the point: charts, routes, underlines, hand-drawn circles.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/004.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/motion.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/004.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/motion.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

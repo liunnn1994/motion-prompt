@@ -1,4 +1,4 @@
-Please use "Sticky header" (追従ヘッダー), one of the names in "Landing page & web effects".
+Please use "Sticky header" (吸顶导航), one of the names in "Landing page & web effects".
 Motion Prompt #075
 
 What it is: The header stays at the top while the page scrolls
@@ -11,6 +11,6 @@ Spec:
 - The content (photo, heading, three cards) scrolls normally under the header.
 When to use it: Use it to keep the menu and the call-to-action within reach on a long page.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/075.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/lp.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/075.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/lp.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

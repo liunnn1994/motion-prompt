@@ -1,6 +1,6 @@
-// Motion Prompt #118 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#118
+// Motion Prompt #118 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#118
 //
-// Film grain / フィルムグレイン
+// Film grain / 胶片颗粒
 // Pack: photo (Photo looks, lighting & styles) · element 22 · Category: Tones & finishing looks
 // What happens: Fine grain appears over the whole of the same landscape and the colours lean slightly towards a warm cream.
 // Motion spec:
@@ -12,8 +12,8 @@
 // When to use it: To remove the clean digital look and add an analogue film texture.
 // Tags: film grain, grain, noise, analog, 35mm film, texture, warm tone
 // Size: 539x208 px · Cycle: 5 s
-// Needs: kit photo -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/photo.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#118
+// Needs: kit photo -> https://motion-prompt.2077tech.com/api/v1/kit/photo.js
+// Live demo: https://motion-prompt.2077tech.com/#118
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

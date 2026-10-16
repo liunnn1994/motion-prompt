@@ -1,4 +1,4 @@
-Please use "Count-up" (カウントアップ), one of the names in "Motion graphics moves".
+Please use "Count-up" (数字递增), one of the names in "Motion graphics moves".
 Motion Prompt #007
 
 What it is: A number runs up quickly to its final value
@@ -12,6 +12,6 @@ Spec:
 - Bar below (330 × 12, blue→mint gradient): fills in proportion to value ÷ target.
 When to use it: Use it to make a figure feel big or growing: revenue, user counts, completion rates.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/007.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/motion.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/007.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/motion.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

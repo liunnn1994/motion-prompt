@@ -1,6 +1,6 @@
-// Motion Prompt #099 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#099
+// Motion Prompt #099 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#099
 //
-// Silhouette / シルエット
+// Silhouette / 剪影
 // Pack: photo (Photo looks, lighting & styles) · element 03 · Category: Lighting & time of day
 // What happens: As the exposure is set for the bright evening sky, the person, buildings, lamp and tree turn into flat black shapes with no detail and only the sky stays bright.
 // Motion spec:
@@ -13,8 +13,8 @@
 // When to use it: When the shape and pose should carry the picture, against a sunset or a bright window.
 // Tags: silhouette, backlit, sunset, contre-jour, black shape, underexposed
 // Size: 539x208 px · Cycle: 5 s
-// Needs: kit photo -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/photo.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#099
+// Needs: kit photo -> https://motion-prompt.2077tech.com/api/v1/kit/photo.js
+// Live demo: https://motion-prompt.2077tech.com/#099
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

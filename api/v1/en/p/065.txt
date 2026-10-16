@@ -1,4 +1,4 @@
-Please use "Hamburger menu" (ハンバーガーメニュー), one of the names in "UI component names".
+Please use "Hamburger menu" (汉堡菜单), one of the names in "UI component names".
 Motion Prompt #065
 
 What it is: A three-line icon that opens the menu
@@ -10,6 +10,6 @@ Spec:
 - Menu: white, 140 tall, top at y = 44 − 140 + 140·a so it drops from under the header (clipped below the header), shadow blur 16, four items, the first blue.
 When to use it: Use it on narrow screens to tuck the main navigation behind one button.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/065.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/ui.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/065.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/ui.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

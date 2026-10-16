@@ -1,4 +1,4 @@
-Please use "Time-lapse" (タイムラプス), one of the names in "Camera moves & transitions".
+Please use "Time-lapse" (延时摄影), one of the names in "Camera moves & transitions".
 Motion Prompt #039
 
 What it is: Compress hours into seconds
@@ -12,6 +12,6 @@ Spec:
 - Return: cross-fade back to the start over the last 0.5 s; the top-right clock runs 06:00 → 18:00 in 10-minute steps
 When to use it: To show a long stretch of time, or how a city, sky or task changes, in a short clip.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/039.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/camera.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/039.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/camera.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

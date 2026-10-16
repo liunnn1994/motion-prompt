@@ -1,4 +1,4 @@
-Please use "Speed ramp" (スピードランプ), one of the names in "Camera moves & transitions".
+Please use "Speed ramp" (速度渐变), one of the names in "Camera moves & transitions".
 Motion Prompt #038
 
 What it is: Change speed mid-shot
@@ -12,6 +12,6 @@ Spec:
 - Return: stops at 4.2 s, then cross-fades back over the last 0.5 s; top-right readout shows the rate (×2.4 → ×0.3)
 When to use it: To slow down only the key part of an action while keeping the lead-in quick.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/038.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/camera.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/038.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/camera.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

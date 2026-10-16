@@ -10,6 +10,6 @@ Motion Prompt #002
 - 退場: 棒は 1.78 + 0.045×i 秒から0.26秒で easeIn（3乗）で縮む。点は 1.70 + 0.045×i 秒から0.2秒で先に消える
 使いどころ: リスト・グラフ・カードなど、複数の要素を順番に出して視線を流したいとき。
 
-参考実装（Canvas 2D・時刻だけで絵が決まる関数）: https://showheyohtaki.github.io/motion-prompt/api/v1/ja/e/002.txt
-共通の補助コード: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/motion.js
+参考実装（Canvas 2D・時刻だけで絵が決まる関数）: https://motion-prompt.2077tech.com/api/v1/ja/e/002.txt
+共通の補助コード: https://motion-prompt.2077tech.com/api/v1/kit/motion.js
 参考実装の形・タイミング・イージングの数値はそのまま使い、中の文字・色・素材だけ、いま作っている物に合わせてください。

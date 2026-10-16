@@ -1,6 +1,6 @@
 # Contributing: add the names of your field
 
-**English** | [日本語](CONTRIBUTING.ja.md)
+[简体中文](CONTRIBUTING.zh-CN.md) | **English** | [日本語](CONTRIBUTING.ja.md)
 
 This repository is a library of names: the words people in a field use for the things you can ask an AI to make. It started with two of the sets posted on X, motion graphics and camera moves, and UI component names, landing page and web effects, and photo looks have been added since. **Please add the common language of your own field, in your own language.**
 
@@ -12,20 +12,20 @@ You do not have to write the code yourself. The prompts in [`make-your-own/promp
 
 | Way in | What | How to send it | Where it goes |
 |---|---|---|---|
-| A pack of names | The names of your field with moving samples, or another language for an existing pack | A pull request (or [Suggest names or a pack](https://github.com/showheyohtaki/motion-prompt/issues/new?template=1-contribution.yml) to talk it over first) | `packs/<pack>/` |
-| An example you found | A post on X that shares names with samples (your own is welcome) | [Suggest an example](https://github.com/showheyohtaki/motion-prompt/issues/new?template=2-example.yml) | `examples/found.json` and the [examples page](https://showheyohtaki.github.io/motion-prompt/found.html) |
-| A contribution | Something you made with make-your-own (videos, HTML, a cheat-sheet image), or a fix to a name | A pull request or [Suggest names or a pack](https://github.com/showheyohtaki/motion-prompt/issues/new?template=1-contribution.yml) | `make-your-own/examples/<slug>/<lang>/` and so on |
+| A pack of names | The names of your field with moving samples, or another language for an existing pack | A pull request (or [Suggest names or a pack](https://github.com/liunnn1994/motion-prompt/issues/new?template=1-contribution.yml) to talk it over first) | `packs/<pack>/` |
+| An example you found | A post on X that shares names with samples (your own is welcome) | [Suggest an example](https://github.com/liunnn1994/motion-prompt/issues/new?template=2-example.yml) | `examples/found.json` and the [examples page](https://motion-prompt.2077tech.com/found.html) |
+| A contribution | Something you made with make-your-own (videos, HTML, a cheat-sheet image), or a fix to a name | A pull request or [Suggest names or a pack](https://github.com/liunnn1994/motion-prompt/issues/new?template=1-contribution.yml) | `make-your-own/examples/<slug>/<lang>/` and so on |
 
 "Make-your-own examples" are things you made yourself; "examples you found" are other people's posts on X.
 
 ### How found examples are listed
 
 - Other people's posts are shown only with X's official embed, a link, and a one-line introduction we write. No images, videos, screenshots or post text are copied into this repository or onto the site.
-- `examples/found.json` holds only the post ID (`id`), the author (`author`), `url`, a theme (`theme`), a one-line introduction (`intro`, in Japanese and English), the language of the post (`lang`) and the date it was added (`added`). It does not keep the post text or counts such as likes.
+- `examples/found.json` holds only the post ID (`id`), the author (`author`), `url`, a theme (`theme`), a one-line introduction (`intro`, in Simplified Chinese, English and Japanese), the language of the post (`lang`) and the date it was added (`added`). It does not keep the post text or counts such as likes.
 - The introduction is one line in our own words. It does not copy the post and does not read as if the author recommends this site.
 - We list posts with samples the author made (moving samples with names, cheat sheets and so on). We do not list posts that use someone else's work without credit, posts that only quote another post, posts that are mainly advertising a paid course or a product, or company ads.
 - The examples page has no ads for courses or services.
-- Requests to remove or correct an entry come in through the [issue form](https://github.com/showheyohtaki/motion-prompt/issues/new?template=3-removal.yml), and we act on them as soon as they are confirmed.
+- Requests to remove or correct an entry come in through the [issue form](https://github.com/liunnn1994/motion-prompt/issues/new?template=3-removal.yml), and we act on them as soon as they are confirmed.
 
 ### We only take what can be released under MIT
 
@@ -72,7 +72,7 @@ Every text field in `packs/<pack>/meta.json` is an object keyed by language code
 
 You can ask a coding AI to do steps 1 to 3 ("add Spanish to packs/camera/meta.json following CONTRIBUTING.md; list every name you are not sure about"). Then check the names yourself; that part is the contribution.
 
-The gallery site and the skill's command line are in English and Japanese for now. Your language appears in the lists under `packs/` and in `api/v1/catalog.json`. [FORMAT.md](FORMAT.md) has the details.
+The gallery site and skill CLI support Simplified Chinese (`zh-CN`, default), English (`en`) and Japanese (`ja`). Your language appears in the lists under `packs/` and in `api/v1/catalog.json`. [FORMAT.md](FORMAT.md) has the details.
 
 To also make the videos in your language, use [`make-your-own/prompts/en/01-translate.md`](make-your-own/prompts/en/01-translate.md).
 

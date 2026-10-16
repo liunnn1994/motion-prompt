@@ -1,0 +1,34 @@
+// Motion Prompt #064 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#064
+//
+// 分页 / Pagination
+// 素材包: ui (UI 组件) · element 16 · 分类: 选择与切换
+// 示例内容: 依次点击第 2、3 页，蓝色圆圈移动，上方列表切换，最后回到第 1 页。
+// 动画规格:
+//   - 卡片尺寸 542×191，每轮 4.5 秒。“‹ 1 2 3 4 5 ›”居中排列于 y = 160，每项直径 36、间距 8px；当前页以半径 18 的蓝圆和白字标记。
+//   - 光标在 1.0 秒点击第 2 页，2.1 秒点击第 3 页，3.3 秒点击第 1 页。
+//   - 蓝色圆圈每次用 0.2 秒按 easeInOutCubic 移动，每跨一页移动 44px，从第 3 页回第 1 页时移动 88px。
+//   - 上方三行列表在 1.05、2.15、3.35 秒前后各 0.2 秒内，不透明度按 1→0→1 变化，在最低点替换内容。
+// 适用场景: 适合将搜索结果或文章列表分成编号页面。
+// 标签: pagination, pager, page-numbers, paging, next-prev, navigation
+// 尺寸: 542x191 px · 周期: 4.5 s
+// 依赖: kit ui -> https://motion-prompt.2077tech.com/api/v1/kit/ui.js
+// 动态示例: https://motion-prompt.2077tech.com/#064
+//
+// cells[i](k, w, h, u)：k = CanvasRenderingContext2D（由调用方清空画布并执行 save/restore），w、h = 尺寸，u = 秒数，范围为 [0, cycle)。画面仅由 u 决定。
+// 以下为素材代码。CELLS、常量及辅助函数位于 kit 文件中。
+
+// @element 16
+// 16 ページネーション（Pagination）
+CELLS[15] = ui((w, h, t) => {
+  const page = t < 1.05 ? 0 : t < 2.15 ? 1 : t < 3.35 ? 2 : 0;
+  const fade = Math.min(...[1.05, 2.15, 3.35].map(c => Math.abs(t - c) < .2 ? Math.abs(t - c) / .2 : 1));
+  X.save(); X.globalAlpha = fade;
+  for (let k = 0; k < 3; k++) { const y = 10 + k * 40; fillRR(24, y, 52, 32, 6, (k + page) % 3 === 0 ? C.mb : C.line); bar(90, y + 4, [200, 160, 240, 180][(k + page) % 4], C.line2, 10); bar(90, y + 20, [320, 280, 360][(k + 2 * page) % 3], C.line, 7); }
+  X.restore();
+  const items = ['‹', '1', '2', '3', '4', '5', '›'], d = 36, g = 8, total = items.length * d + (items.length - 1) * g, x0 = (w - total) / 2;
+  const pos = eio(seg(t, 1.0, 1.2)) + eio(seg(t, 2.1, 2.3)) - 2 * eio(seg(t, 3.3, 3.5));
+  circle(x0 + (1 + pos) * (d + g) + d / 2, 160, d / 2, C.blue);
+  items.forEach((s, i) => { const cx = x0 + i * (d + g) + d / 2; const on = i >= 1 && i <= 5 && Math.abs(pos - (i - 1)) < .5; text(s, cx, 161, i === 0 || i === 6 ? 22 : 16, on ? '#fff' : '#666', 700, 'center', NUMF); });
+  const px = i => x0 + i * (d + g) + d / 2 + 4;
+  pointer([[.3, w + 30, h + 30], [.95, px(2), 166], [1.6, px(2), 166], [2.05, px(3), 166], [2.8, px(3), 166], [3.25, px(1), 166], [3.65, px(1), 166], [4.25, w + 30, h + 30]], [1.0, 2.1, 3.3], t);
+});

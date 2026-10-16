@@ -1,0 +1,51 @@
+// Motion Prompt #076 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#076
+//
+// 滚动固定 / Pinning
+// 素材包: lp (落地页与网页效果) · element 04 · 分类: 滚动效果
+// 示例内容: 深蓝区块占满视口后固定，继续滚动依次展示 1→2→3，再恢复页面滚动。
+// 动画规格:
+//   - 滚动位置：0.3–3.0 秒为 0→500px，3.5–4.5 秒返回 500→0，使用三次缓入缓出。
+//   - 深蓝区块高 168，滚动 110px 时到达顶部，之后再滚动 300px 期间保持固定，类似 GSAP ScrollTrigger 的 pin。
+//   - 固定期间进度 p = (scroll − 110) / 300；左侧长 124 的竖线随 p 填充为橙色。
+//   - p 在 1/3 和 2/3 附近的 ±0.07 区间内按三次缓入缓出切换步骤；46px 编号上滚 52px，226 × 124 照片上移 124px。
+//   - 固定阶段的 300px 滚动结束后解除固定，当前区块与下方白色区块一起上移。
+// 适用场景: 适合在同一屏幕讲解步骤、功能或前后变化。
+// 标签: pin, pinning, scrolltrigger, gsap, scroll-driven, steps, storytelling
+// 尺寸: 539x208 px · 周期: 4.8 s
+// 依赖: kit lp -> https://motion-prompt.2077tech.com/api/v1/kit/lp.js
+// 动态示例: https://motion-prompt.2077tech.com/#076
+//
+// cells[i](k, w, h, u)：k = CanvasRenderingContext2D（由调用方清空画布并执行 save/restore），w、h = 尺寸，u = 秒数，范围为 [0, cycle)。画面仅由 u 决定。
+// 以下为素材代码。CELLS、常量及辅助函数位于 kit 文件中。
+
+// @element 04
+// 04 ピン留め（セクションが画面に止まったまま、中身だけがスクロールで進む）
+CELLS[3] = (k, w, h, u) => {
+  frame(k);
+  const y = steps([[0.3, 0], [3.0, 500], [3.5, 500], [4.5, 0]], u);
+  const PIN0 = 110, PD = 300;
+  const top = y < PIN0 ? PIN0 - y : y < PIN0 + PD ? 0 : PIN0 + PD - y, p = clamp((y - PIN0) / PD);
+  // 中身は 1/3・2/3 の所で次のステップへ（前後 ±0.07 の範囲で easeInOut）
+  const f = eIO(P(p, 1 / 3 - 0.07, 1 / 3 + 0.07)) + eIO(P(p, 2 / 3 - 0.07, 2 / 3 + 0.07));
+  view(k, () => {
+    txt(k, '3ステップで完成', 34, 56 - y, `800 22px ${JP}`, C.ink); bars(k, 34, 72 - y, 240, 2);
+    k.save(); k.translate(0, top);
+    k.fillStyle = C.ink; k.fillRect(0, 0, VW, VH);
+    // 左: STEP の番号（スクロール量に合わせて回る）
+    txt(k, 'STEP', 34, 40, `700 12px ${EN}`, 'rgba(255,255,255,.6)', 'left', 'alphabetic', '2px');
+    k.save(); k.beginPath(); k.rect(30, 46, 120, 52); k.clip();
+    for (let i = 0; i < 3; i++) txt(k, '0' + (i + 1), 32, 90 + (i - f) * 52, `800 46px ${EN}`, '#fff');
+    k.restore();
+    bars(k, 34, 110, 150, 3, 'rgba(255,255,255,.28)');
+    // 進み具合の線
+    k.fillStyle = 'rgba(255,255,255,.16)'; rr(k, 232, 22, 4, 124, 2); k.fill();
+    k.fillStyle = C.acc; rr(k, 232, 22, 4, 124 * p, 2); k.fill();
+    // 右: 写真が順に入れ替わる
+    k.save(); rr(k, 256, 22, 226, 124, 8); k.clip();
+    for (let i = 0; i < 3; i++) pic(k, 256, 22 + (i - f) * 124, 226, 124, i, 0);
+    k.restore();
+    k.fillStyle = '#fff'; k.fillRect(0, VH, VW, 200); bars(k, 34, VH + 30, 300, 3);
+    k.restore();
+    sbar(k, y / 500, 0.3);
+  });
+};

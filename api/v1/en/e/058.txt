@@ -1,6 +1,6 @@
-// Motion Prompt #058 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#058
+// Motion Prompt #058 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#058
 //
-// Carousel / カルーセル
+// Carousel / 轮播图
 // Pack: ui (UI component names) · element 10 · Category: Choosing & switching
 // What happens: Each click on the right arrow slides a row of three different images one step to the left, and the dot below moves.
 // Motion spec:
@@ -12,8 +12,8 @@
 // When to use it: Use it to show several images or featured items in limited space, one at a time.
 // Tags: carousel, slider, slideshow, gallery, swipe, paging-dots
 // Size: 542x191 px · Cycle: 4.5 s
-// Needs: kit ui -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/ui.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#058
+// Needs: kit ui -> https://motion-prompt.2077tech.com/api/v1/kit/ui.js
+// Live demo: https://motion-prompt.2077tech.com/#058
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

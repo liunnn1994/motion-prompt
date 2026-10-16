@@ -6,8 +6,8 @@ with a moving sample. Each element is a small, dependency-free Canvas 2D animati
 of how to ask for it, and a copyable prompt (ja/en), so people can tell Claude Code / Codex
 "use #012 and #045" or "swap this title for #005".
 
-Repo: GitHub `showheyohtaki/motion-prompt` (MIT) → GitHub Pages
-`https://showheyohtaki.github.io/motion-prompt/`. Author: 大滝昇平 / Shohei Ohtaki (@showheyohtaki).
+Repo: GitHub `liunnn1994/motion-prompt` (MIT) → GitHub Pages
+`https://motion-prompt.2077tech.com/`. Author: 大滝昇平 / Shohei Ohtaki (@showheyohtaki).
 No build framework. The gallery, the packs, the API and the skill are plain HTML/CSS/JS and Node 18+
 scripts with zero npm dependencies. Only `make-your-own/` (rendering your own videos) has a
 `package.json`; it needs Playwright and ffmpeg.
@@ -132,7 +132,7 @@ A field without the new language shows its English text in that list. The headin
 list ("Name", "What it is", …) are English unless you add a block for the language to `DOC` in
 `tools/build.mjs`; add its display name to `LANG_NAME` there too.
 
-The gallery, `api/v1/<lang>/` and the copyable prompt are served in `ja` and `en` only (`LANGS` in
+The gallery, `api/v1/<lang>/` and the copyable prompt are served in `zh-CN` (default), `en` and `ja` (`LANGS` in
 `tools/build.mjs`). In those, a pack with no Japanese shows its English text. Other languages are
 carried in `api/v1/catalog.json` and shown in the generated lists.
 
@@ -140,16 +140,16 @@ carried in `api/v1/catalog.json` and shown in the generated lists.
 
 ```
 api/v1/catalog.json                 { version, count, packs:[…], elements:[{ id, pack, no, slug, category, width, height, cycle, name, meaning, ask, summary, spec, use, tags }] }
-api/v1/<lang>/catalog.tsv           header comment line, then: id  pack  category  title  tags  summary      (lang = ja | en)
+api/v1/<lang>/catalog.tsv           header comment line, then: id  pack  category  title  tags  summary      (lang = zh-CN | en | ja)
 api/v1/<lang>/e/<id>.txt            one element: license line, info header (name, what it shows, spec, use, size, cycle, "Needs: kit <pack>", live demo URL), then the element code block
 api/v1/<lang>/p/<id>.txt            the copy-paste prompt for that element (same text the site's "copy prompt" button copies)
 api/v1/kit/<pack>.js                @kit + all @shared blocks of the pack, plus a short header showing how to run one element standalone
 ```
 
 First line of every `e/<id>.txt` and `kit/<pack>.js`:
-`// Motion Prompt #<id> · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#<id>`
+`// Motion Prompt #<id> · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#<id>`
 
-Live demo deep link: `https://showheyohtaki.github.io/motion-prompt/#<id>`.
+Live demo deep link: `https://motion-prompt.2077tech.com/#<id>`.
 
 ## Tooling
 

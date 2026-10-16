@@ -1,4 +1,4 @@
-// Motion Prompt #032 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#032
+// Motion Prompt #032 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#032
 //
 // ドリーズーム / Dolly zoom (Vertigo)
 // パック: camera (カメラワークと切り替え) · element 08 · カテゴリ: カメラの動き
@@ -13,8 +13,8 @@
 // 使いどころ: 人物が何かに気づいた瞬間や、不安・動揺を映像で表すとき。
 // タグ: dolly zoom, vertigo, zolly, push pull, background stretch, unease, camera move
 // サイズ: 539x208 px · 1周: 9.4 s
-// Needs: kit camera -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/camera.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#032
+// Needs: kit camera -> https://motion-prompt.2077tech.com/api/v1/kit/camera.js
+// 動く見本: https://motion-prompt.2077tech.com/#032
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

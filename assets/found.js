@@ -10,6 +10,57 @@
   var WIDGETS = 'https://platform.twitter.com/widgets.js';
 
   var I18N = {
+    "zh-CN": {
+  "navLabel": "网站导航",
+  "navFound": "案例",
+  "langLabel": "语言",
+  "themeToDark": "切换到深色模式",
+  "themeToLight": "切换到浅色模式",
+  "author": "作者",
+  "authorName": "大滝昇平",
+  "whyLink": "创作缘由",
+  "makeLink": "制作你自己的领域或语言版本",
+  "addLink": "添加你所在领域的术语",
+  "listLink": "术语列表（GitHub）",
+  "removeP1": "如需删除或更正内容，请通过",
+  "removeLink": "GitHub Issue 表单",
+  "removeP2": "联系我们，确认后会及时处理。",
+  "thanks1": "动态示例搭配可复制提示词的形式，灵感来自",
+  "thanks2": "。感谢分享。",
+  "title": "精选案例｜Motion Prompt",
+  "skip": "跳转到案例列表",
+  "navGallery": "素材库",
+  "eyebrow": "精选案例",
+  "h1": "用术语和示例建立共同语言",
+  "lead": "这里收集了将 AI 创作术语与动态示例或速查表一起分享的帖子，涵盖不同领域、语言和风格。我们选择的帖子均有作者自己制作的示例，帖子内容及相关权利归各作者所有。",
+  "leadNote": "被收录不代表作者支持本站。介绍文字由本站撰写。",
+  "noteH": "关于嵌入内容",
+  "noteP": "此页面通过 X（原 Twitter）的官方嵌入功能展示帖子。打开时会从 X 的服务器加载内容，并使用 X 的 Cookie。X 可能记录浏览行为并用于广告。加载时会设置 dnt，请求不将浏览用于个性化。",
+  "notePrivacy": "X 隐私政策",
+  "noteCookies": "关于 X 的 Cookie",
+  "listH": "案例列表",
+  "loadListFailed": "案例列表加载失败。",
+  "count": "{n} 个案例",
+  "postLang": {
+    "zh-CN": "简体中文",
+    "ja": "日语",
+    "en": "英语"
+  },
+  "postLangLabel": "帖子语言：{l}",
+  "viewOnX": "在 X 上查看",
+  "viewOnXLabel": "在 X 上查看 {a} 的帖子",
+  "loading": "正在加载…",
+  "gone": "无法显示此帖子，可能已被删除。",
+  "failed": "无法从 X 加载，可能被广告拦截工具阻止。可以点击“在 X 上查看”打开。",
+  "shown": "已显示 {a} 的帖子",
+  "moreH": "分享你发现的案例",
+  "recH": "推荐帖子（也欢迎自荐）",
+  "recP": "如果发现配有示例的术语分享帖子，请通过 GitHub Issue 告诉我们，也欢迎推荐自己的帖子。本站仅展示嵌入内容和链接，不会复制原帖的图片或视频。",
+  "recLink": "推荐案例（GitHub Issue）",
+  "rmH": "申请移除",
+  "rmP": "如果希望移除自己的帖子，或发现介绍有误，请通过 Issue 表单联系我们，确认后会及时处理。",
+  "rmLink": "申请删除或更正（GitHub Issue）"
+},
     ja: {
       title: '見つけた事例｜Motion Prompt',
       skip: '事例の一覧へ移動', navLabel: 'サイト内', navGallery: '見本', navFound: '事例', langLabel: '言語',
@@ -84,12 +135,12 @@
     del: function (k) { try { localStorage.removeItem(k); } catch (e) { /* ignore */ } },
   };
   var darkQuery = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : { matches: false };
-  var state = { lang: root.lang === 'en' ? 'en' : 'ja', data: null };
+  var state = { lang: I18N[root.lang] ? root.lang : 'zh-CN', data: null };
   var cards = [];   // { item, el, box, status, shown, token }
 
   function t(key, vars) {
     var s = I18N[state.lang][key];
-    if (s == null) s = I18N.ja[key];
+    if (s == null) s = I18N.en[key];
     if (s == null) s = key;
     if (vars && typeof s === 'string') Object.keys(vars).forEach(function (k) { s = s.split('{' + k + '}').join(vars[k]); });
     return s;
@@ -148,7 +199,7 @@
     return loadWidgets().then(function (tw) {
       if (c.token !== token) return;
       return tw.widgets.createTweet(c.item.id, c.box, {
-        lang: state.lang, theme: isDark() ? 'dark' : 'light', dnt: true, conversation: 'none', align: 'center',
+        lang: state.lang === 'zh-CN' ? 'zh-cn' : state.lang, theme: isDark() ? 'dark' : 'light', dnt: true, conversation: 'none', align: 'center',
       }).then(function (el) {
         if (c.token !== token) return;
         if (el) { setStatus(c, null); c.el.classList.remove('is-gone'); }
@@ -234,20 +285,22 @@
         var kv = pair.split(':'); n.setAttribute(kv[0].trim(), t(kv[1].trim()));
       });
     });
-    $$('[data-lang]').forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-lang') === lang ? 'true' : 'false'); });
+    $('#lang').value = lang;
     $$('[data-href-' + lang + ']').forEach(function (a) { a.href = a.getAttribute('data-href-' + lang); });
     applyTheme();
   }
   function applyTheme() { $('#theme').setAttribute('aria-label', t(isDark() ? 'themeToLight' : 'themeToDark')); }
-  $$('[data-lang]').forEach(function (b) {
-    b.addEventListener('click', function () {
-      var lang = b.getAttribute('data-lang');
-      if (lang === state.lang) return;
+  $('#lang').addEventListener('change', function () {
+      var lang = this.value;
+      if (!I18N[lang] || lang === state.lang) return;
       state.lang = lang;
       store.set('mp-lang', lang);
       applyText();
+      if (/[?&]lang=/.test(location.search)) {
+        var q = new URLSearchParams(location.search); q.set('lang', lang);
+        history.replaceState(history.state, '', location.pathname + '?' + q.toString() + location.hash);
+      }
       if (state.data) build();  // rebuild redraws the embeds in the new language
-    });
   });
   $('#theme').addEventListener('click', function () {
     var next = isDark() ? 'light' : 'dark';

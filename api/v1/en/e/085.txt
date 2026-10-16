@@ -1,6 +1,6 @@
-// Motion Prompt #085 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#085
+// Motion Prompt #085 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#085
 //
-// Ripple effect / リップルエフェクト
+// Ripple effect / 波纹效果
 // Pack: lp (Landing page & web effects) · element 13 · Category: Hover & click interactions
 // What happens: Each click sends a white circle out from the click point to fill the button, then it fades away.
 // Motion spec:
@@ -11,8 +11,8 @@
 // When to use it: Use it to confirm a press on a button or list item right where it happened.
 // Tags: ripple, ink-ripple, material, click, tap, feedback, button
 // Size: 539x208 px · Cycle: 4.8 s
-// Needs: kit lp -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/lp.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#085
+// Needs: kit lp -> https://motion-prompt.2077tech.com/api/v1/kit/lp.js
+// Live demo: https://motion-prompt.2077tech.com/#085
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

@@ -1,4 +1,4 @@
-Please use "Animated gradient" (グラデーションアニメーション), one of the names in "Landing page & web effects".
+Please use "Animated gradient" (动态渐变), one of the names in "Landing page & web effects".
 Motion Prompt #095
 
 What it is: Background colours keep drifting and blending
@@ -10,6 +10,6 @@ Spec:
 - A white headline (34 px) and a button sit on top; only the gradient moves.
 When to use it: Use it to add movement and colour behind a hero or heading without using a photo.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/095.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/lp.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/095.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/lp.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

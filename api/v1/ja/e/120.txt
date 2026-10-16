@@ -1,4 +1,4 @@
-// Motion Prompt #120 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#120
+// Motion Prompt #120 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#120
 //
 // 二重露光（多重露光） / Double exposure
 // パック: photo (写真の表現・光と画風) · element 24 · カテゴリ: 仕上げ・画風
@@ -13,8 +13,8 @@
 // 使いどころ: 人物と場所・記憶・内面を1枚で結びつけたい、ポスターやジャケットで。
 // タグ: double exposure, multiple exposure, blend, silhouette, surreal, composite
 // サイズ: 539x208 px · 1周: 5 s
-// Needs: kit photo -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/photo.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#120
+// Needs: kit photo -> https://motion-prompt.2077tech.com/api/v1/kit/photo.js
+// 動く見本: https://motion-prompt.2077tech.com/#120
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

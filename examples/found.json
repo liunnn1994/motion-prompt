@@ -1,11 +1,11 @@
 {
-  "about": "Posts by other people who share names with samples. Only the post ID, URL and a one-line introduction written by this repository are kept here. The posts themselves are shown with X's official embed and belong to their authors; they are not covered by this repository's MIT License. To ask for a removal or a correction: https://github.com/showheyohtaki/motion-prompt/issues/new?template=3-removal.yml",
+  "about": "Posts by other people who share names with samples. Only the post ID, URL and a one-line introduction written by this repository are kept here. The posts themselves are shown with X's official embed and belong to their authors; they are not covered by this repository's MIT License. To ask for a removal or a correction: https://github.com/liunnn1994/motion-prompt/issues/new?template=3-removal.yml",
   "updated": "2026-10-14",
   "themes": [
-    { "slug": "web-motion", "ja": "Web・LPの動き", "en": "Web and landing-page motion" },
-    { "slug": "motion", "ja": "文字・場面の動き", "en": "Text and scene motion" },
-    { "slug": "camera", "ja": "カメラワーク", "en": "Camera moves" },
-    { "slug": "design", "ja": "デザイン・写真の用語", "en": "Design and photo terms" }
+    { "slug": "web-motion", "ja": "Web・LPの動き", "en": "Web and landing-page motion", "zh-CN": "网页与落地页动效" },
+    { "slug": "motion", "ja": "文字・場面の動き", "en": "Text and scene motion", "zh-CN": "文字与场景动效" },
+    { "slug": "camera", "ja": "カメラワーク", "en": "Camera moves", "zh-CN": "镜头运动" },
+    { "slug": "design", "ja": "デザイン・写真の用語", "en": "Design and photo terms", "zh-CN": "设计与摄影术语" }
   ],
   "items": [
     {
@@ -15,7 +15,7 @@
       "theme": "web-motion",
       "intro": {
         "ja": "スクロールに合わせて動く演出6種を、名前つきの動く見本で並べています。",
-        "en": "Six scroll-driven effects for web pages, each shown as a labeled moving sample."
+        "en": "Six scroll-driven effects for web pages, each shown as a labeled moving sample.", "zh-CN": "用带名称的动态示例展示 6 种网页滚动效果。"
       },
       "lang": "en",
       "added": "2026-10-14"
@@ -27,7 +27,7 @@
       "theme": "web-motion",
       "intro": {
         "ja": "LPのアニメーション32種を、「高級感を出したい」のような目的から探せるように分けた図解です。",
-        "en": "32 landing-page animations, grouped by what you want the page to do, such as look premium."
+        "en": "32 landing-page animations, grouped by what you want the page to do, such as look premium.", "zh-CN": "将 32 种落地页动画按设计目标分类，例如如何提升高级感。"
       },
       "lang": "ja",
       "added": "2026-10-14"
@@ -39,7 +39,7 @@
       "theme": "web-motion",
       "intro": {
         "ja": "LPのスクロール演出16種に番号を振った図で、番号を指定してAIに頼めるようにしています。",
-        "en": "16 scroll effects for landing pages, numbered so you can name one to the AI by its number."
+        "en": "16 scroll effects for landing pages, numbered so you can name one to the AI by its number.", "zh-CN": "为 16 种落地页滚动效果编号，方便直接用编号向 AI 描述需求。"
       },
       "lang": "ja",
       "added": "2026-10-14"
@@ -51,7 +51,7 @@
       "theme": "motion",
       "intro": {
         "ja": "テロップの止まり方6種（イーズアウト、バウンスなど）を、同じ条件で動かして見比べる動画です。",
-        "en": "Six ways a caption can come to a stop, such as ease-out and bounce, animated side by side."
+        "en": "Six ways a caption can come to a stop, such as ease-out and bounce, animated side by side.", "zh-CN": "在相同条件下并排演示字幕的 6 种停止方式，包括缓出和弹跳，便于对比。"
       },
       "lang": "ja",
       "added": "2026-10-14"
@@ -63,7 +63,7 @@
       "theme": "motion",
       "intro": {
         "ja": "文字や場面の動き24種に日本語名と英語の指定名を付け、動画3本と早見表にしています。",
-        "en": "24 text and scene moves with Japanese names and English keywords, in three videos and a cheat sheet."
+        "en": "24 text and scene moves with Japanese names and English keywords, in three videos and a cheat sheet.", "zh-CN": "用 3 段视频和一张速查表展示 24 种文字与场景动效，附日语名称和英文关键词。"
       },
       "lang": "ja",
       "added": "2026-10-14"
@@ -75,7 +75,7 @@
       "theme": "motion",
       "intro": {
         "ja": "Claudeで作れるアニメーションの作風・動き・切り替え・カメラを、ブラウザで見られるカタログにしています。",
-        "en": "A catalog you can open in a browser of the animation styles, moves, transitions and camera moves Claude can make."
+        "en": "A catalog you can open in a browser of the animation styles, moves, transitions and camera moves Claude can make.", "zh-CN": "可在浏览器查看的动画目录，汇集 Claude 可实现的风格、动效、转场和镜头运动。"
       },
       "lang": "ja",
       "added": "2026-10-14"
@@ -87,7 +87,7 @@
       "theme": "camera",
       "intro": {
         "ja": "カメラワーク18種を自分のキャラクターで動画にし、ティルトとペデスタルのような似た動きの違いを見せています。",
-        "en": "18 camera moves animated with the author's own character, including look-alikes such as tilt and pedestal."
+        "en": "18 camera moves animated with the author's own character, including look-alikes such as tilt and pedestal.", "zh-CN": "用原创角色演示 18 种镜头运动，比较垂直摇镜与垂直升降等相近手法的区别。"
       },
       "lang": "ja",
       "added": "2026-10-14"
@@ -99,7 +99,7 @@
       "theme": "camera",
       "intro": {
         "ja": "カメラワーク22種を「カメラの動き」と「映る画面」の2つの図で描き、日本語名と英語の指定をセットにしています。",
-        "en": "22 camera moves, each drawn twice, as the camera's path and as what ends up on screen, with Japanese and English names."
+        "en": "22 camera moves, each drawn twice, as the camera's path and as what ends up on screen, with Japanese and English names.", "zh-CN": "以相机运动路径和最终画面两种图示展示 22 种镜头运动，附日英对照名称。"
       },
       "lang": "ja",
       "added": "2026-10-14"
@@ -111,7 +111,7 @@
       "theme": "camera",
       "intro": {
         "ja": "AI動画で使うカメラワーク10種を、図解と動画でまとめています。",
-        "en": "Ten camera moves for AI video, in a diagram and in videos."
+        "en": "Ten camera moves for AI video, in a diagram and in videos.", "zh-CN": "用图解和视频展示 AI 视频创作常用的 10 种镜头运动。"
       },
       "lang": "ja",
       "added": "2026-10-14"
@@ -123,7 +123,7 @@
       "theme": "camera",
       "intro": {
         "ja": "ドリーズームやホイップパンなどのカメラワークを、動く見本と、見る人に与える効果の説明で並べています。",
-        "en": "Camera moves such as the dolly zoom and whip pan, shown as moving samples with what each one does to the viewer."
+        "en": "Camera moves such as the dolly zoom and whip pan, shown as moving samples with what each one does to the viewer.", "zh-CN": "用动态示例介绍滑动变焦、甩镜等镜头手法，以及各自带给观众的感受。"
       },
       "lang": "en",
       "added": "2026-10-14"
@@ -135,7 +135,7 @@
       "theme": "design",
       "intro": {
         "ja": "余白・グリッド・ジャンプ率などのデザイン用語100個を、小さな見本つきの4枚の図にしています。",
-        "en": "100 design terms, such as whitespace and grid, on four sheets with a small sample for each."
+        "en": "100 design terms, such as whitespace and grid, on four sheets with a small sample for each.", "zh-CN": "用 4 张图汇集留白、网格等 100 个设计术语，每项配有小示例。"
       },
       "lang": "ja",
       "added": "2026-10-14"
@@ -147,7 +147,7 @@
       "theme": "design",
       "intro": {
         "ja": "写真の表現技法20種（ダブルエクスポージャー、ライトリークなど）を、作例の画像と名前で並べています。",
-        "en": "20 photo techniques, such as double exposure and light leaks, each with an example image."
+        "en": "20 photo techniques, such as double exposure and light leaks, each with an example image.", "zh-CN": "用名称与示例图片展示双重曝光、漏光等 20 种摄影表现手法。"
       },
       "lang": "ja",
       "added": "2026-10-14"

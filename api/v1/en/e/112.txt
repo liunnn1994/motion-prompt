@@ -1,6 +1,6 @@
-// Motion Prompt #112 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#112
+// Motion Prompt #112 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#112
 //
-// Vignette / 周辺減光（ビネット）
+// Vignette / 暗角
 // Pack: photo (Photo looks, lighting & styles) · element 16 · Category: Lens & camera effects
 // What happens: The frame darkens smoothly from the corners while the person and the road in the middle stay bright.
 // Motion spec:
@@ -11,8 +11,8 @@
 // When to use it: To focus attention on the subject, or to suggest an old lens.
 // Tags: vignette, vignetting, dark corners, edge darkening, lens falloff, focus
 // Size: 539x208 px · Cycle: 5 s
-// Needs: kit photo -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/photo.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#112
+// Needs: kit photo -> https://motion-prompt.2077tech.com/api/v1/kit/photo.js
+// Live demo: https://motion-prompt.2077tech.com/#112
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

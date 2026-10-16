@@ -1,4 +1,4 @@
-// Motion Prompt #043 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#043
+// Motion Prompt #043 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#043
 //
 // ホイップパン / Whip pan
 // パック: camera (カメラワークと切り替え) · element 19 · カテゴリ: 切り替え（トランジション）
@@ -13,8 +13,8 @@
 // 使いどころ: 勢いを保ったまま場所や話題を切り替えるとき。
 // タグ: whip pan, swish pan, motion blur, fast pan, transition, energy
 // サイズ: 539x208 px · 1周: 9.4 s
-// Needs: kit camera -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/camera.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#043
+// Needs: kit camera -> https://motion-prompt.2077tech.com/api/v1/kit/camera.js
+// 動く見本: https://motion-prompt.2077tech.com/#043
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

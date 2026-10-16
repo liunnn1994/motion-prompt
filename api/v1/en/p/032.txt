@@ -1,4 +1,4 @@
-Please use "Dolly zoom (Vertigo)" (ドリーズーム), one of the names in "Camera moves & transitions".
+Please use "Dolly zoom (Vertigo)" (滑动变焦), one of the names in "Camera moves & transitions".
 Motion Prompt #032
 
 What it is: Subject stays, background warps
@@ -12,6 +12,6 @@ Spec:
 - Return: hold 3.4–4.2 s, then cross-fade back to the start over the last 0.5 s (one pass = 4.7 s)
 When to use it: For a moment of realisation, or to show unease or shock visually.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/032.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/camera.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/032.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/camera.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

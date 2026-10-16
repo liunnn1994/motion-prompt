@@ -5,8 +5,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        ありがとうございます。名前の基準と見本の基準は [CONTRIBUTING.ja.md](https://github.com/showheyohtaki/motion-prompt/blob/main/CONTRIBUTING.ja.md) にあります。ファイルを出せる場合は、pull request で送ってもかまいません。
-        Thank you. What a name and a sample need is in [CONTRIBUTING.md](https://github.com/showheyohtaki/motion-prompt/blob/main/CONTRIBUTING.md). If you have the files ready, a pull request works too.
+        ありがとうございます。名前の基準と見本の基準は [CONTRIBUTING.ja.md](https://github.com/liunnn1994/motion-prompt/blob/main/CONTRIBUTING.ja.md) にあります。ファイルを出せる場合は、pull request で送ってもかまいません。
+        Thank you. What a name and a sample need is in [CONTRIBUTING.md](https://github.com/liunnn1994/motion-prompt/blob/main/CONTRIBUTING.md). If you have the files ready, a pull request works too.
 
         このリポジトリは MIT License です。MIT で公開できない物は受け取れません。
         This repository is under the MIT License. We cannot accept anything that cannot be released under it.

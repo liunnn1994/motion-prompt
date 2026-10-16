@@ -1,4 +1,4 @@
-// Motion Prompt #006 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#006
+// Motion Prompt #006 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#006
 //
 // タイプライター / Typewriter
 // パック: motion (モーショングラフィックスの動き) · element 06 · カテゴリ: 登場・文字の演出
@@ -13,8 +13,8 @@
 // 使いどころ: プロンプト入力・検索・チャットなど、文字を打つ操作を見せたいとき。
 // タグ: typewriter, typing, text, cursor, input, prompt, chat, type-on
 // サイズ: 539x208 px · 1周: 4.7 s
-// Needs: kit motion -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/motion.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#006
+// Needs: kit motion -> https://motion-prompt.2077tech.com/api/v1/kit/motion.js
+// 動く見本: https://motion-prompt.2077tech.com/#006
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

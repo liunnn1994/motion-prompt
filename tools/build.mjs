@@ -12,11 +12,11 @@ import vm from 'node:vm';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 
-const SITE = 'https://showheyohtaki.github.io/motion-prompt/';
-const REPO = 'https://github.com/showheyohtaki/motion-prompt';
+const SITE = 'https://motion-prompt.2077tech.com/';
+const REPO = 'https://github.com/liunnn1994/motion-prompt';
 const LICENCE = 'MIT License (c) 2026 Shohei Ohtaki';
 const VERSION = 1;
-const LANGS = ['ja', 'en'];   // languages of the gallery, the API folders and the copyable prompt
+const LANGS = ['zh-CN', 'en', 'ja'];   // languages of the gallery, the API folders and the copyable prompt
 const BASE_LANG = 'en';       // every text field needs this one; any other language code is optional
 
 const args = process.argv.slice(2);
@@ -37,16 +37,26 @@ const isStr = v => typeof v === 'string' && v.trim() !== '';
 // This function is also written into assets/catalog.js (as source text), so the site's
 // "copy prompt" button and api/v1/<lang>/p/<id>.txt can never drift apart. Keep it self-contained.
 function mpPrompt(el, packTitle, lang) {
-  var base = 'https://showheyohtaki.github.io/motion-prompt/';
+  var base = 'https://motion-prompt.2077tech.com/';
   var en = lang === 'en';
   var spec = el.spec[lang].map(function (s) { return '- ' + s; }).join('\n');
   var ref = base + 'api/v1/' + lang + '/e/' + el.id + '.txt';
   var kit = base + 'api/v1/kit/' + el.pack + '.js';
-  var same = el.name.en === el.name.ja;
+  var same = el.name.en === el.name['zh-CN'];
   var mean = el.meaning && (el.meaning[lang] || el.meaning.en);
+  if (lang === 'zh-CN') {
+    return [
+      '请使用“' + el.name['zh-CN'] + (same ? '' : '（' + el.name.en + '）') + '”，它是“' + packTitle + '”中的一种效果。',
+      'Motion Prompt #' + el.id, ''
+    ].concat(mean ? ['含义：' + mean] : [], [
+      '示例内容：' + el.summary[lang], '动画规格：', spec, '适用场景：' + el.use[lang], '',
+      '参考实现（Canvas 2D，画面仅由时间决定）：' + ref, '共享辅助代码：' + kit,
+      '请保留参考实现的形状、时序和缓动数值，仅根据当前作品调整文字、颜色和素材。'
+    ]).join('\n');
+  }
   if (en) {
     return [
-      'Please use "' + el.name.en + '"' + (same ? '' : ' (' + el.name.ja + ')') + ', one of the names in "' + packTitle + '".',
+      'Please use "' + el.name.en + '"' + (same ? '' : ' (' + el.name['zh-CN'] + ')') + ', one of the names in "' + packTitle + '".',
       'Motion Prompt #' + el.id,
       ''
     ].concat(mean ? ['What it is: ' + mean] : [], [
@@ -61,7 +71,7 @@ function mpPrompt(el, packTitle, lang) {
     ]).join('\n');
   }
   return [
-    '「' + el.name.ja + (same ? '' : '（' + el.name.en + '）') + '」を使ってください。「' + packTitle + '」の名前の1つです。',
+    '「' + el.name.ja + (el.name.ja === el.name.en ? '' : '（' + el.name.en + '）') + '」を使ってください。「' + packTitle + '」の名前の1つです。',
     'Motion Prompt #' + el.id,
     ''
   ].concat(mean ? ['どういうものか: ' + mean] : [], [
@@ -173,7 +183,7 @@ const LANG_CODE = /^[a-z]{2,3}(-[A-Za-z0-9]{2,8})*$/;
 function packLangs(meta) {
   const t = meta && meta.title && typeof meta.title === 'object' ? meta.title : {};
   const ls = Object.keys(t).filter(l => isStr(t[l]));
-  return [BASE_LANG, ...ls.filter(l => l !== BASE_LANG).sort()];
+  return [...LANGS.filter(l => ls.includes(l)), ...ls.filter(l => !LANGS.includes(l)).sort()];
 }
 // The gallery and the API read every language in LANGS. Where a pack has no text in one of them,
 // the English text stands in, so a pack written in (say) en + es still shows up everywhere.
@@ -340,6 +350,9 @@ const kitOf = Object.fromEntries(packs.map(p => [p.dir, p.cut.kitText]));
 
 // ---------------------------------------------------------------- text renderers
 const T = {
+  'zh-CN': { what: '示例内容', spec: '动画规格', use: '适用场景', size: '尺寸', cycle: '周期', needs: '依赖', demo: '动态示例', pack: '素材包', cat: '分类', tags: '标签',
+    sig: 'cells[i](k, w, h, u)：k = CanvasRenderingContext2D（由调用方清空画布并执行 save/restore），w、h = 尺寸，u = 秒数，范围为 [0, cycle)。画面仅由 u 决定。',
+    code: '以下为素材代码。CELLS、常量及辅助函数位于 kit 文件中。' },
   ja: { what: '何が起きるか', spec: '動きの仕様', use: '使いどころ', size: 'サイズ', cycle: '1周', needs: 'Needs', demo: '動く見本', pack: 'パック', cat: 'カテゴリ', tags: 'タグ',
     sig: 'cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。',
     code: 'ここから要素のコード。CELLS や定数・補助関数は kit にある。' },
@@ -351,7 +364,7 @@ const T = {
 function elementTxt(el, lang) {
   const t = T[lang], p = packOf[el.pack];
   const cat = p.categories.find(c => c.slug === el.category);
-  const name = lang === 'ja' ? `${el.name.ja} / ${el.name.en}` : `${el.name.en} / ${el.name.ja}`;
+  const name = `${el.name[lang]} / ${el.name[lang === 'en' ? 'zh-CN' : 'en']}`;
   const head = [
     `Motion Prompt #${el.id} · ${LICENCE} · ${SITE}#${el.id}`,
     '',
@@ -378,8 +391,8 @@ function kitJs(p) {
   const head = [
     `Motion Prompt ${range} · ${LICENCE} · ${SITE}#${p.first}`,
     '',
-    `Kit for pack "${p.pack}" (${p.title.en} / ${p.title.ja}): the constants and helpers its elements share.`,
-    `Elements ${range} · ${W}x${H} px · cycle ${C} s. Element code: ${SITE}api/v1/en/e/<id>.txt (or /ja/).`,
+    `Kit for pack "${p.pack}" (${p.title['zh-CN']} / ${p.title.en}): the constants and helpers its elements share.`,
+    `Elements ${range} · ${W}x${H} px · cycle ${C} s. Element code: ${SITE}api/v1/en/e/<id>.txt (or /zh-CN/, /ja/).`,
     ...(p.fonts.length ? [`Fonts used: ${p.fonts.map(f => `${f.family} (${SITE}packs/${p.pack}/${f.url})`).join(', ')}. Load them before drawing.`] : []),
     '',
     'Run one element standalone in a browser:',
@@ -404,7 +417,7 @@ function catalogTsv(lang) {
   const head = `# Motion Prompt catalog (${lang}) · ${catalog.count} elements · ${SITE} · columns: id\tpack\tcategory\ttitle\ttags\tsummary`;
   const rows = catalog.elements.map(el => {
     const cat = packOf[el.pack].categories.find(c => c.slug === el.category);
-    const title = lang === 'ja' ? `${el.name.ja} (${el.name.en})` : `${el.name.en} (${el.name.ja})`;
+    const title = `${el.name[lang]} (${el.name[lang === 'en' ? 'zh-CN' : 'en']})`;
     return [el.id, el.pack, cat ? cat[lang] : el.category, title, el.tags.join(','), el.summary[lang]].map(tsvCell).join('\t');
   });
   return [head, ...rows].join('\n') + '\n';
@@ -414,6 +427,10 @@ function catalogTsv(lang) {
 // One file per language the pack is written in: README.md (en), README.<lang>.md (the others).
 // Headings fall back to English for a language that has no block here; add a block to translate them.
 const DOC = {
+  'zh-CN': { gen: '由 tools/build.mjs 根据 meta.json 生成。请编辑 meta.json，不要直接修改此文件。', names: '个术语', pack: '素材包', langs: '语言',
+    intro: '找到术语后，直接告诉 AI，并补充时长、强度和运动对象，让结果更接近你的想法。',
+    no: '编号', name: '中文名', en: '英文名', meaning: '含义', ask: '如何向 AI 描述',
+    more: '点击编号即可打开动态示例。每个术语的时序、缓动数值和参考代码：', all: '全部素材包', preview: '预览' },
   en: { gen: 'Generated by tools/build.mjs from meta.json. Edit meta.json, not this file.', names: 'names', pack: 'pack', langs: 'Languages',
     intro: 'Find the name, then say it to your AI. Add how long, how strong and what moves, and the result gets closer to what you had in mind.',
     no: '#', name: 'Name', en: 'English', meaning: 'What it is', ask: 'How to ask an AI',
@@ -423,7 +440,7 @@ const DOC = {
     no: '番号', name: '名前', en: '英語名', meaning: 'ひとこと', ask: 'AIへの頼み方の例',
     more: '番号を押すと、ギャラリーの動く見本が開きます。1つの名前の秒数・イージングの数値・参考コード:', all: 'パックの一覧', preview: '見本' },
 };
-const LANG_NAME = { en: 'English', ja: '日本語', zh: '中文', 'zh-Hans': '简体中文', 'zh-Hant': '繁體中文', ko: '한국어', es: 'Español', fr: 'Français', de: 'Deutsch', pt: 'Português', it: 'Italiano', id: 'Bahasa Indonesia', vi: 'Tiếng Việt', th: 'ไทย', hi: 'हिन्दी', ar: 'العربية', ru: 'Русский', tr: 'Türkçe' };
+const LANG_NAME = { en: 'English', ja: '日本語', zh: '中文', 'zh-CN': '简体中文', 'zh-Hans': '简体中文', 'zh-Hant': '繁體中文', ko: '한국어', es: 'Español', fr: 'Français', de: 'Deutsch', pt: 'Português', it: 'Italiano', id: 'Bahasa Indonesia', vi: 'Tiếng Việt', th: 'ไทย', hi: 'हिन्दी', ar: 'العربية', ru: 'Русский', tr: 'Türkçe' };
 const readmeName = lang => (lang === BASE_LANG ? 'README.md' : `README.${lang}.md`);
 const tx = (o, lang) => (o && isStr(o[lang]) ? o[lang] : o && isStr(o[BASE_LANG]) ? o[BASE_LANG] : '');
 const mdCell = s => String(s).replace(/\|/g, '\\|').replace(/[\r\n]+/g, ' ').trim();
@@ -444,16 +461,17 @@ function packReadme(src, p, lang) {
     '',
   ];
   if (fs.existsSync(path.join(ROOT, 'assets', `preview-${p.pack}.gif`))) out.push(`![${tx(meta.title, lang)} — ${d.preview}](../../assets/preview-${p.pack}.gif)`, '');
-  const withEn = lang !== BASE_LANG;
+  const withEn = lang !== BASE_LANG || isStr(meta.title['zh-CN']);
+  const secondary = lang === BASE_LANG ? 'zh-CN' : BASE_LANG;
   for (const c of meta.categories) {
     const els = catalog.elements.filter(e => e.pack === p.pack && e.category === c.slug);
     if (!els.length) continue;
     out.push(`## ${tx(c, lang)}`, '');
-    out.push(`| ${[d.no, d.name, ...(withEn ? [d.en] : []), d.meaning, d.ask].join(' | ')} |`);
+    out.push(`| ${[d.no, d.name, ...(withEn ? [lang === BASE_LANG ? 'Chinese' : d.en] : []), d.meaning, d.ask].join(' | ')} |`);
     out.push(`|${Array(withEn ? 5 : 4).fill('---').join('|')}|`);
     for (const el of els) {
       const raw = meta.elements.find(e => e.slug === el.slug);
-      out.push(`| ${[`[#${el.id}](${SITE}#${el.id})`, `**${mdCell(tx(raw.name, lang))}**`, ...(withEn ? [mdCell(raw.name[BASE_LANG])] : []), mdCell(tx(raw.meaning, lang)), mdCell(tx(raw.ask, lang))].join(' | ')} |`);
+      out.push(`| ${[`[#${el.id}](${SITE}#${el.id})`, `**${mdCell(tx(raw.name, lang))}**`, ...(withEn ? [mdCell(tx(raw.name, secondary))] : []), mdCell(tx(raw.meaning, lang)), mdCell(tx(raw.ask, lang))].join(' | ')} |`);
     }
     out.push('');
   }
@@ -464,21 +482,21 @@ function packReadme(src, p, lang) {
 
 function packsIndex() {
   const out = [
-    `<!-- ${DOC.en.gen} -->`,
+    `<!-- ${DOC['zh-CN'].gen} -->`,
     '',
-    '# Packs',
+    '# 素材包 / Packs',
     '',
-    'A pack is one field\'s set of names. Each list below is readable here on GitHub; the gallery shows the same names moving.',
+    '每个素材包收录一个领域的术语。可以在 GitHub 阅读列表，或在素材库查看动态示例。 / Each pack collects names from one field; open the gallery for moving samples.',
     '',
-    '| Numbers | Pack | Names | Lists |',
+    '| 编号 / Numbers | 素材包 / Pack | 数量 / Names | 语言 / Lists |',
     '|---|---|---|---|',
   ];
   for (const src of packs) {
     const p = packOf[src.dir];
     const lists = src.langs.map(l => `[${LANG_NAME[l] || l}](${p.pack}/${readmeName(l)})`).join(' · ');
-    out.push(`| ${p.first}–${p.last} | \`${p.pack}\` — ${mdCell(src.raw.title[BASE_LANG])} | ${p.count} | ${lists} |`);
+    out.push(`| ${p.first}–${p.last} | \`${p.pack}\` — ${mdCell(src.raw.title['zh-CN'] || src.raw.title[BASE_LANG])} / ${mdCell(src.raw.title[BASE_LANG])} | ${p.count} | ${lists} |`);
   }
-  out.push('', 'To add a pack for your field, or a language to an existing pack, see [CONTRIBUTING.md](../CONTRIBUTING.md).', '');
+  out.push('', '添加素材包或翻译，请参阅[中文贡献指南](../CONTRIBUTING.zh-CN.md) / [English](../CONTRIBUTING.md)。', '');
   return out.join('\n');
 }
 

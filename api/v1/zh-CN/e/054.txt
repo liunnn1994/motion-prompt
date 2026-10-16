@@ -1,0 +1,36 @@
+// Motion Prompt #054 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#054
+//
+// 文字提示 / Tooltip
+// 素材包: ui (UI 组件) · element 06 · 分类: 弹层与面板
+// 示例内容: 悬停问号图标时，上方黑色气泡显示简短说明；移开后消失。
+// 动画规格:
+//   - 卡片尺寸 542×191，每轮 4.5 秒。标签旁的（196, 121）处有蓝色圆环问号图标，半径 13。
+//   - 光标只悬停、不点击：1.05 秒到达问号，停留至 3.15 秒，4.1 秒前移出卡片。
+//   - 显示进度 a：1.15–1.35 秒按 easeOutCubic 从 0 增至 1；不透明度为 a，从下方 6px 上移到位。
+//   - 提示气泡：#26282c，184×36，圆角半径 8，顶部 y = 64；宽 16、高 8 的三角形向下指向图标；白色文字 15px。
+//   - 3.25–3.45 秒线性隐藏，不透明度 1→0。
+// 适用场景: 适合为图标或缩写补充单行说明。
+// 标签: tooltip, hint, hover, help, info, title
+// 尺寸: 542x191 px · 周期: 4.5 s
+// 依赖: kit ui -> https://motion-prompt.2077tech.com/api/v1/kit/ui.js
+// 动态示例: https://motion-prompt.2077tech.com/#054
+//
+// cells[i](k, w, h, u)：k = CanvasRenderingContext2D（由调用方清空画布并执行 save/restore），w、h = 尺寸，u = 秒数，范围为 [0, cycle)。画面仅由 u 决定。
+// 以下为素材代码。CELLS、常量及辅助函数位于 kit 文件中。
+
+// @element 06
+// 06 ツールチップ（Tooltip）
+CELLS[5] = ui((w, h, t) => {
+  pageLines(24, 16, 494);
+  bar(24, 116, 150, C.line2, 11); ring(196, 121, 13, C.blue, 2.2); text('?', 196, 122, 16, C.blue, 700, 'center', NUMF);
+  fillRR(24, 146, 494, 34, 8, C.block);
+  const a = eo(seg(t, 1.15, 1.35)) * (1 - seg(t, 3.25, 3.45));
+  if (a > 0) {
+    X.save(); X.globalAlpha = a; const yy = 64 + 6 * (1 - a);
+    fillRR(196 - 92, yy, 184, 36, 8, C.dark);
+    X.beginPath(); X.moveTo(196 - 8, yy + 36); X.lineTo(196, yy + 44); X.lineTo(196 + 8, yy + 36); X.fillStyle = C.dark; X.fill();
+    text('小さな説明が出る', 196, yy + 18, 15, '#fff', 600, 'center'); X.restore();
+  }
+  // 乗せるだけ（クリックしない）
+  pointer([[.3, w + 30, h + 30], [1.05, 200, 126], [3.15, 200, 126], [4.1, w + 30, h + 30]], [], t);
+});

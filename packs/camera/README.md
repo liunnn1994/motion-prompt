@@ -2,7 +2,7 @@
 
 # Camera moves & transitions
 
-24 names · #025–048 · pack `camera` · Languages: [日本語](README.ja.md)
+24 names · #025–048 · pack `camera` · Languages: [简体中文](README.zh-CN.md) / [日本語](README.ja.md)
 
 Find the name, then say it to your AI. Add how long, how strong and what moves, and the result gets closer to what you had in mind.
 
@@ -10,42 +10,42 @@ Find the name, then say it to your AI. Add how long, how strong and what moves, 
 
 ## Camera Movement
 
-| # | Name | What it is | How to ask an AI |
-|---|---|---|---|
-| [#025](https://showheyohtaki.github.io/motion-prompt/#025) | **Pan** | Pivot the camera left or right | Slow pan from left to right across the skyline, camera fixed in place, over 5 seconds. |
-| [#026](https://showheyohtaki.github.io/motion-prompt/#026) | **Tilt** | Pivot the camera up or down | Slow tilt up from the person's feet to the top of the tower. |
-| [#027](https://showheyohtaki.github.io/motion-prompt/#027) | **Dolly in** | Move the camera toward the subject | Slow dolly in toward her face; move the camera, do not zoom. |
-| [#028](https://showheyohtaki.github.io/motion-prompt/#028) | **Zoom in** | Magnify with the lens (camera stays put) | The camera stays still; zoom in on the person at the window over 3 seconds. |
-| [#029](https://showheyohtaki.github.io/motion-prompt/#029) | **Tracking shot** | Move along with the subject | Tracking shot from the side, moving along with the walking person at the same speed. |
-| [#030](https://showheyohtaki.github.io/motion-prompt/#030) | **Orbit (Arc shot)** | Circle around the subject | Half orbit around the standing person, keeping them in the center of the frame. |
-| [#031](https://showheyohtaki.github.io/motion-prompt/#031) | **Crane up** | Lift the camera up | Crane up from eye level until the whole town comes into view. |
-| [#032](https://showheyohtaki.github.io/motion-prompt/#032) | **Dolly zoom (Vertigo)** | Subject stays, background warps | Dolly zoom on his face at the moment he realizes: he stays the same size while the background stretches away. |
+| # | Name | Chinese | What it is | How to ask an AI |
+|---|---|---|---|---|
+| [#025](https://motion-prompt.2077tech.com/#025) | **Pan** | 水平摇镜 | Pivot the camera left or right | Slow pan from left to right across the skyline, camera fixed in place, over 5 seconds. |
+| [#026](https://motion-prompt.2077tech.com/#026) | **Tilt** | 垂直摇镜 | Pivot the camera up or down | Slow tilt up from the person's feet to the top of the tower. |
+| [#027](https://motion-prompt.2077tech.com/#027) | **Dolly in** | 推镜头 | Move the camera toward the subject | Slow dolly in toward her face; move the camera, do not zoom. |
+| [#028](https://motion-prompt.2077tech.com/#028) | **Zoom in** | 变焦推近 | Magnify with the lens (camera stays put) | The camera stays still; zoom in on the person at the window over 3 seconds. |
+| [#029](https://motion-prompt.2077tech.com/#029) | **Tracking shot** | 跟拍 | Move along with the subject | Tracking shot from the side, moving along with the walking person at the same speed. |
+| [#030](https://motion-prompt.2077tech.com/#030) | **Orbit (Arc shot)** | 环绕镜头 | Circle around the subject | Half orbit around the standing person, keeping them in the center of the frame. |
+| [#031](https://motion-prompt.2077tech.com/#031) | **Crane up** | 升镜头 | Lift the camera up | Crane up from eye level until the whole town comes into view. |
+| [#032](https://motion-prompt.2077tech.com/#032) | **Dolly zoom (Vertigo)** | 滑动变焦 | Subject stays, background warps | Dolly zoom on his face at the moment he realizes: he stays the same size while the background stretches away. |
 
 ## Shooting Style & Time
 
-| # | Name | What it is | How to ask an AI |
-|---|---|---|---|
-| [#033](https://showheyohtaki.github.io/motion-prompt/#033) | **Rack focus** | Shift focus between near and far | Rack focus from the cup in the foreground to the person behind it, in 1 second. |
-| [#034](https://showheyohtaki.github.io/motion-prompt/#034) | **Handheld** | A slight shake, as if the camera were held by hand | Handheld shot following behind the walking person, with only a slight shake. |
-| [#035](https://showheyohtaki.github.io/motion-prompt/#035) | **FPV drone shot** | Fast, immersive fly-through | FPV drone shot weaving between the trees and out over the river. |
-| [#036](https://showheyohtaki.github.io/motion-prompt/#036) | **Dutch angle** | Tilt the frame diagonally | Use a Dutch angle of about 15 degrees for this uneasy scene. |
-| [#037](https://showheyohtaki.github.io/motion-prompt/#037) | **Slow motion** | Play the action slower | Show the moment of the splash in slow motion. |
-| [#038](https://showheyohtaki.github.io/motion-prompt/#038) | **Speed ramp** | Change speed mid-shot | Speed ramp: normal speed, slowing at the top of the jump, then back to normal. |
-| [#039](https://showheyohtaki.github.io/motion-prompt/#039) | **Time-lapse** | Compress hours into seconds | Time-lapse of the city from dusk to night as the lights come on. |
-| [#040](https://showheyohtaki.github.io/motion-prompt/#040) | **Freeze frame** | Pause the action for a beat | Freeze frame at the moment she turns around; hold for 1 second and show her name. |
+| # | Name | Chinese | What it is | How to ask an AI |
+|---|---|---|---|---|
+| [#033](https://motion-prompt.2077tech.com/#033) | **Rack focus** | 移焦 | Shift focus between near and far | Rack focus from the cup in the foreground to the person behind it, in 1 second. |
+| [#034](https://motion-prompt.2077tech.com/#034) | **Handheld** | 手持拍摄 | A slight shake, as if the camera were held by hand | Handheld shot following behind the walking person, with only a slight shake. |
+| [#035](https://motion-prompt.2077tech.com/#035) | **FPV drone shot** | FPV 穿越机镜头 | Fast, immersive fly-through | FPV drone shot weaving between the trees and out over the river. |
+| [#036](https://motion-prompt.2077tech.com/#036) | **Dutch angle** | 荷兰角 | Tilt the frame diagonally | Use a Dutch angle of about 15 degrees for this uneasy scene. |
+| [#037](https://motion-prompt.2077tech.com/#037) | **Slow motion** | 慢动作 | Play the action slower | Show the moment of the splash in slow motion. |
+| [#038](https://motion-prompt.2077tech.com/#038) | **Speed ramp** | 速度渐变 | Change speed mid-shot | Speed ramp: normal speed, slowing at the top of the jump, then back to normal. |
+| [#039](https://motion-prompt.2077tech.com/#039) | **Time-lapse** | 延时摄影 | Compress hours into seconds | Time-lapse of the city from dusk to night as the lights come on. |
+| [#040](https://motion-prompt.2077tech.com/#040) | **Freeze frame** | 定格 | Pause the action for a beat | Freeze frame at the moment she turns around; hold for 1 second and show her name. |
 
 ## Transitions
 
-| # | Name | What it is | How to ask an AI |
-|---|---|---|---|
-| [#041](https://showheyohtaki.github.io/motion-prompt/#041) | **Jump cut** | Same framing, skip ahead in time | Use jump cuts from the same framing to move quickly through the preparation. |
-| [#042](https://showheyohtaki.github.io/motion-prompt/#042) | **Match cut** | Cut on a matching shape or motion | Match cut from the round coffee cup to a full moon in the same position. |
-| [#043](https://showheyohtaki.github.io/motion-prompt/#043) | **Whip pan** | Fast pan blur into the next shot | Whip pan to the right and land in the next location. |
-| [#044](https://showheyohtaki.github.io/motion-prompt/#044) | **Cross dissolve** | Blend one shot into the next | Cross dissolve from the room in the morning to the same room at night, 1 second. |
-| [#045](https://showheyohtaki.github.io/motion-prompt/#045) | **Wipe** | A moving edge replaces the shot | Wipe from left to right into the next scene. |
-| [#046](https://showheyohtaki.github.io/motion-prompt/#046) | **Smash cut** | Abrupt cut to a contrasting scene | Smash cut from the quiet bedroom to a noisy intersection. |
-| [#047](https://showheyohtaki.github.io/motion-prompt/#047) | **J-cut** | Next scene's audio starts first | J-cut: let the sound of waves from the next scene start before cutting to the sea. |
-| [#048](https://showheyohtaki.github.io/motion-prompt/#048) | **L-cut** | Previous scene's audio carries over | L-cut: keep her voice going while cutting to the listener's face. |
+| # | Name | Chinese | What it is | How to ask an AI |
+|---|---|---|---|---|
+| [#041](https://motion-prompt.2077tech.com/#041) | **Jump cut** | 跳切 | Same framing, skip ahead in time | Use jump cuts from the same framing to move quickly through the preparation. |
+| [#042](https://motion-prompt.2077tech.com/#042) | **Match cut** | 匹配剪辑 | Cut on a matching shape or motion | Match cut from the round coffee cup to a full moon in the same position. |
+| [#043](https://motion-prompt.2077tech.com/#043) | **Whip pan** | 甩镜转场 | Fast pan blur into the next shot | Whip pan to the right and land in the next location. |
+| [#044](https://motion-prompt.2077tech.com/#044) | **Cross dissolve** | 叠化 | Blend one shot into the next | Cross dissolve from the room in the morning to the same room at night, 1 second. |
+| [#045](https://motion-prompt.2077tech.com/#045) | **Wipe** | 划像转场 | A moving edge replaces the shot | Wipe from left to right into the next scene. |
+| [#046](https://motion-prompt.2077tech.com/#046) | **Smash cut** | 猛切 | Abrupt cut to a contrasting scene | Smash cut from the quiet bedroom to a noisy intersection. |
+| [#047](https://motion-prompt.2077tech.com/#047) | **J-cut** | J 型剪辑 | Next scene's audio starts first | J-cut: let the sound of waves from the next scene start before cutting to the sea. |
+| [#048](https://motion-prompt.2077tech.com/#048) | **L-cut** | L 型剪辑 | Previous scene's audio carries over | L-cut: keep her voice going while cutting to the listener's face. |
 
 Each number opens the moving sample in the gallery. Timings, easing values and reference code for one name: `api/v1/en/e/<id>.txt` ([#025](../../api/v1/en/e/025.txt)).
 

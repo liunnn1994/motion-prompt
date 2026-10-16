@@ -1,4 +1,4 @@
-// Motion Prompt #103 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#103
+// Motion Prompt #103 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#103
 //
 // ゴールデンアワー / Golden hour
 // パック: photo (写真の表現・光と画風) · element 07 · カテゴリ: 光の当て方・時間帯
@@ -13,8 +13,8 @@
 // 使いどころ: あたたかく、なつかしく、やさしい雰囲気の写真にしたいとき。
 // タグ: golden hour, magic hour, sunset light, warm light, long shadows, low sun
 // サイズ: 539x208 px · 1周: 5 s
-// Needs: kit photo -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/photo.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#103
+// Needs: kit photo -> https://motion-prompt.2077tech.com/api/v1/kit/photo.js
+// 動く見本: https://motion-prompt.2077tech.com/#103
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

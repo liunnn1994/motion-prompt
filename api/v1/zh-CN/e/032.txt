@@ -1,0 +1,31 @@
+// Motion Prompt #032 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#032
+//
+// 滑动变焦 / Dolly zoom (Vertigo)
+// 素材包: camera (镜头运动与转场) · element 08 · 分类: 镜头运动
+// 示例内容: 相机后退并同步放大焦距，人物大小不变，背景逐渐拉近。
+// 动画规格:
+//   - 相机：与前方 8m 处人物的距离 d 从 3.2m 增至 8m，即后拉 4.8m，高度为 1.3m。
+//   - 焦距：f = 330 × d/8 px，即 132px→330px，显示为 10mm→24mm，保持距离与焦距之比不变。
+//   - 时序：0.5–3.4 秒，时长 2.9 秒，使用三次缓入缓出，约为 cubic-bezier(0.65,0,0.35,1)。
+//   - 主体：人物静止，在画面中的高度不变；头顶距地面 1.8m，头顶和脚底各有宽 160px 的蓝色虚线，显示大小恒定。
+//   - 背景：48m 外的建筑放大约 2.2 倍，山放大约 2.4 倍，向人物后方压近，人物前方地面则缩小。
+//   - 回到起点：3.4–4.2 秒停留，最后 0.5 秒交叉淡化至初始状态，每轮 4.7 秒。
+// 适用场景: 适合表现突然醒悟、不安或震惊。
+// 标签: dolly zoom, vertigo, zolly, push pull, background stretch, unease, camera move
+// 尺寸: 539x208 px · 周期: 9.4 s
+// 依赖: kit camera -> https://motion-prompt.2077tech.com/api/v1/kit/camera.js
+// 动态示例: https://motion-prompt.2077tech.com/#032
+//
+// cells[i](k, w, h, u)：k = CanvasRenderingContext2D（由调用方清空画布并执行 save/restore），w、h = 尺寸，u = 秒数，范围为 [0, cycle)。画面仅由 u 决定。
+// 以下为素材代码。CELLS、常量及辅助函数位于 kit 文件中。
+
+// @element 08
+// 08 ドリーズーム: 人物の大きさは一定、背景だけ伸び縮み
+CELLS[7] = shot(camCell((k, w, h, p) => {
+  const d = lerp(3.2, 8, p), f = F0 * d / 8 * 1.0;
+  const c = cam({ z: 8 - d, f, y: 1.3 });
+  world(k, w, h, c, {
+    person: { z: 8 }, trees: true,
+    after: (kk, cc) => { const top = proj(cc, 0, 1.8, 8).y, bot = proj(cc, 0, 0, 8).y; kk.strokeStyle = C.blue; kk.lineWidth = 1.6; kk.setLineDash([6, 5]); kk.beginPath(); kk.moveTo(-80, top); kk.lineTo(80, top); kk.moveTo(-80, bot); kk.lineTo(80, bot); kk.stroke(); kk.setLineDash([]); }
+  });
+}, p => mm(F0 * lerp(3.2, 8, p) / 8)));

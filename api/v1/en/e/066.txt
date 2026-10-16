@@ -1,6 +1,6 @@
-// Motion Prompt #066 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#066
+// Motion Prompt #066 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#066
 //
-// Breadcrumbs / パンくずリスト
+// Breadcrumbs / 面包屑导航
 // Pack: ui (UI component names) · element 18 · Category: Navigation & status
 // What happens: Clicking "Courses" in the breadcrumbs goes up to the list page; clicking a card there returns to the detail page.
 // Motion spec:
@@ -12,8 +12,8 @@
 // When to use it: Use it on sites with deep hierarchies to show where the page is and give a way back up.
 // Tags: breadcrumbs, breadcrumb, trail, hierarchy, navigation, path
 // Size: 542x191 px · Cycle: 4.5 s
-// Needs: kit ui -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/ui.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#066
+// Needs: kit ui -> https://motion-prompt.2077tech.com/api/v1/kit/ui.js
+// Live demo: https://motion-prompt.2077tech.com/#066
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

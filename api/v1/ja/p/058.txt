@@ -11,6 +11,6 @@ Motion Prompt #058
 - 絵は3種類（山の風景・丸3つ・棒グラフ）の繰り返しなので、3回送ると最初の絵に戻る
 使いどころ: 限られた場所で、画像やおすすめを何枚も順に見せたいとき。
 
-参考実装（Canvas 2D・時刻だけで絵が決まる関数）: https://showheyohtaki.github.io/motion-prompt/api/v1/ja/e/058.txt
-共通の補助コード: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/ui.js
+参考実装（Canvas 2D・時刻だけで絵が決まる関数）: https://motion-prompt.2077tech.com/api/v1/ja/e/058.txt
+共通の補助コード: https://motion-prompt.2077tech.com/api/v1/kit/ui.js
 参考実装の形・タイミング・イージングの数値はそのまま使い、中の文字・色・素材だけ、いま作っている物に合わせてください。

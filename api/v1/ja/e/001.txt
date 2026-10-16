@@ -1,4 +1,4 @@
-// Motion Prompt #001 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#001
+// Motion Prompt #001 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#001
 //
 // ポップイン / Pop-in
 // パック: motion (モーショングラフィックスの動き) · element 01 · カテゴリ: 登場・文字の演出
@@ -13,8 +13,8 @@
 // 使いどころ: アイコン・ボタン・バッジなど、小さな要素を軽く目立たせて出したいとき。
 // タグ: pop, pop-in, spring, bounce, scale, icon, badge, entrance
 // サイズ: 539x208 px · 1周: 4.7 s
-// Needs: kit motion -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/motion.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#001
+// Needs: kit motion -> https://motion-prompt.2077tech.com/api/v1/kit/motion.js
+// 動く見本: https://motion-prompt.2077tech.com/#001
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

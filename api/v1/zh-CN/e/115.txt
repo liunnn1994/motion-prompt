@@ -1,0 +1,26 @@
+// Motion Prompt #115 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#115
+//
+// 黑白摄影 / Black and white
+// 素材包: photo (摄影效果、布光与风格) · element 19 · 分类: 影调与后期风格
+// 示例内容: 同一风景逐渐褪色，阳光和人物变为灰阶，形状仅通过亮度呈现。
+// 动画规格:
+//   - 场景 3：左侧为半身像，头部圆心（140, 82）、半径 28px；右侧为山丘、房屋、树和太阳，太阳圆心（432, 54）、半径 15px。
+//   - 将各颜色转换为对应亮度的灰色，亮度 = 0.2126R + 0.7152G + 0.0722B，以 140 为中点将对比度乘以 1.25。
+//   - 例如人物 #4D5A75→约 #4D4D4D，太阳 #F5A524→约 #B5B5B5。
+//   - 时序：0.4–1.4 秒效果逐渐增强，保持至 4.0 秒，4.8 秒前恢复原状；每轮 5 秒，使用三次缓入缓出，约为 cubic-bezier(0.65,0,0.35,1)。
+// 适用场景: 适合经典质感，或突出形状、光影和表情。
+// 标签: black and white, monochrome, b&w, grayscale, desaturated, classic
+// 尺寸: 539x208 px · 周期: 5 s
+// 依赖: kit photo -> https://motion-prompt.2077tech.com/api/v1/kit/photo.js
+// 动态示例: https://motion-prompt.2077tech.com/#115
+//
+// cells[i](k, w, h, u)：k = CanvasRenderingContext2D（由调用方清空画布并执行 save/restore），w、h = 尺寸，u = 秒数，范围为 [0, cycle)。画面仅由 u 决定。
+// 以下为素材代码。CELLS、常量及辅助函数位于 kit 文件中。
+
+// @element 19
+// モノクロ: 色を抜き、明るさだけで見せる（コントラストを少し強める）
+CELLS[18] = cell((k, u) => {
+  const a = env(u);
+  const GRAY = mapPal(BASE, c => { const g = clamp((lum(c) - 140) * 1.25 + 140, 0, 255); return toHex([g, g, g]); });
+  stageLand(k, pal(BASE, GRAY, a));
+});

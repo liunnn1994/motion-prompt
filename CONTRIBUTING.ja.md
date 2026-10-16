@@ -12,9 +12,9 @@
 
 | 受け入れ口 | 何を | 送り方 | 入る場所 |
 |---|---|---|---|
-| 名前のパック | あなたの分野の名前と動く見本、今あるパックの別の言語 | pull request（相談だけなら [名前・パックの提案](https://github.com/showheyohtaki/motion-prompt/issues/new?template=1-contribution.yml)） | `packs/<pack>/` |
-| 見つけた事例 | 名前に見本を付けて公開している X のポスト（自薦も歓迎） | [事例の推薦](https://github.com/showheyohtaki/motion-prompt/issues/new?template=2-example.yml) | `examples/found.json` と[事例のページ](https://showheyohtaki.github.io/motion-prompt/found.html) |
-| 寄稿 | 自分で作った作例（動画・HTML・早見表の画像）、名前の直し | pull request か [名前・パックの提案](https://github.com/showheyohtaki/motion-prompt/issues/new?template=1-contribution.yml) | `make-your-own/examples/<slug>/<lang>/` など |
+| 名前のパック | あなたの分野の名前と動く見本、今あるパックの別の言語 | pull request（相談だけなら [名前・パックの提案](https://github.com/liunnn1994/motion-prompt/issues/new?template=1-contribution.yml)） | `packs/<pack>/` |
+| 見つけた事例 | 名前に見本を付けて公開している X のポスト（自薦も歓迎） | [事例の推薦](https://github.com/liunnn1994/motion-prompt/issues/new?template=2-example.yml) | `examples/found.json` と[事例のページ](https://motion-prompt.2077tech.com/found.html) |
+| 寄稿 | 自分で作った作例（動画・HTML・早見表の画像）、名前の直し | pull request か [名前・パックの提案](https://github.com/liunnn1994/motion-prompt/issues/new?template=1-contribution.yml) | `make-your-own/examples/<slug>/<lang>/` など |
 
 「作例」は make-your-own で自分が作った物、「事例」はほかの人の X のポストです。
 
@@ -25,7 +25,7 @@
 - 紹介は自分の言葉で1行に書きます。本文を写したり、投稿者がこのサイトを推薦しているように見える書き方をしたりはしません。
 - 載せるのは、投稿者が自分で作った見本（名前のついた動く見本、早見表など）があるポストです。ほかの人の作品を出典なく使ったポスト、引用だけのポスト、有料教材や商品の宣伝が主のポスト、企業の広告は載せません。
 - 事例のページには、講座やサービスの案内を置きません。
-- 削除・訂正の依頼は [Issue のフォーム](https://github.com/showheyohtaki/motion-prompt/issues/new?template=3-removal.yml) で受け、確認後すみやかに外します。
+- 削除・訂正の依頼は [Issue のフォーム](https://github.com/liunnn1994/motion-prompt/issues/new?template=3-removal.yml) で受け、確認後すみやかに外します。
 
 ### MIT で出せない物は受け取りません
 

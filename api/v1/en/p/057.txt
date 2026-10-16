@@ -1,4 +1,4 @@
-Please use "Tabs" (タブ), one of the names in "UI component names".
+Please use "Tabs" (选项卡), one of the names in "UI component names".
 Motion Prompt #057
 
 What it is: Click a label to switch which panel is shown
@@ -11,6 +11,6 @@ Spec:
 - Content: the old panel fades out linearly in 0.2 s; 0.1 s later the new one fades in over 0.2 s while rising 8 px.
 When to use it: Use it to show several related views in the same space and let people switch between them.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/057.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/ui.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/057.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/ui.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

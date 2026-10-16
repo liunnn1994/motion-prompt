@@ -1,6 +1,6 @@
-// Motion Prompt #068 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#068
+// Motion Prompt #068 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#068
 //
-// Step indicator / ステップインジケーター
+// Step indicator / 步骤指示器
 // Pack: ui (UI component names) · element 20 · Category: Navigation & status
 // What happens: Each click on "Next" turns the next of four step circles into a check and extends the blue line to the following step.
 // Motion spec:
@@ -12,8 +12,8 @@
 // When to use it: Use it in multi-step flows such as sign-up or checkout to show progress and what is left.
 // Tags: step-indicator, stepper, steps, progress-steps, wizard, multi-step, checkout
 // Size: 542x191 px · Cycle: 4.5 s
-// Needs: kit ui -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/ui.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#068
+// Needs: kit ui -> https://motion-prompt.2077tech.com/api/v1/kit/ui.js
+// Live demo: https://motion-prompt.2077tech.com/#068
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

@@ -1,6 +1,6 @@
-// Motion Prompt #072 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#072
+// Motion Prompt #072 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#072
 //
-// Empty state / エンプティステート
+// Empty state / 空状态
 // Pack: ui (UI component names) · element 24 · Category: Navigation & status
 // What happens: Deleting the two list rows with their trash icons brings up an empty-box drawing, "Nothing here yet" and an "Add" button.
 // Motion spec:
@@ -11,8 +11,8 @@
 // When to use it: Use it for first-use screens or no-results pages to tell people what to do next.
 // Tags: empty-state, no-data, zero-state, blank-state, no-results, onboarding
 // Size: 542x191 px · Cycle: 4.5 s
-// Needs: kit ui -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/ui.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#072
+// Needs: kit ui -> https://motion-prompt.2077tech.com/api/v1/kit/ui.js
+// Live demo: https://motion-prompt.2077tech.com/#072
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

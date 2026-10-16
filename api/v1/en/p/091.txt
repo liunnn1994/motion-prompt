@@ -1,4 +1,4 @@
-Please use "Infinite scroll" (無限スクロール), one of the names in "Landing page & web effects".
+Please use "Infinite scroll" (无限滚动), one of the names in "Landing page & web effects".
 Motion Prompt #091
 
 What it is: More items load automatically at the bottom
@@ -10,6 +10,6 @@ Spec:
 - Each cycle advances by three items (156 px). The content repeats every three items, so the end of the cycle looks the same as the start.
 When to use it: Use it for feeds and news lists that people should keep reading without paging.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/091.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/lp.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/091.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/lp.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

@@ -1,6 +1,6 @@
-// Motion Prompt #014 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#014
+// Motion Prompt #014 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#014
 //
-// Motion trail / モーショントレイル
+// Motion trail / 运动拖尾
 // Pack: motion (Motion graphics moves) · element 14 · Category: Motion polish
 // What happens: A ball moving in a figure eight leaves a fading trail of copies behind it.
 // Motion spec:
@@ -12,8 +12,8 @@
 // When to use it: Use it to show speed or a path: flying objects, cursors, points of light.
 // Tags: trail, motion-trail, echo, afterimage, ghost, path, speed
 // Size: 539x208 px · Cycle: 4.7 s
-// Needs: kit motion -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/motion.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#014
+// Needs: kit motion -> https://motion-prompt.2077tech.com/api/v1/kit/motion.js
+// Live demo: https://motion-prompt.2077tech.com/#014
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

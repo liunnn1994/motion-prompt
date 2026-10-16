@@ -1,4 +1,4 @@
-// Motion Prompt #024 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#024
+// Motion Prompt #024 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#024
 //
 // インパクトシェイク / Impact shake
 // パック: motion (モーショングラフィックスの動き) · element 24 · カテゴリ: 切り替え・見せ場
@@ -13,8 +13,8 @@
 // 使いどころ: 重要な見出しや数字を、重さと衝撃で強く印象づけたいとき。
 // タグ: shake, impact, camera-shake, slam, drop, thud, headline, emphasis
 // サイズ: 539x208 px · 1周: 4.7 s
-// Needs: kit motion -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/motion.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#024
+// Needs: kit motion -> https://motion-prompt.2077tech.com/api/v1/kit/motion.js
+// 動く見本: https://motion-prompt.2077tech.com/#024
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

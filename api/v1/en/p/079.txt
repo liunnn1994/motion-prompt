@@ -1,4 +1,4 @@
-Please use "Scroll progress bar" (スクロールプログレスバー), one of the names in "Landing page & web effects".
+Please use "Scroll progress bar" (滚动进度条), one of the names in "Landing page & web effects".
 Motion Prompt #079
 
 What it is: A bar at the top shows how far you have read
@@ -10,6 +10,6 @@ Spec:
 - Fill width = 511 px × scroll / 430, the scroll fraction itself (the same as CSS animation-timeline: scroll()).
 When to use it: Use it on long articles to show how much is left to read.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/079.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/lp.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/079.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/lp.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

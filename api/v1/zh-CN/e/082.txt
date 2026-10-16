@@ -1,0 +1,34 @@
+// Motion Prompt #082 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#082
+//
+// 悬停图片缩放 / Image zoom on hover
+// 素材包: lp (落地页与网页效果) · element 10 · 分类: 悬停与点击交互
+// 示例内容: 光标下的图片缓慢放大，边框不变，移开后缩回。
+// 动画规格:
+//   - 两个照片框均为 222 × 118，圆角半径 8；光标先悬停左图、再悬停右图，各约 1.5 秒。
+//   - 悬停时，图片以中心为锚点用 0.5 秒从 1 放大至 1.15 倍，使用三次缓出；移开后用 0.5 秒复原。
+//   - 边框外内容被裁剪，相当于 overflow: hidden；边框与说明文字保持不动。
+// 适用场景: 适合展示作品、商品和文章的图片网格。
+// 标签: hover, zoom, image, scale, overflow-hidden, thumbnail, gallery
+// 尺寸: 539x208 px · 周期: 4.8 s
+// 依赖: kit lp -> https://motion-prompt.2077tech.com/api/v1/kit/lp.js
+// 动态示例: https://motion-prompt.2077tech.com/#082
+//
+// cells[i](k, w, h, u)：k = CanvasRenderingContext2D（由调用方清空画布并执行 save/restore），w、h = 尺寸，u = 秒数，范围为 [0, cycle)。画面仅由 u 决定。
+// 以下为素材代码。CELLS、常量及辅助函数位于 kit 文件中。
+
+// @element 10
+// 10 ホバーで画像ズーム（枠はそのままで、中の写真だけがゆっくり拡大する）
+CELLS[9] = (k, w, h, u) => {
+  frame(k);
+  const FX = [22, 267], FY = 16, FW = 222, FH = 118, ZOOM = 0.15;
+  const cur = t => path([[0, 60, 160], [0.5, 120, 70], [1.8, 140, 84], [2.2, 370, 70], [3.4, 390, 84], [3.9, 470, 160], [4.8, 60, 160]], t);
+  view(k, () => {
+    for (let i = 0; i < 2; i++) {
+      const inside = t => { const [x, y] = cur(t); return x > FX[i] && x < FX[i] + FW && y > FY && y < FY + FH; };
+      const q = trans(inside, u, 0.5);
+      pic(k, FX[i], FY, FW, FH, i, 8, 1 + ZOOM * q);
+      txt(k, ['夏の山小屋', '海辺のカフェ'][i], FX[i], FY + FH + 20, `800 13px ${JP}`, C.ink); bars(k, FX[i], FY + FH + 28, 150, 1);
+    }
+    const [cx, cy] = cur(u); cursor(k, cx, cy);
+  });
+};

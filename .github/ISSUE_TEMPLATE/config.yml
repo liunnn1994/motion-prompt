@@ -1,8 +1,8 @@
 blank_issues_enabled: true
 contact_links:
   - name: "寄稿の手引き · Contributing guide"
-    url: https://github.com/showheyohtaki/motion-prompt/blob/main/CONTRIBUTING.md
+    url: https://github.com/liunnn1994/motion-prompt/blob/main/CONTRIBUTING.md
     about: "名前と見本の基準、パックの足し方 / What a name and a sample need, and how to add a pack"
   - name: "事例のページ · Examples page"
-    url: https://showheyohtaki.github.io/motion-prompt/found.html
+    url: https://motion-prompt.2077tech.com/found.html
     about: "いま載っている事例 / The examples listed now"

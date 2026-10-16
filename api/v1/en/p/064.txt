@@ -1,4 +1,4 @@
-Please use "Pagination" (ページネーション), one of the names in "UI component names".
+Please use "Pagination" (分页), one of the names in "UI component names".
 Motion Prompt #064
 
 What it is: Numbered buttons that move between pages
@@ -10,6 +10,6 @@ Spec:
 - The three-row list above dips in opacity 1 → 0 → 1 within 0.2 s either side of 1.05, 2.15 and 3.35 s, and its content changes at the dip.
 When to use it: Use it to split a long list, such as search results or articles, into numbered pages.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/064.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/ui.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/064.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/ui.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

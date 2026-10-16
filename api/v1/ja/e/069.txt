@@ -1,4 +1,4 @@
-// Motion Prompt #069 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#069
+// Motion Prompt #069 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#069
 //
 // スケルトン / Skeleton screen
 // パック: ui (UIパーツの名前) · element 21 · カテゴリ: 案内する・状態を伝えるパーツ
@@ -11,8 +11,8 @@
 // 使いどころ: 読み込みに少し時間がかかる一覧やカードで、待っている間も画面の形を見せたいとき。
 // タグ: skeleton, skeleton-screen, placeholder, shimmer, loading, ghost-content
 // サイズ: 542x191 px · 1周: 4.5 s
-// Needs: kit ui -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/ui.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#069
+// Needs: kit ui -> https://motion-prompt.2077tech.com/api/v1/kit/ui.js
+// 動く見本: https://motion-prompt.2077tech.com/#069
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

@@ -1,4 +1,4 @@
-// Motion Prompt #067 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#067
+// Motion Prompt #067 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#067
 //
 // メガメニュー / Mega menu
 // パック: ui (UIパーツの名前) · element 19 · カテゴリ: 案内する・状態を伝えるパーツ
@@ -12,8 +12,8 @@
 // 使いどころ: 製品やサービスが多いサイトで、全体を一度に見渡せるメニューにしたいとき。
 // タグ: mega-menu, megamenu, dropdown-navigation, navigation, header-menu, multi-column
 // サイズ: 542x191 px · 1周: 4.5 s
-// Needs: kit ui -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/ui.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#067
+// Needs: kit ui -> https://motion-prompt.2077tech.com/api/v1/kit/ui.js
+// 動く見本: https://motion-prompt.2077tech.com/#067
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

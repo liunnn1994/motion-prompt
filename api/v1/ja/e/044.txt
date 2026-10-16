@@ -1,4 +1,4 @@
-// Motion Prompt #044 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#044
+// Motion Prompt #044 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#044
 //
 // クロスディゾルブ / Cross dissolve
 // パック: camera (カメラワークと切り替え) · element 20 · カテゴリ: 切り替え（トランジション）
@@ -13,8 +13,8 @@
 // 使いどころ: 時間の経過や場所の移動を穏やかに伝えるとき、回想へ入るとき。
 // タグ: cross dissolve, dissolve, crossfade, fade, opacity, blend, transition
 // サイズ: 539x208 px · 1周: 9.4 s
-// Needs: kit camera -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/camera.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#044
+// Needs: kit camera -> https://motion-prompt.2077tech.com/api/v1/kit/camera.js
+// 動く見本: https://motion-prompt.2077tech.com/#044
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

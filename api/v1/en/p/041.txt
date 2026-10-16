@@ -1,4 +1,4 @@
-Please use "Jump cut" (ジャンプカット), one of the names in "Camera moves & transitions".
+Please use "Jump cut" (跳切), one of the names in "Camera moves & transitions".
 Motion Prompt #041
 
 What it is: Same framing, skip ahead in time
@@ -12,6 +12,6 @@ Spec:
 - Shot 5 cuts straight back to shot 1
 When to use it: To tighten pauses in talk or work and raise the pace, or to show time passing quickly.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/041.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/camera.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/041.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/camera.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

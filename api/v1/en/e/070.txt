@@ -1,6 +1,6 @@
-// Motion Prompt #070 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#070
+// Motion Prompt #070 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#070
 //
-// Spinner / スピナー
+// Spinner / 加载指示器
 // Pack: ui (UI component names) · element 22 · Category: Navigation & status
 // What happens: Clicking "Send" washes the card white and a blue arc spins in the middle; when finished it changes to a check and fades.
 // Motion spec:
@@ -12,8 +12,8 @@
 // When to use it: Use it for short waits of unknown length, such as sending or saving.
 // Tags: spinner, loading, loader, activity-indicator, progress-circle, busy
 // Size: 542x191 px · Cycle: 4.5 s
-// Needs: kit ui -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/ui.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#070
+// Needs: kit ui -> https://motion-prompt.2077tech.com/api/v1/kit/ui.js
+// Live demo: https://motion-prompt.2077tech.com/#070
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

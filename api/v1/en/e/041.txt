@@ -1,6 +1,6 @@
-// Motion Prompt #041 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#041
+// Motion Prompt #041 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#041
 //
-// Jump cut / ジャンプカット
+// Jump cut / 跳切
 // Pack: camera (Camera moves & transitions) · element 17 · Category: Transitions
 // What happens: Camera position and framing stay the same while the person's position and the clock jump; time is skipped inside one scene.
 // Motion spec:
@@ -13,8 +13,8 @@
 // When to use it: To tighten pauses in talk or work and raise the pace, or to show time passing quickly.
 // Tags: jump cut, cut, time skip, same framing, vlog, ellipsis, edit
 // Size: 539x208 px · Cycle: 9.4 s
-// Needs: kit camera -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/camera.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#041
+// Needs: kit camera -> https://motion-prompt.2077tech.com/api/v1/kit/camera.js
+// Live demo: https://motion-prompt.2077tech.com/#041
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

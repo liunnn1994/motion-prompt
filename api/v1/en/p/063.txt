@@ -1,4 +1,4 @@
-Please use "Stepper (+/−)" (ステッパー), one of the names in "UI component names".
+Please use "Stepper (+/−)" (数字步进器), one of the names in "UI component names".
 Motion Prompt #063
 
 What it is: Plus and minus buttons that change a number by one
@@ -10,6 +10,6 @@ Spec:
 - Number: on each press its scale goes linearly from 1.18 back to 1 over 0.25 s, and it is blue meanwhile.
 When to use it: Use it for small whole numbers changed one at a time, such as quantity or number of guests.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/063.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/ui.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/063.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/ui.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

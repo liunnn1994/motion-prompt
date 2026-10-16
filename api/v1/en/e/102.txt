@@ -1,6 +1,6 @@
-// Motion Prompt #102 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#102
+// Motion Prompt #102 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#102
 //
-// Butterfly lighting / バタフライライティング
+// Butterfly lighting / 蝴蝶光
 // Pack: photo (Photo looks, lighting & styles) · element 06 · Category: Lighting & time of day
 // What happens: A light in front of the face and high above comes on; the face lights evenly on both sides and only a small symmetrical shadow falls under the chin.
 // Motion spec:
@@ -12,8 +12,8 @@
 // When to use it: For beauty and fashion portraits that flatter the face.
 // Tags: butterfly lighting, paramount lighting, beauty lighting, portrait lighting, overhead light, glamour
 // Size: 539x208 px · Cycle: 5 s
-// Needs: kit photo -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/photo.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#102
+// Needs: kit photo -> https://motion-prompt.2077tech.com/api/v1/kit/photo.js
+// Live demo: https://motion-prompt.2077tech.com/#102
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

@@ -1,4 +1,4 @@
-// Motion Prompt #101 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#101
+// Motion Prompt #101 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#101
 //
 // レンブラントライティング / Rembrandt lighting
 // パック: photo (写真の表現・光と画風) · element 05 · カテゴリ: 光の当て方・時間帯
@@ -12,8 +12,8 @@
 // 使いどころ: 絵画のような重みと立体感のある人物写真にしたいとき。
 // タグ: rembrandt lighting, portrait lighting, triangle, 45 degree light, chiaroscuro, painterly
 // サイズ: 539x208 px · 1周: 5 s
-// Needs: kit photo -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/photo.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#101
+// Needs: kit photo -> https://motion-prompt.2077tech.com/api/v1/kit/photo.js
+// 動く見本: https://motion-prompt.2077tech.com/#101
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

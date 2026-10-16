@@ -1,0 +1,28 @@
+// Motion Prompt #029 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#029
+//
+// 跟拍 / Tracking shot
+// 素材包: camera (镜头运动与转场) · element 05 · 分类: 镜头运动
+// 示例内容: 相机与行人同速横向移动，人物保持居中，近处柱子更快掠过。
+// 动画规格:
+//   - 相机：以 1.7m/s 匀速向右移动，4.7 秒内 x = −4.0m→+4.0m；高度 1.3m，面向正前方，不使用缓动。
+//   - 主体：人物与相机保持相同 x 坐标，相距 7.5m，在画面中央行走；手臂和腿摆动角为 sin(u×7)×0.42rad。
+//   - 视差：前方 4m 处每隔 1.6m 一根柱子，向左掠过最快，其次是树和 48m 外建筑，远山几乎不动。
+//   - 右上角显示“→ 1.7m/s”。
+//   - 每 4.7 秒跳回起点；柱子和地面网格在接缝处对齐，背景建筑和树会跳变。
+// 适用场景: 适合跟随行走或奔跑的主体，保持运动感。
+// 标签: tracking, tracking shot, follow, truck, lateral, sideways, parallax, walk
+// 尺寸: 539x208 px · 周期: 9.4 s
+// 依赖: kit camera -> https://motion-prompt.2077tech.com/api/v1/kit/camera.js
+// 动态示例: https://motion-prompt.2077tech.com/#029
+//
+// cells[i](k, w, h, u)：k = CanvasRenderingContext2D（由调用方清空画布并执行 save/restore），w、h = 尺寸，u = 秒数，范围为 [0, cycle)。画面仅由 u 决定。
+// 以下为素材代码。CELLS、常量及辅助函数位于 kit 文件中。
+
+// @element 05
+// 05 トラッキング: 人物と並んで横移動（手前ほど速く流れる）
+CELLS[4] = shot((k, w, h, u) => {
+  const x = (u - CYC / 2) * 1.7;
+  const fgp = []; for (let i = -12; i <= 12; i++) fgp.push([i * 1.6, 4]);
+  world(k, w, h, cam({ x, y: 1.3 }), { person: { x, z: 7.5, walk: u * 7 }, fg: fgp });
+  return '→ 1.7m/s';
+});

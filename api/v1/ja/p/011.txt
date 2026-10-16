@@ -11,6 +11,6 @@ Motion Prompt #011
 - 影は高さに応じて小さく・細く。着地のたびに左右へ黄色い短い線が飛ぶ（1バウンドの約18%の間）
 使いどころ: キャラクターやロゴの動きに、重さとやわらかさを出したいとき。
 
-参考実装（Canvas 2D・時刻だけで絵が決まる関数）: https://showheyohtaki.github.io/motion-prompt/api/v1/ja/e/011.txt
-共通の補助コード: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/motion.js
+参考実装（Canvas 2D・時刻だけで絵が決まる関数）: https://motion-prompt.2077tech.com/api/v1/ja/e/011.txt
+共通の補助コード: https://motion-prompt.2077tech.com/api/v1/kit/motion.js
 参考実装の形・タイミング・イージングの数値はそのまま使い、中の文字・色・素材だけ、いま作っている物に合わせてください。

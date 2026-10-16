@@ -1,4 +1,4 @@
-Please use "Segmented control" (セグメントコントロール), one of the names in "UI component names".
+Please use "Segmented control" (分段选择器), one of the names in "UI component names".
 Motion Prompt #060
 
 What it is: A row of joined buttons that switches the view
@@ -10,6 +10,6 @@ Spec:
 - Chart below: seven bars 34 wide, 58 px apart (the sixth is blue). Heights move between three data sets (about 30–85, 40–100, 60–115) together with the selection, eased the same way.
 When to use it: Use it to switch between two to four views of the same content, such as day, week and month.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/060.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/ui.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/060.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/ui.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

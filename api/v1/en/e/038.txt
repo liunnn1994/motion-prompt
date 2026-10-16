@@ -1,6 +1,6 @@
-// Motion Prompt #038 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#038
+// Motion Prompt #038 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#038
 //
-// Speed ramp / スピードランプ
+// Speed ramp / 速度渐变
 // Pack: camera (Camera moves & transitions) · element 14 · Category: Shooting Style & Time
 // What happens: Within one shot the playback speed changes smoothly from fast to slow; a graph at bottom left shows the speed.
 // Motion spec:
@@ -13,8 +13,8 @@
 // When to use it: To slow down only the key part of an action while keeping the lead-in quick.
 // Tags: speed ramp, time remap, ramping, fast to slow, variable speed, velocity
 // Size: 539x208 px · Cycle: 9.4 s
-// Needs: kit camera -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/camera.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#038
+// Needs: kit camera -> https://motion-prompt.2077tech.com/api/v1/kit/camera.js
+// Live demo: https://motion-prompt.2077tech.com/#038
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

@@ -1,4 +1,4 @@
-// Motion Prompt #098 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#098
+// Motion Prompt #098 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#098
 //
 // リムライト / Rim light
 // パック: photo (写真の表現・光と画風) · element 02 · カテゴリ: 光の当て方・時間帯
@@ -12,8 +12,8 @@
 // 使いどころ: 暗い背景から人物や商品を切り離して、形をくっきり見せたいとき。
 // タグ: rim light, rim lighting, edge light, backlight, kicker, outline, studio
 // サイズ: 539x208 px · 1周: 5 s
-// Needs: kit photo -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/photo.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#098
+// Needs: kit photo -> https://motion-prompt.2077tech.com/api/v1/kit/photo.js
+// 動く見本: https://motion-prompt.2077tech.com/#098
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

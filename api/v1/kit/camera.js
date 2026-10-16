@@ -1,7 +1,7 @@
-// Motion Prompt #025-048 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#025
+// Motion Prompt #025-048 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#025
 //
-// Kit for pack "camera" (Camera moves & transitions / カメラワークと切り替え): the constants and helpers its elements share.
-// Elements #025-048 · 539x208 px · cycle 9.4 s. Element code: https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/<id>.txt (or /ja/).
+// Kit for pack "camera" (镜头运动与转场 / Camera moves & transitions): the constants and helpers its elements share.
+// Elements #025-048 · 539x208 px · cycle 9.4 s. Element code: https://motion-prompt.2077tech.com/api/v1/en/e/<id>.txt (or /zh-CN/, /ja/).
 //
 // Run one element standalone in a browser:
 //   1. paste this file into a <script>,

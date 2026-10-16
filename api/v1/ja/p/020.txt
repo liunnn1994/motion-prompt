@@ -11,6 +11,6 @@ Motion Prompt #020
 - 穴の中には次の画面を 1/最大倍率 に縮めて置く。拡大が終わるとちょうど等倍になり、そのまま次の画面に切り替わる
 使いどころ: ロゴや文字の中へ入り込んで、勢いよく次の場面へ進みたいとき。
 
-参考実装（Canvas 2D・時刻だけで絵が決まる関数）: https://showheyohtaki.github.io/motion-prompt/api/v1/ja/e/020.txt
-共通の補助コード: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/motion.js
+参考実装（Canvas 2D・時刻だけで絵が決まる関数）: https://motion-prompt.2077tech.com/api/v1/ja/e/020.txt
+共通の補助コード: https://motion-prompt.2077tech.com/api/v1/kit/motion.js
 参考実装の形・タイミング・イージングの数値はそのまま使い、中の文字・色・素材だけ、いま作っている物に合わせてください。

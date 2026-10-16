@@ -1,7 +1,7 @@
-// Motion Prompt #073-096 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#073
+// Motion Prompt #073-096 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#073
 //
-// Kit for pack "lp" (Landing page & web effects / LP・Webサイトの演出): the constants and helpers its elements share.
-// Elements #073-096 · 539x208 px · cycle 4.8 s. Element code: https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/<id>.txt (or /ja/).
+// Kit for pack "lp" (落地页与网页效果 / Landing page & web effects): the constants and helpers its elements share.
+// Elements #073-096 · 539x208 px · cycle 4.8 s. Element code: https://motion-prompt.2077tech.com/api/v1/en/e/<id>.txt (or /zh-CN/, /ja/).
 //
 // Run one element standalone in a browser:
 //   1. paste this file into a <script>,

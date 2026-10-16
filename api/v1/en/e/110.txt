@@ -1,6 +1,6 @@
-// Motion Prompt #110 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#110
+// Motion Prompt #110 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#110
 //
-// Fisheye lens / 魚眼レンズ
+// Fisheye lens / 鱼眼镜头
 // Pack: photo (Photo looks, lighting & styles) · element 14 · Category: Lens & camera effects
 // What happens: The middle of the street scene bulges out; the vertical lines of the buildings and the lines of the road bow outward while the corners stay where they are.
 // Motion spec:
@@ -13,8 +13,8 @@
 // When to use it: For bold, playful or peephole-like views (skateboarding, music videos).
 // Tags: fisheye, fisheye lens, barrel distortion, ultra wide, 8mm, distortion
 // Size: 539x208 px · Cycle: 5 s
-// Needs: kit photo -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/photo.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#110
+// Needs: kit photo -> https://motion-prompt.2077tech.com/api/v1/kit/photo.js
+// Live demo: https://motion-prompt.2077tech.com/#110
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

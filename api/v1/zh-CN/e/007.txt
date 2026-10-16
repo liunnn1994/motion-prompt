@@ -1,0 +1,49 @@
+// Motion Prompt #007 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#007
+//
+// 数字递增 / Count-up
+// 素材包: motion (动态图形) · element 07 · 分类: 入场与文字动效
+// 示例内容: 数字不断递增，最终停在目标值。
+// 动画规格:
+//   - 每 4.7 秒一轮，0.1–0.4 秒淡入，4.0–4.4 秒淡出。
+//   - 数字：粗体 104px，在 0.45–2.9 秒从 0 增至 2,480。数值 = round(target × (1 − (1 − p)^4))，先快后慢。
+//   - 使用千位分隔符、等宽数字和右对齐，避免数字横向跳动。
+//   - 2.9 秒到达目标：文字从白变黄，缩放比例按 1 + 0.07·e^(−7t)·cos(15t) 轻微弹跳。
+//   - 左侧上箭头标签：薄荷绿圆形、半径 34，从 0.35 秒起按 1 − e^(−7t)·cos(14t) 弹出；计数时纵向抖动量为 6px × (1 − p)^3 × sin(30u)。
+//   - 下方进度条：330 × 12，蓝至薄荷绿渐变，填充比例为当前数值 ÷ 目标值。
+// 适用场景: 适合营收、用户数和完成率等增长数据。
+// 标签: count-up, counter, number, odometer, stats, kpi, progress
+// 尺寸: 539x208 px · 周期: 4.7 s
+// 依赖: kit motion -> https://motion-prompt.2077tech.com/api/v1/kit/motion.js
+// 动态示例: https://motion-prompt.2077tech.com/#007
+//
+// cells[i](k, w, h, u)：k = CanvasRenderingContext2D（由调用方清空画布并执行 save/restore），w、h = 尺寸，u = 秒数，范围为 [0, cycle)。画面仅由 u 决定。
+// 以下为素材代码。CELLS、常量及辅助函数位于 kit 文件中。
+
+// @element 07
+// 07 カウントアップ（数字が勢いよく増えて、最後にピタッと決まる）
+CELLS[6] = (k, w, h, u) => {
+  stage(k);
+  const TARGET = 2480, a = P(u, 0.1, 0.4) * (1 - P(u, 4.0, 4.4));
+  const p = P(u, 0.45, 2.9), v = Math.round(TARGET * (1 - Math.pow(1 - p, 4)));
+  const s = v.toLocaleString('en-US'), f = `800 104px ${DISP}`;
+  k.font = f; const dw = k.measureText('0').width + 2, cw = k.measureText(',').width;
+  const full = TARGET.toLocaleString('en-US'); let tot = 0; for (const ch of full) tot += ch === ',' ? cw : dw;
+  const land = u - 2.9, pop = 1 + (land > 0 ? 0.07 * Math.exp(-7 * land) * Math.cos(15 * land) : 0);
+  const X = w / 2 + 42, Y = 96;
+  k.save(); k.globalAlpha = a; k.translate(X, Y); k.scale(pop, pop);
+  let x = tot / 2;   // 右そろえ
+  const speed = p < 1 ? Math.pow(1 - p, 3) : 0;
+  for (const ch of [...s].reverse()) {
+    const cwid = ch === ',' ? cw : dw; x -= cwid;
+    txt(k, ch, x + cwid / 2, 0, f, land > 0 ? C.yel : '#fff', 'center', 'middle');
+  }
+  k.restore();
+  // 上向きの矢印チップ
+  const ar = spring(u - 0.35, 14, 7) * (1 - P(u, 4.0, 4.3)), bob = speed * 6 * Math.sin(u * 30);
+  if (ar > 0.01) { k.save(); k.translate(X - tot / 2 - 58, Y - 2 + bob); k.scale(ar, ar); k.fillStyle = C.mint; k.beginPath(); k.arc(0, 0, 34, 0, 7); k.fill(); k.strokeStyle = C.navy; k.lineWidth = 8; k.lineCap = 'round'; k.lineJoin = 'round'; k.beginPath(); k.moveTo(0, 15); k.lineTo(0, -14); k.moveTo(-13, -1); k.lineTo(0, -15); k.lineTo(13, -1); k.stroke(); k.restore(); }
+  // 下のバー
+  const bw = 330, bx = w / 2 - bw / 2, by = 168;
+  k.globalAlpha = a; k.fillStyle = C.navy3; rr(k, bx, by, bw, 12, 6); k.fill();
+  const g = k.createLinearGradient(bx, 0, bx + bw, 0); g.addColorStop(0, C.blue); g.addColorStop(1, C.mint);
+  k.fillStyle = g; rr(k, bx, by, Math.max(12, bw * (v / TARGET)), 12, 6); k.fill(); k.globalAlpha = 1;
+};

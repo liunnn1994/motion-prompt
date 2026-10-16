@@ -1,4 +1,4 @@
-// Motion Prompt #063 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#063
+// Motion Prompt #063 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#063
 //
 // ステッパー / Stepper (+/−)
 // パック: ui (UIパーツの名前) · element 15 · カテゴリ: 選ぶ・切り替えるパーツ
@@ -11,8 +11,8 @@
 // 使いどころ: カートの数量や人数など、小さな数を1つずつ変えさせたいとき。
 // タグ: stepper, quantity, number-input, increment, decrement, plus-minus, spin-button
 // サイズ: 542x191 px · 1周: 4.5 s
-// Needs: kit ui -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/ui.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#063
+// Needs: kit ui -> https://motion-prompt.2077tech.com/api/v1/kit/ui.js
+// 動く見本: https://motion-prompt.2077tech.com/#063
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

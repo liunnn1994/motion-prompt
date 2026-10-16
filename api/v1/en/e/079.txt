@@ -1,6 +1,6 @@
-// Motion Prompt #079 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#079
+// Motion Prompt #079 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#079
 //
-// Scroll progress bar / スクロールプログレスバー
+// Scroll progress bar / 滚动进度条
 // Pack: lp (Landing page & web effects) · element 07 · Category: Scroll effects
 // What happens: As the article is read a bit at a time, the line along the top grows from the left and reaches the far end at the bottom of the page.
 // Motion spec:
@@ -11,8 +11,8 @@
 // When to use it: Use it on long articles to show how much is left to read.
 // Tags: progress-bar, reading-progress, scroll-progress, indicator, scroll-driven, article
 // Size: 539x208 px · Cycle: 4.8 s
-// Needs: kit lp -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/lp.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#079
+// Needs: kit lp -> https://motion-prompt.2077tech.com/api/v1/kit/lp.js
+// Live demo: https://motion-prompt.2077tech.com/#079
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

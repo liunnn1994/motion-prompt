@@ -1,4 +1,4 @@
-Please use "Shape morph" (モーフィング), one of the names in "Motion graphics moves".
+Please use "Shape morph" (形状变形), one of the names in "Motion graphics moves".
 Motion Prompt #012
 
 What it is: One shape turns smoothly into another
@@ -12,6 +12,6 @@ Spec:
 - Four dots below; the dot for the current shape is larger and coloured.
 When to use it: Use it to turn one icon or logo into another without a cut.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/012.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/motion.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/012.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/motion.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

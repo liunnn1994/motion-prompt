@@ -12,6 +12,6 @@ Motion Prompt #009
 - レールには等しい時間間隔での位置を12個の点で表示（上は等間隔、下は両端に詰まる）
 使いどころ: 移動・拡大・回転など、あらゆる動きに緩急を付けて機械的に見えないようにしたいとき。
 
-参考実装（Canvas 2D・時刻だけで絵が決まる関数）: https://showheyohtaki.github.io/motion-prompt/api/v1/ja/e/009.txt
-共通の補助コード: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/motion.js
+参考実装（Canvas 2D・時刻だけで絵が決まる関数）: https://motion-prompt.2077tech.com/api/v1/ja/e/009.txt
+共通の補助コード: https://motion-prompt.2077tech.com/api/v1/kit/motion.js
 参考実装の形・タイミング・イージングの数値はそのまま使い、中の文字・色・素材だけ、いま作っている物に合わせてください。

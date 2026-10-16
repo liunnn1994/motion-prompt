@@ -1,6 +1,6 @@
-// Motion Prompt #064 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#064
+// Motion Prompt #064 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#064
 //
-// Pagination / ページネーション
+// Pagination / 分页
 // Pack: ui (UI component names) · element 16 · Category: Choosing & switching
 // What happens: Clicking 2 and then 3 in the page numbers moves the blue circle and swaps the list above; finally it goes back to 1.
 // Motion spec:
@@ -11,8 +11,8 @@
 // When to use it: Use it to split a long list, such as search results or articles, into numbered pages.
 // Tags: pagination, pager, page-numbers, paging, next-prev, navigation
 // Size: 542x191 px · Cycle: 4.5 s
-// Needs: kit ui -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/ui.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#064
+// Needs: kit ui -> https://motion-prompt.2077tech.com/api/v1/kit/ui.js
+// Live demo: https://motion-prompt.2077tech.com/#064
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

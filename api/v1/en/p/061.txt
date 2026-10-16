@@ -1,4 +1,4 @@
-Please use "Filter chips" (チップ), one of the names in "UI component names".
+Please use "Filter chips" (筛选标签), one of the names in "UI component names".
 Motion Prompt #061
 
 What it is: Small pills you click to add or remove a filter
@@ -10,6 +10,6 @@ Spec:
 - List below: four cards (242×54, two columns, two rows); cards that do not match drop from opacity 1 to 0.12.
 When to use it: Use it to let people narrow a list or search results by combining a few quick filters.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/061.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/ui.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/061.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/ui.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

@@ -1,6 +1,6 @@
-// Motion Prompt #086 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#086
+// Motion Prompt #086 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#086
 //
-// Underline animation / 下線アニメーション
+// Underline animation / 下划线动画
 // Pack: lp (Landing page & web effects) · element 14 · Category: Hover & click interactions
 // What happens: Under the link the cursor is on, an orange line grows from the left; when the cursor leaves, the line shrinks away to the right.
 // Motion spec:
@@ -11,8 +11,8 @@
 // When to use it: Use it on menu and text links to show where the pointer is, quietly.
 // Tags: underline, hover, link, navigation, menu, text-link, scalex
 // Size: 539x208 px · Cycle: 4.8 s
-// Needs: kit lp -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/lp.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#086
+// Needs: kit lp -> https://motion-prompt.2077tech.com/api/v1/kit/lp.js
+// Live demo: https://motion-prompt.2077tech.com/#086
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

@@ -1,0 +1,50 @@
+// Motion Prompt #038 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#038
+//
+// 速度渐变 / Speed ramp
+// 素材包: camera (镜头运动与转场) · element 14 · 分类: 拍摄手法与时间控制
+// 示例内容: 同一镜头的播放速度由快到慢平滑变化，左下角曲线显示速度。
+// 动画规格:
+//   - 相机完全固定，高度 1.3m，仅改变播放速度。
+//   - 播放速度由 2.4 倍降至 0.25 倍，1.2–1.9 秒完成变化，时长 0.7 秒；使用二次缓入缓出，约为 cubic-bezier(0.45,0,0.55,1)。
+//   - 主体：前方 8m 的人物从左侧 6m 向右跑，x = −6 + 素材时间 × 2.0 m；快速段中迅速靠近。
+//   - 跳跃：x 在 −1.5m 至 2.5m 之间走抛物线，最高 0.99m，双臂抬起；约 0.94 秒起跳，大部分腾空阶段慢放，约 3.68 秒落地。
+//   - 左下角显示 120×40px 的速度曲线，半径 5px 的蓝点标记当前时间。
+//   - 4.2 秒停止，最后 0.5 秒交叉淡化回起点；右上角显示倍率 ×2.4→×0.3。
+// 适用场景: 适合仅放慢动作关键部分，保持前后节奏紧凑。
+// 标签: speed ramp, time remap, ramping, fast to slow, variable speed, velocity
+// 尺寸: 539x208 px · 周期: 9.4 s
+// 依赖: kit camera -> https://motion-prompt.2077tech.com/api/v1/kit/camera.js
+// 动态示例: https://motion-prompt.2077tech.com/#038
+//
+// cells[i](k, w, h, u)：k = CanvasRenderingContext2D（由调用方清空画布并执行 save/restore），w、h = 尺寸，u = 秒数，范围为 [0, cycle)。画面仅由 u 决定。
+// 以下为素材代码。CELLS、常量及辅助函数位于 kit 文件中。
+
+// @element 14
+// 14 スピードランプ: 速い→遅い（グラフで速さを表示）
+function rampTime(u) {   // 再生速度 v(u): 2.4 → 0.25（u 1.2〜1.9 で切替）
+  const v = x => lerp(2.4, 0.25, eIOs(P(x, 1.2, 1.9)));
+  let s = 0; const N = 60; for (let i = 0; i < N; i++) { const x = u * (i + .5) / N; s += v(x) * u / N; } return { s, v: v(u) };
+}
+CELLS[13] = shot((k, w, h, u) => {
+  const uu = Math.min(u, CYC - RESET);
+  const draw = (kk, uu) => {
+    const { s, v } = rampTime(uu);
+    const x = -6 + s * 2.0, q = P(x, -1.5, 2.5);
+    world(kk, w, h, cam({ y: 1.3 }), {
+      person: { x, z: 8, walk: s * 9, y: jumpY(q) * 0.9, armUp: q > 0 && q < 1 },
+      after: (k2) => {   // 速度グラフ
+        const gx = -w / 2 + 26, gy = h / 2 - 22, gw = 120, gh = 40;
+        k2.fillStyle = 'rgba(255,255,255,.85)'; rr(k2, gx - 8, gy - gh - 10, gw + 16, gh + 18, 6); k2.fill();
+        k2.strokeStyle = C.faint; k2.lineWidth = 1.5; k2.beginPath(); k2.moveTo(gx, gy); k2.lineTo(gx + gw, gy); k2.stroke();
+        k2.strokeStyle = C.blue; k2.lineWidth = 2.5; k2.beginPath();
+        for (let i = 0; i <= 40; i++) { const xx = i / 40 * (CYC - RESET), vv = rampTime(xx).v; const X = gx + i / 40 * gw, Y = gy - vv / 2.4 * gh; i ? k2.lineTo(X, Y) : k2.moveTo(X, Y); }
+        k2.stroke();
+        const X = gx + uu / (CYC - RESET) * gw, Y = gy - v / 2.4 * gh; k2.fillStyle = C.blue; k2.beginPath(); k2.arc(X, Y, 5, 0, 7); k2.fill();
+      }
+    });
+    return v;
+  };
+  const r = P(u, CYC - RESET, CYC); let v;
+  blend(k, kk => { v = draw(kk, uu); }, kk => draw(kk, 0), eIOs(r));
+  return `×${(r > .5 ? 2.4 : v).toFixed(1)}`;
+});

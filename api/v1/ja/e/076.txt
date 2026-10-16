@@ -1,4 +1,4 @@
-// Motion Prompt #076 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#076
+// Motion Prompt #076 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#076
 //
 // ピン留め / Pinning
 // パック: lp (LP・Webサイトの演出) · element 04 · カテゴリ: スクロールで起きる演出
@@ -12,8 +12,8 @@
 // 使いどころ: 手順・特長・ビフォーアフターを、1画面で順番に見せたいとき。
 // タグ: pin, pinning, scrolltrigger, gsap, scroll-driven, steps, storytelling
 // サイズ: 539x208 px · 1周: 4.8 s
-// Needs: kit lp -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/lp.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#076
+// Needs: kit lp -> https://motion-prompt.2077tech.com/api/v1/kit/lp.js
+// 動く見本: https://motion-prompt.2077tech.com/#076
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

@@ -1,6 +1,6 @@
-// Motion Prompt #047 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#047
+// Motion Prompt #047 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#047
 //
-// J-cut / Jカット
+// J-cut / J 型剪辑
 // Pack: camera (Camera moves & transitions) · element 23 · Category: Transitions
 // What happens: The next scene's audio starts before the picture changes; the picture is shown on top with video and audio timelines below.
 // Motion spec:
@@ -13,8 +13,8 @@
 // When to use it: To build anticipation for the next scene, or to make a change of scene or speaker feel natural.
 // Tags: j-cut, j cut, split edit, audio lead, sound first, audio transition, edit
 // Size: 539x208 px · Cycle: 9.4 s
-// Needs: kit camera -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/camera.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#047
+// Needs: kit camera -> https://motion-prompt.2077tech.com/api/v1/kit/camera.js
+// Live demo: https://motion-prompt.2077tech.com/#047
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

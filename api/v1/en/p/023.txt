@@ -1,4 +1,4 @@
-Please use "Glitch" (グリッチ), one of the names in "Motion graphics moves".
+Please use "Glitch" (故障效果), one of the names in "Motion graphics moves".
 Motion Prompt #023
 
 What it is: The picture breaks up as if it were malfunctioning
@@ -12,6 +12,6 @@ Spec:
 - Background brightness never changes (no full-frame flashing). The random values use a fixed seed.
 When to use it: Use it for a digital, error or uneasy feel, as an accent on titles and scene changes.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/023.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/motion.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/023.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/motion.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

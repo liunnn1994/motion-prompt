@@ -1,0 +1,24 @@
+// Motion Prompt #044 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#044
+//
+// 叠化 / Cross dissolve
+// 素材包: camera (镜头运动与转场) · element 20 · 分类: 剪辑与转场
+// 示例内容: 下一画面叠加在当前画面上，不透明度逐渐增加，中途两幅画面同时可见。
+// 动画规格:
+//   - 1.5–3.0 秒转场，时长 1.5 秒，后一画面的不透明度从 0 增至 100%。
+//   - 使用二次缓入缓出，约为 cubic-bezier(0.45,0,0.55,1)；2.25 秒达到 50%。
+//   - 前一画面在底层保持完全不透明，后一画面叠加其上，不先淡出前一画面。
+//   - 两场景机位均固定；A 高 1.4m，B 高 1.6m、俯仰角 +0.1rad，主体也均静止。
+//   - 0–1.5 秒仅显示前一画面，3.0–4.7 秒仅显示后一画面。
+//   - 每 4.7 秒交替 A→B、B→A，往返共 9.4 秒；右上角显示“A → B”或“B → A”。
+// 适用场景: 适合温和地表现时间流逝、地点变化或进入回忆。
+// 标签: cross dissolve, dissolve, crossfade, fade, opacity, blend, transition
+// 尺寸: 539x208 px · 周期: 9.4 s
+// 依赖: kit camera -> https://motion-prompt.2077tech.com/api/v1/kit/camera.js
+// 动态示例: https://motion-prompt.2077tech.com/#044
+//
+// cells[i](k, w, h, u)：k = CanvasRenderingContext2D（由调用方清空画布并执行 save/restore），w、h = 尺寸，u = 秒数，范围为 [0, cycle)。画面仅由 u 决定。
+// 以下为素材代码。CELLS、常量及辅助函数位于 kit 文件中。
+
+// @element 20
+// 20 クロスディゾルブ
+CELLS[19] = shot(abCell((k, w, h, u, A, B) => blend(k, kk => A(kk, w, h), kk => B(kk, w, h), eIOs(P(u, 1.5, 3.0)))));

@@ -1,6 +1,6 @@
-// Motion Prompt #013 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#013
+// Motion Prompt #013 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#013
 //
-// Liquid motion / リキッドモーション
+// Liquid motion / 液态动效
 // Pack: motion (Motion graphics moves) · element 13 · Category: Motion polish
 // What happens: A blob stretches out, breaks into drops and merges back into one.
 // Motion spec:
@@ -12,8 +12,8 @@
 // When to use it: Use it for an organic, soft look in logos, backgrounds and connecting moves.
 // Tags: liquid, blob, goo, gooey, metaball, fluid, organic, drip
 // Size: 539x208 px · Cycle: 4.7 s
-// Needs: kit motion -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/motion.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#013
+// Needs: kit motion -> https://motion-prompt.2077tech.com/api/v1/kit/motion.js
+// Live demo: https://motion-prompt.2077tech.com/#013
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

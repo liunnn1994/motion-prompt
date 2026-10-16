@@ -11,6 +11,6 @@ Motion Prompt #077
 - スクロールバーのつまみは縦に動き、カードは横に動く
 使いどころ: 作品・事例・商品を、縦長のページの中で横一列に見せたいとき。
 
-参考実装（Canvas 2D・時刻だけで絵が決まる関数）: https://showheyohtaki.github.io/motion-prompt/api/v1/ja/e/077.txt
-共通の補助コード: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/lp.js
+参考実装（Canvas 2D・時刻だけで絵が決まる関数）: https://motion-prompt.2077tech.com/api/v1/ja/e/077.txt
+共通の補助コード: https://motion-prompt.2077tech.com/api/v1/kit/lp.js
 参考実装の形・タイミング・イージングの数値はそのまま使い、中の文字・色・素材だけ、いま作っている物に合わせてください。

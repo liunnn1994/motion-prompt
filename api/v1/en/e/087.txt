@@ -1,6 +1,6 @@
-// Motion Prompt #087 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#087
+// Motion Prompt #087 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#087
 //
-// Before/after slider / ビフォーアフタースライダー
+// Before/after slider / 前后对比滑块
 // Pack: lp (Landing page & web effects) · element 15 · Category: Hover & click interactions
 // What happens: Dragging the line in the middle of the photo left and right changes how much of the grey "before" (left) and the coloured "after" (right) is shown.
 // Motion spec:
@@ -11,8 +11,8 @@
 // When to use it: Use it on pages that sell a change: renovation, beauty, photo retouching.
 // Tags: before-after, image-comparison, slider, drag, compare, clip, photo
 // Size: 539x208 px · Cycle: 4.8 s
-// Needs: kit lp -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/lp.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#087
+// Needs: kit lp -> https://motion-prompt.2077tech.com/api/v1/kit/lp.js
+// Live demo: https://motion-prompt.2077tech.com/#087
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

@@ -5,8 +5,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        [事例のページ](https://showheyohtaki.github.io/motion-prompt/found.html) には、X の公式の埋め込みとリンク、こちらで書いた一行の紹介だけを載せます。画像・動画・本文をこのリポジトリに写すことはしません。
-        The [examples page](https://showheyohtaki.github.io/motion-prompt/found.html) shows X's official embed, a link, and a one-line introduction we write. No images, videos or post text are copied into this repository.
+        [事例のページ](https://motion-prompt.2077tech.com/found.html) には、X の公式の埋め込みとリンク、こちらで書いた一行の紹介だけを載せます。画像・動画・本文をこのリポジトリに写すことはしません。
+        The [examples page](https://motion-prompt.2077tech.com/found.html) shows X's official embed, a link, and a one-line introduction we write. No images, videos or post text are copied into this repository.
 
         載せるのは、投稿者が自分で作った見本（名前のついた動く見本や早見表など）があるポストです。他人の作品を使ったポスト、宣伝が主のポストは載せません。
         We list posts with samples the author made (moving samples with names, cheat sheets and so on). Posts that use someone else's work, or that are mainly advertising, are not listed.

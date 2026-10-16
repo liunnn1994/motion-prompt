@@ -1,6 +1,6 @@
-// Motion Prompt #109 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#109
+// Motion Prompt #109 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#109
 //
-// Lens flare / レンズフレア
+// Lens flare / 镜头光晕
 // Pack: photo (Photo looks, lighting & styles) · element 13 · Category: Lens & camera effects
 // What happens: As the sun comes out from behind a building, rays appear around it and a line of light dots, hexagons and a ring runs from the sun through the centre of the frame to the opposite side.
 // Motion spec:
@@ -13,8 +13,8 @@
 // When to use it: To add glare, summer sunshine or a cinematic light feel.
 // Tags: lens flare, flare, ghosting, sun flare, starburst, cinematic
 // Size: 539x208 px · Cycle: 5 s
-// Needs: kit photo -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/photo.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#109
+// Needs: kit photo -> https://motion-prompt.2077tech.com/api/v1/kit/photo.js
+// Live demo: https://motion-prompt.2077tech.com/#109
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

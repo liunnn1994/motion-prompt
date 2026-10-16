@@ -1,6 +1,6 @@
-// Motion Prompt #115 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#115
+// Motion Prompt #115 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#115
 //
-// Black and white / モノクロ
+// Black and white / 黑白摄影
 // Pack: photo (Photo looks, lighting & styles) · element 19 · Category: Tones & finishing looks
 // What happens: The colour drains from the same landscape; the sun and the light on the figure turn grey and the shapes read only by their brightness.
 // Motion spec:
@@ -11,8 +11,8 @@
 // When to use it: For a timeless feel, or when shape, light and expression matter more than colour.
 // Tags: black and white, monochrome, b&w, grayscale, desaturated, classic
 // Size: 539x208 px · Cycle: 5 s
-// Needs: kit photo -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/photo.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#115
+// Needs: kit photo -> https://motion-prompt.2077tech.com/api/v1/kit/photo.js
+// Live demo: https://motion-prompt.2077tech.com/#115
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

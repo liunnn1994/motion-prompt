@@ -1,4 +1,4 @@
-Please use "Shape transition" (シェイプトランジション), one of the names in "Motion graphics moves".
+Please use "Shape transition" (图形转场), one of the names in "Motion graphics moves".
 Motion Prompt #018
 
 What it is: Shapes cover the screen and uncover the next scene
@@ -11,6 +11,6 @@ Spec:
 - Direction: left to right for day→night, mirrored for night→day.
 When to use it: Use it to change scenes with shapes in brand colours: chapter breaks, topic changes.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/018.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/motion.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/018.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/motion.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

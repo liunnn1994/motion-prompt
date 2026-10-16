@@ -1,14 +1,14 @@
 {
   "name": "motion-prompt",
-  "displayName": "Motion Prompt",
+  "displayName": "Motion Prompt 中文版",
   "version": "0.1.0",
-  "description": "A numbered library of the names of motion-graphics moves, camera moves and transitions, UI components, landing-page and web effects, and photo looks and lighting, each with a moving sample. Ask your agent to open the library, pick what you like in the browser, and it applies your picks to your video, web or image project with the published timings and easing.",
+  "description": "由 liunnn1994 维护的 Motion Prompt 中文版，默认简体中文，支持英文与日语。包含 120 个创作术语、动态示例、中英对照和可发送给 AI 的规格与参考代码。原作：Shohei Ohtaki。",
   "author": {
     "name": "Shohei Ohtaki",
     "url": "https://x.com/showheyohtaki"
   },
-  "homepage": "https://showheyohtaki.github.io/motion-prompt/",
-  "repository": "https://github.com/showheyohtaki/motion-prompt",
+  "homepage": "https://motion-prompt.2077tech.com/",
+  "repository": "https://github.com/liunnn1994/motion-prompt",
   "license": "MIT",
   "keywords": [
     "motion-graphics",
@@ -16,6 +16,7 @@
     "video",
     "canvas",
     "remotion",
-    "skill"
+    "skill",
+    "chinese"
   ]
 }

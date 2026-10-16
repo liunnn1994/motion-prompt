@@ -1,6 +1,6 @@
-// Motion Prompt #104 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#104
+// Motion Prompt #104 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#104
 //
-// Blue hour / ブルーアワー
+// Blue hour / 蓝调时刻
 // Pack: photo (Photo looks, lighting & styles) · element 08 · Category: Lighting & time of day
 // What happens: Once the sun has set, the sky turns two bands of deep blue, the windows and street lamp come on in amber and the person becomes a dark blue shape.
 // Motion spec:
@@ -13,8 +13,8 @@
 // When to use it: For city and night scenes that need both a blue sky and glowing lights.
 // Tags: blue hour, twilight, dusk, night city, cityscape, deep blue sky
 // Size: 539x208 px · Cycle: 5 s
-// Needs: kit photo -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/photo.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#104
+// Needs: kit photo -> https://motion-prompt.2077tech.com/api/v1/kit/photo.js
+// Live demo: https://motion-prompt.2077tech.com/#104
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

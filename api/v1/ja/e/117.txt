@@ -1,4 +1,4 @@
-// Motion Prompt #117 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#117
+// Motion Prompt #117 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#117
 //
 // ティール＆オレンジ / Teal and orange
 // パック: photo (写真の表現・光と画風) · element 21 · カテゴリ: 仕上げ・画風
@@ -11,8 +11,8 @@
 // 使いどころ: 映画のポスターや予告編のような、色の対比が強い画にしたいとき。
 // タグ: teal and orange, orange and teal, cinematic, color grading, blockbuster, film look
 // サイズ: 539x208 px · 1周: 5 s
-// Needs: kit photo -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/photo.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#117
+// Needs: kit photo -> https://motion-prompt.2077tech.com/api/v1/kit/photo.js
+// 動く見本: https://motion-prompt.2077tech.com/#117
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

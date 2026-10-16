@@ -1,5 +1,5 @@
 <!doctype html>
-<meta charset="utf-8"><title>pack preview</title>
+<meta charset="utf-8"><title>素材包预览 / Pack preview</title>
 <style>
 body{margin:20px;background:#f4f3f0;font:13px/1.4 system-ui}
 #g{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
@@ -21,7 +21,7 @@ s.onload = async () => {
   const meta = await fetch(`../packs/${id}/meta.json`).then(r => r.json()).catch(() => null);
   const only = +q.get('only') || 0, fixed = q.has('t') ? +q.get('t') : null;
   if (only) document.getElementById('g').style.gridTemplateColumns = '1fr';
-  document.getElementById('info').textContent = `${id}: ${p.cells.length} cells, ${p.width}x${p.height}, cycle ${p.cycle}s`;
+  document.getElementById('info').textContent = `${id}: ${p.cells.length} 个素材 / cells, ${p.width}x${p.height}, cycle ${p.cycle}s`;
   const items = [];
   p.cells.forEach((cell, i) => {
     if (only && only !== i + 1) return;
@@ -29,7 +29,7 @@ s.onload = async () => {
     c.width = p.width; c.height = p.height;
     const el = meta && meta.elements[i];
     f.append(c); const cap = document.createElement('figcaption');
-    cap.textContent = `${String(i + 1).padStart(2, '0')} ${el ? el.name.ja + ' / ' + el.name.en : ''}`;
+    cap.textContent = `${String(i + 1).padStart(2, '0')} ${el ? el.name['zh-CN'] + ' / ' + el.name.en : ''}`;
     f.append(cap); document.getElementById('g').append(f);
     items.push({ cell, k: c.getContext('2d') });
   });

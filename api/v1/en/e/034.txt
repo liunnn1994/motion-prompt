@@ -1,6 +1,6 @@
-// Motion Prompt #034 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#034
+// Motion Prompt #034 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#034
 //
-// Handheld / 手持ち
+// Handheld / 手持拍摄
 // Pack: camera (Camera moves & transitions) · element 10 · Category: Shooting Style & Time
 // What happens: Adds a small, irregular shake to the whole frame, as if the camera were held by hand instead of on a tripod.
 // Motion spec:
@@ -13,8 +13,8 @@
 // When to use it: To give a documentary feel or the sense of being present in the scene.
 // Tags: handheld, camera shake, shaky, documentary, wobble, noise, realism
 // Size: 539x208 px · Cycle: 9.4 s
-// Needs: kit camera -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/camera.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#034
+// Needs: kit camera -> https://motion-prompt.2077tech.com/api/v1/kit/camera.js
+// Live demo: https://motion-prompt.2077tech.com/#034
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

@@ -1,4 +1,4 @@
-Please use "Mask transition" (マスクトランジション), one of the names in "Motion graphics moves".
+Please use "Mask transition" (蒙版转场), one of the names in "Motion graphics moves".
 Motion Prompt #017
 
 What it is: The next scene appears inside a growing shape
@@ -11,6 +11,6 @@ Spec:
 - While it grows, the edge of the shape has a white outline (width 7).
 When to use it: Use it to change scenes starting from an object in the frame, such as a sun, logo or button.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/017.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/motion.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/017.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/motion.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

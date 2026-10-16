@@ -1,4 +1,4 @@
-Please use "Easing" (イージング), one of the names in "Motion graphics moves".
+Please use "Easing" (缓动), one of the names in "Motion graphics moves".
 Motion Prompt #009
 
 What it is: Motion speeds up and slows down instead of moving at one speed
@@ -12,6 +12,6 @@ Spec:
 - Each rail shows 12 dots marking positions at equal time intervals (evenly spaced on top, bunched at both ends below).
 When to use it: Use it on any move, scale or rotation so the motion accelerates and decelerates instead of looking mechanical.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/009.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/motion.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/009.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/motion.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

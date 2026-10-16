@@ -1,4 +1,4 @@
-Please use "Pan" (パン), one of the names in "Camera moves & transitions".
+Please use "Pan" (水平摇镜), one of the names in "Camera moves & transitions".
 Motion Prompt #025
 
 What it is: Pivot the camera left or right
@@ -12,6 +12,6 @@ Spec:
 - Top-right readout shows the angle in whole degrees (-18° → +18°)
 When to use it: To reveal a wide location or to shift attention from one side of the scene to the other.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/025.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/camera.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/025.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/camera.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

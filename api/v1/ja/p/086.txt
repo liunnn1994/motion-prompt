@@ -10,6 +10,6 @@ Motion Prompt #086
 - 離れたら 左端を右へ0.3秒で動かし、右へ抜けるように消す（transform-origin を右にした scaleX と同じ）
 使いどころ: ヘッダーのメニューや本文のリンクで、どこを指しているかを上品に伝えたいとき。
 
-参考実装（Canvas 2D・時刻だけで絵が決まる関数）: https://showheyohtaki.github.io/motion-prompt/api/v1/ja/e/086.txt
-共通の補助コード: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/lp.js
+参考実装（Canvas 2D・時刻だけで絵が決まる関数）: https://motion-prompt.2077tech.com/api/v1/ja/e/086.txt
+共通の補助コード: https://motion-prompt.2077tech.com/api/v1/kit/lp.js
 参考実装の形・タイミング・イージングの数値はそのまま使い、中の文字・色・素材だけ、いま作っている物に合わせてください。

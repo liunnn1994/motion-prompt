@@ -1,0 +1,31 @@
+// Motion Prompt #099 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#099
+//
+// 剪影 / Silhouette
+// 素材包: photo (摄影效果、布光与风格) · element 03 · 分类: 布光与拍摄时段
+// 示例内容: 曝光以明亮暮色天空为准，人物、建筑、灯和树变为无细节的黑色轮廓。
+// 动画规格:
+//   - 场景 1：半身人物站在 y = 150 的地平线前，头部圆心为（270, 78）、半径 29px，不绘制五官或头发。
+//   - 天空顶部 #FAF9F7→#FFEDC4，靠近地平线 y = 92–150 处为 #FFCF73 色带。
+//   - 天空之外的物体变为 #2A2D36，远山为 #4A4546，人物为 #22252D。
+//   - 太阳半径 20px，x = 404，y 从 60 降至 128，半遮于山后。
+//   - 右上角曝光读数从 ±0.0EV 变为 −2.0EV。
+//   - 时序：0.4–1.4 秒效果逐渐增强，保持至 4.0 秒，4.8 秒前恢复原状；每轮 5 秒，使用三次缓入缓出，约为 cubic-bezier(0.65,0,0.35,1)。
+// 适用场景: 适合用姿态和形状表达画面，常用于日落或明亮窗前。
+// 标签: silhouette, backlit, sunset, contre-jour, black shape, underexposed
+// 尺寸: 539x208 px · 周期: 5 s
+// 依赖: kit photo -> https://motion-prompt.2077tech.com/api/v1/kit/photo.js
+// 动态示例: https://motion-prompt.2077tech.com/#099
+//
+// cells[i](k, w, h, u)：k = CanvasRenderingContext2D（由调用方清空画布并执行 save/restore），w、h = 尺寸，u = 秒数，范围为 [0, cycle)。画面仅由 u 决定。
+// 以下为素材代码。CELLS、常量及辅助函数位于 kit 文件中。
+
+// @element 03
+// シルエット: 露出を明るい空に合わせると、人物も建物も木も黒い形だけになる
+CELLS[2] = cell((k, u) => {
+  const a = env(u), INK = '#2A2D36';
+  const SILH = mapPal(BASE, () => INK);
+  Object.assign(SILH, { sky: '#FFEDC4', sky2: '#FFCF73', far: '#4A4546', sun: BASE.sun, glow: BASE.glow });
+  stagePortrait(k, pal(BASE, SILH, a), { sun: [404, lerp(60, 128, a), 20, a] });
+  bust(k, PX, PY, PR, mixc(BASE.person, '#22252D', a));
+  hud(k, `${(-2 * a).toFixed(1).replace('-0.0', '±0.0')} EV`);
+});

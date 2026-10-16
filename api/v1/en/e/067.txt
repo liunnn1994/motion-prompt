@@ -1,6 +1,6 @@
-// Motion Prompt #067 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#067
+// Motion Prompt #067 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#067
 //
-// Mega menu / メガメニュー
+// Mega menu / 大型下拉菜单
 // Pack: ui (UI component names) · element 19 · Category: Navigation & status
 // What happens: Hovering over "Products" in the header drops a full-width panel with three columns of links and an image; it closes when the cursor leaves.
 // Motion spec:
@@ -12,8 +12,8 @@
 // When to use it: Use it on sites with many products or sections so visitors can see the whole range at once.
 // Tags: mega-menu, megamenu, dropdown-navigation, navigation, header-menu, multi-column
 // Size: 542x191 px · Cycle: 4.5 s
-// Needs: kit ui -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/ui.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#067
+// Needs: kit ui -> https://motion-prompt.2077tech.com/api/v1/kit/ui.js
+// Live demo: https://motion-prompt.2077tech.com/#067
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

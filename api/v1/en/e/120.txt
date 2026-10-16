@@ -1,6 +1,6 @@
-// Motion Prompt #120 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#120
+// Motion Prompt #120 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#120
 //
-// Double exposure / 二重露光（多重露光）
+// Double exposure / 双重曝光
 // Pack: photo (Photo looks, lighting & styles) · element 24 · Category: Tones & finishing looks
 // What happens: The background turns white and the landscape of hills, house, trees and sun appears, scaled down, only inside the shape of the bust.
 // Motion spec:
@@ -13,8 +13,8 @@
 // When to use it: For posters and covers that tie a person to a place, a memory or an inner world.
 // Tags: double exposure, multiple exposure, blend, silhouette, surreal, composite
 // Size: 539x208 px · Cycle: 5 s
-// Needs: kit photo -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/photo.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#120
+// Needs: kit photo -> https://motion-prompt.2077tech.com/api/v1/kit/photo.js
+// Live demo: https://motion-prompt.2077tech.com/#120
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

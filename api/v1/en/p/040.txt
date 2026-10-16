@@ -1,4 +1,4 @@
-Please use "Freeze frame" (フリーズフレーム), one of the names in "Camera moves & transitions".
+Please use "Freeze frame" (定格), one of the names in "Camera moves & transitions".
 Motion Prompt #040
 
 What it is: Pause the action for a beat
@@ -12,6 +12,6 @@ Spec:
 - Top-right readout shows "FREEZE" only while frozen; no cross-fade reset
 When to use it: To emphasise a decisive moment, or to pause so a name or caption can be placed over the frame.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/040.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/camera.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/040.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/camera.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

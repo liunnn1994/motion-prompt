@@ -1,4 +1,4 @@
-Please use "Typewriter" (タイプライター), one of the names in "Motion graphics moves".
+Please use "Typewriter" (打字机效果), one of the names in "Motion graphics moves".
 Motion Prompt #006
 
 What it is: Text appears one character at a time, as if typed
@@ -12,6 +12,6 @@ Spec:
 - The cursor returns to the start once the text is half faded (about 3.27 s); at 3.51–3.81 s the blue fades.
 When to use it: Use it to show someone typing: a prompt, a search query, a chat message.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/006.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/motion.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/006.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/motion.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

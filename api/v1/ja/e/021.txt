@@ -1,4 +1,4 @@
-// Motion Prompt #021 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#021
+// Motion Prompt #021 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#021
 //
 // フリップ / Flip
 // パック: motion (モーショングラフィックスの動き) · element 21 · カテゴリ: 切り替え・見せ場
@@ -12,8 +12,8 @@
 // 使いどころ: 問いと答え、ビフォーとアフターなど、表と裏の関係にある2つを見せたいとき。
 // タグ: flip, card, 3d, rotate, turn, reveal, question-answer
 // サイズ: 539x208 px · 1周: 4.7 s
-// Needs: kit motion -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/motion.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#021
+// Needs: kit motion -> https://motion-prompt.2077tech.com/api/v1/kit/motion.js
+// 動く見本: https://motion-prompt.2077tech.com/#021
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

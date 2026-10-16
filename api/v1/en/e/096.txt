@@ -1,6 +1,6 @@
-// Motion Prompt #096 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#096
+// Motion Prompt #096 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#096
 //
-// Floating animation / ふわふわアニメーション
+// Floating animation / 悬浮动画
 // Pack: lp (Landing page & web effects) · element 24 · Category: Loading, navigation & ambient loops
 // What happens: Next to the headline, a phone, a heart badge and a rating chip each bob gently out of step, and the shadow under the phone grows and shrinks.
 // Motion spec:
@@ -11,8 +11,8 @@
 // When to use it: Use it to add quiet motion to product images, app mockups or decorative icons.
 // Tags: floating, float, bob, hover-animation, keyframes, translatey, decoration, loop
 // Size: 539x208 px · Cycle: 4.8 s
-// Needs: kit lp -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/lp.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#096
+// Needs: kit lp -> https://motion-prompt.2077tech.com/api/v1/kit/lp.js
+// Live demo: https://motion-prompt.2077tech.com/#096
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

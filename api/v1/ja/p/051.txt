@@ -11,6 +11,6 @@ Motion Prompt #051
 - 閉じる: 指が2.75秒につまみ (271, 68) に乗り、3.0〜3.6秒に下へ引く。a に (1 − easeInOutCubic(3.0〜3.6秒)) を掛け、シートが指と一緒に下へ消える
 使いどころ: スマホで、今の画面を残したまま詳細や選択肢を出したいとき。
 
-参考実装（Canvas 2D・時刻だけで絵が決まる関数）: https://showheyohtaki.github.io/motion-prompt/api/v1/ja/e/051.txt
-共通の補助コード: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/ui.js
+参考実装（Canvas 2D・時刻だけで絵が決まる関数）: https://motion-prompt.2077tech.com/api/v1/ja/e/051.txt
+共通の補助コード: https://motion-prompt.2077tech.com/api/v1/kit/ui.js
 参考実装の形・タイミング・イージングの数値はそのまま使い、中の文字・色・素材だけ、いま作っている物に合わせてください。

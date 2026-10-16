@@ -1,4 +1,4 @@
-Please use "Bottom sheet" (ボトムシート), one of the names in "UI component names".
+Please use "Bottom sheet" (底部面板), one of the names in "UI component names".
 Motion Prompt #051
 
 What it is: A panel slides up from the bottom of the screen
@@ -11,6 +11,6 @@ Spec:
 - Close: the finger lands on the handle (271, 68) at 2.75 s and drags down over 3.0–3.6 s; a is multiplied by (1 − easeInOutCubic over 3.0–3.6 s), so the sheet follows the finger off the bottom.
 When to use it: Use it on mobile to show details or choices while keeping the current screen in view.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/051.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/ui.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/051.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/ui.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

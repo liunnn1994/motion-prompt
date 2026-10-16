@@ -1,0 +1,32 @@
+// Motion Prompt #059 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#059
+//
+// 切换开关 / Toggle switch
+// 素材包: ui (UI 组件) · element 11 · 分类: 选择与切换
+// 示例内容: 前三行设置中的前两个开关依次开启，再依次关闭。
+// 动画规格:
+//   - 卡片尺寸 542×191，每轮 4.5 秒。3 行设置相距 60px，带分隔线；x = 450 处为 64×34、圆角半径 17 的开关轨道，白色滑块半径 13，带阴影。
+//   - 点击顺序：1.0 秒开启第一行，1.8 秒开启第二行，3.0 秒关闭第一行，3.6 秒关闭第二行；第三行保持关闭。
+//   - 每次切换用 0.2 秒按 easeOutCubic 完成，滑块移动 30px，位置 17→47。
+//   - 轨道颜色随开关进度从灰色 #d9d7d5 过渡到蓝色 #1f5ae8。
+// 适用场景: 适合立即生效且只有两种状态的设置。
+// 标签: toggle, switch, toggle-switch, on-off, boolean, settings
+// 尺寸: 542x191 px · 周期: 4.5 s
+// 依赖: kit ui -> https://motion-prompt.2077tech.com/api/v1/kit/ui.js
+// 动态示例: https://motion-prompt.2077tech.com/#059
+//
+// cells[i](k, w, h, u)：k = CanvasRenderingContext2D（由调用方清空画布并执行 save/restore），w、h = 尺寸，u = 秒数，范围为 [0, cycle)。画面仅由 u 决定。
+// 以下为素材代码。CELLS、常量及辅助函数位于 kit 文件中。
+
+// @element 11
+// 11 トグルスイッチ（Toggle switch）
+CELLS[10] = ui((w, h, t) => {
+  const st = [eo(seg(t, 1.0, 1.2)) * (1 - eo(seg(t, 3.0, 3.2))), eo(seg(t, 1.8, 2.0)) * (1 - eo(seg(t, 3.6, 3.8))), 0];
+  for (let i = 0; i < 3; i++) {
+    const y = 14 + i * 60; bar(24, y + 10, [170, 140, 190][i], C.line2, 11); bar(24, y + 30, [260, 220, 240][i], C.line, 8);
+    if (i < 2) { X.fillStyle = C.line; X.fillRect(24, y + 52, 494, 1.5); }
+    const k = st[i], tx = 450, ty = y + 10;
+    fillRR(tx, ty, 64, 34, 17, k > .5 ? C.blue : '#d9d7d5'); if (k > 0 && k < 1) { X.globalAlpha = k; fillRR(tx, ty, 64, 34, 17, C.blue); X.globalAlpha = 1; }
+    shadowed(() => circle(tx + 17 + 30 * k, ty + 17, 13, '#fff'), 4, 1, .25);
+  }
+  pointer([[.3, w + 30, h + 30], [.95, 486, 30], [1.35, 486, 30], [1.75, 486, 90], [2.5, 486, 90], [2.95, 486, 30], [3.25, 486, 30], [3.55, 486, 90], [3.85, 486, 90], [4.3, w + 30, h + 30]], [1.0, 1.8, 3.0, 3.6], t);
+});

@@ -1,4 +1,4 @@
-// Motion Prompt #016 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#016
+// Motion Prompt #016 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#016
 //
 // パララックス / Parallax
 // パック: motion (モーショングラフィックスの動き) · element 16 · カテゴリ: 動きの味付け
@@ -11,8 +11,8 @@
 // 使いどころ: 平面の絵や写真に奥行きを出したいとき。背景・風景・スクロール表現に。
 // タグ: parallax, depth, layers, pan, 2.5d, background, landscape
 // サイズ: 539x208 px · 1周: 4.7 s
-// Needs: kit motion -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/motion.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#016
+// Needs: kit motion -> https://motion-prompt.2077tech.com/api/v1/kit/motion.js
+// 動く見本: https://motion-prompt.2077tech.com/#016
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

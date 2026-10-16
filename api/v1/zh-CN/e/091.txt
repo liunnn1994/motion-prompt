@@ -1,0 +1,42 @@
+// Motion Prompt #091 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#091
+//
+// 无限滚动 / Infinite scroll
+// 素材包: lp (落地页与网页效果) · element 19 · 分类: 加载、导航与循环动效
+// 示例内容: 滚动至列表末尾后出现加载指示器，再追加三条内容以继续阅读。
+// 动画规格:
+//   - 列表项为 331 × 44、圆角半径 8，间距 52；最后一项下方有半径 10 的加载指示器，每 0.8 秒一圈。
+//   - 滚动位置在 0.25–0.85 秒从 38 增至 116px，1.15–1.75 秒从 116 增至 194px，使用三次缓入缓出，停在列表末尾可见的位置。
+//   - 2.6 秒追加 3 项，各用 0.35 秒从下方 10px 处上移并淡入，不透明度 0→1，使用三次缓出；加载指示器移到新的列表末尾。
+//   - 每轮前进 3 项，即 156px；内容每 3 项重复，因此循环结尾与开头一致。
+// 适用场景: 适合信息流或新闻列表，免去手动翻页。
+// 标签: infinite-scroll, endless-scroll, load-more, feed, pagination, spinner, list
+// 尺寸: 539x208 px · 周期: 4.8 s
+// 依赖: kit lp -> https://motion-prompt.2077tech.com/api/v1/kit/lp.js
+// 动态示例: https://motion-prompt.2077tech.com/#091
+//
+// cells[i](k, w, h, u)：k = CanvasRenderingContext2D（由调用方清空画布并执行 save/restore），w、h = 尺寸，u = 秒数，范围为 [0, cycle)。画面仅由 u 决定。
+// 以下为素材代码。CELLS、常量及辅助函数位于 kit 文件中。
+
+// @element 19
+// 19 無限スクロール（いちばん下まで来ると読み込み表示が出て、続きが足される）
+CELLS[18] = (k, w, h, u) => {
+  frame(k);
+  // 1周期で 3件（156px）ぶん進む。周期の終わりは始まりと同じ見た目（内容は3件ごとにくり返す）
+  const PITCH = 52, BATCH = 3, L0 = 6, TL = 2.6;
+  const y = steps([[0.25, 38], [0.85, 116], [1.15, 116], [1.75, 194], [4.8, 194]], u);
+  const n = u < TL ? L0 : L0 + BATCH, end = 10 + n * PITCH;
+  view(k, () => {
+    k.fillStyle = C.soft; k.fillRect(0, 0, VW, VH);
+    k.save(); k.translate(0, -y);
+    for (let i = 0; i < n; i++) {
+      const top = 10 + i * PITCH, v = i % 3, fresh = i >= L0 ? eOut(P(u, TL, TL + 0.35)) : 1;
+      if (top - y > VH || top + 44 - y < 0) continue;
+      k.save(); k.globalAlpha = fresh; k.translate(0, 10 * (1 - fresh));
+      k.fillStyle = '#fff'; rr(k, 90, top, 331, 44, 8); k.fill(); pic(k, 98, top + 6, 48, 32, v, 5);
+      bars(k, 158, top + 12, [180, 140, 200][v], 1, C.ink, 7); bars(k, 158, top + 26, [120, 150, 100][v], 1, C.faint, 6);
+      k.restore();
+    }
+    spinner(k, VW / 2, end + 18, 10, u);
+    k.restore();
+  });
+};

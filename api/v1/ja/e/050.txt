@@ -1,4 +1,4 @@
-// Motion Prompt #050 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#050
+// Motion Prompt #050 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#050
 //
 // ドロワー / Drawer (Off-canvas)
 // パック: ui (UIパーツの名前) · element 02 · カテゴリ: 開く・重なるパーツ
@@ -12,8 +12,8 @@
 // 使いどころ: スマホの全体メニューや、絞り込み条件など、場所を取る操作を横に隠しておきたいとき。
 // タグ: drawer, off-canvas, offcanvas, side-menu, navigation-drawer, sheet, sidebar, slide-in
 // サイズ: 542x191 px · 1周: 4.5 s
-// Needs: kit ui -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/ui.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#050
+// Needs: kit ui -> https://motion-prompt.2077tech.com/api/v1/kit/ui.js
+// 動く見本: https://motion-prompt.2077tech.com/#050
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

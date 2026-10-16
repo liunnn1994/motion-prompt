@@ -1,6 +1,6 @@
-// Motion Prompt #054 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#054
+// Motion Prompt #054 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#054
 //
-// Tooltip / ツールチップ
+// Tooltip / 文字提示
 // Pack: ui (UI component names) · element 06 · Category: Opening & overlays
 // What happens: Hovering over a "?" icon shows a short note in a dark bubble above it; it disappears when the cursor leaves.
 // Motion spec:
@@ -12,8 +12,8 @@
 // When to use it: Use it to add a one-line hint to an icon or abbreviation without taking space on the page.
 // Tags: tooltip, hint, hover, help, info, title
 // Size: 542x191 px · Cycle: 4.5 s
-// Needs: kit ui -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/ui.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#054
+// Needs: kit ui -> https://motion-prompt.2077tech.com/api/v1/kit/ui.js
+// Live demo: https://motion-prompt.2077tech.com/#054
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

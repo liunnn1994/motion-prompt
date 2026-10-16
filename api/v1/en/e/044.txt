@@ -1,6 +1,6 @@
-// Motion Prompt #044 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#044
+// Motion Prompt #044 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#044
 //
-// Cross dissolve / クロスディゾルブ
+// Cross dissolve / 叠化
 // Pack: camera (Camera moves & transitions) · element 20 · Category: Transitions
 // What happens: The next picture is laid over the current one and its opacity rises until it takes over; both show through each other midway.
 // Motion spec:
@@ -13,8 +13,8 @@
 // When to use it: To convey a gentle passage of time or change of place, or to move into a memory.
 // Tags: cross dissolve, dissolve, crossfade, fade, opacity, blend, transition
 // Size: 539x208 px · Cycle: 9.4 s
-// Needs: kit camera -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/camera.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#044
+// Needs: kit camera -> https://motion-prompt.2077tech.com/api/v1/kit/camera.js
+// Live demo: https://motion-prompt.2077tech.com/#044
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

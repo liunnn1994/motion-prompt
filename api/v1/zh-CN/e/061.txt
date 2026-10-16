@@ -1,0 +1,40 @@
+// Motion Prompt #061 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#061
+//
+// 筛选标签 / Filter chips
+// 素材包: ui (UI 组件) · element 13 · 分类: 选择与切换
+// 示例内容: 点击“新品”和“免费”标签后出现勾号并变蓝，不匹配的卡片淡出。
+// 动画规格:
+//   - 卡片尺寸 542×191，每轮 4.5 秒。4 个筛选标签，日语文字为全部、新品、热门、免费；高 34、圆角半径 17、宽度为文字宽加 32，从左侧依次排列，间距 10px。
+//   - 点击顺序：0.95 秒选中新品，1.75 秒选中免费，3.0 秒取消新品，3.6 秒取消免费。
+//   - 每次变化用 0.15 秒按 easeOutCubic 完成；标签加宽 18px 以容纳勾号，填充变浅蓝、边框和文字变蓝。
+//   - 下方为两行两列的 4 张 242×54 卡片，不匹配项的不透明度由 1 降至 0.12。
+// 适用场景: 适合组合多个条件缩小列表或搜索结果范围。
+// 标签: chips, filter-chips, tags, filter, facets, pills
+// 尺寸: 542x191 px · 周期: 4.5 s
+// 依赖: kit ui -> https://motion-prompt.2077tech.com/api/v1/kit/ui.js
+// 动态示例: https://motion-prompt.2077tech.com/#061
+//
+// cells[i](k, w, h, u)：k = CanvasRenderingContext2D（由调用方清空画布并执行 save/restore），w、h = 尺寸，u = 秒数，范围为 [0, cycle)。画面仅由 u 决定。
+// 以下为素材代码。CELLS、常量及辅助函数位于 kit 文件中。
+
+// @element 13
+// 13 チップ（Filter chips）
+CELLS[12] = ui((w, h, t) => {
+  const chips = ['すべて', '新着', '人気', '無料']; let x = 24; const pos = [];
+  const on = [0, eo(seg(t, 0.95, 1.1)) * (1 - eo(seg(t, 3.0, 3.15))), 0, eo(seg(t, 1.75, 1.9)) * (1 - eo(seg(t, 3.6, 3.75)))];
+  chips.forEach((s, i) => {
+    const k = on[i], cw0 = tw(s, 15, 600) + 32 + (k > 0 ? 18 * k : 0);
+    fillRR(x, 12, cw0, 34, 17, k > .5 ? C.lb : '#fff'); strokeRR(x, 12, cw0, 34, 17, k > .5 ? C.blue : C.line2, 1.5);
+    if (k > 0) { X.globalAlpha = k; check(x + 18, 29, 5, C.blue, 2.4); X.globalAlpha = 1; }
+    text(s, x + 16 + 18 * k, 30, 15, k > .5 ? C.blue : '#555', 600);
+    pos.push(x + cw0 / 2); x += cw0 + 10;
+  });
+  // 一覧：条件に合わないカードが消える
+  const vis = [1, 1 - Math.max(on[1], on[3]), 1 - on[3], 1];
+  for (let i = 0; i < 4; i++) {
+    const cx = 24 + (i % 2) * 252, cy = 60 + Math.floor(i / 2) * 64, a = clamp(.12 + .88 * vis[i]);
+    X.save(); X.globalAlpha = a; strokeRR(cx, cy, 242, 54, 8, C.line2, 1.5); fillRR(cx + 10, cy + 10, 34, 34, 6, i === 0 ? C.mb : C.line); bar(cx + 54, cy + 14, 120, C.line2, 10); bar(cx + 54, cy + 32, 150, C.line, 7); X.restore();
+  }
+  const p1 = pos[1] || 120, p3 = pos[3] || 300;
+  pointer([[.3, w + 30, h + 30], [.9, 130, 32], [1.3, 130, 32], [1.7, 300, 32], [2.5, 300, 32], [2.95, 130, 32], [3.2, 130, 32], [3.55, 296, 32], [3.85, 296, 32], [4.3, w + 30, h + 30]], [0.95, 1.75, 3.0, 3.6], t);
+});

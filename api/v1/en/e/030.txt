@@ -1,6 +1,6 @@
-// Motion Prompt #030 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#030
+// Motion Prompt #030 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#030
 //
-// Orbit (Arc shot) / オービット
+// Orbit (Arc shot) / 环绕镜头
 // Pack: camera (Camera moves & transitions) · element 06 · Category: Camera Movement
 // What happens: The camera travels on a circle around the subject; the person stays centred while the trees and buildings behind sweep sideways.
 // Motion spec:
@@ -13,8 +13,8 @@
 // When to use it: To show a person or product in three dimensions, or to emphasise an entrance or a key moment.
 // Tags: orbit, arc shot, circle, 360, rotate around, revolve, camera move
 // Size: 539x208 px · Cycle: 9.4 s
-// Needs: kit camera -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/camera.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#030
+// Needs: kit camera -> https://motion-prompt.2077tech.com/api/v1/kit/camera.js
+// Live demo: https://motion-prompt.2077tech.com/#030
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

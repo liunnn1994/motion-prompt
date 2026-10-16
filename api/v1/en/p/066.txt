@@ -1,4 +1,4 @@
-Please use "Breadcrumbs" (パンくずリスト), one of the names in "UI component names".
+Please use "Breadcrumbs" (面包屑导航), one of the names in "UI component names".
 Motion Prompt #066
 
 What it is: A trail of links showing where the page sits in the site
@@ -11,6 +11,6 @@ Spec:
 - Back: the cursor moves onto the first card (blue outline 2.45–2.8 s) and clicks at 2.7 s; the detail page returns over 2.7–2.95 s.
 When to use it: Use it on sites with deep hierarchies to show where the page is and give a way back up.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/066.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/ui.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/066.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/ui.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

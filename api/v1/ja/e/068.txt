@@ -1,4 +1,4 @@
-// Motion Prompt #068 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#068
+// Motion Prompt #068 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#068
 //
 // ステップインジケーター / Step indicator
 // パック: ui (UIパーツの名前) · element 20 · カテゴリ: 案内する・状態を伝えるパーツ
@@ -12,8 +12,8 @@
 // 使いどころ: 申し込みや購入など、何段階かに分かれた手続きで今の位置を示したいとき。
 // タグ: step-indicator, stepper, steps, progress-steps, wizard, multi-step, checkout
 // サイズ: 542x191 px · 1周: 4.5 s
-// Needs: kit ui -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/ui.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#068
+// Needs: kit ui -> https://motion-prompt.2077tech.com/api/v1/kit/ui.js
+// 動く見本: https://motion-prompt.2077tech.com/#068
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

@@ -1,6 +1,6 @@
-// Motion Prompt #062 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#062
+// Motion Prompt #062 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#062
 //
-// Range slider / レンジスライダー
+// Range slider / 范围滑块
 // Pack: ui (UI component names) · element 14 · Category: Choosing & switching
 // What happens: On a price slider, the left handle is dragged right and the right handle left to narrow the range, then both go back.
 // Motion spec:
@@ -12,8 +12,8 @@
 // When to use it: Use it to filter by a range, such as price, date or size, with a minimum and a maximum.
 // Tags: range-slider, slider, dual-thumb, min-max, price-filter, range
 // Size: 542x191 px · Cycle: 4.5 s
-// Needs: kit ui -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/ui.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#062
+// Needs: kit ui -> https://motion-prompt.2077tech.com/api/v1/kit/ui.js
+// Live demo: https://motion-prompt.2077tech.com/#062
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

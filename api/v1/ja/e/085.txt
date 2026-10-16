@@ -1,4 +1,4 @@
-// Motion Prompt #085 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#085
+// Motion Prompt #085 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#085
 //
 // リップルエフェクト / Ripple effect
 // パック: lp (LP・Webサイトの演出) · element 13 · カテゴリ: マウス・クリックへの反応
@@ -11,8 +11,8 @@
 // 使いどころ: ボタンやリストを押したことを、その場ですぐ返したいとき。
 // タグ: ripple, ink-ripple, material, click, tap, feedback, button
 // サイズ: 539x208 px · 1周: 4.8 s
-// Needs: kit lp -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/lp.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#085
+// Needs: kit lp -> https://motion-prompt.2077tech.com/api/v1/kit/lp.js
+// 動く見本: https://motion-prompt.2077tech.com/#085
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

@@ -1,4 +1,4 @@
-// Motion Prompt #053 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#053
+// Motion Prompt #053 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#053
 //
 // ドロップダウン / Dropdown (select)
 // パック: ui (UIパーツの名前) · element 05 · カテゴリ: 開く・重なるパーツ
@@ -12,8 +12,8 @@
 // 使いどころ: フォームで、決まった候補の中から1つを選ばせたいとき。
 // タグ: dropdown, dropdown-menu, select, picker, combobox, options, form
 // サイズ: 542x191 px · 1周: 4.5 s
-// Needs: kit ui -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/ui.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#053
+// Needs: kit ui -> https://motion-prompt.2077tech.com/api/v1/kit/ui.js
+// 動く見本: https://motion-prompt.2077tech.com/#053
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

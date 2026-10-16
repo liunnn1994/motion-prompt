@@ -1,4 +1,4 @@
-// Motion Prompt #072 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#072
+// Motion Prompt #072 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#072
 //
 // エンプティステート / Empty state
 // パック: ui (UIパーツの名前) · element 24 · カテゴリ: 案内する・状態を伝えるパーツ
@@ -11,8 +11,8 @@
 // 使いどころ: 初めて使う画面や、検索で何も見つからないときに、次にすることを案内したいとき。
 // タグ: empty-state, no-data, zero-state, blank-state, no-results, onboarding
 // サイズ: 542x191 px · 1周: 4.5 s
-// Needs: kit ui -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/ui.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#072
+// Needs: kit ui -> https://motion-prompt.2077tech.com/api/v1/kit/ui.js
+// 動く見本: https://motion-prompt.2077tech.com/#072
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

@@ -1,0 +1,121 @@
+# Motion Prompt catalog (zh-CN) · 120 elements · https://motion-prompt.2077tech.com/ · columns: id	pack	category	title	tags	summary
+001	motion	入场与文字动效	弹性入场 (Pop-in)	pop,pop-in,spring,bounce,scale,icon,badge,entrance	应用图标弹跳着出现，通知角标稍后弹出。
+002	motion	入场与文字动效	交错入场 (Stagger)	stagger,sequence,delay,cascade,bar-chart,list,entrance	柱状图从左到右依次升起，每根柱子略有延迟。
+003	motion	入场与文字动效	放射迸发 (Burst)	burst,explosion,radial,like,heart,celebrate,accent,sparkle	点赞爱心点亮的同时，周围的圆环、线条和粒子向外迸发。
+004	motion	入场与文字动效	描边动画 (Line draw)	line-draw,trim-path,stroke,draw-on,chart,path,write-on	图表曲线逐渐绘出，然后从起点开始擦除。
+005	motion	入场与文字动效	蒙版揭示 (Mask reveal)	mask,reveal,clip,wipe,title,text,slide-up,headline	标题从一条细线标记的不可见边缘后方滑出。
+006	motion	入场与文字动效	打字机效果 (Typewriter)	typewriter,typing,text,cursor,input,prompt,chat,type-on	输入框中的文字逐字出现，随后发送按钮点亮并被按下。
+007	motion	入场与文字动效	数字递增 (Count-up)	count-up,counter,number,odometer,stats,kpi,progress	数字不断递增，最终停在目标值。
+008	motion	入场与文字动效	动态文字 (Kinetic typography)	kinetic-typography,text,typography,lyric,word,bounce,spin,slam	词语随含义而变化：拉伸、弹跳、旋转或重重落下。
+009	motion	动效细节	缓动 (Easing)	easing,ease-in-out,cubic-bezier,linear,timing,curve,acceleration	两个方块在相同时间移动相同距离，上方匀速，下方使用缓动。
+010	motion	动效细节	过冲 (Overshoot)	overshoot,spring,bounce,settle,elastic,gauge,meter,needle	仪表指针越过目标位置，回摆后稳定下来。
+011	motion	动效细节	挤压与拉伸 (Squash & stretch)	squash,stretch,squash-and-stretch,bounce,character,ball,animation-principle	弹跳角色在落地时压扁，在起跳时拉长。
+012	motion	动效细节	形状变形 (Shape morph)	morph,morphing,shape,path,interpolate,transform,icon	形状在圆形、方形、星形和爱心之间平滑变化，颜色也随之改变。
+013	motion	动效细节	液态动效 (Liquid motion)	liquid,blob,goo,gooey,metaball,fluid,organic,drip	液团拉伸、分裂成液滴，再重新融合。
+014	motion	动效细节	运动拖尾 (Motion trail)	trail,motion-trail,echo,afterimage,ghost,path,speed	小球沿八字形移动，身后留下逐渐消失的残影。
+015	motion	动效细节	粒子效果 (Particles)	particles,confetti,emitter,fountain,gravity,celebration,sparks	粒子持续从发射器喷出，扩散后落下。
+016	motion	动效细节	视差 (Parallax)	parallax,depth,layers,pan,2.5d,background,landscape	风景横向移动，近景移动多、远景移动少，形成纵深感。
+017	motion	转场与视觉强调	蒙版转场 (Mask transition)	mask,transition,iris,wipe,shape-wipe,reveal,scene-change	圆形或星形窗口展开，露出其中的下一场景。
+018	motion	转场与视觉强调	图形转场 (Shape transition)	shape-transition,transition,wipe,bands,stripes,cover,scene-change	彩色色带扫过并覆盖画面，离开后露出下一场景。
+019	motion	转场与视觉强调	液态转场 (Liquid transition)	liquid,transition,drip,paint,goo,fluid,wipe,scene-change	颜料般的液体从上方流下，覆盖画面后成为下一场景。
+020	motion	转场与视觉强调	穿越缩放 (Zoom through)	zoom,zoom-through,transition,push-in,scale,tunnel,scene-change	镜头推入字母 O 的孔洞，从另一侧进入下一场景。
+021	motion	转场与视觉强调	翻转 (Flip)	flip,card,3d,rotate,turn,reveal,question-answer	卡片绕垂直轴翻转，显示另一面。
+022	motion	转场与视觉强调	扫光 (Light sweep)	light-sweep,shine,sheen,glint,highlight,logo,badge,premium	一条倾斜光带扫过标志徽章的表面。
+023	motion	转场与视觉强调	故障效果 (Glitch)	glitch,rgb-split,chromatic-aberration,distortion,digital,error,slice	文字切片横向错位、颜色分离并出现短条纹，没有亮度闪烁。
+024	motion	转场与视觉强调	冲击震动 (Impact shake)	shake,impact,camera-shake,slam,drop,thud,headline,emphasis	沉重的标题牌落下，整幅画面随撞击震动。
+025	camera	镜头运动	水平摇镜 (Pan)	pan,panning,yaw,rotate,horizontal,camera move,reveal	相机原地水平转动，近景和远景的横向位移相同。
+026	camera	镜头运动	垂直摇镜 (Tilt)	tilt,tilt up,pitch,vertical,look up,camera move	相机原地向上转动，从地面人物一直看到塔顶。
+027	camera	镜头运动	推镜头 (Dolly in)	dolly,dolly in,push in,track in,move forward,parallax,camera move	相机本身向人物靠近，近景迅速变大并移出画面，远山变化很小。
+028	camera	镜头运动	变焦推近 (Zoom in)	zoom,zoom in,focal length,lens,magnify,telephoto,camera move	相机不动，焦距变长，整个画面按相同比例放大。
+029	camera	镜头运动	跟拍 (Tracking shot)	tracking,tracking shot,follow,truck,lateral,sideways,parallax,walk	相机与行人同速横向移动，人物保持居中，近处柱子更快掠过。
+030	camera	镜头运动	环绕镜头 (Orbit (Arc shot))	orbit,arc shot,circle,360,rotate around,revolve,camera move	相机绕人物移动，人物居中，背后的树木和建筑向侧面掠过。
+031	camera	镜头运动	升镜头 (Crane up)	crane,crane up,jib,boom up,rise,high angle,camera move	相机升高的同时向下俯仰，最终俯视人物。
+032	camera	镜头运动	滑动变焦 (Dolly zoom (Vertigo))	dolly zoom,vertigo,zolly,push pull,background stretch,unease,camera move	相机后退并同步放大焦距，人物大小不变，背景逐渐拉近。
+033	camera	拍摄手法与时间控制	移焦 (Rack focus)	rack focus,focus pull,pull focus,depth of field,blur,bokeh,foreground	机位不变，焦点从前景花朵移向后方人物，两者交替清晰与模糊。
+034	camera	拍摄手法与时间控制	手持拍摄 (Handheld)	handheld,camera shake,shaky,documentary,wobble,noise,realism	整幅画面出现轻微的不规则抖动，像手持相机拍摄。
+035	camera	拍摄手法与时间控制	FPV 穿越机镜头 (FPV drone shot)	fpv,drone,fly through,first person,banking,speed,aerial	第一人称视角在两排树木间快速低飞，左右倾斜转向。
+036	camera	拍摄手法与时间控制	荷兰角 (Dutch angle)	dutch angle,dutch tilt,canted angle,oblique,roll,tension,tilted horizon	相机绕镜头轴旋转，让地平线保持倾斜。
+037	camera	拍摄手法与时间控制	慢动作 (Slow motion)	slow motion,slow-mo,slomo,high frame rate,120fps,time stretch,jump	固定镜头中，跳跃者缓慢上升和落下，树叶也缓慢飘落。
+038	camera	拍摄手法与时间控制	速度渐变 (Speed ramp)	speed ramp,time remap,ramping,fast to slow,variable speed,velocity	同一镜头的播放速度由快到慢平滑变化，左下角曲线显示速度。
+039	camera	拍摄手法与时间控制	延时摄影 (Time-lapse)	time-lapse,timelapse,fast forward,time compression,sun,clouds,day to night	固定机位把 06:00 到 18:00 压缩为数秒，太阳、云、人和影子快速移动。
+040	camera	拍摄手法与时间控制	定格 (Freeze frame)	freeze frame,still frame,pause,hold,stop motion,highlight	跳跃者到达最高点时画面暂停，1.4 秒后从同一帧继续。
+041	camera	剪辑与转场	跳切 (Jump cut)	jump cut,cut,time skip,same framing,vlog,ellipsis,edit	机位和取景不变，人物位置与时钟跳变，略过同一场景中的时间。
+042	camera	剪辑与转场	匹配剪辑 (Match cut)	match cut,graphic match,shape match,cut,transition,edit	抛出的球在下一镜头变为同位置、同大小的太阳，用相似形状连接两个场景。
+043	camera	剪辑与转场	甩镜转场 (Whip pan)	whip pan,swish pan,motion blur,fast pan,transition,energy	相机快速横向转动，在条纹状运动模糊中切换场景。
+044	camera	剪辑与转场	叠化 (Cross dissolve)	cross dissolve,dissolve,crossfade,fade,opacity,blend,transition	下一画面叠加在当前画面上，不透明度逐渐增加，中途两幅画面同时可见。
+045	camera	剪辑与转场	划像转场 (Wipe)	wipe,linear wipe,reveal,clip,edge,left to right,transition	垂直边界从左向右移动，经过的位置替换为下一画面。
+046	camera	剪辑与转场	猛切 (Smash cut)	smash cut,hard cut,abrupt,contrast,quiet to loud,comedy,transition	熟睡的安静场景毫无预兆地切入紧张场景，音量表同时跃升。
+047	camera	剪辑与转场	J 型剪辑 (J-cut)	j-cut,j cut,split edit,audio lead,sound first,audio transition,edit	下一场景的音频先开始，随后画面切换；示例上方为画面，下方为音视频时间线。
+048	camera	剪辑与转场	L 型剪辑 (L-cut)	l-cut,l cut,split edit,audio lag,sound carries over,audio transition,edit	画面切换后，上一场景的音频继续播放一段时间；下方时间线展示音画关系。
+049	ui	弹层与面板	模态对话框 (Modal dialog)	modal,modal-dialog,dialog,popup,overlay,backdrop,lightbox,confirm	点击“打开”后背景变暗，小窗口放大到中央；点击 × 关闭。
+050	ui	弹层与面板	抽屉面板 (Drawer (Off-canvas))	drawer,off-canvas,offcanvas,side-menu,navigation-drawer,sheet,sidebar,slide-in	点击“菜单”后高面板从左侧滑入，点击外部后滑回。
+051	ui	弹层与面板	底部面板 (Bottom sheet)	bottom-sheet,sheet,modal-sheet,mobile,slide-up,drag-to-dismiss,panel	手指点击“查看详情”，面板从底部升起，下拖手柄关闭。
+052	ui	弹层与面板	折叠面板 (Accordion)	accordion,collapsible,expand,collapse,disclosure,faq,details	点击第一个标题展开内容，下方条目被推开；再次点击收起。
+053	ui	弹层与面板	下拉选择框 (Dropdown (select))	dropdown,dropdown-menu,select,picker,combobox,options,form	点击字段后下方出现四个选项，选择“名古屋”后列表收起并填入字段。
+054	ui	弹层与面板	文字提示 (Tooltip)	tooltip,hint,hover,help,info,title	悬停问号图标时，上方黑色气泡显示简短说明；移开后消失。
+055	ui	弹层与面板	气泡卡片 (Popover)	popover,popup,callout,bubble,flyout,overlay	点击“详情”后右侧出现带指示角的白色面板，点击内部“确定”关闭。
+056	ui	弹层与面板	轻提示 (Toast notification)	toast,snackbar,notification,alert,message,auto-dismiss	点击“保存”后，黑色通知滑入右下角，稍后自行滑出。
+057	ui	选择与切换	选项卡 (Tabs)	tabs,tab-bar,tabbed,navigation,switch-view,underline	依次点击概览、价格、评价，蓝色下划线滑动，下方内容切换。
+058	ui	选择与切换	轮播图 (Carousel)	carousel,slider,slideshow,gallery,swipe,paging-dots	每次点击右箭头，三张图片组成的横排向左移动一格，下方圆点同步切换。
+059	ui	选择与切换	切换开关 (Toggle switch)	toggle,switch,toggle-switch,on-off,boolean,settings	前三行设置中的前两个开关依次开启，再依次关闭。
+060	ui	选择与切换	分段选择器 (Segmented control)	segmented-control,segmented-button,button-group,toggle-group,switcher,view-switch	点击日、周、月，蓝色高亮滑动，下方柱状图高度变化。
+061	ui	选择与切换	筛选标签 (Filter chips)	chips,filter-chips,tags,filter,facets,pills	点击“新品”和“免费”标签后出现勾号并变蓝，不匹配的卡片淡出。
+062	ui	选择与切换	范围滑块 (Range slider)	range-slider,slider,dual-thumb,min-max,price-filter,range	左右滑块向中间移动以缩小价格范围，然后回到原位。
+063	ui	选择与切换	数字步进器 (Stepper (+/−))	stepper,quantity,number-input,increment,decrement,plus-minus,spin-button	点击加号三次，数字从 1 变为 4；点击减号三次，回到 1。
+064	ui	选择与切换	分页 (Pagination)	pagination,pager,page-numbers,paging,next-prev,navigation	依次点击第 2、3 页，蓝色圆圈移动，上方列表切换，最后回到第 1 页。
+065	ui	导航与状态反馈	汉堡菜单 (Hamburger menu)	hamburger-menu,hamburger,menu-icon,nav-toggle,mobile-menu,menu	点击页头三线图标后变为 ×，下方展开菜单；再次点击关闭。
+066	ui	导航与状态反馈	面包屑导航 (Breadcrumbs)	breadcrumbs,breadcrumb,trail,hierarchy,navigation,path	点击面包屑中的“课程”返回列表，再点击卡片进入详情。
+067	ui	导航与状态反馈	大型下拉菜单 (Mega menu)	mega-menu,megamenu,dropdown-navigation,navigation,header-menu,multi-column	悬停“产品”出现全宽分组面板，移开后关闭。
+068	ui	导航与状态反馈	步骤指示器 (Step indicator)	step-indicator,stepper,steps,progress-steps,wizard,multi-step,checkout	每次点击“下一步”，四个圆点中的下一个被选中，蓝色连接线延长。
+069	ui	导航与状态反馈	骨架屏 (Skeleton screen)	skeleton,skeleton-screen,placeholder,shimmer,loading,ghost-content	点击“重新加载”后列表变为同形状的灰块，扫光经过，加载结束后恢复内容。
+070	ui	导航与状态反馈	加载指示器 (Spinner)	spinner,loading,loader,activity-indicator,progress-circle,busy	点击“发送”后卡片蒙上白色，中央蓝色弧线旋转，完成后变为勾号并消失。
+071	ui	导航与状态反馈	角标 (Badge)	badge,notification-badge,counter,count,dot,unread	每次收到通知，铃铛上的蓝色角标依次显示 1、2、3，点击铃铛清除。
+072	ui	导航与状态反馈	空状态 (Empty state)	empty-state,no-data,zero-state,blank-state,no-results,onboarding	删除两条列表项后，显示空盒子插画、“暂无内容”和添加按钮。
+073	lp	滚动效果	视差滚动 (Parallax scrolling)	parallax,parallax-scrolling,scroll,depth,layers,hero,background	页面向下滚动，标题正常上移，天空、太阳、远山和近山移动较慢。
+074	lp	滚动效果	滚动淡入 (Fade-in on scroll)	fade-in,scroll-reveal,reveal-on-scroll,intersection-observer,aos,entrance,scroll	滚动时，标题、卡片和正文进入视口后依次上移、淡入到位。
+075	lp	滚动效果	吸顶导航 (Sticky header)	sticky,sticky-header,fixed-header,position-sticky,navigation,header,scroll	公告条滚出画面，下方导航停在顶端，正文在其下继续滚动。
+076	lp	滚动效果	滚动固定 (Pinning)	pin,pinning,scrolltrigger,gsap,scroll-driven,steps,storytelling	深蓝区块占满视口后固定，继续滚动依次展示 1→2→3，再恢复页面滚动。
+077	lp	滚动效果	横向滚动 (Horizontal scroll)	horizontal-scroll,sideways,scrolltrigger,pin,gallery,portfolio,scroll	页面向下滚动时区块保持固定，四张编号作品卡片向左移动。
+078	lp	滚动效果	滚动吸附 (Scroll snap)	scroll-snap,snap,full-page,sections,css,mandatory,scroll	小幅滚动后页面自动补足距离，使下一节顶部对齐视口。
+079	lp	滚动效果	滚动进度条 (Scroll progress bar)	progress-bar,reading-progress,scroll-progress,indicator,scroll-driven,article	随着文章向下滚动，顶部线条从左向右延长，到页尾时填满。
+080	lp	滚动效果	荧光笔动画 (Highlighter animation)	highlighter,marker,text-highlight,emphasis,scroll-reveal,copy,underline	文案进入视口后，黄色笔画从左向右覆盖关键词下半部。
+081	lp	悬停与点击交互	悬停抬升 (Hover lift)	hover,lift,float,card,shadow,translatey,interaction	光标下的卡片微微抬起、阴影扩散，移开后复原。
+082	lp	悬停与点击交互	悬停图片缩放 (Image zoom on hover)	hover,zoom,image,scale,overflow-hidden,thumbnail,gallery	光标下的图片缓慢放大，边框不变，移开后缩回。
+083	lp	悬停与点击交互	光标跟随 (Cursor follower)	cursor,custom-cursor,cursor-follower,mouse-follow,lerp,trail,interaction	光标移动时，橙色圆圈在后方跟随。
+084	lp	悬停与点击交互	磁吸按钮 (Magnetic button)	magnetic,magnetic-button,hover,cursor,elastic,cta,interaction	光标靠近时按钮跟随移动，离开后弹回原位。
+085	lp	悬停与点击交互	波纹效果 (Ripple effect)	ripple,ink-ripple,material,click,tap,feedback,button	每次点击后白色圆圈从点击点扩散并填满按钮，再逐渐消失。
+086	lp	悬停与点击交互	下划线动画 (Underline animation)	underline,hover,link,navigation,menu,text-link,scalex	光标下的链接出现橙色下划线，移开后向右缩短消失。
+087	lp	悬停与点击交互	前后对比滑块 (Before/after slider)	before-after,image-comparison,slider,drag,compare,clip,photo	左右拖动分界线，改变灰色原图和彩色效果图的可见比例。
+088	lp	悬停与点击交互	离站提示弹窗 (Exit-intent popup)	exit-intent,popup,mouseleave,coupon,conversion,retention,lp	光标向标签页或关闭按钮移动并越过页顶时，背景变暗，出现“稍等”弹窗，点击 × 关闭。
+089	lp	加载、导航与循环动效	预加载画面 (Preloader)	preloader,loading-screen,loader,percentage,intro,splash,curtain	深蓝画面中的数字从 0% 增至 100%，随后画面升起，下方页面淡入。
+090	lp	加载、导航与循环动效	懒加载 (Lazy loading)	lazy-loading,lazy-load,images,placeholder,performance,spinner,gallery	灰色占位进入视口后出现加载指示器，图片加载完成后淡入，首行从一开始就已加载。
+091	lp	加载、导航与循环动效	无限滚动 (Infinite scroll)	infinite-scroll,endless-scroll,load-more,feed,pagination,spinner,list	滚动至列表末尾后出现加载指示器，再追加三条内容以继续阅读。
+092	lp	加载、导航与循环动效	页面转场 (Page transition)	page-transition,transition,view-transitions,navigation,wipe,barba,spa	点击作品卡片后橙色面板从左侧扫入，URL 改变，面板从右侧退出并露出详情页，返回时同样过渡。
+093	lp	加载、导航与循环动效	平滑滚动 (Smooth scroll)	smooth-scroll,scroll-behavior,anchor-link,in-page-link,back-to-top,navigation	点击“价格”后页面平滑下移至价格区，右下角箭头可平滑返回顶部。
+094	lp	加载、导航与循环动效	跑马灯 (Marquee)	marquee,ticker,infinite-loop,scrolling-text,logo-strip,band,loop	深蓝横条中，橙色圆点分隔的服务名称持续向左移动，没有间隙。
+095	lp	加载、导航与循环动效	动态渐变 (Animated gradient)	gradient,animated-gradient,mesh-gradient,background,hero,ambient,loop	标题后方柔和的橙、浅橙、蓝、浅蓝色块绕圈漂移，相互融合。
+096	lp	加载、导航与循环动效	悬浮动画 (Floating animation)	floating,float,bob,hover-animation,keyframes,translatey,decoration,loop	标题旁的手机、爱心角标和评分标签轻轻浮动，手机下的阴影同步伸缩。
+097	photo	布光与拍摄时段	逆光 (Backlighting)	backlighting,backlit,contre-jour,sun behind,haze,glow,halo	太阳移到人物头后，轮廓边缘亮起，暖色薄雾覆盖画面，人物正面变暗。
+098	photo	布光与拍摄时段	轮廓光 (Rim light)	rim light,rim lighting,edge light,backlight,kicker,outline,studio	环境变暗，人物左右后方的灯照亮头肩边缘，右下角平面图显示灯位。
+099	photo	布光与拍摄时段	剪影 (Silhouette)	silhouette,backlit,sunset,contre-jour,black shape,underexposed	曝光以明亮暮色天空为准，人物、建筑、灯和树变为无细节的黑色轮廓。
+100	photo	布光与拍摄时段	分割光 (Split lighting)	split lighting,side light,portrait lighting,half face,dramatic,chiaroscuro	灯从前侧 20° 移至正侧 90°，脸部阴影由月牙形变为半脸。
+101	photo	布光与拍摄时段	伦勃朗光 (Rembrandt lighting)	rembrandt lighting,portrait lighting,triangle,45 degree light,chiaroscuro,painterly	侧上方灯光亮起，脸部一侧进入阴影，仅暗侧脸颊保留倒三角亮区。
+102	photo	布光与拍摄时段	蝴蝶光 (Butterfly lighting)	butterfly lighting,paramount lighting,beauty lighting,portrait lighting,overhead light,glamour	正前高位灯亮起，脸部两侧照明均匀，下巴下方保留小而对称的阴影。
+103	photo	布光与拍摄时段	黄金时刻 (Golden hour)	golden hour,magic hour,sunset light,warm light,long shadows,low sun	太阳降至地平线上方，天地转暖橙，人物左侧被照亮，树和灯的影子向右延长。
+104	photo	布光与拍摄时段	蓝调时刻 (Blue hour)	blue hour,twilight,dusk,night city,cityscape,deep blue sky	太阳落山后天空渐变为深蓝，窗户和路灯亮起琥珀色，人物呈深蓝轮廓。
+105	photo	镜头与相机效果	散景 (Bokeh)	bokeh,shallow depth of field,background blur,wide aperture,f/1.4,out of focus,lights	光圈增大，人物保持清晰，建筑变柔，远处灯光化为浅色大光斑。
+106	photo	镜头与相机效果	移轴效果 (Tilt-shift)	tilt-shift,miniature,miniature effect,fake miniature,selective focus,toy town,focus band	街景上下两端变模糊，仅中间道路、汽车和小人保持清晰，像模型世界。
+107	photo	镜头与相机效果	长曝光 (Long exposure)	long exposure,light trails,slow shutter,night photography,car trails,motion	街道进入夜色，汽车几乎消失，车尾拖出红色光轨，对向车道出现白色和琥珀色光轨。
+108	photo	镜头与相机效果	追随拍摄 (Panning shot)	panning,panning shot,motion blur,speed,sports photography,slow shutter	相机跟随汽车，车身保持在中央且清晰，背景建筑、树木和灯光横向模糊。
+109	photo	镜头与相机效果	镜头光晕 (Lens flare)	lens flare,flare,ghosting,sun flare,starburst,cinematic	太阳从建筑后露出，周围出现光芒，光点、六边形和圆环穿过画面中心延伸到另一侧。
+110	photo	镜头与相机效果	鱼眼镜头 (Fisheye lens)	fisheye,fisheye lens,barrel distortion,ultra wide,8mm,distortion	街景中心凸起，建筑垂线和道路线条向外弯曲，边角位置不变。
+111	photo	镜头与相机效果	色差 (Chromatic aberration)	chromatic aberration,color fringing,rgb split,lens aberration,fringe,glitch	街景拆为红绿蓝三层，以略有差异的尺寸重叠，主体边缘出现红青条纹，靠两侧更强。
+112	photo	镜头与相机效果	暗角 (Vignette)	vignette,vignetting,dark corners,edge darkening,lens falloff,focus	画面从四角渐渐变暗，中央人物和道路仍然明亮。
+113	photo	影调与后期风格	高调摄影 (High-key)	high-key,high key,bright,white background,airy,low contrast	风景和人物变为接近白色的浅色调，阴影很弱，直方图峰值移向右侧。
+114	photo	影调与后期风格	低调摄影 (Low-key)	low-key,low key,dark,black background,moody,dramatic,chiaroscuro	画面大部分变暗，太阳消失，半身像仅右侧边缘被照亮，直方图峰值移向左侧。
+115	photo	影调与后期风格	黑白摄影 (Black and white)	black and white,monochrome,b&w,grayscale,desaturated,classic	同一风景逐渐褪色，阳光和人物变为灰阶，形状仅通过亮度呈现。
+116	photo	影调与后期风格	双色调 (Duotone)	duotone,two-tone,gradient map,color overlay,poster,graphic	同一风景的颜色被替换为两种颜色，暗部靛蓝、亮部粉色。
+117	photo	影调与后期风格	青橙色调 (Teal and orange)	teal and orange,orange and teal,cinematic,color grading,blockbuster,film look	天空、山丘、地面和阴影人物变青，人物受光边缘与太阳变橙，形成互补对比。
+118	photo	影调与后期风格	胶片颗粒 (Film grain)	film grain,grain,noise,analog,35mm film,texture,warm tone	同一风景上出现细颗粒，色彩略向暖奶油色偏移。
+119	photo	影调与后期风格	漏光 (Light leak)	light leak,film leak,vintage,analog,lomo,warm glow	画面右边缘渗入缓慢晃动的光带，内部淡黄、边缘偏红。
+120	photo	影调与后期风格	双重曝光 (Double exposure)	double exposure,multiple exposure,blend,silhouette,surreal,composite	背景变白，缩小的山丘、房屋、树木和太阳风景出现在半身像轮廓内部。

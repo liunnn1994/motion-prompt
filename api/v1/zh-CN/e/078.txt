@@ -1,0 +1,39 @@
+// Motion Prompt #078 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#078
+//
+// 滚动吸附 / Scroll snap
+// 素材包: lp (落地页与网页效果) · element 06 · 分类: 滚动效果
+// 示例内容: 小幅滚动后页面自动补足距离，使下一节顶部对齐视口。
+// 动画规格:
+//   - 每个区块与视口等高，为 168px；首区块浅蓝，第二个深蓝。
+//   - 每 2.4 秒吸附一次；0.45–0.85 秒用户仅滚动 34px，使用三次缓出。
+//   - 0.9–1.5 秒页面自动补足剩余 134px，使下一区块顶部对齐视口，使用三次缓出。
+//   - 后一个 2.4 秒以相同方式向上返回第一区块，模拟 scroll-snap-type: y mandatory。
+// 适用场景: 适合每次展示一整屏的演示型页面。
+// 标签: scroll-snap, snap, full-page, sections, css, mandatory, scroll
+// 尺寸: 539x208 px · 周期: 4.8 s
+// 依赖: kit lp -> https://motion-prompt.2077tech.com/api/v1/kit/lp.js
+// 动态示例: https://motion-prompt.2077tech.com/#078
+//
+// cells[i](k, w, h, u)：k = CanvasRenderingContext2D（由调用方清空画布并执行 save/restore），w、h = 尺寸，u = 秒数，范围为 [0, cycle)。画面仅由 u 决定。
+// 以下为素材代码。CELLS、常量及辅助函数位于 kit 文件中。
+
+// @element 06
+// 06 スクロールスナップ（少しスクロールすると、次のセクションの頭までピタッと送られる）
+CELLS[5] = (k, w, h, u) => {
+  frame(k);
+  const T = CYC / 2, lu = mod(u, T), dir = u < T ? 1 : -1, from = u < T ? 0 : VH, DRIFT = 34;
+  const y = from + dir * (DRIFT * eOut(P(lu, 0.45, 0.85)) + (VH - DRIFT) * eOut(P(lu, 0.9, 1.5)));
+  view(k, () => {
+    k.save(); k.translate(0, -y);
+    for (let i = 0; i < 2; i++) {
+      const y0 = i * VH, dark = i === 1;
+      k.fillStyle = dark ? C.ink : C.blueL; k.fillRect(0, y0, VW, VH);
+      txt(k, '0' + (i + 1), 34, y0 + 70, `800 46px ${EN}`, C.acc);
+      txt(k, dark ? '使ってみる' : '知ってもらう', 34, y0 + 102, `800 18px ${JP}`, dark ? '#fff' : C.ink);
+      bars(k, 34, y0 + 118, 170, 2, dark ? 'rgba(255,255,255,.3)' : '#C3CDEA');
+      pic(k, 262, y0 + 24, 220, 120, dark ? 2 : 0, 8);
+    }
+    k.restore();
+    sbar(k, y / VH, 0.5);
+  });
+};

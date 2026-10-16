@@ -1,6 +1,6 @@
-// Motion Prompt #018 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#018
+// Motion Prompt #018 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#018
 //
-// Shape transition / シェイプトランジション
+// Shape transition / 图形转场
 // Pack: motion (Motion graphics moves) · element 18 · Category: Transitions & highlights
 // What happens: Coloured bands sweep across and cover the frame; when they leave, the next scene is there.
 // Motion spec:
@@ -12,8 +12,8 @@
 // When to use it: Use it to change scenes with shapes in brand colours: chapter breaks, topic changes.
 // Tags: shape-transition, transition, wipe, bands, stripes, cover, scene-change
 // Size: 539x208 px · Cycle: 4.7 s
-// Needs: kit motion -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/motion.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#018
+// Needs: kit motion -> https://motion-prompt.2077tech.com/api/v1/kit/motion.js
+// Live demo: https://motion-prompt.2077tech.com/#018
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

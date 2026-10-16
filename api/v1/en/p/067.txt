@@ -1,4 +1,4 @@
-Please use "Mega menu" (メガメニュー), one of the names in "UI component names".
+Please use "Mega menu" (大型下拉菜单), one of the names in "UI component names".
 Motion Prompt #067
 
 What it is: A wide panel of grouped links that opens from the main menu
@@ -11,6 +11,6 @@ Spec:
 - Close: the cursor leaves the panel from 2.9 s; it fades over 3.15–3.4 s (1 − easeInOutCubic).
 When to use it: Use it on sites with many products or sections so visitors can see the whole range at once.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/067.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/ui.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/067.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/ui.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

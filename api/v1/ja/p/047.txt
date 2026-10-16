@@ -12,6 +12,6 @@ Motion Prompt #047
 - 戻り: 最後の0.5秒で開始状態へクロスフェード（1周4.7秒）
 使いどころ: 次の場面への期待を先に作りたいとき、会話や場面転換を自然につなぐとき。
 
-参考実装（Canvas 2D・時刻だけで絵が決まる関数）: https://showheyohtaki.github.io/motion-prompt/api/v1/ja/e/047.txt
-共通の補助コード: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/camera.js
+参考実装（Canvas 2D・時刻だけで絵が決まる関数）: https://motion-prompt.2077tech.com/api/v1/ja/e/047.txt
+共通の補助コード: https://motion-prompt.2077tech.com/api/v1/kit/camera.js
 参考実装の形・タイミング・イージングの数値はそのまま使い、中の文字・色・素材だけ、いま作っている物に合わせてください。

@@ -1,4 +1,4 @@
-// Motion Prompt #008 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#008
+// Motion Prompt #008 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#008
 //
 // キネティックタイポグラフィ / Kinetic typography
 // パック: motion (モーショングラフィックスの動き) · element 08 · カテゴリ: 登場・文字の演出
@@ -13,8 +13,8 @@
 // 使いどころ: ナレーションや歌詞のキーワードを、意味ごと印象に残したいとき。
 // タグ: kinetic-typography, text, typography, lyric, word, bounce, spin, slam
 // サイズ: 539x208 px · 1周: 4.7 s
-// Needs: kit motion -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/motion.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#008
+// Needs: kit motion -> https://motion-prompt.2077tech.com/api/v1/kit/motion.js
+// 動く見本: https://motion-prompt.2077tech.com/#008
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

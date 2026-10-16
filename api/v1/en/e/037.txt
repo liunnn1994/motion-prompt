@@ -1,6 +1,6 @@
-// Motion Prompt #037 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#037
+// Motion Prompt #037 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#037
 //
-// Slow motion / スローモーション
+// Slow motion / 慢动作
 // Pack: camera (Camera moves & transitions) · element 13 · Category: Shooting Style & Time
 // What happens: In front of a fixed camera a person rises and falls slowly through a jump while leaves drift down slowly; the whole action is stretched out.
 // Motion spec:
@@ -13,8 +13,8 @@
 // When to use it: To let viewers study a brief action or expression, or to emphasise an emotional peak.
 // Tags: slow motion, slow-mo, slomo, high frame rate, 120fps, time stretch, jump
 // Size: 539x208 px · Cycle: 9.4 s
-// Needs: kit camera -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/camera.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#037
+// Needs: kit camera -> https://motion-prompt.2077tech.com/api/v1/kit/camera.js
+// Live demo: https://motion-prompt.2077tech.com/#037
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

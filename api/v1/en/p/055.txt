@@ -1,4 +1,4 @@
-Please use "Popover" (ポップオーバー), one of the names in "UI component names".
+Please use "Popover" (气泡卡片), one of the names in "UI component names".
 Motion Prompt #055
 
 What it is: Click a button to open a small panel pointing at it
@@ -11,6 +11,6 @@ Spec:
 - Close: the cursor moves to OK (402, 157) by 3.0 s and clicks at 3.3 s; a is multiplied by (1 − easeInOutCubic over 3.3–3.5 s).
 When to use it: Use it for a short setting or confirmation that belongs right next to the button that opened it.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/055.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/ui.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/055.txt
+Shared helper code: https://motion-prompt.2077tech.com/api/v1/kit/ui.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

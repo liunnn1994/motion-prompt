@@ -10,6 +10,6 @@ Motion Prompt #065
 - メニュー: 白・高さ140。上端 y = 44 − 140 + 140×a でヘッダーの下から下りる（ヘッダーの下だけ見せる）。影 blur 16。中に4項目、1つ目は青
 使いどころ: スマホなど幅の狭い画面で、全体メニューを1つのボタンにしまいたいとき。
 
-参考実装（Canvas 2D・時刻だけで絵が決まる関数）: https://showheyohtaki.github.io/motion-prompt/api/v1/ja/e/065.txt
-共通の補助コード: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/ui.js
+参考実装（Canvas 2D・時刻だけで絵が決まる関数）: https://motion-prompt.2077tech.com/api/v1/ja/e/065.txt
+共通の補助コード: https://motion-prompt.2077tech.com/api/v1/kit/ui.js
 参考実装の形・タイミング・イージングの数値はそのまま使い、中の文字・色・素材だけ、いま作っている物に合わせてください。

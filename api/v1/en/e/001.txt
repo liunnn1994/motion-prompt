@@ -1,6 +1,6 @@
-// Motion Prompt #001 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#001
+// Motion Prompt #001 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#001
 //
-// Pop-in / ポップイン
+// Pop-in / 弹性入场
 // Pack: motion (Motion graphics moves) · element 01 · Category: Entrances & text
 // What happens: An app icon pops in with a bounce, then a notification badge pops in a moment later.
 // Motion spec:
@@ -13,8 +13,8 @@
 // When to use it: Use it to bring in a small element such as an icon, button or badge with a light accent.
 // Tags: pop, pop-in, spring, bounce, scale, icon, badge, entrance
 // Size: 539x208 px · Cycle: 4.7 s
-// Needs: kit motion -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/motion.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#001
+// Needs: kit motion -> https://motion-prompt.2077tech.com/api/v1/kit/motion.js
+// Live demo: https://motion-prompt.2077tech.com/#001
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

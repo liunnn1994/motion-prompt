@@ -1,4 +1,4 @@
-// Motion Prompt #009 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#009
+// Motion Prompt #009 · MIT License (c) 2026 Shohei Ohtaki · https://motion-prompt.2077tech.com/#009
 //
 // イージング / Easing
 // パック: motion (モーショングラフィックスの動き) · element 09 · カテゴリ: 動きの味付け
@@ -13,8 +13,8 @@
 // 使いどころ: 移動・拡大・回転など、あらゆる動きに緩急を付けて機械的に見えないようにしたいとき。
 // タグ: easing, ease-in-out, cubic-bezier, linear, timing, curve, acceleration
 // サイズ: 539x208 px · 1周: 4.7 s
-// Needs: kit motion -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/motion.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#009
+// Needs: kit motion -> https://motion-prompt.2077tech.com/api/v1/kit/motion.js
+// 動く見本: https://motion-prompt.2077tech.com/#009
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。
