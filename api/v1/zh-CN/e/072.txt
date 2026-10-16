@@ -6,7 +6,7 @@
 // 动画规格:
 //   - 卡片尺寸 542×191，每轮 4.5 秒。列表有两行，每行 494×48、圆角半径 8，右侧带删除图标。
 //   - 0.95 秒和 1.65 秒分别点击删除图标；对应行用 0.3 秒按 easeInOutCubic 左移 60px 并淡出，第二行上移 58px 补到首行位置。
-//   - 1.95–2.3 秒线性淡入空状态并上移 8px：蓝色线条收件盒插画、16px 日语“暂无内容”和 112×34 的蓝色“添加”按钮。
+//   - 1.95–2.3 秒线性淡入空状态并上移 8px：蓝色线条收件盒插画、16px 中文“暂无内容”和 112×34 的蓝色“添加”按钮。
 //   - 3.3 秒点击“添加”；空状态在 3.25–3.45 秒淡出，两行内容在 3.35–3.7 秒按 easeOutCubic 从左侧返回。
 // 适用场景: 适合首次使用或无结果页面，告诉用户下一步可以做什么。
 // 标签: empty-state, no-data, zero-state, blank-state, no-results, onboarding
@@ -39,8 +39,8 @@ CELLS[23] = ui((w, h, t) => {
     X.strokeStyle = C.blue; X.lineWidth = 2.6; X.lineJoin = 'round';
     X.beginPath(); X.moveTo(w / 2 - 26, cy - 4); X.lineTo(w / 2 - 18, cy - 22); X.lineTo(w / 2 + 18, cy - 22); X.lineTo(w / 2 + 26, cy - 4); X.lineTo(w / 2 + 26, cy + 16); X.lineTo(w / 2 - 26, cy + 16); X.closePath(); X.stroke();
     X.beginPath(); X.moveTo(w / 2 - 26, cy - 4); X.lineTo(w / 2 - 9, cy - 4); X.lineTo(w / 2 - 6, cy + 3); X.lineTo(w / 2 + 6, cy + 3); X.lineTo(w / 2 + 9, cy - 4); X.lineTo(w / 2 + 26, cy - 4); X.stroke();
-    text('まだ何もありません', w / 2, cy + 40, 16, '#555', 600, 'center');
-    fillRR(w / 2 - 56, cy + 62, 112, 34, 8, C.blue); text('追加する', w / 2, cy + 79, 15, '#fff', 600, 'center');
+    text('暂无内容', w / 2, cy + 40, 16, '#555', 600, 'center');
+    fillRR(w / 2 - 56, cy + 62, 112, 34, 8, C.blue); text('添加', w / 2, cy + 79, 15, '#fff', 600, 'center');
     X.restore();
   }
   pointer([[.3, w + 30, h + 30], [.9, 486, 67], [1.25, 486, 67], [1.6, 486, 67], [2.4, 486, 67], [3.2, w / 2 + 4, 156], [3.5, w / 2 + 4, 156], [4.2, w + 30, h + 30]], [0.95, 1.65, 3.3], t);

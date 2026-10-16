@@ -27,11 +27,11 @@ CELLS[20] = (k, w, h, u) => {
   const [cx, cy] = path([[0, 380, 132], [0.75, 360, 18], [1.0, 360, 18], [2.9, 478, 140], [3.25, 478, 140], [4.8, 380, 132]], u);
   view(k, () => {
     k.save(); k.translate(0, -y);
-    pic(k, 24, 46, 222, 110, 0, 8); txt(k, 'ちょうどいい道具を。', 264, 84, `800 19px ${JP}`, C.ink); bars(k, 264, 98, 210, 3);
+    pic(k, 24, 46, 222, 110, 0, 8); txt(k, '找到顺手的工具。', 264, 84, `800 19px ${JP}`, C.ink); bars(k, 264, 98, 210, 3);
     k.fillStyle = C.soft; k.fillRect(0, 170, VW, 160);
-    txt(k, '特長', VW / 2, 206, `800 17px ${JP}`, C.ink, 'center');
+    txt(k, '特色', VW / 2, 206, `800 17px ${JP}`, C.ink, 'center');
     for (let i = 0; i < 3; i++) { const x = 100 + i * 155; k.fillStyle = C.blueL; k.beginPath(); k.arc(x, 252, 24, 0, 7); k.fill(); bars(k, x - 46, 288, 92, 2); }
-    txt(k, '料金', VW / 2, 370, `800 17px ${JP}`, C.ink, 'center');
+    txt(k, '价格', VW / 2, 370, `800 17px ${JP}`, C.ink, 'center');
     ['¥0', '¥980', '¥2,980'].forEach((s, i) => {
       const x = 50 + i * 143, hi = i === 1; k.fillStyle = '#fff'; rr(k, x, 388, 125, 96, 8); k.fill();
       k.lineWidth = hi ? 2.5 : 1.5; k.strokeStyle = hi ? C.acc : C.faint; k.stroke();

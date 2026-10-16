@@ -24,7 +24,7 @@ CELLS[21] = ui((w, h, t) => {
   const load = seg(t, 1.05, 1.2) * (1 - seg(t, 2.95, 3.05));
   const done = seg(t, 2.95, 3.15) * (1 - seg(t, 3.75, 4.0));
   pageLines(24, 18, 494); strokeRR(24, 90, 494, 34, 7, C.line2, 1.5);
-  fillRR(w / 2 - 60, 140, 120, 40, 8, C.blue); text('送信', w / 2, 160, 16, '#fff', 600, 'center');
+  fillRR(w / 2 - 60, 140, 120, 40, 8, C.blue); text('发送', w / 2, 160, 16, '#fff', 600, 'center');
   const ov = Math.max(load, done);
   if (ov > 0) {
     X.fillStyle = `rgba(255,255,255,${.78 * ov})`; X.fillRect(0, 0, w, h);

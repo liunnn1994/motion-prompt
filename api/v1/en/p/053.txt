@@ -6,9 +6,9 @@ What the sample shows: Clicking the field opens four options below it; picking "
 Spec:
 - 4.5 s cycle on a 542×191 card. A 260×38 field (radius 8) shows a placeholder and a chevron; the cursor clicks it at 1.0 s.
 - Open amount: 0→1 over 1.0–1.25 s with easeOutCubic. The list (white 260×112, shadow blur 18) fades in while dropping 6 px. The chevron turns 180° and the field border becomes 2 px blue.
-- Four options 26 px apart (Tokyo, Osaka, Nagoya, Fukuoka in Japanese). As the cursor moves down, Osaka is highlighted light blue from 1.55 s and Nagoya from 1.95 s.
-- Click on Nagoya at 2.3 s: the list closes over 2.3–2.45 s (1 − easeInOutCubic); the placeholder fades out over 2.2–2.3 s and "Nagoya" fades in over 2.32–2.42 s.
-- Reset: Nagoya fades out over 3.9–4.08 s, then the placeholder returns over 4.1–4.3 s, so the two texts never overlap.
+- Four options 26 px apart (Beijing, Shanghai, Shenzhen, Guangzhou in Chinese). As the cursor moves down, Shanghai is highlighted light blue from 1.55 s and Shenzhen from 1.95 s.
+- Click on Shenzhen at 2.3 s: the list closes over 2.3–2.45 s (1 − easeInOutCubic); the placeholder fades out over 2.2–2.3 s and "Shenzhen" fades in over 2.32–2.42 s.
+- Reset: Shenzhen fades out over 3.9–4.08 s, then the placeholder returns over 4.1–4.3 s, so the two texts never overlap.
 When to use it: Use it in a form when people pick one value from a fixed list.
 
 Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/053.txt

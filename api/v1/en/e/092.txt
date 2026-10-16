@@ -34,7 +34,7 @@ CELLS[19] = (k, w, h, u) => {
       txt(k, 'WORKS', 34, 62, `800 18px ${EN}`, C.ink, 'left', 'alphabetic', '2px');
       for (let i = 0; i < 3; i++) { const x = 34 + i * 152; pic(k, x, 74, 136, 60, i, 6); bars(k, x, 142, 100, 1, C.ink, 7); }
     } else {
-      txt(k, '← 一覧へ', 34, 55, `700 12px ${JP}`, C.sub, 'left', 'middle');
+      txt(k, '← 返回列表', 34, 55, `700 12px ${JP}`, C.sub, 'left', 'middle');
       pic(k, 34, 68, 240, 90, 1, 8);
       txt(k, 'Project 02', 296, 96, `800 22px ${EN}`, C.ink); bars(k, 296, 110, 180, 3);
     }

@@ -22,7 +22,7 @@
 // 07 ポップオーバー（Popover）
 CELLS[6] = ui((w, h, t) => {
   pageLines(24, 16, 494);
-  strokeRR(24, 112, 108, 36, 8, C.blue, 2); text('詳細', 78, 130, 15, C.blue, 600, 'center');
+  strokeRR(24, 112, 108, 36, 8, C.blue, 2); text('详情', 78, 130, 15, C.blue, 600, 'center');
   fillRR(24, 160, 494, 22, 6, C.block);
   const a = eo(seg(t, 1.0, 1.28)) * (1 - eio(seg(t, 3.3, 3.5)));
   if (a > 0) {

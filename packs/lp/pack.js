@@ -95,8 +95,8 @@ MotionPrompt.pack('lp', function () {
   function header(k, y, active = -1) {
     k.fillStyle = '#fff'; k.fillRect(0, y, VW, 34); k.fillStyle = C.rule; k.fillRect(0, y + 33, VW, 1);
     logo(k, 18, y + 17);
-    ['特長', '料金', 'FAQ'].forEach((s, i) => txt(k, s, NAVX[i], y + 17.5, `600 12px ${JP}`, active === i ? C.acc : C.ink, 'left', 'middle'));
-    btn(k, 428, y + 7, 70, 20, '無料で試す', C.acc, '#fff', 10.5);
+    ['特色', '价格', 'FAQ'].forEach((s, i) => txt(k, s, NAVX[i], y + 17.5, `600 12px ${JP}`, active === i ? C.acc : C.ink, 'left', 'middle'));
+    btn(k, 428, y + 7, 70, 20, '免费试用', C.acc, '#fff', 10.5);
   }
   // マウスのカーソル（矢印）。press で少し縮む
   function cursor(k, x, y, press = 0) {
@@ -146,11 +146,11 @@ MotionPrompt.pack('lp', function () {
       k.save(); k.translate(0, -y * 0.4); mount(k, VW, 190, M1, '#7D9AF4', 0); k.restore();   // 遠い山: 0.4倍
       k.save(); k.translate(0, -y * 0.7); mount(k, VW, 205, M2, '#4B6BDB', 1); k.restore();   // 近い山: 0.7倍
       k.save(); k.translate(0, -y);                                // 見出し・ボタン・次のセクション: 1倍
-      txt(k, '山へ、行こう。', 34, 64, `800 28px ${JP}`, '#fff', 'left', 'alphabetic', '1px');
+      txt(k, '一起去山里。', 34, 64, `800 28px ${JP}`, '#fff', 'left', 'alphabetic', '1px');
       bars(k, 34, 78, 160, 2, 'rgba(255,255,255,.85)');
-      btn(k, 34, 106, 92, 26, '予約する');
+      btn(k, 34, 106, 92, 26, '立即预订');
       k.fillStyle = '#fff'; k.fillRect(0, VH, VW, 200);
-      txt(k, '人気のコース', 34, VH + 34, `800 16px ${JP}`, C.ink);
+      txt(k, '热门路线', 34, VH + 34, `800 16px ${JP}`, C.ink);
       for (let i = 0; i < 3; i++) { pic(k, 34 + i * 152, VH + 50, 136, 58, i, 6); bars(k, 34 + i * 152, VH + 116, 110, 1, C.faint); }
       k.restore();
       sbar(k, s * 0.35, 0.4);
@@ -165,10 +165,10 @@ MotionPrompt.pack('lp', function () {
     const LINE = VH * 0.85, DUR = 0.7, RISE = 28;
     view(k, () => {
       k.save(); k.translate(0, -y);
-      txt(k, '暮らしを、軽く。', 34, 52, `800 24px ${JP}`, C.ink); bars(k, 34, 68, 190, 3); btn(k, 34, 108, 96, 26, '詳しく見る');
+      txt(k, '让生活更轻松。', 34, 52, `800 24px ${JP}`, C.ink); bars(k, 34, 68, 190, 3); btn(k, 34, 108, 96, 26, '查看详情');
       pic(k, 286, 18, 196, 110, 0, 8);
       const items = [
-        [172, () => txt(k, '選ばれる3つの理由', VW / 2, 172 + 20, `800 18px ${JP}`, C.ink, 'center')],
+        [172, () => txt(k, '选择我们的3个理由', VW / 2, 172 + 20, `800 18px ${JP}`, C.ink, 'center')],
         [206, () => { for (let i = 0; i < 3; i++) { const x = 34 + i * 152; k.fillStyle = C.soft; rr(k, x, 206, 136, 106, 8); k.fill(); pic(k, x + 8, 214, 120, 56, i, 5); bars(k, x + 10, 280, 112, 2, '#CBD2DE'); } }],
         [334, () => bars(k, 110, 334, 290, 3, C.faint, 7, 13)]
       ];
@@ -191,12 +191,12 @@ MotionPrompt.pack('lp', function () {
     view(k, () => {
       k.save(); k.translate(0, -y);
       pic(k, 24, 70, 214, 112, 0, 8);
-      txt(k, '新しい毎日を、', 262, 104, `800 22px ${JP}`, C.ink); bars(k, 262, 120, 210, 3); btn(k, 262, 160, 100, 26, '詳しく見る');
+      txt(k, '开启全新一天，', 262, 104, `800 22px ${JP}`, C.ink); bars(k, 262, 120, 210, 3); btn(k, 262, 160, 100, 26, '查看详情');
       k.fillStyle = C.soft; k.fillRect(0, 212, VW, 240);
-      txt(k, '特長', VW / 2, 246, `800 18px ${JP}`, C.ink, 'center');
+      txt(k, '特色', VW / 2, 246, `800 18px ${JP}`, C.ink, 'center');
       for (let i = 0; i < 3; i++) { const x = 34 + i * 152; k.fillStyle = '#fff'; rr(k, x, 262, 136, 120, 8); k.fill(); pic(k, x + 8, 270, 120, 58, i, 5); bars(k, x + 10, 340, 110, 3, C.faint, 6, 11); }
       k.fillStyle = C.ink; k.fillRect(0, 0, VW, STRIP);
-      txt(k, '期間限定キャンペーン実施中', VW / 2, STRIP / 2 + 0.5, `600 11px ${JP}`, '#fff', 'center', 'middle');
+      txt(k, '限时优惠进行中', VW / 2, STRIP / 2 + 0.5, `600 11px ${JP}`, '#fff', 'center', 'middle');
       k.restore();
       const hy = Math.max(STRIP - y, 0), sh = clamp((y - STRIP) / 24);
       if (sh > 0) { const g = k.createLinearGradient(0, hy + 34, 0, hy + 46); g.addColorStop(0, `rgba(28,35,51,${0.16 * sh})`); g.addColorStop(1, 'rgba(28,35,51,0)'); k.fillStyle = g; k.fillRect(0, hy + 34, VW, 12); }
@@ -215,7 +215,7 @@ MotionPrompt.pack('lp', function () {
     // 中身は 1/3・2/3 の所で次のステップへ（前後 ±0.07 の範囲で easeInOut）
     const f = eIO(P(p, 1 / 3 - 0.07, 1 / 3 + 0.07)) + eIO(P(p, 2 / 3 - 0.07, 2 / 3 + 0.07));
     view(k, () => {
-      txt(k, '3ステップで完成', 34, 56 - y, `800 22px ${JP}`, C.ink); bars(k, 34, 72 - y, 240, 2);
+      txt(k, '3步轻松完成', 34, 56 - y, `800 22px ${JP}`, C.ink); bars(k, 34, 72 - y, 240, 2);
       k.save(); k.translate(0, top);
       k.fillStyle = C.ink; k.fillRect(0, 0, VW, VH);
       // 左: STEP の番号（スクロール量に合わせて回る）
@@ -272,7 +272,7 @@ MotionPrompt.pack('lp', function () {
         const y0 = i * VH, dark = i === 1;
         k.fillStyle = dark ? C.ink : C.blueL; k.fillRect(0, y0, VW, VH);
         txt(k, '0' + (i + 1), 34, y0 + 70, `800 46px ${EN}`, C.acc);
-        txt(k, dark ? '使ってみる' : '知ってもらう', 34, y0 + 102, `800 18px ${JP}`, dark ? '#fff' : C.ink);
+        txt(k, dark ? '立即体验' : '深入了解', 34, y0 + 102, `800 18px ${JP}`, dark ? '#fff' : C.ink);
         bars(k, 34, y0 + 118, 170, 2, dark ? 'rgba(255,255,255,.3)' : '#C3CDEA');
         pic(k, 262, y0 + 24, 220, 120, dark ? 2 : 0, 8);
       }
@@ -289,7 +289,7 @@ MotionPrompt.pack('lp', function () {
     const y = steps([[0.3, 0], [0.75, 110], [1.15, 110], [1.6, 220], [2.0, 220], [2.45, 330], [2.85, 330], [3.3, MAX], [3.75, MAX], [4.55, 0]], u);
     view(k, () => {
       k.save(); k.translate(0, -y);
-      txt(k, 'はじめてのWebデザイン', 70, 44, `800 20px ${JP}`, C.ink); bars(k, 70, 56, 120, 1, C.faint, 5);
+      txt(k, '网页设计入门', 70, 44, `800 20px ${JP}`, C.ink); bars(k, 70, 56, 120, 1, C.faint, 5);
       pic(k, 70, 74, 371, 112, 0, 8);
       for (let b = 0; b < 4; b++) { const y0 = 204 + b * 82; k.fillStyle = C.ink; rr(k, 70, y0, 140, 9, 4.5); k.fill(); bars(k, 70, y0 + 22, 371, 4, C.faint, 6, 12); }
       k.restore();
@@ -305,10 +305,10 @@ MotionPrompt.pack('lp', function () {
     frame(k);
     const SY = t => steps([[0.35, 0], [1.0, 90], [1.6, 90], [2.2, 180], [3.3, 180], [4.4, 0]], t), y = SY(u);
     const LINE = VH * 0.8, DUR = 0.8, MARK = '#FFE36B', F = `800 20px ${JP}`;
-    const rows = [[190, ['毎日のごはんが', 'たった10分で', '作れる。']], [290, ['はじめてでも', '失敗しないレシピ', 'だけ。']]];
+    const rows = [[190, ['每天的饭菜', '只需10分钟', '就做好。']], [290, ['即使是新手', '也能轻松做好的食谱', '都在这里。']]];
     view(k, () => {
       k.save(); k.translate(0, -y);
-      txt(k, '忙しい人のための', 70, 50, `700 14px ${JP}`, C.sub); txt(k, '台所の新しい相棒', 70, 80, `800 24px ${JP}`, C.ink);
+      txt(k, '为忙碌的你准备', 70, 50, `700 14px ${JP}`, C.sub); txt(k, '厨房里的新伙伴', 70, 80, `800 24px ${JP}`, C.ink);
       bars(k, 70, 96, 330, 4, C.faint, 6, 12, 0.8);
       for (const [base, parts] of rows) {
         k.font = F; const ws = parts.map(s => k.measureText(s).width); let x = (VW - ws.reduce((a, b) => a + b, 0)) / 2;
@@ -336,7 +336,7 @@ MotionPrompt.pack('lp', function () {
         k.save(); k.shadowColor = `rgba(28,35,51,${0.08 + 0.14 * q})`; k.shadowBlur = 6 + 16 * q; k.shadowOffsetY = 2 + 10 * q;
         k.fillStyle = '#fff'; rr(k, x, y, CWD, CHT, 10); k.fill(); k.restore();
         pic(k, x + 8, y + 8, CWD - 16, 66, i, 6);
-        txt(k, ['山の宿', '海の宿', '星の宿'][i], x + 12, y + 96, `800 13px ${JP}`, C.ink); bars(k, x + 12, y + 106, 100, 1);
+        txt(k, ['山间旅馆', '海边旅馆', '星空旅馆'][i], x + 12, y + 96, `800 13px ${JP}`, C.ink); bars(k, x + 12, y + 106, 100, 1);
       }
       const [cx, cy] = cur(u); cursor(k, cx, cy);
     });
@@ -353,7 +353,7 @@ MotionPrompt.pack('lp', function () {
         const inside = t => { const [x, y] = cur(t); return x > FX[i] && x < FX[i] + FW && y > FY && y < FY + FH; };
         const q = trans(inside, u, 0.5);
         pic(k, FX[i], FY, FW, FH, i, 8, 1 + ZOOM * q);
-        txt(k, ['夏の山小屋', '海辺のカフェ'][i], FX[i], FY + FH + 20, `800 13px ${JP}`, C.ink); bars(k, FX[i], FY + FH + 28, 150, 1);
+        txt(k, ['夏日山间小屋', '海边咖啡馆'][i], FX[i], FY + FH + 20, `800 13px ${JP}`, C.ink); bars(k, FX[i], FY + FH + 28, 150, 1);
       }
       const [cx, cy] = cur(u); cursor(k, cx, cy);
     });
@@ -370,7 +370,7 @@ MotionPrompt.pack('lp', function () {
     view(k, () => {
       txt(k, 'CREATIVE STUDIO', VW / 2, 74, `800 34px ${EN}`, C.ink, 'center', 'alphabetic', '3px');
       bars(k, VW / 2 - 120, 96, 240, 2, C.faint, 6, 12, 0.7);
-      btn(k, VW / 2 - 50, 128, 100, 24, '作品を見る', C.ink);
+      btn(k, VW / 2 - 50, 128, 100, 24, '查看作品', C.ink);
       k.fillStyle = C.acc; k.globalAlpha = 0.88; k.beginPath(); k.arc(fx, fy, 17, 0, 7); k.fill(); k.globalAlpha = 1;
       const [cx, cy] = cur(u); cursor(k, cx, cy);
     });
@@ -400,7 +400,7 @@ MotionPrompt.pack('lp', function () {
       k.save(); k.translate(BX + ox, BY + oy);
       k.shadowColor = 'rgba(255,90,44,.35)'; k.shadowBlur = 16; k.shadowOffsetY = 6;
       k.fillStyle = C.acc; rr(k, -84, -26, 168, 52, 26); k.fill(); k.shadowColor = 'transparent';
-      txt(k, 'お問い合わせ', 0, 1, `800 16px ${JP}`, '#fff', 'center', 'middle');
+      txt(k, '联系我们', 0, 1, `800 16px ${JP}`, '#fff', 'center', 'middle');
       k.restore();
       const [cx, cy] = cur(u); cursor(k, cx, cy);
     });
@@ -414,7 +414,7 @@ MotionPrompt.pack('lp', function () {
     const [cx, cy] = path([[0, 430, 160], [0.55, 165, 110], [1.6, 165, 110], [2.7, 345, 100], [3.6, 345, 100], [4.4, 430, 160], [4.8, 430, 160]], u);
     view(k, () => {
       k.fillStyle = C.soft; k.fillRect(0, 0, VW, VH);
-      txt(k, 'お申し込み', VW / 2, 38, `800 18px ${JP}`, C.ink, 'center'); bars(k, VW / 2 - 110, 50, 220, 1, C.faint, 6, 11, 1);
+      txt(k, '报名申请', VW / 2, 38, `800 18px ${JP}`, C.ink, 'center'); bars(k, VW / 2 - 110, 50, 220, 1, C.faint, 6, 11, 1);
       k.save(); k.shadowColor = 'rgba(28,35,51,.18)'; k.shadowBlur = 8; k.shadowOffsetY = 3; k.fillStyle = C.acc; rr(k, B.x, B.y, B.w, B.h, 10); k.fill(); k.restore();
       k.save(); rr(k, B.x, B.y, B.w, B.h, 10); k.clip();
       for (const [tc, px, py] of TAPS) {
@@ -423,7 +423,7 @@ MotionPrompt.pack('lp', function () {
         k.fillStyle = `rgba(255,255,255,${0.4 * (1 - P(d, 0.3, 0.8))})`; k.beginPath(); k.arc(px, py, Rm * eOut(P(d, 0, DUR)), 0, 7); k.fill();
       }
       k.restore();
-      txt(k, '送信する', VW / 2, B.y + B.h / 2 + 1, `800 17px ${JP}`, '#fff', 'center', 'middle');
+      txt(k, '发送', VW / 2, B.y + B.h / 2 + 1, `800 17px ${JP}`, '#fff', 'center', 'middle');
       click(k, cx, cy, u, TAPS.map(a => a[0]));
     });
   };
@@ -432,7 +432,7 @@ MotionPrompt.pack('lp', function () {
   // 14 下線アニメーション（リンクにカーソルを乗せると下線が左から伸び、離れると右へ抜ける）
   CELLS[13] = (k, w, h, u) => {
     frame(k);
-    const LINKS = ['サービス', '実績', '会社概要'], F = `800 20px ${JP}`, GAP = 56, LY = 84, DUR = 0.3;
+    const LINKS = ['服务', '案例', '公司简介'], F = `800 20px ${JP}`, GAP = 56, LY = 84, DUR = 0.3;
     const cur = t => path([[0, 120, 150], [0.45, 170, 80], [1.3, 186, 84], [1.55, 268, 80], [2.4, 282, 84], [2.65, 372, 80], [3.5, 390, 84], [3.95, 430, 150], [4.8, 120, 150]], t);
     view(k, () => {
       logo(k, 22, 28); bars(k, 90, 132, 331, 2, C.faint, 6, 12, 0.6);
@@ -489,14 +489,14 @@ MotionPrompt.pack('lp', function () {
     const D = { x: 125.5, y: 18, w: 260, h: 132 };
     view(k, () => {
       header(k, 0);
-      pic(k, 24, 46, 222, 110, 0, 8); txt(k, 'はじめての方へ', 264, 82, `800 19px ${JP}`, C.ink); bars(k, 264, 96, 210, 3); btn(k, 264, 132, 100, 24, '申し込む');
+      pic(k, 24, 46, 222, 110, 0, 8); txt(k, '新用户指南', 264, 82, `800 19px ${JP}`, C.ink); bars(k, 264, 96, 210, 3); btn(k, 264, 132, 100, 24, '立即报名');
       if (m > 0) {
         k.fillStyle = `rgba(28,35,51,${0.5 * m})`; k.fillRect(0, 0, VW, VH);
         k.save(); k.globalAlpha = m; k.translate(D.x + D.w / 2, D.y + D.h / 2); const s = 0.9 + 0.1 * m; k.scale(s, s); k.translate(-D.w / 2, -D.h / 2);
         k.fillStyle = '#fff'; rr(k, 0, 0, D.w, D.h, 12); k.fill();
-        txt(k, 'ちょっと待って！', D.w / 2, 34, `800 17px ${JP}`, C.ink, 'center');
-        txt(k, '今なら初回 10%OFF', D.w / 2, 60, `800 15px ${JP}`, C.acc, 'center');
-        btn(k, D.w / 2 - 75, 80, 150, 30, 'クーポンを受け取る', C.acc, '#fff', 12);
+        txt(k, '请稍等一下！', D.w / 2, 34, `800 17px ${JP}`, C.ink, 'center');
+        txt(k, '首次体验享九折', D.w / 2, 60, `800 15px ${JP}`, C.acc, 'center');
+        btn(k, D.w / 2 - 75, 80, 150, 30, '领取优惠券', C.acc, '#fff', 12);
         k.strokeStyle = C.sub; k.lineWidth = 2; k.lineCap = 'round'; k.beginPath(); k.moveTo(D.w - 26, 14); k.lineTo(D.w - 14, 26); k.moveTo(D.w - 14, 14); k.lineTo(D.w - 26, 26); k.stroke();
         k.restore();
       }
@@ -515,7 +515,7 @@ MotionPrompt.pack('lp', function () {
     view(k, () => {
       header(k, 0);
       k.save(); k.globalAlpha = show; k.translate(0, 14 * (1 - show));
-      txt(k, 'ようこそ。', 34, 82, `800 26px ${JP}`, C.ink); bars(k, 34, 98, 200, 3); btn(k, 34, 136, 96, 24, '始める');
+      txt(k, '欢迎你。', 34, 82, `800 26px ${JP}`, C.ink); bars(k, 34, 98, 200, 3); btn(k, 34, 136, 96, 24, '开始');
       pic(k, 270, 46, 214, 112, 0, 8); k.restore();
       if (cy > -VH) {
         k.save(); k.translate(0, cy); k.fillStyle = C.ink; k.fillRect(0, 0, VW, VH);
@@ -536,7 +536,7 @@ MotionPrompt.pack('lp', function () {
     const COLX = [15, 180, 345], IW = 151, IH = 92, ROWS = [12, 168, 276], WAIT = 0.45, FADE = 0.35;
     view(k, () => {
       k.save(); k.translate(0, -y);
-      txt(k, 'ギャラリー', 15, 140, `800 18px ${JP}`, C.ink); bars(k, 120, 128, 200, 1);
+      txt(k, '作品集', 15, 140, `800 18px ${JP}`, C.ink); bars(k, 120, 128, 200, 1);
       ROWS.forEach((top, r) => COLX.forEach((x, c) => {
         const t0 = r === 0 ? -1e9 : enteredAt(SY, top, VH, u), age = t0 === null ? -1 : u - t0 - c * 0.12;
         k.fillStyle = C.skel; rr(k, x, top, IW, IH, 6); k.fill();
@@ -593,7 +593,7 @@ MotionPrompt.pack('lp', function () {
         txt(k, 'WORKS', 34, 62, `800 18px ${EN}`, C.ink, 'left', 'alphabetic', '2px');
         for (let i = 0; i < 3; i++) { const x = 34 + i * 152; pic(k, x, 74, 136, 60, i, 6); bars(k, x, 142, 100, 1, C.ink, 7); }
       } else {
-        txt(k, '← 一覧へ', 34, 55, `700 12px ${JP}`, C.sub, 'left', 'middle');
+        txt(k, '← 返回列表', 34, 55, `700 12px ${JP}`, C.sub, 'left', 'middle');
         pic(k, 34, 68, 240, 90, 1, 8);
         txt(k, 'Project 02', 296, 96, `800 22px ${EN}`, C.ink); bars(k, 296, 110, 180, 3);
       }
@@ -611,11 +611,11 @@ MotionPrompt.pack('lp', function () {
     const [cx, cy] = path([[0, 380, 132], [0.75, 360, 18], [1.0, 360, 18], [2.9, 478, 140], [3.25, 478, 140], [4.8, 380, 132]], u);
     view(k, () => {
       k.save(); k.translate(0, -y);
-      pic(k, 24, 46, 222, 110, 0, 8); txt(k, 'ちょうどいい道具を。', 264, 84, `800 19px ${JP}`, C.ink); bars(k, 264, 98, 210, 3);
+      pic(k, 24, 46, 222, 110, 0, 8); txt(k, '找到顺手的工具。', 264, 84, `800 19px ${JP}`, C.ink); bars(k, 264, 98, 210, 3);
       k.fillStyle = C.soft; k.fillRect(0, 170, VW, 160);
-      txt(k, '特長', VW / 2, 206, `800 17px ${JP}`, C.ink, 'center');
+      txt(k, '特色', VW / 2, 206, `800 17px ${JP}`, C.ink, 'center');
       for (let i = 0; i < 3; i++) { const x = 100 + i * 155; k.fillStyle = C.blueL; k.beginPath(); k.arc(x, 252, 24, 0, 7); k.fill(); bars(k, x - 46, 288, 92, 2); }
-      txt(k, '料金', VW / 2, 370, `800 17px ${JP}`, C.ink, 'center');
+      txt(k, '价格', VW / 2, 370, `800 17px ${JP}`, C.ink, 'center');
       ['¥0', '¥980', '¥2,980'].forEach((s, i) => {
         const x = 50 + i * 143, hi = i === 1; k.fillStyle = '#fff'; rr(k, x, 388, 125, 96, 8); k.fill();
         k.lineWidth = hi ? 2.5 : 1.5; k.strokeStyle = hi ? C.acc : C.faint; k.stroke();
@@ -665,7 +665,7 @@ MotionPrompt.pack('lp', function () {
       }
       txt(k, 'Hello, Future.', 40, 82, `800 34px ${EN}`, '#fff', 'left', 'alphabetic', '1px');
       bars(k, 40, 100, 200, 2, 'rgba(255,255,255,.8)', 6, 12, 0.6);
-      btn(k, 40, 128, 104, 26, 'はじめる', '#fff', C.ink);
+      btn(k, 40, 128, 104, 26, '开始使用', '#fff', C.ink);
     });
   };
 
@@ -677,8 +677,8 @@ MotionPrompt.pack('lp', function () {
     const y1 = bob(2.4, 8, 0), y2 = bob(1.6, 6, 1.2), y3 = bob(2.4, 6, 2.4);
     view(k, () => {
       k.fillStyle = C.soft; k.fillRect(0, 0, VW, VH);
-      txt(k, 'アプリで、', 34, 62, `800 24px ${JP}`, C.ink); txt(k, 'もっと身軽に。', 34, 94, `800 24px ${JP}`, C.ink);
-      bars(k, 34, 108, 170, 2); btn(k, 34, 134, 112, 24, 'ダウンロード');
+      txt(k, '用上应用，', 34, 62, `800 24px ${JP}`, C.ink); txt(k, '生活更轻松。', 34, 94, `800 24px ${JP}`, C.ink);
+      bars(k, 34, 108, 170, 2); btn(k, 34, 134, 112, 24, '立即下载');
       // 影（上がるほど小さく薄く）
       const sh = 1 + y1 / 40;
       k.fillStyle = `rgba(28,35,51,${0.16 * sh})`; k.beginPath(); k.ellipse(352, 160, 54 * sh, 6 * sh, 0, 0, 7); k.fill();

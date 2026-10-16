@@ -169,7 +169,7 @@ MotionPrompt.pack('motion', function () {
     // 下の段：線の上から下へ
     const dn = (1 - eOut5(P(lu, 0.55, 1.15))) * -60 + eIn(P(lu, 1.75, 2.05)) * 70;
     k.save(); k.beginPath(); k.rect(0, LY + 5, w, 52); k.clip();
-    txt(k, 'はじめまして', X, LY + 44 + dn, `700 32px ${JP}`, C.yel, 'center', 'alphabetic', '6px');
+    txt(k, '很高兴见到你', X, LY + 44 + dn, `700 32px ${JP}`, C.yel, 'center', 'alphabetic', '6px');
     k.restore();
     if (lg > 0.005) { k.fillStyle = C.coral; rr(k, X - 190 * lg, LY - 3, 380 * lg, 6, 3); k.fill(); }
   };
@@ -178,7 +178,7 @@ MotionPrompt.pack('motion', function () {
   // 06 タイプライター（入力欄に1文字ずつ打たれ、打ち終わると送信ボタンが点く）
   CELLS[5] = (k, w, h, u) => {
     stage(k);
-    const S = 'ねこの動画つくって', N = [...S].length, t0 = 0.3, dt = 0.24, done = t0 + N * dt;
+    const S = '请帮我制作猫咪视频', N = [...S].length, t0 = 0.3, dt = 0.24, done = t0 + N * dt;
     const BX = 34, BY = 58, BW = w - 68, BH = 92;
     const sendT = done + 0.55, clr = P(u, sendT + 0.12, sendT + 0.4);
     k.fillStyle = '#fff'; rr(k, BX, BY, BW, BH, 30); k.fill();
@@ -243,16 +243,16 @@ MotionPrompt.pack('motion', function () {
     k.save(); k.translate(X, Y + oy); k.globalAlpha = oa;
     if (n === 0) {
       const sp = spring(lu - 0.05, 12, 4.2), sx = 0.3 + 0.7 * sp, sy = 1 / Math.sqrt(Math.max(0.75, sx));
-      k.globalAlpha = oa * P(lu, 0.03, 0.12); k.scale(sx, sy); txt(k, 'のびる', 0, 0, f, C.blue, 'center', 'middle', '4px');
+      k.globalAlpha = oa * P(lu, 0.03, 0.12); k.scale(sx, sy); txt(k, '伸展开', 0, 0, f, C.blue, 'center', 'middle', '4px');
     } else if (n === 1) {
-      chars(k, 'はねる', f, 6).forEach((c, i) => {
+      chars(k, '弹起来', f, 6).forEach((c, i) => {
         const tt = lu - 0.06 - i * 0.1; if (tt < 0) return;
         const y = -78 * Math.abs(Math.sin(Math.PI * tt / 0.4)) * Math.exp(-2.6 * tt), near = Math.abs(Math.sin(Math.PI * tt / 0.4)) < 0.25 ? 1 : 0;
         const sq = 1 - 0.16 * near * Math.exp(-2.6 * tt), a = P(tt, 0, 0.08);
         k.save(); k.globalAlpha = oa * a; k.translate(c.x, y + 44); k.scale(2 - sq, sq); txt(k, c.ch, 0, -44, f, C.yel, 'center', 'middle'); k.restore();
       });
     } else if (n === 2) {
-      chars(k, 'まわる', f, 6).forEach((c, i) => {
+      chars(k, '旋转中', f, 6).forEach((c, i) => {
         const tt = lu - 0.05 - i * 0.12; if (tt < 0) return;
         const q = backOut(P(tt, 0, 0.62), 1.3), sc = eOut(P(tt, 0, 0.25));
         k.save(); k.translate(c.x, 0); k.rotate((1 - q) * -Math.PI * 2); k.scale(sc, sc); txt(k, c.ch, 0, 0, f, C.mint, 'center', 'middle'); k.restore();
@@ -262,7 +262,7 @@ MotionPrompt.pack('motion', function () {
       const dx = tt > 0 ? 10 * Math.exp(-9 * tt) * Math.sin(38 * tt) : 0, sy = tt > 0 ? 1 - 0.2 * Math.exp(-11 * tt) : 1;
       k.globalAlpha = oa * P(lu, 0.02, 0.1);
       if (tt > 0 && tt < 0.4) { const q = eOut(tt / 0.4); k.strokeStyle = C.yel; k.lineWidth = 7 * (1 - q); k.lineCap = 'round'; for (let i = 0; i < 8; i++) { const a = i / 8 * Math.PI * 2 + 0.2, r0 = 120 + 50 * q, r1 = r0 + 26; k.beginPath(); k.moveTo(Math.cos(a) * r0 * 1.35, Math.sin(a) * r0 * 0.5); k.lineTo(Math.cos(a) * r1 * 1.35, Math.sin(a) * r1 * 0.5); if (q < 0.97) k.stroke(); } }
-      k.translate(dx, 44); k.scale(sc * (2 - sy), sc * sy); k.transform(1, 0, -0.14, 1, 0, 0); txt(k, 'ドン!', 0, -44, `800 100px ${JP}`, C.coral, 'center', 'middle');
+      k.translate(dx, 44); k.scale(sc * (2 - sy), sc * sy); k.transform(1, 0, -0.14, 1, 0, 0); txt(k, '砰！', 0, -44, `800 100px ${JP}`, C.coral, 'center', 'middle');
     }
     k.restore();
   };
@@ -280,8 +280,8 @@ MotionPrompt.pack('motion', function () {
     const ez = mv === 1 ? EZ(pp) : mv === -1 ? 1 - EZ(pp) : lin;
     const vel = mv ? (EZ(Math.min(1, pp + 0.01)) - EZ(Math.max(0, pp - 0.01))) / 0.02 : 0, vn = clamp(vel / 3.6);
     // ラベル
-    txt(k, '一定', 24, y1 + 1, `700 34px ${JP}`, C.dim, 'left', 'middle');
-    txt(k, '緩急', 24, y2 + 1, `700 34px ${JP}`, C.yel, 'left', 'middle');
+    txt(k, '匀速', 24, y1 + 1, `700 34px ${JP}`, C.dim, 'left', 'middle');
+    txt(k, '缓动', 24, y2 + 1, `700 34px ${JP}`, C.yel, 'left', 'middle');
     // レール＋0.1秒ごとの位置
     [[y1, x => x, '#34489A'], [y2, EZ, '#34489A']].forEach(([y, f, col]) => {
       k.strokeStyle = C.navy2; k.lineWidth = 6; k.lineCap = 'round'; k.beginPath(); k.moveTo(x0, y); k.lineTo(x1, y); k.stroke();

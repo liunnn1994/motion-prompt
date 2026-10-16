@@ -6,7 +6,7 @@ What the sample shows: Deleting the two list rows with their trash icons brings 
 Spec:
 - 4.5 s cycle on a 542×191 card. A two-row list (494×48, radius 8, a trash icon at the right).
 - The cursor clicks the trash icons at 0.95 s and 1.65 s. Each row slides 60 px left while fading out over 0.3 s (easeInOutCubic); the second row moves up 58 px into the first slot.
-- Over 1.95–2.3 s (linear) the empty state fades in while rising 8 px: a blue line drawing of an inbox tray, "Nothing here yet" (16 px, in Japanese) and a blue "Add" button (112×34).
+- Over 1.95–2.3 s (linear) the empty state fades in while rising 8 px: a blue line drawing of an inbox tray, "Nothing here yet" (16 px, in Chinese) and a blue "Add" button (112×34).
 - The cursor clicks "Add" at 3.3 s; the empty state fades over 3.25–3.45 s and the two rows come back from the left over 3.35–3.7 s with easeOutCubic.
 When to use it: Use it for first-use screens or no-results pages to tell people what to do next.
 

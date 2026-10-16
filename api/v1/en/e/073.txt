@@ -30,11 +30,11 @@ CELLS[0] = (k, w, h, u) => {
     k.save(); k.translate(0, -y * 0.4); mount(k, VW, 190, M1, '#7D9AF4', 0); k.restore();   // 遠い山: 0.4倍
     k.save(); k.translate(0, -y * 0.7); mount(k, VW, 205, M2, '#4B6BDB', 1); k.restore();   // 近い山: 0.7倍
     k.save(); k.translate(0, -y);                                // 見出し・ボタン・次のセクション: 1倍
-    txt(k, '山へ、行こう。', 34, 64, `800 28px ${JP}`, '#fff', 'left', 'alphabetic', '1px');
+    txt(k, '一起去山里。', 34, 64, `800 28px ${JP}`, '#fff', 'left', 'alphabetic', '1px');
     bars(k, 34, 78, 160, 2, 'rgba(255,255,255,.85)');
-    btn(k, 34, 106, 92, 26, '予約する');
+    btn(k, 34, 106, 92, 26, '立即预订');
     k.fillStyle = '#fff'; k.fillRect(0, VH, VW, 200);
-    txt(k, '人気のコース', 34, VH + 34, `800 16px ${JP}`, C.ink);
+    txt(k, '热门路线', 34, VH + 34, `800 16px ${JP}`, C.ink);
     for (let i = 0; i < 3; i++) { pic(k, 34 + i * 152, VH + 50, 136, 58, i, 6); bars(k, 34 + i * 152, VH + 116, 110, 1, C.faint); }
     k.restore();
     sbar(k, s * 0.35, 0.4);

@@ -32,7 +32,7 @@ CELLS[4] = (k, w, h, u) => {
   // 下の段：線の上から下へ
   const dn = (1 - eOut5(P(lu, 0.55, 1.15))) * -60 + eIn(P(lu, 1.75, 2.05)) * 70;
   k.save(); k.beginPath(); k.rect(0, LY + 5, w, 52); k.clip();
-  txt(k, 'はじめまして', X, LY + 44 + dn, `700 32px ${JP}`, C.yel, 'center', 'alphabetic', '6px');
+  txt(k, '很高兴见到你', X, LY + 44 + dn, `700 32px ${JP}`, C.yel, 'center', 'alphabetic', '6px');
   k.restore();
   if (lg > 0.005) { k.fillStyle = C.coral; rr(k, X - 190 * lg, LY - 3, 380 * lg, 6, 3); k.fill(); }
 };

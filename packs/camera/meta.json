@@ -432,15 +432,15 @@
       "ask": { "ja": "静かな寝室から、騒がしい交差点へスマッシュカット。", "en": "Smash cut from the quiet bedroom to a noisy intersection.", "zh-CN": "从安静卧室猛切到喧闹路口。" },
       "summary": { "ja": "人物が寝ている静かな場面から、前触れなく激しい場面へ直結で切り替える。音量メーターも一気に上がる。", "en": "A quiet scene of a person asleep cuts with no warning straight to an intense one; the volume meter jumps at the same moment.", "zh-CN": "熟睡的安静场景毫无预兆地切入紧张场景，音量表同时跃升。" },
       "spec": {
-        "ja": ["つなぎ方: 2.4秒で直結（0フレーム）。つなぎの効果は入れず、前後の落差で見せる", "前の絵（0〜2.4秒）: 固定カメラ（高さ1.2m、焦点距離330px）。7m先で横になった人物、「z」の文字が3つ浮かんで消える。音量メーターは8段中ほぼ0〜1段（0.08±0.04）", "後の絵（2.4〜4.2秒）: 焦点距離を2.6倍（858px）にして寄り、ロール -0.12rad（約-7°）で傾ける。人物は両腕を上げ、放射状の青い線18本", "後の絵の揺れ: ロール ±0.03rad（毎秒約6回）と ヨー ±0.006rad（毎秒約8回）で振る。音量メーターは0.85±0.15でほぼ満杯", "戻り: 最後の0.5秒で静かな絵へクロスフェード（2次のイーズインアウト）", "右上に「♪ 静か」→「♪ 大音量」"],
-        "en": ["Join: a straight cut at 2.4 s (0 frames); no transition effect, the contrast does the work", "Outgoing shot (0–2.4 s): fixed camera (height 1.2 m, focal length 330 px); a person lying down 7 m away, three \"z\" letters float up and fade; volume meter at about 0–1 of 8 bars (0.08±0.04)", "Incoming shot (2.4–4.2 s): focal length 2.6× (858 px) for a tight framing, rolled -0.12 rad (about -7°); the person has both arms raised, with 18 radial blue lines", "Shake in the incoming shot: roll ±0.03 rad (about 6 cycles per second) and yaw ±0.006 rad (about 8 per second); volume meter at 0.85±0.15, nearly full", "Return: cross-fade back to the quiet shot over the last 0.5 s (quadratic ease-in-out)", "Top-right readout shows \"♪ 静か\" (quiet) → \"♪ 大音量\" (loud)"],
+        "ja": ["つなぎ方: 2.4秒で直結（0フレーム）。つなぎの効果は入れず、前後の落差で見せる", "前の絵（0〜2.4秒）: 固定カメラ（高さ1.2m、焦点距離330px）。7m先で横になった人物、「z」の文字が3つ浮かんで消える。音量メーターは8段中ほぼ0〜1段（0.08±0.04）", "後の絵（2.4〜4.2秒）: 焦点距離を2.6倍（858px）にして寄り、ロール -0.12rad（約-7°）で傾ける。人物は両腕を上げ、放射状の青い線18本", "後の絵の揺れ: ロール ±0.03rad（毎秒約6回）と ヨー ±0.006rad（毎秒約8回）で振る。音量メーターは0.85±0.15でほぼ満杯", "戻り: 最後の0.5秒で静かな絵へクロスフェード（2次のイーズインアウト）", "右上に「♪ 安静」→「♪ 大音量」"],
+        "en": ["Join: a straight cut at 2.4 s (0 frames); no transition effect, the contrast does the work", "Outgoing shot (0–2.4 s): fixed camera (height 1.2 m, focal length 330 px); a person lying down 7 m away, three \"z\" letters float up and fade; volume meter at about 0–1 of 8 bars (0.08±0.04)", "Incoming shot (2.4–4.2 s): focal length 2.6× (858 px) for a tight framing, rolled -0.12 rad (about -7°); the person has both arms raised, with 18 radial blue lines", "Shake in the incoming shot: roll ±0.03 rad (about 6 cycles per second) and yaw ±0.006 rad (about 8 per second); volume meter at 0.85±0.15, nearly full", "Return: cross-fade back to the quiet shot over the last 0.5 s (quadratic ease-in-out)", "Top-right readout shows \"♪ 安静\" (quiet) → \"♪ 大音量\" (loud)"],
         "zh-CN": [
           "2.4 秒处直接硬切，过渡时长 0 帧；不添加转场效果，依靠内容反差产生冲击。",
           "前一镜头为 0–2.4 秒，固定机位，高 1.2m、焦距 330px；前方 7m 的人物躺下，3 个 z 字母上浮淡出；8 格音量表仅约 0–1 格，数值 0.08±0.04。",
           "后一镜头为 2.4–4.2 秒，焦距放大 2.6 倍至 858px，形成紧凑取景；横滚角 −0.12rad，约 −7°，人物双臂抬起，周围显示 18 条蓝色放射线。",
           "后一镜头抖动：横滚角 ±0.03rad、约每秒 6 次，水平角 ±0.006rad、约每秒 8 次；音量表为 0.85±0.15，接近满格。",
           "最后 0.5 秒按二次缓入缓出交叉淡化回安静镜头。",
-          "右上角显示日语“♪ 静か”→“♪ 大音量”，含义为安静→大音量。"
+          "右上角显示“♪ 安静”→“♪ 大音量”。"
         ]
       },
       "use": { "ja": "笑いや驚きを作るとき。静と動、予想と現実の落差を一瞬で見せるとき。", "en": "For comedy or shock, showing in an instant the gap between calm and chaos or between expectation and reality.", "zh-CN": "适合用平静与混乱、预期与现实的反差制造喜剧或震撼。" },
@@ -452,14 +452,14 @@
       "ask": { "ja": "Jカットで、次の場面の波の音を先に聞かせてから、海の映像に切り替える。", "en": "J-cut: let the sound of waves from the next scene start before cutting to the sea.", "zh-CN": "使用 J 型剪辑，先听到下一场景的海浪声，再切到海面。" },
       "summary": { "ja": "映像が切り替わる前に、次の場面の音が先に入る。上に映像、下に映像と音のタイムラインを表示する。", "en": "The next scene's audio starts before the picture changes; the picture is shown on top with video and audio timelines below.", "zh-CN": "下一场景的音频先开始，随后画面切换；示例上方为画面，下方为音视频时间线。" },
       "spec": {
-        "ja": ["つなぎ方: 映像は直結。音だけ映像より先に次の場面（B）へ切り替える。ずれはタイムライン全体の20%（0.72秒）", "再生ヘッド: 0.4秒から4.0秒まで3.6秒かけて等速で左から右へ。音の切り替えは35%（約1.66秒）、映像の切り替えは55%（約2.38秒）", "ずれている区間（35〜55%）は、映像がAのまま音だけBになる。区間を薄い青の帯と青い点線2本で強調", "画面構成: 上134pxが映像（固定カメラ・被写体は動かない）、下74pxが「映像」「音」の2段のタイムライン（A＝灰色、B＝薄い青、音の段に波形）", "表示: 映像の左下に「映像A / 映像B」、右下に今流れている音（「♪ Aの音」灰色 →「♪ Bの音」青）", "戻り: 最後の0.5秒で開始状態へクロスフェード（1周4.7秒）"],
-        "en": ["Join: the picture is a straight cut; only the audio switches to the next scene (B) before the picture does. The offset is 20% of the timeline (0.72 s)", "Playhead: moves left to right at constant speed over 3.6 s (0.4 s to 4.0 s); audio switches at 35% (about 1.66 s), picture at 55% (about 2.38 s)", "In the offset section (35–55%) the picture is still A while the audio is already B; the section is marked with a pale blue band and two blue dashed lines", "Layout: the top 134 px is the picture (fixed camera, subjects do not move); the bottom 74 px holds two timeline rows, video and audio (A grey, B pale blue, waveform on the audio row)", "Labels: \"映像A / 映像B\" (video A / B) at bottom left of the picture; the audio now playing at bottom right (\"♪ Aの音\" grey → \"♪ Bの音\" blue)", "Return: cross-fade back to the start over the last 0.5 s (one pass = 4.7 s)"],
+        "ja": ["つなぎ方: 映像は直結。音だけ映像より先に次の場面（B）へ切り替える。ずれはタイムライン全体の20%（0.72秒）", "再生ヘッド: 0.4秒から4.0秒まで3.6秒かけて等速で左から右へ。音の切り替えは35%（約1.66秒）、映像の切り替えは55%（約2.38秒）", "ずれている区間（35〜55%）は、映像がAのまま音だけBになる。区間を薄い青の帯と青い点線2本で強調", "画面構成: 上134pxが映像（固定カメラ・被写体は動かない）、下74pxが「映像」「音」の2段のタイムライン（A＝灰色、B＝薄い青、音の段に波形）", "表示: 映像の左下に「画面A / 画面B」、右下に今流れている音（「♪ A音频」灰色 →「♪ B音频」青）", "戻り: 最後の0.5秒で開始状態へクロスフェード（1周4.7秒）"],
+        "en": ["Join: the picture is a straight cut; only the audio switches to the next scene (B) before the picture does. The offset is 20% of the timeline (0.72 s)", "Playhead: moves left to right at constant speed over 3.6 s (0.4 s to 4.0 s); audio switches at 35% (about 1.66 s), picture at 55% (about 2.38 s)", "In the offset section (35–55%) the picture is still A while the audio is already B; the section is marked with a pale blue band and two blue dashed lines", "Layout: the top 134 px is the picture (fixed camera, subjects do not move); the bottom 74 px holds two timeline rows, video and audio (A grey, B pale blue, waveform on the audio row)", "Labels: \"画面A / 画面B\" (video A / B) at bottom left of the picture; the audio now playing at bottom right (\"♪ A音频\" grey → \"♪ B音频\" blue)", "Return: cross-fade back to the start over the last 0.5 s (one pass = 4.7 s)"],
         "zh-CN": [
           "画面直接硬切，下一场景 B 的音频先于画面切换；错开量为时间线的 20%，即 0.72 秒。",
           "播放头在 0.4–4.0 秒内匀速从左向右移动，时长 3.6 秒；音频在 35%、约 1.66 秒切换，画面在 55%、约 2.38 秒切换。",
           "35–55% 区间内，画面仍为 A，声音已为 B；用浅蓝底带和两条蓝色虚线标出该区间。",
           "布局：上方 134px 显示画面，机位和主体固定；下方 74px 显示视频与音频两条时间线，A 为灰色、B 为浅蓝色，音轨带波形。",
-          "画面左下显示“映像A / 映像B”，即视频 A / B；右下显示当前声音，灰色“♪ Aの音”变为蓝色“♪ Bの音”。",
+          "画面左下显示“画面A / 画面B”，即视频 A / B；右下显示当前声音，灰色“♪ A音频”变为蓝色“♪ B音频”。",
           "最后 0.5 秒交叉淡化回起点，每轮 4.7 秒。"
         ]
       },
@@ -472,14 +472,14 @@
       "ask": { "ja": "Lカットで、彼女の話し声を残したまま、聞き手の顔に切り替える。", "en": "L-cut: keep her voice going while cutting to the listener's face.", "zh-CN": "使用 L 型剪辑，保留说话声，同时切到听者的脸。" },
       "summary": { "ja": "映像が次の場面に切り替わったあとも、前の場面の音がしばらく残る。上に映像、下に映像と音のタイムラインを表示する。", "en": "The previous scene's audio carries on for a while after the picture has changed; the picture is shown on top with video and audio timelines below.", "zh-CN": "画面切换后，上一场景的音频继续播放一段时间；下方时间线展示音画关系。" },
       "spec": {
-        "ja": ["つなぎ方: 映像は直結。音だけ映像より後に次の場面（B）へ切り替える。ずれはタイムライン全体の20%（0.72秒）", "再生ヘッド: 0.4秒から4.0秒まで3.6秒かけて等速で左から右へ。映像の切り替えは55%（約2.38秒）、音の切り替えは75%（約3.10秒）", "ずれている区間（55〜75%）は、映像がBになっても音はAのまま。区間を薄い青の帯と青い点線2本で強調", "画面構成: 上134pxが映像（固定カメラ・被写体は動かない）、下74pxが「映像」「音」の2段のタイムライン（A＝灰色、B＝薄い青、音の段に波形）", "表示: 映像の左下に「映像A / 映像B」、右下に今流れている音（「♪ Aの音」灰色 →「♪ Bの音」青）", "戻り: 最後の0.5秒で開始状態へクロスフェード（1周4.7秒）"],
-        "en": ["Join: the picture is a straight cut; only the audio switches to the next scene (B) after the picture does. The offset is 20% of the timeline (0.72 s)", "Playhead: moves left to right at constant speed over 3.6 s (0.4 s to 4.0 s); picture switches at 55% (about 2.38 s), audio at 75% (about 3.10 s)", "In the offset section (55–75%) the picture is already B while the audio is still A; the section is marked with a pale blue band and two blue dashed lines", "Layout: the top 134 px is the picture (fixed camera, subjects do not move); the bottom 74 px holds two timeline rows, video and audio (A grey, B pale blue, waveform on the audio row)", "Labels: \"映像A / 映像B\" (video A / B) at bottom left of the picture; the audio now playing at bottom right (\"♪ Aの音\" grey → \"♪ Bの音\" blue)", "Return: cross-fade back to the start over the last 0.5 s (one pass = 4.7 s)"],
+        "ja": ["つなぎ方: 映像は直結。音だけ映像より後に次の場面（B）へ切り替える。ずれはタイムライン全体の20%（0.72秒）", "再生ヘッド: 0.4秒から4.0秒まで3.6秒かけて等速で左から右へ。映像の切り替えは55%（約2.38秒）、音の切り替えは75%（約3.10秒）", "ずれている区間（55〜75%）は、映像がBになっても音はAのまま。区間を薄い青の帯と青い点線2本で強調", "画面構成: 上134pxが映像（固定カメラ・被写体は動かない）、下74pxが「映像」「音」の2段のタイムライン（A＝灰色、B＝薄い青、音の段に波形）", "表示: 映像の左下に「画面A / 画面B」、右下に今流れている音（「♪ A音频」灰色 →「♪ B音频」青）", "戻り: 最後の0.5秒で開始状態へクロスフェード（1周4.7秒）"],
+        "en": ["Join: the picture is a straight cut; only the audio switches to the next scene (B) after the picture does. The offset is 20% of the timeline (0.72 s)", "Playhead: moves left to right at constant speed over 3.6 s (0.4 s to 4.0 s); picture switches at 55% (about 2.38 s), audio at 75% (about 3.10 s)", "In the offset section (55–75%) the picture is already B while the audio is still A; the section is marked with a pale blue band and two blue dashed lines", "Layout: the top 134 px is the picture (fixed camera, subjects do not move); the bottom 74 px holds two timeline rows, video and audio (A grey, B pale blue, waveform on the audio row)", "Labels: \"画面A / 画面B\" (video A / B) at bottom left of the picture; the audio now playing at bottom right (\"♪ A音频\" grey → \"♪ B音频\" blue)", "Return: cross-fade back to the start over the last 0.5 s (one pass = 4.7 s)"],
         "zh-CN": [
           "画面直接硬切，下一场景 B 的音频晚于画面切换；错开量为时间线的 20%，即 0.72 秒。",
           "播放头在 0.4–4.0 秒内匀速从左向右移动，时长 3.6 秒；画面在 55%、约 2.38 秒切换，音频在 75%、约 3.10 秒切换。",
           "55–75% 区间内，画面已为 B，声音仍为 A；用浅蓝底带和两条蓝色虚线标出该区间。",
           "布局：上方 134px 显示画面，机位和主体固定；下方 74px 显示视频与音频两条时间线，A 为灰色、B 为浅蓝色，音轨带波形。",
-          "画面左下显示“映像A / 映像B”，即视频 A / B；右下显示当前声音，灰色“♪ Aの音”变为蓝色“♪ Bの音”。",
+          "画面左下显示“画面A / 画面B”，即视频 A / B；右下显示当前声音，灰色“♪ A音频”变为蓝色“♪ B音频”。",
           "最后 0.5 秒交叉淡化回起点，每轮 4.7 秒。"
         ]
       },

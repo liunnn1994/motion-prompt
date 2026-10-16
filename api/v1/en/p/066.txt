@@ -4,7 +4,7 @@ Motion Prompt #066
 What it is: A trail of links showing where the page sits in the site
 What the sample shows: Clicking "Courses" in the breadcrumbs goes up to the list page; clicking a card there returns to the detail page.
 Spec:
-- 4.5 s cycle on a 542×191 card. At the top "Home › Courses › Web design" (in Japanese, 17 px): links blue, current page black and bold; a divider at y 46.
+- 4.5 s cycle on a 542×191 card. At the top "Home › Courses › Web production" (in Chinese, 17 px): links blue, current page black and bold; a divider at y 46.
 - The cursor hovers "Courses" (underline 0.9–1.2 s) and clicks at 1.0 s.
 - Up amount: 0→1 over 1.0–1.25 s with easeInOutCubic. "› Web design" fades out and "Courses" becomes the current page (black, bold).
 - Content cross-fades from a detail page (title and text) to a list of three cards (158×118, with a landscape picture).

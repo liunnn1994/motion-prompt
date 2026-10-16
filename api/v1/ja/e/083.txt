@@ -28,7 +28,7 @@ CELLS[10] = (k, w, h, u) => {
   view(k, () => {
     txt(k, 'CREATIVE STUDIO', VW / 2, 74, `800 34px ${EN}`, C.ink, 'center', 'alphabetic', '3px');
     bars(k, VW / 2 - 120, 96, 240, 2, C.faint, 6, 12, 0.7);
-    btn(k, VW / 2 - 50, 128, 100, 24, '作品を見る', C.ink);
+    btn(k, VW / 2 - 50, 128, 100, 24, '查看作品', C.ink);
     k.fillStyle = C.acc; k.globalAlpha = 0.88; k.beginPath(); k.arc(fx, fy, 17, 0, 7); k.fill(); k.globalAlpha = 1;
     const [cx, cy] = cur(u); cursor(k, cx, cy);
   });

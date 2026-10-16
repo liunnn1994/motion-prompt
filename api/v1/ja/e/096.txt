@@ -25,8 +25,8 @@ CELLS[23] = (k, w, h, u) => {
   const y1 = bob(2.4, 8, 0), y2 = bob(1.6, 6, 1.2), y3 = bob(2.4, 6, 2.4);
   view(k, () => {
     k.fillStyle = C.soft; k.fillRect(0, 0, VW, VH);
-    txt(k, 'アプリで、', 34, 62, `800 24px ${JP}`, C.ink); txt(k, 'もっと身軽に。', 34, 94, `800 24px ${JP}`, C.ink);
-    bars(k, 34, 108, 170, 2); btn(k, 34, 134, 112, 24, 'ダウンロード');
+    txt(k, '用上应用，', 34, 62, `800 24px ${JP}`, C.ink); txt(k, '生活更轻松。', 34, 94, `800 24px ${JP}`, C.ink);
+    bars(k, 34, 108, 170, 2); btn(k, 34, 134, 112, 24, '立即下载');
     // 影（上がるほど小さく薄く）
     const sh = 1 + y1 / 40;
     k.fillStyle = `rgba(28,35,51,${0.16 * sh})`; k.beginPath(); k.ellipse(352, 160, 54 * sh, 6 * sh, 0, 0, 7); k.fill();

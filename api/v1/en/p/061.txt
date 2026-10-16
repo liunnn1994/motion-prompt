@@ -4,7 +4,7 @@ Motion Prompt #061
 What it is: Small pills you click to add or remove a filter
 What the sample shows: Clicking the "New" and "Free" chips adds a check mark and turns them blue, and cards that do not match fade out.
 Spec:
-- 4.5 s cycle on a 542×191 card. Four chips ("All, New, Popular, Free" in Japanese): 34 tall, radius 17, width = text + 32, 10 px apart from the left.
+- 4.5 s cycle on a 542×191 card. Four chips ("All, New, Popular, Free" in Chinese): 34 tall, radius 17, width = text + 32, 10 px apart from the left.
 - Clicks: New on at 0.95 s, Free on at 1.75 s, New off at 3.0 s, Free off at 3.6 s.
 - Each change takes 0.15 s with easeOutCubic: the chip widens 18 px to make room for a check mark; fill light blue, border and text blue.
 - List below: four cards (242×54, two columns, two rows); cards that do not match drop from opacity 1 to 0.12.

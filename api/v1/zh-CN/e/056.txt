@@ -28,7 +28,7 @@ CELLS[7] = ui((w, h, t) => {
     const tw0 = 214, th = 52, tx = w - 18 - tw0 + (1 - tin) * 240 + tout * 240, ty = h - 16 - th;
     shadowed(() => fillRR(tx, ty, tw0, th, 10, C.dark), 18, 6, .25);
     circle(tx + 26, ty + 24, 11, C.blue); check(tx + 26, ty + 24, 5, '#fff', 2.4);
-    text('保存しました', tx + 46, ty + 24, 15, '#fff', 600);
+    text('已保存', tx + 46, ty + 24, 15, '#fff', 600);
     const life = 1 - seg(t, 1.4, 3.2); fillRR(tx + 10, ty + th - 7, (tw0 - 20) * life, 3, 1.5, C.sb);
   }
   pointer([[.3, -30, h + 30], [.95, 84, 168], [1.5, 84, 168], [2.2, -40, h + 40]], [1.0], t);

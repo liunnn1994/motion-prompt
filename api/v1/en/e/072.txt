@@ -6,7 +6,7 @@
 // Motion spec:
 //   - 4.5 s cycle on a 542×191 card. A two-row list (494×48, radius 8, a trash icon at the right).
 //   - The cursor clicks the trash icons at 0.95 s and 1.65 s. Each row slides 60 px left while fading out over 0.3 s (easeInOutCubic); the second row moves up 58 px into the first slot.
-//   - Over 1.95–2.3 s (linear) the empty state fades in while rising 8 px: a blue line drawing of an inbox tray, "Nothing here yet" (16 px, in Japanese) and a blue "Add" button (112×34).
+//   - Over 1.95–2.3 s (linear) the empty state fades in while rising 8 px: a blue line drawing of an inbox tray, "Nothing here yet" (16 px, in Chinese) and a blue "Add" button (112×34).
 //   - The cursor clicks "Add" at 3.3 s; the empty state fades over 3.25–3.45 s and the two rows come back from the left over 3.35–3.7 s with easeOutCubic.
 // When to use it: Use it for first-use screens or no-results pages to tell people what to do next.
 // Tags: empty-state, no-data, zero-state, blank-state, no-results, onboarding
@@ -39,8 +39,8 @@ CELLS[23] = ui((w, h, t) => {
     X.strokeStyle = C.blue; X.lineWidth = 2.6; X.lineJoin = 'round';
     X.beginPath(); X.moveTo(w / 2 - 26, cy - 4); X.lineTo(w / 2 - 18, cy - 22); X.lineTo(w / 2 + 18, cy - 22); X.lineTo(w / 2 + 26, cy - 4); X.lineTo(w / 2 + 26, cy + 16); X.lineTo(w / 2 - 26, cy + 16); X.closePath(); X.stroke();
     X.beginPath(); X.moveTo(w / 2 - 26, cy - 4); X.lineTo(w / 2 - 9, cy - 4); X.lineTo(w / 2 - 6, cy + 3); X.lineTo(w / 2 + 6, cy + 3); X.lineTo(w / 2 + 9, cy - 4); X.lineTo(w / 2 + 26, cy - 4); X.stroke();
-    text('まだ何もありません', w / 2, cy + 40, 16, '#555', 600, 'center');
-    fillRR(w / 2 - 56, cy + 62, 112, 34, 8, C.blue); text('追加する', w / 2, cy + 79, 15, '#fff', 600, 'center');
+    text('暂无内容', w / 2, cy + 40, 16, '#555', 600, 'center');
+    fillRR(w / 2 - 56, cy + 62, 112, 34, 8, C.blue); text('添加', w / 2, cy + 79, 15, '#fff', 600, 'center');
     X.restore();
   }
   pointer([[.3, w + 30, h + 30], [.9, 486, 67], [1.25, 486, 67], [1.6, 486, 67], [2.4, 486, 67], [3.2, w / 2 + 4, 156], [3.5, w / 2 + 4, 156], [4.2, w + 30, h + 30]], [0.95, 1.65, 3.3], t);

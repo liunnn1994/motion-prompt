@@ -25,7 +25,7 @@ CELLS[18] = ui((w, h, t) => {
   pageLines(24, 62, 494); fillRR(24, 130, 494, 50, 8, C.block);
   X.fillStyle = '#fff'; X.fillRect(0, 0, w, 42); X.fillStyle = C.line; X.fillRect(0, 42, w, 1.5);
   fillRR(24, 14, 70, 16, 4, C.mb);
-  const nav = [['製品', 190], ['料金', 262], ['サポート', 334]];
+  const nav = [['产品', 190], ['价格', 262], ['支持', 334]];
   nav.forEach(([s, x], i) => { const on = i === 0 && a > .3; text(s, x, 22, 16, on ? C.blue : '#555', on ? 700 : 600); if (on) fillRR(x, 36, tw(s, 16, 700), 3, 1.5, C.blue); chevron(x + tw(s, 16, 700) + 10, 22, 3.5, 0, on ? C.blue : '#999', 1.8); });
   if (a > 0) {
     X.save(); X.globalAlpha = a; X.beginPath(); X.rect(0, 43, w, h); X.clip(); const py = 43 - 12 * (1 - a);

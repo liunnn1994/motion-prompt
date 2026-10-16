@@ -4,7 +4,7 @@
 // Pack: ui (UI component names) · element 13 · Category: Choosing & switching
 // What happens: Clicking the "New" and "Free" chips adds a check mark and turns them blue, and cards that do not match fade out.
 // Motion spec:
-//   - 4.5 s cycle on a 542×191 card. Four chips ("All, New, Popular, Free" in Japanese): 34 tall, radius 17, width = text + 32, 10 px apart from the left.
+//   - 4.5 s cycle on a 542×191 card. Four chips ("All, New, Popular, Free" in Chinese): 34 tall, radius 17, width = text + 32, 10 px apart from the left.
 //   - Clicks: New on at 0.95 s, Free on at 1.75 s, New off at 3.0 s, Free off at 3.6 s.
 //   - Each change takes 0.15 s with easeOutCubic: the chip widens 18 px to make room for a check mark; fill light blue, border and text blue.
 //   - List below: four cards (242×54, two columns, two rows); cards that do not match drop from opacity 1 to 0.12.
@@ -20,7 +20,7 @@
 // @element 13
 // 13 チップ（Filter chips）
 CELLS[12] = ui((w, h, t) => {
-  const chips = ['すべて', '新着', '人気', '無料']; let x = 24; const pos = [];
+  const chips = ['全部', '最新', '热门', '免费']; let x = 24; const pos = [];
   const on = [0, eo(seg(t, 0.95, 1.1)) * (1 - eo(seg(t, 3.0, 3.15))), 0, eo(seg(t, 1.75, 1.9)) * (1 - eo(seg(t, 3.6, 3.75)))];
   chips.forEach((s, i) => {
     const k = on[i], cw0 = tw(s, 15, 600) + 32 + (k > 0 ? 18 * k : 0);

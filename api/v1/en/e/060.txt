@@ -4,7 +4,7 @@
 // Pack: ui (UI component names) · element 12 · Category: Choosing & switching
 // What happens: Clicking Day, Week or Month slides a blue highlight across and the bar chart below changes height.
 // Motion spec:
-//   - 4.5 s cycle on a 542×191 card. A grey 300×40 base (radius 10) at (121, 12), split into three 100-wide segments: Day, Week, Month (in Japanese).
+//   - 4.5 s cycle on a 542×191 card. A grey 300×40 base (radius 10) at (121, 12), split into three 100-wide segments: Day, Week, Month (in Chinese).
 //   - Selection: blue 92×32, radius 8, shadow blur 6; the selected label is white.
 //   - The cursor clicks Week at 1.0 s, Month at 2.1 s and Day at 3.3 s; the selection slides over 0.25 s each with easeInOutCubic.
 //   - Chart below: seven bars 34 wide, 58 px apart (the sixth is blue). Heights move between three data sets (about 30–85, 40–100, 60–115) together with the selection, eased the same way.
@@ -24,7 +24,7 @@ CELLS[11] = ui((w, h, t) => {
   const sx = 121, sy = 12, sw = 300, sh = 40, cw = sw / 3;
   fillRR(sx, sy, sw, sh, 10, '#efedeb');
   shadowed(() => fillRR(sx + 4 + pos * cw, sy + 4, cw - 8, sh - 8, 8, C.blue), 6, 2, .2);
-  ['日', '週', '月'].forEach((s, i) => { const near = 1 - clamp(Math.abs(pos - i)); text(s, sx + cw * i + cw / 2, sy + sh / 2 + 1, 17, near > .5 ? '#fff' : '#6d6b69', 700, 'center'); });
+  ['日', '周', '月'].forEach((s, i) => { const near = 1 - clamp(Math.abs(pos - i)); text(s, sx + cw * i + cw / 2, sy + sh / 2 + 1, 17, near > .5 ? '#fff' : '#6d6b69', 700, 'center'); });
   const sets = [[30, 55, 40, 70, 50, 85, 60], [60, 40, 90, 75, 100, 55, 80], [95, 70, 110, 60, 85, 115, 100]];
   const fi = Math.floor(pos), fr = pos - fi, gi = Math.min(2, fi + 1);
   X.fillStyle = C.line; X.fillRect(60, 182, 422, 1.5);

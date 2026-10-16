@@ -21,7 +21,7 @@
 // @element 09
 // 09 タブ（Tabs）
 CELLS[8] = ui((w, h, t) => {
-  const labs = ['概要', '料金', 'レビュー'], xs = [24, 114, 204], ws = [70, 70, 100];
+  const labs = ['概要', '价格', '评价'], xs = [24, 114, 204], ws = [70, 70, 100];
   const c1 = eio(seg(t, 1.0, 1.25)), c2 = eio(seg(t, 2.2, 2.45)), c3 = eio(seg(t, 3.4, 3.65));
   const pos = c1 + c2 - 2 * c3; // 0 -> 1 -> 2 -> 0
   const fi = Math.floor(pos), fr = pos - fi, gi = Math.min(2, fi + 1);

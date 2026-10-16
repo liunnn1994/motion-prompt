@@ -27,7 +27,7 @@ CELLS[9] = (k, w, h, u) => {
       const inside = t => { const [x, y] = cur(t); return x > FX[i] && x < FX[i] + FW && y > FY && y < FY + FH; };
       const q = trans(inside, u, 0.5);
       pic(k, FX[i], FY, FW, FH, i, 8, 1 + ZOOM * q);
-      txt(k, ['夏の山小屋', '海辺のカフェ'][i], FX[i], FY + FH + 20, `800 13px ${JP}`, C.ink); bars(k, FX[i], FY + FH + 28, 150, 1);
+      txt(k, ['夏日山间小屋', '海边咖啡馆'][i], FX[i], FY + FH + 20, `800 13px ${JP}`, C.ink); bars(k, FX[i], FY + FH + 28, 150, 1);
     }
     const [cx, cy] = cur(u); cursor(k, cx, cy);
   });

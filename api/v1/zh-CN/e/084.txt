@@ -41,7 +41,7 @@ CELLS[11] = (k, w, h, u) => {
     k.save(); k.translate(BX + ox, BY + oy);
     k.shadowColor = 'rgba(255,90,44,.35)'; k.shadowBlur = 16; k.shadowOffsetY = 6;
     k.fillStyle = C.acc; rr(k, -84, -26, 168, 52, 26); k.fill(); k.shadowColor = 'transparent';
-    txt(k, 'お問い合わせ', 0, 1, `800 16px ${JP}`, '#fff', 'center', 'middle');
+    txt(k, '联系我们', 0, 1, `800 16px ${JP}`, '#fff', 'center', 'middle');
     k.restore();
     const [cx, cy] = cur(u); cursor(k, cx, cy);
   });

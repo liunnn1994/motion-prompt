@@ -27,7 +27,7 @@ CELLS[13] = ui((w, h, t) => {
   const x0 = 54, x1 = 488, ty = 120, X_ = v => lerp(x0, x1, v);
   const lo = LO(t), hi = HI(t), lx = X_(lo), hx = X_(hi);
   const yen = v => '¥' + (Math.round(v * 100) * 100).toLocaleString('en-US');
-  text('価格', 24, 26, 16, '#555', 700);
+  text('价格', 24, 26, 16, '#555', 700);
   text(yen(lo) + ' 〜 ' + yen(hi), w - 24, 26, 17, C.blue, 700, 'right', NUMF);
   fillRR(x0, ty - 4, x1 - x0, 8, 4, '#e3e1df'); fillRR(lx, ty - 4, hx - lx, 8, 4, C.blue);
   const loAct = (t > 1.0 && t < 1.7) || (t > 3.55 && t < 3.95), hiAct = t > 2.1 && t < 3.3;

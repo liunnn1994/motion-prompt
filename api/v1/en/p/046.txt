@@ -9,7 +9,7 @@ Spec:
 - Incoming shot (2.4–4.2 s): focal length 2.6× (858 px) for a tight framing, rolled -0.12 rad (about -7°); the person has both arms raised, with 18 radial blue lines
 - Shake in the incoming shot: roll ±0.03 rad (about 6 cycles per second) and yaw ±0.006 rad (about 8 per second); volume meter at 0.85±0.15, nearly full
 - Return: cross-fade back to the quiet shot over the last 0.5 s (quadratic ease-in-out)
-- Top-right readout shows "♪ 静か" (quiet) → "♪ 大音量" (loud)
+- Top-right readout shows "♪ 安静" (quiet) → "♪ 大音量" (loud)
 When to use it: For comedy or shock, showing in an instant the gap between calm and chaos or between expectation and reality.
 
 Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://motion-prompt.2077tech.com/api/v1/en/e/046.txt

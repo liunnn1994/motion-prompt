@@ -25,7 +25,7 @@ CELLS[6] = (k, w, h, u) => {
   const y = steps([[0.3, 0], [0.75, 110], [1.15, 110], [1.6, 220], [2.0, 220], [2.45, 330], [2.85, 330], [3.3, MAX], [3.75, MAX], [4.55, 0]], u);
   view(k, () => {
     k.save(); k.translate(0, -y);
-    txt(k, 'はじめてのWebデザイン', 70, 44, `800 20px ${JP}`, C.ink); bars(k, 70, 56, 120, 1, C.faint, 5);
+    txt(k, '网页设计入门', 70, 44, `800 20px ${JP}`, C.ink); bars(k, 70, 56, 120, 1, C.faint, 5);
     pic(k, 70, 74, 371, 112, 0, 8);
     for (let b = 0; b < 4; b++) { const y0 = 204 + b * 82; k.fillStyle = C.ink; rr(k, 70, y0, 140, 9, 4.5); k.fill(); bars(k, 70, y0 + 22, 371, 4, C.faint, 6, 12); }
     k.restore();

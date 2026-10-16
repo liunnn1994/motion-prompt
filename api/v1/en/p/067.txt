@@ -4,7 +4,7 @@ Motion Prompt #067
 What it is: A wide panel of grouped links that opens from the main menu
 What the sample shows: Hovering over "Products" in the header drops a full-width panel with three columns of links and an image; it closes when the cursor leaves.
 Spec:
-- 4.5 s cycle on a 542×191 card. A 42-tall header with "Products, Pricing, Support" (in Japanese, 16 px, each with a down chevron).
+- 4.5 s cycle on a 542×191 card. A 42-tall header with "Products, Pricing, Support" (in Chinese, 16 px, each with a down chevron).
 - The cursor only hovers: it reaches "Products" at 1.0 s. Open amount a: 0→1 over 1.05–1.3 s with easeOutCubic; "Products" turns blue with an underline.
 - Panel: white, full width, 146 tall, dropping 12 px into place under the header while fading in with a. Shadow blur 18, offset y 8.
 - Inside: three columns 130 px apart (a blue heading and three links each) and a 104×112 picture at the right. The cursor moves down and the second link of the second column is highlighted light blue from 1.75 to 2.9 s.

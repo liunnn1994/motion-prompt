@@ -29,7 +29,7 @@ CELLS[5] = ui((w, h, t) => {
     X.save(); X.globalAlpha = a; const yy = 64 + 6 * (1 - a);
     fillRR(196 - 92, yy, 184, 36, 8, C.dark);
     X.beginPath(); X.moveTo(196 - 8, yy + 36); X.lineTo(196, yy + 44); X.lineTo(196 + 8, yy + 36); X.fillStyle = C.dark; X.fill();
-    text('小さな説明が出る', 196, yy + 18, 15, '#fff', 600, 'center'); X.restore();
+    text('显示简短说明', 196, yy + 18, 15, '#fff', 600, 'center'); X.restore();
   }
   // 乗せるだけ（クリックしない）
   pointer([[.3, w + 30, h + 30], [1.05, 200, 126], [3.15, 200, 126], [4.1, w + 30, h + 30]], [], t);

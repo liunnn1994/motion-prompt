@@ -112,8 +112,8 @@ const NAVX = [300, 346, 392];
 function header(k, y, active = -1) {
   k.fillStyle = '#fff'; k.fillRect(0, y, VW, 34); k.fillStyle = C.rule; k.fillRect(0, y + 33, VW, 1);
   logo(k, 18, y + 17);
-  ['特長', '料金', 'FAQ'].forEach((s, i) => txt(k, s, NAVX[i], y + 17.5, `600 12px ${JP}`, active === i ? C.acc : C.ink, 'left', 'middle'));
-  btn(k, 428, y + 7, 70, 20, '無料で試す', C.acc, '#fff', 10.5);
+  ['特色', '价格', 'FAQ'].forEach((s, i) => txt(k, s, NAVX[i], y + 17.5, `600 12px ${JP}`, active === i ? C.acc : C.ink, 'left', 'middle'));
+  btn(k, 428, y + 7, 70, 20, '免费试用', C.acc, '#fff', 10.5);
 }
 // マウスのカーソル（矢印）。press で少し縮む
 function cursor(k, x, y, press = 0) {

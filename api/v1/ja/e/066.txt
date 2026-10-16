@@ -23,12 +23,12 @@
 CELLS[17] = ui((w, h, t) => {
   const up = eio(seg(t, 1.0, 1.25)) * (1 - eio(seg(t, 2.7, 2.95))); // 1=「講座」の階層にいる
   let x = 24; const y = 24;
-  text('ホーム', x, y, 17, C.blue, 600); x += tw('ホーム', 17, 600) + 10; text('›', x, y, 17, '#aaa', 500); x += 18;
-  const kx = x, kw = tw('講座', 17, 700);
+  text('首页', x, y, 17, C.blue, 600); x += tw('首页', 17, 600) + 10; text('›', x, y, 17, '#aaa', 500); x += 18;
+  const kx = x, kw = tw('课程', 17, 700);
   const hoverK = t > .9 && t < 1.2;
-  text('講座', x, y, 17, up > .5 ? C.ink : C.blue, up > .5 ? 700 : 600); if (hoverK) { X.fillStyle = C.blue; X.fillRect(x, y + 12, kw, 2); }
+  text('课程', x, y, 17, up > .5 ? C.ink : C.blue, up > .5 ? 700 : 600); if (hoverK) { X.fillStyle = C.blue; X.fillRect(x, y + 12, kw, 2); }
   x += kw + 10;
-  X.globalAlpha = 1 - up; text('›', x, y, 17, '#aaa', 500); text('Web制作', x + 18, y, 17, C.ink, 700); X.globalAlpha = 1;
+  X.globalAlpha = 1 - up; text('›', x, y, 17, '#aaa', 500); text('网页制作', x + 18, y, 17, C.ink, 700); X.globalAlpha = 1;
   X.fillStyle = C.line; X.fillRect(24, 46, 494, 1.5);
   // 中身：詳細ページ ⇄ 一覧ページ
   if (up < 1) { X.save(); X.globalAlpha = 1 - up; bar(24, 64, 200, C.ink, 13); bar(24, 92, 494); bar(24, 110, 420); fillRR(24, 132, 494, 48, 8, C.block); X.restore(); }

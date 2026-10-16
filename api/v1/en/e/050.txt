@@ -21,7 +21,7 @@
 // @element 02
 // 02 ドロワー（Drawer (Off-canvas)）
 CELLS[1] = ui((w, h, t) => {
-  strokeRR(24, 14, 110, 34, 8, C.line2, 1.5); text('メニュー', 79, 31, 15, '#555', 600, 'center');
+  strokeRR(24, 14, 110, 34, 8, C.line2, 1.5); text('菜单', 79, 31, 15, '#555', 600, 'center');
   bar(160, 26, 140, C.line2, 11); pageLines(24, 70, 494); fillRR(24, 138, 494, 42, 8, C.block);
   const a = eo(seg(t, 1.0, 1.38)) * (1 - eio(seg(t, 3.3, 3.65)));
   if (a > 0) {

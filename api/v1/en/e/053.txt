@@ -6,9 +6,9 @@
 // Motion spec:
 //   - 4.5 s cycle on a 542×191 card. A 260×38 field (radius 8) shows a placeholder and a chevron; the cursor clicks it at 1.0 s.
 //   - Open amount: 0→1 over 1.0–1.25 s with easeOutCubic. The list (white 260×112, shadow blur 18) fades in while dropping 6 px. The chevron turns 180° and the field border becomes 2 px blue.
-//   - Four options 26 px apart (Tokyo, Osaka, Nagoya, Fukuoka in Japanese). As the cursor moves down, Osaka is highlighted light blue from 1.55 s and Nagoya from 1.95 s.
-//   - Click on Nagoya at 2.3 s: the list closes over 2.3–2.45 s (1 − easeInOutCubic); the placeholder fades out over 2.2–2.3 s and "Nagoya" fades in over 2.32–2.42 s.
-//   - Reset: Nagoya fades out over 3.9–4.08 s, then the placeholder returns over 4.1–4.3 s, so the two texts never overlap.
+//   - Four options 26 px apart (Beijing, Shanghai, Shenzhen, Guangzhou in Chinese). As the cursor moves down, Shanghai is highlighted light blue from 1.55 s and Shenzhen from 1.95 s.
+//   - Click on Shenzhen at 2.3 s: the list closes over 2.3–2.45 s (1 − easeInOutCubic); the placeholder fades out over 2.2–2.3 s and "Shenzhen" fades in over 2.32–2.42 s.
+//   - Reset: Shenzhen fades out over 3.9–4.08 s, then the placeholder returns over 4.1–4.3 s, so the two texts never overlap.
 // When to use it: Use it in a form when people pick one value from a fixed list.
 // Tags: dropdown, dropdown-menu, select, picker, combobox, options, form
 // Size: 542x191 px · Cycle: 4.5 s
@@ -26,15 +26,15 @@ CELLS[4] = ui((w, h, t) => {
   const chosen = seg(t, 2.32, 2.42) * (1 - seg(t, 3.9, 4.08));
   const ph = (1 - seg(t, 2.2, 2.3)) + seg(t, 4.1, 4.3); // プレースホルダーは先に消し、名前が消えてから戻す（重ねない）
   strokeRR(24, 34, 260, 38, 8, open > .1 || (chosen > 0 && t < 2.9) ? C.blue : C.line2, open > .1 ? 2 : 1.5);
-  if (ph > 0) { X.globalAlpha = clamp(ph); text('選択してください', 40, 53, 15, '#9a9896', 500); X.globalAlpha = 1; }
-  if (chosen > 0) { X.globalAlpha = chosen; text('名古屋', 40, 53, 16, C.ink, 600); X.globalAlpha = 1; }
+  if (ph > 0) { X.globalAlpha = clamp(ph); text('请选择', 40, 53, 15, '#9a9896', 500); X.globalAlpha = 1; }
+  if (chosen > 0) { X.globalAlpha = chosen; text('深圳', 40, 53, 16, C.ink, 600); X.globalAlpha = 1; }
   chevron(262, 52, 5, Math.PI * open, '#777');
   fillRR(310, 34, 208, 70, 8, C.block); bar(310, 120, 208); bar(310, 138, 160); bar(24, 150, 200); bar(24, 168, 150);
   if (open > 0) {
     X.save(); X.globalAlpha = open; const oy = 78 - 6 * (1 - open);
     shadowed(() => fillRR(24, oy, 260, 112, 8, '#fff'), 18, 6, .18); strokeRR(24, oy, 260, 112, 8, C.border, 1);
     const hi = seg(t, 1.55, 1.75) > 0 ? (t < 1.95 ? 1 : 2) : -1;
-    ['東京', '大阪', '名古屋', '福岡'].forEach((s, i) => { const yy = oy + 4 + i * 26; if (i === hi + (hi === 1 ? 0 : 0) && hi >= 0) fillRR(28, yy, 252, 26, 5, C.lb); text(s, 40, yy + 13, 15, i === hi ? C.blue : '#444', i === hi ? 600 : 500); });
+    ['北京', '上海', '深圳', '广州'].forEach((s, i) => { const yy = oy + 4 + i * 26; if (i === hi + (hi === 1 ? 0 : 0) && hi >= 0) fillRR(28, yy, 252, 26, 5, C.lb); text(s, 40, yy + 13, 15, i === hi ? C.blue : '#444', i === hi ? 600 : 500); });
     X.restore();
   }
   pointer([[.3, w + 30, h + 30], [.95, 200, 56], [1.25, 200, 56], [1.6, 170, 121], [2.0, 170, 147], [2.45, 170, 147], [3.2, 170, 147], [4.2, w + 30, h + 30]], [1.0, 2.3], t);

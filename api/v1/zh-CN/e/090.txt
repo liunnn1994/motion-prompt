@@ -26,7 +26,7 @@ CELLS[17] = (k, w, h, u) => {
   const COLX = [15, 180, 345], IW = 151, IH = 92, ROWS = [12, 168, 276], WAIT = 0.45, FADE = 0.35;
   view(k, () => {
     k.save(); k.translate(0, -y);
-    txt(k, 'ギャラリー', 15, 140, `800 18px ${JP}`, C.ink); bars(k, 120, 128, 200, 1);
+    txt(k, '作品集', 15, 140, `800 18px ${JP}`, C.ink); bars(k, 120, 128, 200, 1);
     ROWS.forEach((top, r) => COLX.forEach((x, c) => {
       const t0 = r === 0 ? -1e9 : enteredAt(SY, top, VH, u), age = t0 === null ? -1 : u - t0 - c * 0.12;
       k.fillStyle = C.skel; rr(k, x, top, IW, IH, 6); k.fill();

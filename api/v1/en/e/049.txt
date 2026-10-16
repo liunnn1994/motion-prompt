@@ -22,7 +22,7 @@
 // 01 モーダル（Modal dialog）
 CELLS[0] = ui((w, h, t) => {
   pageLines(24, 18, 494);
-  fillRR(24, 92, 120, 36, 8, C.blue); text('開く', 84, 110, 16, '#fff', 600, 'center');
+  fillRR(24, 92, 120, 36, 8, C.blue); text('打开', 84, 110, 16, '#fff', 600, 'center');
   fillRR(170, 92, 348, 36, 8, C.block); fillRR(24, 142, 494, 38, 8, C.block);
   const a = eo(seg(t, 1.0, 1.32)) * (1 - eio(seg(t, 3.3, 3.58)));
   if (a > 0) {

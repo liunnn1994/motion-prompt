@@ -25,7 +25,7 @@ CELLS[12] = (k, w, h, u) => {
   const [cx, cy] = path([[0, 430, 160], [0.55, 165, 110], [1.6, 165, 110], [2.7, 345, 100], [3.6, 345, 100], [4.4, 430, 160], [4.8, 430, 160]], u);
   view(k, () => {
     k.fillStyle = C.soft; k.fillRect(0, 0, VW, VH);
-    txt(k, 'お申し込み', VW / 2, 38, `800 18px ${JP}`, C.ink, 'center'); bars(k, VW / 2 - 110, 50, 220, 1, C.faint, 6, 11, 1);
+    txt(k, '报名申请', VW / 2, 38, `800 18px ${JP}`, C.ink, 'center'); bars(k, VW / 2 - 110, 50, 220, 1, C.faint, 6, 11, 1);
     k.save(); k.shadowColor = 'rgba(28,35,51,.18)'; k.shadowBlur = 8; k.shadowOffsetY = 3; k.fillStyle = C.acc; rr(k, B.x, B.y, B.w, B.h, 10); k.fill(); k.restore();
     k.save(); rr(k, B.x, B.y, B.w, B.h, 10); k.clip();
     for (const [tc, px, py] of TAPS) {
@@ -34,7 +34,7 @@ CELLS[12] = (k, w, h, u) => {
       k.fillStyle = `rgba(255,255,255,${0.4 * (1 - P(d, 0.3, 0.8))})`; k.beginPath(); k.arc(px, py, Rm * eOut(P(d, 0, DUR)), 0, 7); k.fill();
     }
     k.restore();
-    txt(k, '送信する', VW / 2, B.y + B.h / 2 + 1, `800 17px ${JP}`, '#fff', 'center', 'middle');
+    txt(k, '发送', VW / 2, B.y + B.h / 2 + 1, `800 17px ${JP}`, '#fff', 'center', 'middle');
     click(k, cx, cy, u, TAPS.map(a => a[0]));
   });
 };

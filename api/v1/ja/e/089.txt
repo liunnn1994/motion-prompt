@@ -28,7 +28,7 @@ CELLS[16] = (k, w, h, u) => {
   view(k, () => {
     header(k, 0);
     k.save(); k.globalAlpha = show; k.translate(0, 14 * (1 - show));
-    txt(k, 'ようこそ。', 34, 82, `800 26px ${JP}`, C.ink); bars(k, 34, 98, 200, 3); btn(k, 34, 136, 96, 24, '始める');
+    txt(k, '欢迎你。', 34, 82, `800 26px ${JP}`, C.ink); bars(k, 34, 98, 200, 3); btn(k, 34, 136, 96, 24, '开始');
     pic(k, 270, 46, 214, 112, 0, 8); k.restore();
     if (cy > -VH) {
       k.save(); k.translate(0, cy); k.fillStyle = C.ink; k.fillRect(0, 0, VW, VH);

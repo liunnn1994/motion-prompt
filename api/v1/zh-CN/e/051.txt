@@ -22,7 +22,7 @@
 // 03 ボトムシート（Bottom sheet）
 CELLS[2] = ui((w, h, t) => {
   pageLines(24, 16, 494); fillRR(24, 76, 239, 54, 8, C.block); fillRR(279, 76, 239, 54, 8, C.block);
-  fillRR(186, 144, 170, 36, 18, C.blue); text('詳細を見る', 271, 162, 15, '#fff', 600, 'center');
+  fillRR(186, 144, 170, 36, 18, C.blue); text('查看详情', 271, 162, 15, '#fff', 600, 'center');
   const open = eo(seg(t, 1.05, 1.45));
   const drag = eio(seg(t, 3.0, 3.6));
   const a = open * (1 - drag);

@@ -27,12 +27,12 @@ CELLS[2] = (k, w, h, u) => {
   view(k, () => {
     k.save(); k.translate(0, -y);
     pic(k, 24, 70, 214, 112, 0, 8);
-    txt(k, '新しい毎日を、', 262, 104, `800 22px ${JP}`, C.ink); bars(k, 262, 120, 210, 3); btn(k, 262, 160, 100, 26, '詳しく見る');
+    txt(k, '开启全新一天，', 262, 104, `800 22px ${JP}`, C.ink); bars(k, 262, 120, 210, 3); btn(k, 262, 160, 100, 26, '查看详情');
     k.fillStyle = C.soft; k.fillRect(0, 212, VW, 240);
-    txt(k, '特長', VW / 2, 246, `800 18px ${JP}`, C.ink, 'center');
+    txt(k, '特色', VW / 2, 246, `800 18px ${JP}`, C.ink, 'center');
     for (let i = 0; i < 3; i++) { const x = 34 + i * 152; k.fillStyle = '#fff'; rr(k, x, 262, 136, 120, 8); k.fill(); pic(k, x + 8, 270, 120, 58, i, 5); bars(k, x + 10, 340, 110, 3, C.faint, 6, 11); }
     k.fillStyle = C.ink; k.fillRect(0, 0, VW, STRIP);
-    txt(k, '期間限定キャンペーン実施中', VW / 2, STRIP / 2 + 0.5, `600 11px ${JP}`, '#fff', 'center', 'middle');
+    txt(k, '限时优惠进行中', VW / 2, STRIP / 2 + 0.5, `600 11px ${JP}`, '#fff', 'center', 'middle');
     k.restore();
     const hy = Math.max(STRIP - y, 0), sh = clamp((y - STRIP) / 24);
     if (sh > 0) { const g = k.createLinearGradient(0, hy + 34, 0, hy + 46); g.addColorStop(0, `rgba(28,35,51,${0.16 * sh})`); g.addColorStop(1, 'rgba(28,35,51,0)'); k.fillStyle = g; k.fillRect(0, hy + 34, VW, 12); }

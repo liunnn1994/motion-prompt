@@ -30,14 +30,14 @@ CELLS[15] = (k, w, h, u) => {
   const D = { x: 125.5, y: 18, w: 260, h: 132 };
   view(k, () => {
     header(k, 0);
-    pic(k, 24, 46, 222, 110, 0, 8); txt(k, 'はじめての方へ', 264, 82, `800 19px ${JP}`, C.ink); bars(k, 264, 96, 210, 3); btn(k, 264, 132, 100, 24, '申し込む');
+    pic(k, 24, 46, 222, 110, 0, 8); txt(k, '新用户指南', 264, 82, `800 19px ${JP}`, C.ink); bars(k, 264, 96, 210, 3); btn(k, 264, 132, 100, 24, '立即报名');
     if (m > 0) {
       k.fillStyle = `rgba(28,35,51,${0.5 * m})`; k.fillRect(0, 0, VW, VH);
       k.save(); k.globalAlpha = m; k.translate(D.x + D.w / 2, D.y + D.h / 2); const s = 0.9 + 0.1 * m; k.scale(s, s); k.translate(-D.w / 2, -D.h / 2);
       k.fillStyle = '#fff'; rr(k, 0, 0, D.w, D.h, 12); k.fill();
-      txt(k, 'ちょっと待って！', D.w / 2, 34, `800 17px ${JP}`, C.ink, 'center');
-      txt(k, '今なら初回 10%OFF', D.w / 2, 60, `800 15px ${JP}`, C.acc, 'center');
-      btn(k, D.w / 2 - 75, 80, 150, 30, 'クーポンを受け取る', C.acc, '#fff', 12);
+      txt(k, '请稍等一下！', D.w / 2, 34, `800 17px ${JP}`, C.ink, 'center');
+      txt(k, '首次体验享九折', D.w / 2, 60, `800 15px ${JP}`, C.acc, 'center');
+      btn(k, D.w / 2 - 75, 80, 150, 30, '领取优惠券', C.acc, '#fff', 12);
       k.strokeStyle = C.sub; k.lineWidth = 2; k.lineCap = 'round'; k.beginPath(); k.moveTo(D.w - 26, 14); k.lineTo(D.w - 14, 26); k.moveTo(D.w - 14, 14); k.lineTo(D.w - 26, 26); k.stroke();
       k.restore();
     }

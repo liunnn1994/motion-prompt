@@ -4,7 +4,7 @@ Motion Prompt #068
 What it is: Shows which step of a process you are on
 What the sample shows: Each click on "Next" turns the next of four step circles into a check and extends the blue line to the following step.
 Spec:
-- 4.5 s cycle on a 542×191 card. Four steps ("Details, Review, Payment, Done" in Japanese) at x 80, 207, 334, 461, y 35; circles of radius 17 joined by a 4 px grey line.
+- 4.5 s cycle on a 542×191 card. Four steps ("Input, Confirm, Payment, Done" in Chinese) at x 80, 207, 334, 461, y 35; circles of radius 17 joined by a 4 px grey line.
 - The cursor clicks "Next" (110×38, bottom right) at 0.9, 1.7 and 2.5 s.
 - On each click the current step becomes a blue circle with a white check and the next becomes the current one (blue circle, white number). Steps not reached are white with a grey rim.
 - The blue line grows 127 px per click over 0.3 s with easeInOutCubic; after the third click all four are checked.

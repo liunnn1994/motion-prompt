@@ -74,7 +74,7 @@ MotionPrompt.pack('ui', function () {
   // 01 モーダル（Modal dialog）
   CELLS[0] = ui((w, h, t) => {
     pageLines(24, 18, 494);
-    fillRR(24, 92, 120, 36, 8, C.blue); text('開く', 84, 110, 16, '#fff', 600, 'center');
+    fillRR(24, 92, 120, 36, 8, C.blue); text('打开', 84, 110, 16, '#fff', 600, 'center');
     fillRR(170, 92, 348, 36, 8, C.block); fillRR(24, 142, 494, 38, 8, C.block);
     const a = eo(seg(t, 1.0, 1.32)) * (1 - eio(seg(t, 3.3, 3.58)));
     if (a > 0) {
@@ -92,7 +92,7 @@ MotionPrompt.pack('ui', function () {
   // @element 02
   // 02 ドロワー（Drawer (Off-canvas)）
   CELLS[1] = ui((w, h, t) => {
-    strokeRR(24, 14, 110, 34, 8, C.line2, 1.5); text('メニュー', 79, 31, 15, '#555', 600, 'center');
+    strokeRR(24, 14, 110, 34, 8, C.line2, 1.5); text('菜单', 79, 31, 15, '#555', 600, 'center');
     bar(160, 26, 140, C.line2, 11); pageLines(24, 70, 494); fillRR(24, 138, 494, 42, 8, C.block);
     const a = eo(seg(t, 1.0, 1.38)) * (1 - eio(seg(t, 3.3, 3.65)));
     if (a > 0) {
@@ -109,7 +109,7 @@ MotionPrompt.pack('ui', function () {
   // 03 ボトムシート（Bottom sheet）
   CELLS[2] = ui((w, h, t) => {
     pageLines(24, 16, 494); fillRR(24, 76, 239, 54, 8, C.block); fillRR(279, 76, 239, 54, 8, C.block);
-    fillRR(186, 144, 170, 36, 18, C.blue); text('詳細を見る', 271, 162, 15, '#fff', 600, 'center');
+    fillRR(186, 144, 170, 36, 18, C.blue); text('查看详情', 271, 162, 15, '#fff', 600, 'center');
     const open = eo(seg(t, 1.05, 1.45));
     const drag = eio(seg(t, 3.0, 3.6));
     const a = open * (1 - drag);
@@ -149,15 +149,15 @@ MotionPrompt.pack('ui', function () {
     const chosen = seg(t, 2.32, 2.42) * (1 - seg(t, 3.9, 4.08));
     const ph = (1 - seg(t, 2.2, 2.3)) + seg(t, 4.1, 4.3); // プレースホルダーは先に消し、名前が消えてから戻す（重ねない）
     strokeRR(24, 34, 260, 38, 8, open > .1 || (chosen > 0 && t < 2.9) ? C.blue : C.line2, open > .1 ? 2 : 1.5);
-    if (ph > 0) { X.globalAlpha = clamp(ph); text('選択してください', 40, 53, 15, '#9a9896', 500); X.globalAlpha = 1; }
-    if (chosen > 0) { X.globalAlpha = chosen; text('名古屋', 40, 53, 16, C.ink, 600); X.globalAlpha = 1; }
+    if (ph > 0) { X.globalAlpha = clamp(ph); text('请选择', 40, 53, 15, '#9a9896', 500); X.globalAlpha = 1; }
+    if (chosen > 0) { X.globalAlpha = chosen; text('深圳', 40, 53, 16, C.ink, 600); X.globalAlpha = 1; }
     chevron(262, 52, 5, Math.PI * open, '#777');
     fillRR(310, 34, 208, 70, 8, C.block); bar(310, 120, 208); bar(310, 138, 160); bar(24, 150, 200); bar(24, 168, 150);
     if (open > 0) {
       X.save(); X.globalAlpha = open; const oy = 78 - 6 * (1 - open);
       shadowed(() => fillRR(24, oy, 260, 112, 8, '#fff'), 18, 6, .18); strokeRR(24, oy, 260, 112, 8, C.border, 1);
       const hi = seg(t, 1.55, 1.75) > 0 ? (t < 1.95 ? 1 : 2) : -1;
-      ['東京', '大阪', '名古屋', '福岡'].forEach((s, i) => { const yy = oy + 4 + i * 26; if (i === hi + (hi === 1 ? 0 : 0) && hi >= 0) fillRR(28, yy, 252, 26, 5, C.lb); text(s, 40, yy + 13, 15, i === hi ? C.blue : '#444', i === hi ? 600 : 500); });
+      ['北京', '上海', '深圳', '广州'].forEach((s, i) => { const yy = oy + 4 + i * 26; if (i === hi + (hi === 1 ? 0 : 0) && hi >= 0) fillRR(28, yy, 252, 26, 5, C.lb); text(s, 40, yy + 13, 15, i === hi ? C.blue : '#444', i === hi ? 600 : 500); });
       X.restore();
     }
     pointer([[.3, w + 30, h + 30], [.95, 200, 56], [1.25, 200, 56], [1.6, 170, 121], [2.0, 170, 147], [2.45, 170, 147], [3.2, 170, 147], [4.2, w + 30, h + 30]], [1.0, 2.3], t);
@@ -174,7 +174,7 @@ MotionPrompt.pack('ui', function () {
       X.save(); X.globalAlpha = a; const yy = 64 + 6 * (1 - a);
       fillRR(196 - 92, yy, 184, 36, 8, C.dark);
       X.beginPath(); X.moveTo(196 - 8, yy + 36); X.lineTo(196, yy + 44); X.lineTo(196 + 8, yy + 36); X.fillStyle = C.dark; X.fill();
-      text('小さな説明が出る', 196, yy + 18, 15, '#fff', 600, 'center'); X.restore();
+      text('显示简短说明', 196, yy + 18, 15, '#fff', 600, 'center'); X.restore();
     }
     // 乗せるだけ（クリックしない）
     pointer([[.3, w + 30, h + 30], [1.05, 200, 126], [3.15, 200, 126], [4.1, w + 30, h + 30]], [], t);
@@ -184,7 +184,7 @@ MotionPrompt.pack('ui', function () {
   // 07 ポップオーバー（Popover）
   CELLS[6] = ui((w, h, t) => {
     pageLines(24, 16, 494);
-    strokeRR(24, 112, 108, 36, 8, C.blue, 2); text('詳細', 78, 130, 15, C.blue, 600, 'center');
+    strokeRR(24, 112, 108, 36, 8, C.blue, 2); text('详情', 78, 130, 15, C.blue, 600, 'center');
     fillRR(24, 160, 494, 22, 6, C.block);
     const a = eo(seg(t, 1.0, 1.28)) * (1 - eio(seg(t, 3.3, 3.5)));
     if (a > 0) {
@@ -210,7 +210,7 @@ MotionPrompt.pack('ui', function () {
       const tw0 = 214, th = 52, tx = w - 18 - tw0 + (1 - tin) * 240 + tout * 240, ty = h - 16 - th;
       shadowed(() => fillRR(tx, ty, tw0, th, 10, C.dark), 18, 6, .25);
       circle(tx + 26, ty + 24, 11, C.blue); check(tx + 26, ty + 24, 5, '#fff', 2.4);
-      text('保存しました', tx + 46, ty + 24, 15, '#fff', 600);
+      text('已保存', tx + 46, ty + 24, 15, '#fff', 600);
       const life = 1 - seg(t, 1.4, 3.2); fillRR(tx + 10, ty + th - 7, (tw0 - 20) * life, 3, 1.5, C.sb);
     }
     pointer([[.3, -30, h + 30], [.95, 84, 168], [1.5, 84, 168], [2.2, -40, h + 40]], [1.0], t);
@@ -219,7 +219,7 @@ MotionPrompt.pack('ui', function () {
   // @element 09
   // 09 タブ（Tabs）
   CELLS[8] = ui((w, h, t) => {
-    const labs = ['概要', '料金', 'レビュー'], xs = [24, 114, 204], ws = [70, 70, 100];
+    const labs = ['概要', '价格', '评价'], xs = [24, 114, 204], ws = [70, 70, 100];
     const c1 = eio(seg(t, 1.0, 1.25)), c2 = eio(seg(t, 2.2, 2.45)), c3 = eio(seg(t, 3.4, 3.65));
     const pos = c1 + c2 - 2 * c3; // 0 -> 1 -> 2 -> 0
     const fi = Math.floor(pos), fr = pos - fi, gi = Math.min(2, fi + 1);
@@ -282,7 +282,7 @@ MotionPrompt.pack('ui', function () {
     const sx = 121, sy = 12, sw = 300, sh = 40, cw = sw / 3;
     fillRR(sx, sy, sw, sh, 10, '#efedeb');
     shadowed(() => fillRR(sx + 4 + pos * cw, sy + 4, cw - 8, sh - 8, 8, C.blue), 6, 2, .2);
-    ['日', '週', '月'].forEach((s, i) => { const near = 1 - clamp(Math.abs(pos - i)); text(s, sx + cw * i + cw / 2, sy + sh / 2 + 1, 17, near > .5 ? '#fff' : '#6d6b69', 700, 'center'); });
+    ['日', '周', '月'].forEach((s, i) => { const near = 1 - clamp(Math.abs(pos - i)); text(s, sx + cw * i + cw / 2, sy + sh / 2 + 1, 17, near > .5 ? '#fff' : '#6d6b69', 700, 'center'); });
     const sets = [[30, 55, 40, 70, 50, 85, 60], [60, 40, 90, 75, 100, 55, 80], [95, 70, 110, 60, 85, 115, 100]];
     const fi = Math.floor(pos), fr = pos - fi, gi = Math.min(2, fi + 1);
     X.fillStyle = C.line; X.fillRect(60, 182, 422, 1.5);
@@ -293,7 +293,7 @@ MotionPrompt.pack('ui', function () {
   // @element 13
   // 13 チップ（Filter chips）
   CELLS[12] = ui((w, h, t) => {
-    const chips = ['すべて', '新着', '人気', '無料']; let x = 24; const pos = [];
+    const chips = ['全部', '最新', '热门', '免费']; let x = 24; const pos = [];
     const on = [0, eo(seg(t, 0.95, 1.1)) * (1 - eo(seg(t, 3.0, 3.15))), 0, eo(seg(t, 1.75, 1.9)) * (1 - eo(seg(t, 3.6, 3.75)))];
     chips.forEach((s, i) => {
       const k = on[i], cw0 = tw(s, 15, 600) + 32 + (k > 0 ? 18 * k : 0);
@@ -321,7 +321,7 @@ MotionPrompt.pack('ui', function () {
     const x0 = 54, x1 = 488, ty = 120, X_ = v => lerp(x0, x1, v);
     const lo = LO(t), hi = HI(t), lx = X_(lo), hx = X_(hi);
     const yen = v => '¥' + (Math.round(v * 100) * 100).toLocaleString('en-US');
-    text('価格', 24, 26, 16, '#555', 700);
+    text('价格', 24, 26, 16, '#555', 700);
     text(yen(lo) + ' 〜 ' + yen(hi), w - 24, 26, 17, C.blue, 700, 'right', NUMF);
     fillRR(x0, ty - 4, x1 - x0, 8, 4, '#e3e1df'); fillRR(lx, ty - 4, hx - lx, 8, 4, C.blue);
     const loAct = (t > 1.0 && t < 1.7) || (t > 3.55 && t < 3.95), hiAct = t > 2.1 && t < 3.3;
@@ -411,12 +411,12 @@ MotionPrompt.pack('ui', function () {
   CELLS[17] = ui((w, h, t) => {
     const up = eio(seg(t, 1.0, 1.25)) * (1 - eio(seg(t, 2.7, 2.95))); // 1=「講座」の階層にいる
     let x = 24; const y = 24;
-    text('ホーム', x, y, 17, C.blue, 600); x += tw('ホーム', 17, 600) + 10; text('›', x, y, 17, '#aaa', 500); x += 18;
-    const kx = x, kw = tw('講座', 17, 700);
+    text('首页', x, y, 17, C.blue, 600); x += tw('首页', 17, 600) + 10; text('›', x, y, 17, '#aaa', 500); x += 18;
+    const kx = x, kw = tw('课程', 17, 700);
     const hoverK = t > .9 && t < 1.2;
-    text('講座', x, y, 17, up > .5 ? C.ink : C.blue, up > .5 ? 700 : 600); if (hoverK) { X.fillStyle = C.blue; X.fillRect(x, y + 12, kw, 2); }
+    text('课程', x, y, 17, up > .5 ? C.ink : C.blue, up > .5 ? 700 : 600); if (hoverK) { X.fillStyle = C.blue; X.fillRect(x, y + 12, kw, 2); }
     x += kw + 10;
-    X.globalAlpha = 1 - up; text('›', x, y, 17, '#aaa', 500); text('Web制作', x + 18, y, 17, C.ink, 700); X.globalAlpha = 1;
+    X.globalAlpha = 1 - up; text('›', x, y, 17, '#aaa', 500); text('网页制作', x + 18, y, 17, C.ink, 700); X.globalAlpha = 1;
     X.fillStyle = C.line; X.fillRect(24, 46, 494, 1.5);
     // 中身：詳細ページ ⇄ 一覧ページ
     if (up < 1) { X.save(); X.globalAlpha = 1 - up; bar(24, 64, 200, C.ink, 13); bar(24, 92, 494); bar(24, 110, 420); fillRR(24, 132, 494, 48, 8, C.block); X.restore(); }
@@ -431,7 +431,7 @@ MotionPrompt.pack('ui', function () {
     pageLines(24, 62, 494); fillRR(24, 130, 494, 50, 8, C.block);
     X.fillStyle = '#fff'; X.fillRect(0, 0, w, 42); X.fillStyle = C.line; X.fillRect(0, 42, w, 1.5);
     fillRR(24, 14, 70, 16, 4, C.mb);
-    const nav = [['製品', 190], ['料金', 262], ['サポート', 334]];
+    const nav = [['产品', 190], ['价格', 262], ['支持', 334]];
     nav.forEach(([s, x], i) => { const on = i === 0 && a > .3; text(s, x, 22, 16, on ? C.blue : '#555', on ? 700 : 600); if (on) fillRR(x, 36, tw(s, 16, 700), 3, 1.5, C.blue); chevron(x + tw(s, 16, 700) + 10, 22, 3.5, 0, on ? C.blue : '#999', 1.8); });
     if (a > 0) {
       X.save(); X.globalAlpha = a; X.beginPath(); X.rect(0, 43, w, h); X.clip(); const py = 43 - 12 * (1 - a);
@@ -450,7 +450,7 @@ MotionPrompt.pack('ui', function () {
     const clicks = [.9, 1.7, 2.5]; let step = 0; clicks.forEach(c => { if (t >= c) step++; });
     const reset = seg(t, 3.75, 4.05), back = seg(t, 4.05, 4.3);
     const showStep = reset >= 1 ? 0 : step;
-    const xs = [80, 207, 334, 461], labs = ['入力', '確認', '支払い', '完了'];
+    const xs = [80, 207, 334, 461], labs = ['填写', '确认', '付款', '完成'];
     const prog = clicks.reduce((s, c) => s + eio(seg(t, c, c + .3)), 0);
     X.save(); X.globalAlpha = reset < 1 ? 1 - reset : back;
     const pr = reset >= 1 ? 0 : prog;
@@ -463,7 +463,7 @@ MotionPrompt.pack('ui', function () {
     });
     X.restore();
     strokeRR(24, 96, 494, 30, 7, C.line2, 1.5); bar(36, 106, 160, C.line); bar(24, 148, 200, C.line);
-    fillRR(w - 24 - 110, 142, 110, 38, 8, C.blue); text('次へ', w - 24 - 55, 161, 16, '#fff', 600, 'center');
+    fillRR(w - 24 - 110, 142, 110, 38, 8, C.blue); text('下一步', w - 24 - 55, 161, 16, '#fff', 600, 'center');
     pointer([[.3, w + 30, h + 30], [.85, w - 74, 166], [2.6, w - 74, 166], [3.3, w + 30, h + 30]], clicks, t);
   });
 
@@ -496,7 +496,7 @@ MotionPrompt.pack('ui', function () {
     const load = seg(t, 1.05, 1.2) * (1 - seg(t, 2.95, 3.05));
     const done = seg(t, 2.95, 3.15) * (1 - seg(t, 3.75, 4.0));
     pageLines(24, 18, 494); strokeRR(24, 90, 494, 34, 7, C.line2, 1.5);
-    fillRR(w / 2 - 60, 140, 120, 40, 8, C.blue); text('送信', w / 2, 160, 16, '#fff', 600, 'center');
+    fillRR(w / 2 - 60, 140, 120, 40, 8, C.blue); text('发送', w / 2, 160, 16, '#fff', 600, 'center');
     const ov = Math.max(load, done);
     if (ov > 0) {
       X.fillStyle = `rgba(255,255,255,${.78 * ov})`; X.fillRect(0, 0, w, h);
@@ -550,8 +550,8 @@ MotionPrompt.pack('ui', function () {
       X.strokeStyle = C.blue; X.lineWidth = 2.6; X.lineJoin = 'round';
       X.beginPath(); X.moveTo(w / 2 - 26, cy - 4); X.lineTo(w / 2 - 18, cy - 22); X.lineTo(w / 2 + 18, cy - 22); X.lineTo(w / 2 + 26, cy - 4); X.lineTo(w / 2 + 26, cy + 16); X.lineTo(w / 2 - 26, cy + 16); X.closePath(); X.stroke();
       X.beginPath(); X.moveTo(w / 2 - 26, cy - 4); X.lineTo(w / 2 - 9, cy - 4); X.lineTo(w / 2 - 6, cy + 3); X.lineTo(w / 2 + 6, cy + 3); X.lineTo(w / 2 + 9, cy - 4); X.lineTo(w / 2 + 26, cy - 4); X.stroke();
-      text('まだ何もありません', w / 2, cy + 40, 16, '#555', 600, 'center');
-      fillRR(w / 2 - 56, cy + 62, 112, 34, 8, C.blue); text('追加する', w / 2, cy + 79, 15, '#fff', 600, 'center');
+      text('暂无内容', w / 2, cy + 40, 16, '#555', 600, 'center');
+      fillRR(w / 2 - 56, cy + 62, 112, 34, 8, C.blue); text('添加', w / 2, cy + 79, 15, '#fff', 600, 'center');
       X.restore();
     }
     pointer([[.3, w + 30, h + 30], [.9, 486, 67], [1.25, 486, 67], [1.6, 486, 67], [2.4, 486, 67], [3.2, w / 2 + 4, 156], [3.5, w / 2 + 4, 156], [4.2, w + 30, h + 30]], [0.95, 1.65, 3.3], t);

@@ -32,8 +32,8 @@ CELLS[8] = (k, w, h, u) => {
   const ez = mv === 1 ? EZ(pp) : mv === -1 ? 1 - EZ(pp) : lin;
   const vel = mv ? (EZ(Math.min(1, pp + 0.01)) - EZ(Math.max(0, pp - 0.01))) / 0.02 : 0, vn = clamp(vel / 3.6);
   // ラベル
-  txt(k, '一定', 24, y1 + 1, `700 34px ${JP}`, C.dim, 'left', 'middle');
-  txt(k, '緩急', 24, y2 + 1, `700 34px ${JP}`, C.yel, 'left', 'middle');
+  txt(k, '匀速', 24, y1 + 1, `700 34px ${JP}`, C.dim, 'left', 'middle');
+  txt(k, '缓动', 24, y2 + 1, `700 34px ${JP}`, C.yel, 'left', 'middle');
   // レール＋0.1秒ごとの位置
   [[y1, x => x, '#34489A'], [y2, EZ, '#34489A']].forEach(([y, f, col]) => {
     k.strokeStyle = C.navy2; k.lineWidth = 6; k.lineCap = 'round'; k.beginPath(); k.moveTo(x0, y); k.lineTo(x1, y); k.stroke();

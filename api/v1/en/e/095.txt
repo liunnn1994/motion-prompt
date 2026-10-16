@@ -32,6 +32,6 @@ CELLS[22] = (k, w, h, u) => {
     }
     txt(k, 'Hello, Future.', 40, 82, `800 34px ${EN}`, '#fff', 'left', 'alphabetic', '1px');
     bars(k, 40, 100, 200, 2, 'rgba(255,255,255,.8)', 6, 12, 0.6);
-    btn(k, 40, 128, 104, 26, 'はじめる', '#fff', C.ink);
+    btn(k, 40, 128, 104, 26, '开始使用', '#fff', C.ink);
   });
 };

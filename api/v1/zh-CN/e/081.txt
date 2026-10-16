@@ -31,7 +31,7 @@ CELLS[8] = (k, w, h, u) => {
       k.save(); k.shadowColor = `rgba(28,35,51,${0.08 + 0.14 * q})`; k.shadowBlur = 6 + 16 * q; k.shadowOffsetY = 2 + 10 * q;
       k.fillStyle = '#fff'; rr(k, x, y, CWD, CHT, 10); k.fill(); k.restore();
       pic(k, x + 8, y + 8, CWD - 16, 66, i, 6);
-      txt(k, ['山の宿', '海の宿', '星の宿'][i], x + 12, y + 96, `800 13px ${JP}`, C.ink); bars(k, x + 12, y + 106, 100, 1);
+      txt(k, ['山间旅馆', '海边旅馆', '星空旅馆'][i], x + 12, y + 96, `800 13px ${JP}`, C.ink); bars(k, x + 12, y + 106, 100, 1);
     }
     const [cx, cy] = cur(u); cursor(k, cx, cy);
   });

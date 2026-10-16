@@ -26,10 +26,10 @@ CELLS[1] = (k, w, h, u) => {
   const LINE = VH * 0.85, DUR = 0.7, RISE = 28;
   view(k, () => {
     k.save(); k.translate(0, -y);
-    txt(k, '暮らしを、軽く。', 34, 52, `800 24px ${JP}`, C.ink); bars(k, 34, 68, 190, 3); btn(k, 34, 108, 96, 26, '詳しく見る');
+    txt(k, '让生活更轻松。', 34, 52, `800 24px ${JP}`, C.ink); bars(k, 34, 68, 190, 3); btn(k, 34, 108, 96, 26, '查看详情');
     pic(k, 286, 18, 196, 110, 0, 8);
     const items = [
-      [172, () => txt(k, '選ばれる3つの理由', VW / 2, 172 + 20, `800 18px ${JP}`, C.ink, 'center')],
+      [172, () => txt(k, '选择我们的3个理由', VW / 2, 172 + 20, `800 18px ${JP}`, C.ink, 'center')],
       [206, () => { for (let i = 0; i < 3; i++) { const x = 34 + i * 152; k.fillStyle = C.soft; rr(k, x, 206, 136, 106, 8); k.fill(); pic(k, x + 8, 214, 120, 56, i, 5); bars(k, x + 10, 280, 112, 2, '#CBD2DE'); } }],
       [334, () => bars(k, 110, 334, 290, 3, C.faint, 7, 13)]
     ];

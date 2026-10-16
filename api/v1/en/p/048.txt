@@ -8,7 +8,7 @@ Spec:
 - Playhead: moves left to right at constant speed over 3.6 s (0.4 s to 4.0 s); picture switches at 55% (about 2.38 s), audio at 75% (about 3.10 s)
 - In the offset section (55–75%) the picture is already B while the audio is still A; the section is marked with a pale blue band and two blue dashed lines
 - Layout: the top 134 px is the picture (fixed camera, subjects do not move); the bottom 74 px holds two timeline rows, video and audio (A grey, B pale blue, waveform on the audio row)
-- Labels: "映像A / 映像B" (video A / B) at bottom left of the picture; the audio now playing at bottom right ("♪ Aの音" grey → "♪ Bの音" blue)
+- Labels: "画面A / 画面B" (video A / B) at bottom left of the picture; the audio now playing at bottom right ("♪ A音频" grey → "♪ B音频" blue)
 - Return: cross-fade back to the start over the last 0.5 s (one pass = 4.7 s)
 When to use it: To keep a speaker's voice running while showing the listener's reaction or related footage.
 

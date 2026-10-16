@@ -29,7 +29,7 @@ CELLS[5] = (k, w, h, u) => {
       const y0 = i * VH, dark = i === 1;
       k.fillStyle = dark ? C.ink : C.blueL; k.fillRect(0, y0, VW, VH);
       txt(k, '0' + (i + 1), 34, y0 + 70, `800 46px ${EN}`, C.acc);
-      txt(k, dark ? '使ってみる' : '知ってもらう', 34, y0 + 102, `800 18px ${JP}`, dark ? '#fff' : C.ink);
+      txt(k, dark ? '立即体验' : '深入了解', 34, y0 + 102, `800 18px ${JP}`, dark ? '#fff' : C.ink);
       bars(k, 34, y0 + 118, 170, 2, dark ? 'rgba(255,255,255,.3)' : '#C3CDEA');
       pic(k, 262, y0 + 24, 220, 120, dark ? 2 : 0, 8);
     }

@@ -490,7 +490,7 @@ MotionPrompt.pack('camera', function () {
     };
     if (u < cut) quiet(k, u);
     else blend(k, kk => loud(kk, u), kk => quiet(kk, 0), eIOs(r));
-    return u < cut || r > .5 ? '♪ 静か' : '♪ 大音量';
+    return u < cut || r > .5 ? '♪ 安静' : '♪ 大音量';
   });
 
   // @shared
@@ -506,17 +506,17 @@ MotionPrompt.pack('camera', function () {
         kk.save(); kk.beginPath(); kk.rect(0, 0, w, vh); kk.clip();
         (p < cutV ? sceneA : sceneB)(kk, w, vh, { cam: { pitch: p < cutV ? -0.13 : -0.06 } });
         // 今流れている音
-        const aB = p >= cutA, lab = aB ? '♪ Bの音' : '♪ Aの音', f = `700 15px ${JP}`;
+        const aB = p >= cutA, lab = aB ? '♪ B音频' : '♪ A音频', f = `700 15px ${JP}`;
         const bw = tw(kk, lab, f) + 22;
         kk.fillStyle = aB ? C.blue : '#8E8E93'; rr(kk, w - 42 - bw, vh - 40, bw, 26, 13); kk.fill();
         txt(kk, lab, w - 42 - bw / 2, vh - 26.5, f, '#fff', 'center', 'middle');
         const sl = p < cutV ? 'A' : 'B';
         kk.fillStyle = 'rgba(255,255,255,.9)'; rr(kk, 42, vh - 40, 70, 26, 13); kk.fill();
-        txt(kk, '映像' + sl, 77, vh - 26.5, `700 15px ${JP}`, C.ink, 'center', 'middle');
+        txt(kk, '画面' + sl, 77, vh - 26.5, `700 15px ${JP}`, C.ink, 'center', 'middle');
         kk.restore();
         kk.strokeStyle = C.border; kk.lineWidth = 1.5; kk.beginPath(); kk.moveTo(0, vh + .5); kk.lineTo(w, vh + .5); kk.stroke();
         // タイムライン
-        const tracks = [['映像', vh + 14, cutV], ['音', vh + 44, cutA]];
+        const tracks = [['画面', vh + 14, cutV], ['音', vh + 44, cutA]];
         const xAt = q => lerp(X0, X1, q);
         tracks.forEach(([name, y, cut]) => {
           txt(kk, name, 18, y + 11, `600 15px ${JP}`, C.sub, 'left', 'middle');

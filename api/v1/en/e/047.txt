@@ -8,7 +8,7 @@
 //   - Playhead: moves left to right at constant speed over 3.6 s (0.4 s to 4.0 s); audio switches at 35% (about 1.66 s), picture at 55% (about 2.38 s)
 //   - In the offset section (35–55%) the picture is still A while the audio is already B; the section is marked with a pale blue band and two blue dashed lines
 //   - Layout: the top 134 px is the picture (fixed camera, subjects do not move); the bottom 74 px holds two timeline rows, video and audio (A grey, B pale blue, waveform on the audio row)
-//   - Labels: "映像A / 映像B" (video A / B) at bottom left of the picture; the audio now playing at bottom right ("♪ Aの音" grey → "♪ Bの音" blue)
+//   - Labels: "画面A / 画面B" (video A / B) at bottom left of the picture; the audio now playing at bottom right ("♪ A音频" grey → "♪ B音频" blue)
 //   - Return: cross-fade back to the start over the last 0.5 s (one pass = 4.7 s)
 // When to use it: To build anticipation for the next scene, or to make a change of scene or speaker feel natural.
 // Tags: j-cut, j cut, split edit, audio lead, sound first, audio transition, edit

@@ -4,7 +4,7 @@ Motion Prompt #060
 What it is: A row of joined buttons that switches the view
 What the sample shows: Clicking Day, Week or Month slides a blue highlight across and the bar chart below changes height.
 Spec:
-- 4.5 s cycle on a 542×191 card. A grey 300×40 base (radius 10) at (121, 12), split into three 100-wide segments: Day, Week, Month (in Japanese).
+- 4.5 s cycle on a 542×191 card. A grey 300×40 base (radius 10) at (121, 12), split into three 100-wide segments: Day, Week, Month (in Chinese).
 - Selection: blue 92×32, radius 8, shadow blur 6; the selected label is white.
 - The cursor clicks Week at 1.0 s, Month at 2.1 s and Day at 3.3 s; the selection slides over 0.25 s each with easeInOutCubic.
 - Chart below: seven bars 34 wide, 58 px apart (the sixth is blue). Heights move between three data sets (about 30–85, 40–100, 60–115) together with the selection, eased the same way.
