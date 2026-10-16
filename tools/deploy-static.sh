@@ -75,9 +75,12 @@ SH
 chmod 700 "$ssh_dir/connect"
 
 # Upload into the configured directory, which may be a bind mount; never replace it.
+echo 'Checking remote deployment directory and rsync availability...'
 "$ssh_dir/connect" "$DEPLOY_USER@$DEPLOY_HOST" \
   "test -d '$deploy_path' && test -w '$deploy_path' && command -v rsync >/dev/null"
+echo 'Uploading staged files; replacements are applied after the transfer completes...'
 rsync --recursive --links --times --perms --compress --delay-updates --omit-dir-times \
+  --info=progress2 --stats --timeout=120 \
   --chmod=D755,F644 --exclude='.well-known/' \
   -e "$ssh_dir/connect" -- "$source_dir/" "$DEPLOY_USER@$DEPLOY_HOST:$deploy_path/"
 echo 'Uploaded static files. Nginx configuration was not changed.'
