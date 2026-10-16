@@ -33,11 +33,11 @@ Shohei Ohtaki
 
 | Numbers | Pack | Names | Lists |
 |---|---|---|---|
-| 001–024 | `motion`: motion graphics moves | 24 | [English](packs/motion/README.md) · [日本語](packs/motion/README.ja.md) |
-| 025–048 | `camera`: camera moves and transitions | 24 | [English](packs/camera/README.md) · [日本語](packs/camera/README.ja.md) |
-| 049–072 | `ui`: UI component names | 24 | [English](packs/ui/README.md) · [日本語](packs/ui/README.ja.md) |
-| 073–096 | `lp`: landing page and web effects | 24 | [English](packs/lp/README.md) · [日本語](packs/lp/README.ja.md) |
-| 097–120 | `photo`: photo looks, lighting and styles | 24 | [English](packs/photo/README.md) · [日本語](packs/photo/README.ja.md) |
+| 001–024 | `motion`: motion graphics moves | 24 | [简体中文](packs/motion/README.zh-CN.md) · [English](packs/motion/README.md) · [日本語](packs/motion/README.ja.md) |
+| 025–048 | `camera`: camera moves and transitions | 24 | [简体中文](packs/camera/README.zh-CN.md) · [English](packs/camera/README.md) · [日本語](packs/camera/README.ja.md) |
+| 049–072 | `ui`: UI component names | 24 | [简体中文](packs/ui/README.zh-CN.md) · [English](packs/ui/README.md) · [日本語](packs/ui/README.ja.md) |
+| 073–096 | `lp`: landing page and web effects | 24 | [简体中文](packs/lp/README.zh-CN.md) · [English](packs/lp/README.md) · [日本語](packs/lp/README.ja.md) |
+| 097–120 | `photo`: photo looks, lighting and styles | 24 | [简体中文](packs/photo/README.zh-CN.md) · [English](packs/photo/README.md) · [日本語](packs/photo/README.ja.md) |
 
 Each list gives the number, the name, what it means and an example of how to ask an AI for it. The same names move in the [gallery](https://motion-prompt.2077tech.com/).
 
@@ -177,7 +177,7 @@ This section is for an AI agent that received the prompt in "With a prompt".
    node <skill-dir>/scripts/motion-prompt.mjs info
    ```
    Exit code 3 means the data source could not be reached. Get network permission and run it again.
-5. Read `<skill-dir>/SKILL.md` and tell the user how to use the skill in three lines. For example:
+5. Read `<skill-dir>/SKILL.md` and tell the user how to use the skill in three lines, in their language. For Chinese requests, use “选择 / Pick” and “发送给 AI / Send to AI”; the default gallery and CLI language is `zh-CN`. For example, in English:
    - Say "open the motion-prompt library" and the gallery opens. Press "Pick" on what you want, then "Send to AI".
    - Then say what to do with them, for example "edit the opening of this video like this".
    - If you know the numbers, you can also ask directly: "use #012 and #045".
@@ -204,7 +204,7 @@ Three files make up the skill: the instructions (`SKILL.md`), notes on moving an
 | Command | What it does |
 |---|---|
 | `pick` / `pick --pack camera` | opens the gallery and prints what arrives with "Send to AI": numbers, names, specs and your note. Waits up to 15 minutes |
-| `search typewriter text` / `search 文字 登場` | finds elements for a scene (English or Japanese words) |
+| `search 推镜头` / `search typewriter text` | finds elements for a scene (Chinese, English or Japanese words) |
 | `list` / `list --pack motion` | an overview of all packs, or one pack listed element by element |
 | `get 12 #045` | prints the spec and then the code for those numbers (8 at most in one call) |
 | `kit motion` | the shared code of a pack |
@@ -219,9 +219,9 @@ The script makes GET requests for the text files below and nothing else. Nothing
 | File | Contents |
 |---|---|
 | `catalog.json` | version, count, packs, and every element's names, meaning, summary, spec and tags |
-| `{ja,en}/catalog.tsv` | the index as tab-separated text (id, pack, category, title, tags, summary) |
-| `{ja,en}/e/{id}.txt` | a single element: attribution line, what it shows, the spec, then its code |
-| `{ja,en}/p/{id}.txt` | the copy-paste prompt for one element |
+| `{zh-CN,en,ja}/catalog.tsv` | the index as tab-separated text (id, pack, category, title, tags, summary) |
+| `{zh-CN,en,ja}/e/{id}.txt` | a single element: attribution line, what it shows, the spec, then its code |
+| `{zh-CN,en,ja}/p/{id}.txt` | the copy-paste prompt for one element |
 | `kit/{pack}.js` | the shared code of a pack |
 
 If you clone this whole repository, the CLI reads the local `api/v1` first and needs no network. Downloaded data is kept on disk, and the saved copy is used when the source cannot be reached.

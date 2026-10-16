@@ -3,7 +3,7 @@
 Motion Prompt is a library of names: the words a field uses for the things you ask an AI to make, each
 with a moving sample. Each element is a small, dependency-free Canvas 2D animation that is a
 **pure function of time**, with its name and a one-line meaning in several languages, an example
-of how to ask for it, and a copyable prompt (ja/en), so people can tell Claude Code / Codex
+of how to ask for it, and a copyable prompt (zh-CN/en/ja), so people can tell Claude Code / Codex
 "use #012 and #045" or "swap this title for #005".
 
 Repo: GitHub `liunnn1994/motion-prompt` (MIT) → GitHub Pages
@@ -30,11 +30,11 @@ Packs and their order (global IDs are assigned in this order, 3 digits; new pack
 
 | order | pack | elements | IDs | title |
 |---|---|---|---|---|
-| 1 | `motion` | 24 | 001–024 | Motion graphics moves / モーショングラフィックスの動き |
-| 2 | `camera` | 24 | 025–048 | Camera moves & transitions / カメラワークと切り替え |
-| 3 | `ui` | 24 | 049–072 | UI component names / UIパーツの名前 |
-| 4 | `lp` | 24 | 073–096 | Landing page & web effects / LP・Webサイトの演出 |
-| 5 | `photo` | 24 | 097–120 | Photo looks, lighting & styles / 写真の表現・光と画風 |
+| 1 | `motion` | 24 | 001–024 | 动态图形 / Motion graphics moves |
+| 2 | `camera` | 24 | 025–048 | 镜头运动与转场 / Camera moves & transitions |
+| 3 | `ui` | 24 | 049–072 | UI 组件 / UI component names |
+| 4 | `lp` | 24 | 073–096 | 落地页与网页效果 / Landing page & web effects |
+| 5 | `photo` | 24 | 097–120 | 摄影效果、布光与风格 / Photo looks, lighting & styles |
 
 **Once the repository is public, numbers are never renumbered and published names are not renamed.**
 A new pack takes the next `order` and the next free IDs. An element is added at the end of its pack
@@ -85,16 +85,16 @@ Rules:
 ```json
 {
   "pack": "motion", "order": 1,
-  "title": { "ja": "モーショングラフィックスの動き", "en": "Motion graphics moves" },
-  "categories": [ { "slug": "entrances-text", "ja": "登場・文字の演出", "en": "Entrances & text" } ],
+  "title": { "zh-CN": "动态图形", "en": "Motion graphics moves", "ja": "モーショングラフィックスの動き" },
+  "categories": [ { "slug": "entrances-text", "zh-CN": "入场与文字动效", "en": "Entrances & text", "ja": "登場・文字の演出" } ],
   "elements": [
     { "no": "01", "slug": "pop-in", "category": "entrances-text",
-      "name": { "ja": "ポップイン", "en": "Pop-in" },
-      "meaning": { "ja": "ポンと弾んで現れる", "en": "Pops into view with a small bounce" },
-      "ask": { "ja": "ロゴをポップインで出して。0.4秒で、行き過ぎは少しだけ。", "en": "Bring the logo in with a pop-in, about 0.4 s, with a slight overshoot." },
-      "summary": { "ja": "…", "en": "…" },
-      "spec": { "ja": ["…", "…"], "en": ["…", "…"] },
-      "use": { "ja": "…", "en": "…" },
+      "name": { "zh-CN": "弹性入场", "en": "Pop-in", "ja": "ポップイン" },
+      "meaning": { "zh-CN": "轻轻弹跳着出现", "en": "Pops into view with a small bounce", "ja": "ポンと弾んで現れる" },
+      "ask": { "zh-CN": "让标志以弹性入场效果出现，时长约 0.4 秒，稍微超出目标大小后回落。", "en": "Bring the logo in with a pop-in, about 0.4 s, with a slight overshoot.", "ja": "ロゴをポップインで出して。0.4秒で、行き過ぎは少しだけ。" },
+      "summary": { "zh-CN": "…", "en": "…", "ja": "…" },
+      "spec": { "zh-CN": ["…", "…"], "en": ["…", "…"], "ja": ["…", "…"] },
+      "use": { "zh-CN": "…", "en": "…", "ja": "…" },
       "tags": ["pop", "spring", "icon", "badge"] }
   ]
 }
@@ -112,7 +112,8 @@ Rules:
   539×208 card, degrees, scale). Take every number from the code — never invent. This is the product.
 - `use`: one sentence, when to reach for it in a video.
 - `tags`: 4–8 lowercase English keywords (include obvious synonyms people would search).
-- Japanese copy: plain です/ます-free noun/verb endings as in a spec sheet, no hype words, no AI-ish filler.
+- Chinese copy: use standard industry terms and clear, concise Simplified Chinese, with English names as the bilingual counterpart.
+  Japanese copy: plain です/ます-free noun/verb endings as in a spec sheet, no hype words, no AI-ish filler.
   English: plain, no slang, check each term is safe and standard in English.
 
 ### Languages

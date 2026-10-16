@@ -27,7 +27,7 @@ jobs:
           package-manager-cache: false
       - name: Validate and build website
         run: |
-          node --test tools/deployment.test.mjs
+          node --test tools/deployment.test.mjs tools/localization.test.mjs
           node tools/build.mjs --check
           node tools/build.mjs
           node tools/package-site.mjs

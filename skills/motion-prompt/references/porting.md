@@ -151,7 +151,7 @@ Elements take colors from the palette object `C` in the kit. Read the kit to see
 
 ## Content
 
-The words, numbers and names inside an element are sample content. Replace them with the user's. Text is measured and laid out for the sample's length, so check long replacements: reduce the font size constant or split lines rather than letting text leave the card. Japanese and Latin text have different widths at the same size; check both if the video is bilingual.
+The words, numbers and names inside an element are sample content. Replace them with the user's. Text is measured and laid out for the sample's length, so check long replacements: reduce the font size constant or split lines rather than letting text leave the card. Chinese and Latin text have different widths at the same size; check both for Chinese/English videos, and check the requested languages for other bilingual videos.
 
 ## License line
 

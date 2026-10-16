@@ -9,7 +9,7 @@ import http from 'node:http';
 import { spawn } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 
-const VERSION = '0.1.0';
+const VERSION = '0.1.1';
 const SITE = 'https://motion-prompt.2077tech.com/';
 const REMOTES = [
   'https://motion-prompt.2077tech.com/api/v1',
@@ -288,7 +288,7 @@ function line(cat, e, lang) {
 
 function score(cat, e, tokens) {
   const name = both(e.name).toLowerCase();
-  const names = [tx(e.name, 'ja'), tx(e.name, 'en')].map((s) => s.toLowerCase());
+  const names = ['zh-CN', 'en', 'ja'].map((lang) => tx(e.name, lang).toLowerCase());
   const tags = (e.tags || []).map((t) => String(t).toLowerCase());
   const slug = String(e.slug || '').toLowerCase();
   const catHay = `${categoryLabel(cat, e, 'en').haystack} ${e.pack} ${both((packsOf(cat).find((p) => packKey(p) === e.pack) || {}).title)}`.toLowerCase();
@@ -619,7 +619,8 @@ async function cmdPick(store, args, flags) {
   const origin = `http://127.0.0.1:${port}`;
   const q = new URLSearchParams({ cb: `${origin}/?t=${token}` });
   if (pack) q.set('pack', pack);
-  if (flags.lang) q.set('lang', flags.lang);
+  const galleryLang = flags.lang || 'zh-CN';
+  q.set('lang', galleryLang);
   const galleryUrl = `${root ? `${origin}/` : SITE}?${q}`;
   const waiting = waitForPick(server, { port, token, root, cat, flags, timeoutSec });
 
@@ -627,7 +628,12 @@ async function cmdPick(store, args, flags) {
   if (flags['no-open']) console.log('Not opened (--no-open). Open this URL in a browser, or give it to the user to open.');
   else if (await openBrowser(galleryUrl)) console.log('Opened in the default browser. If no browser window appeared, open the URL above yourself.');
   else console.log('Could not open a browser from here. Open the URL above in a browser, or give it to the user to open.');
-  console.log(`Waiting for the user to pick and press "Send to AI" (up to ${timeoutSec} s)…\n`);
+  const labels = {
+    'zh-CN': ['选择 / Pick', '发送给 AI / Send to AI'],
+    en: ['Pick', 'Send to AI'],
+    ja: ['選ぶ', 'AIに渡す'],
+  }[galleryLang];
+  console.log(`Waiting for the user to choose with "${labels[0]}" and press "${labels[1]}" (up to ${timeoutSec} s)…\n`);
 
   printPick(cat, await waiting);
 }

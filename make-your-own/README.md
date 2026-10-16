@@ -45,7 +45,7 @@ Give this repository to a coding AI and paste one of these.
 | The names of your own field, with your own look | [`prompts/en/02-your-own-field.md`](prompts/en/02-your-own-field.md) |
 | The one-page cheat-sheet image | [`prompts/en/03-cheatsheet-image.md`](prompts/en/03-cheatsheet-image.md) |
 
-Japanese versions are in [`prompts/ja/`](prompts/ja/).
+Simplified Chinese versions are in [`prompts/zh-CN/`](prompts/zh-CN/); Japanese versions are in [`prompts/ja/`](prompts/ja/).
 
 Where to edit by hand, in an `index.html`:
 

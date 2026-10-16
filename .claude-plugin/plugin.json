@@ -1,7 +1,7 @@
 {
   "name": "motion-prompt",
   "displayName": "Motion Prompt 中文版",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "由 liunnn1994 维护的 Motion Prompt 中文版，默认简体中文，支持英文与日语。包含 120 个创作术语、动态示例、中英对照和可发送给 AI 的规格与参考代码。原作：Shohei Ohtaki。",
   "author": {
     "name": "Shohei Ohtaki",
